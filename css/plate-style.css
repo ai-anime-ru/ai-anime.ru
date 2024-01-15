@@ -360,3 +360,16 @@ footer {
 .side-block-main .calendar__item-date {
     display: none;
 }
+
+.side-block-main .calendar__item-date {
+    margin-right: 0;
+}
+
+.side-block-main .calendar__item-bookmark {
+    margin-left: 0px;
+    margin-right: 2px;
+}
+
+.side-block-main .h3 {
+    color: white;
+}
