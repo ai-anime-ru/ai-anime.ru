@@ -388,7 +388,7 @@ footer {
 
 .navigation {
     width: 100%;
-    margin: 25px 0;
+    padding: 20px;
 }
 
 .dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
@@ -431,4 +431,13 @@ footer {
     background-color: rgb(224 231 255/var(--tw-bg-opacity));
     border-radius: 0.5rem;
     box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+
+.page_next-prev {
+    float: right;
+    height: 36px;
+}
+
+.page_next-prev  {
+    font-size: 25px;
 }
