@@ -269,14 +269,15 @@ footer {
 .column-list-item a{
     color: #fff;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1em;
+    font-size: 0.8em;
+    line-height: 23px;
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
     text-decoration: none;
 }
 
-.column-list-item:hover {
+.column-list-item a:hover {
     color: rgb(143, 143, 143);
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
@@ -307,7 +308,7 @@ footer {
 .copyright-footer-text {
     float: left;
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(219, 219, 219);
+    color: white;
     font-size: 0.8em;
     margin-top: 1em;
     padding-bottom: 5px;
@@ -317,10 +318,14 @@ footer {
     transition: all 0.15s;
 }
 
-.copyright-footer-text-dev {
+.copyright-link {
+    color: white;
+}
+
+.copyright-footer-text-dev{
     float: right;
     font-family: 'Noto Sans', sans-serif;
-    color: rgb(219, 219, 219);
+    color: white;
     font-size: 0.8em;
     margin-top: 1em;
     padding-bottom: 5px;
