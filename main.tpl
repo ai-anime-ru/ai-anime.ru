@@ -66,7 +66,6 @@
 			{include file="/modules/sidebar.tpl"}
 			<section class="main__content">
 				{include file="modules/main.tpl"}
-				{include file="modules/side-block-main.tpl"}
 			</section>
 			[not-aviable=main]{content}[/not-aviable]
 			{include file="/modules/footer.tpl"}

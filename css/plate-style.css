@@ -190,6 +190,10 @@ ul li {
 
 /* ---------- SIDE BLOCK ---------*/
 
+.main {
+    display: flex;
+}
+
 .side-block-main {
     background-color: #393949;
     width: 200px;

@@ -8,6 +8,7 @@
             {custom template="shortstory" category='10' navigation='yes' from='0' cache='no'}
         </div>
     </section>
+    {include file="modules/side-block-main.tpl"}
     [/aviable] 
     <div class="bg_overlay"></div>
 </main>
