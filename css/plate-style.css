@@ -386,6 +386,44 @@ footer {
 
 /* --------- NAVIGATION ---------*/
 
+.dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
+    background-color: #202020;
+}
+
 .pages {
-    color: white;
+    text-align: left;
+}
+
+.dark .pages span {
+    --tw-text-opacity: 1;
+    color: rgb(212 212 212);
+}
+
+.dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
+    background-color: #202020;
+}
+
+.pages a, .pages span {
+    height: 38px;
+    line-height: 24px;
+    min-width: 40px;
+    text-decoration: none!important;
+}
+
+.pages a, .pages span {
+    color: inherit;
+    display: inline-block;
+    font-weight: 700;
+    padding: 0.5rem;
+    position: relative;
+    text-align: center;
+}
+
+.page_next-prev, .pages a:hover, .pages span {
+    --tw-bg-opacity: 1;
+    --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+    --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+    background-color: rgb(224 231 255/var(--tw-bg-opacity));
+    border-radius: 0.5rem;
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
 }
