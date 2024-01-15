@@ -391,17 +391,10 @@ footer {
     padding: 20px;
 }
 
-.dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
-    background-color: #202020;
-}
-
 .pages {
     text-align: left;
 }
 
-.dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
-    background-color: #202020;
-}
 
 .pages a, .pages span {
     height: 38px;
@@ -433,10 +426,10 @@ footer {
     --tw-bg-opacity: 1;
     --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
     --tw-shadow-colored: 0 1px 2px 0 ;
-    background-color: rgb(224 231 255);
+    background-color: #1e1e26;;
     border-radius: 0.5rem;
     font-size: 1em;
-    color: black;
+    color: white;
 }
 
 .page_next-prev {
