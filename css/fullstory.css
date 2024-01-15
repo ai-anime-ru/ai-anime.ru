@@ -572,3 +572,12 @@ span.sim-dot {
 .news-block a {
     text-decoration: none;
 }
+
+.news-container .poster-box {
+    width: 283px;
+    height: 422px;
+}
+
+.news-container .box-shortstory {
+    display: flex;
+}
