@@ -20,7 +20,9 @@
 	{include file="{THEME}/css/plate-style.css"}
 	{include file="{THEME}/css/sidebar.css"}
 	{include file="{THEME}/css/full-story.css"}
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+		crossorigin="anonymous" />
 	<!-- <https://fontawesome.com/> -->
 	<script src="https://kit.fontawesome.com/429dc96de0.js" crossorigin="anonymous"></script>
 	<script src="/js/slider.js"></script>
@@ -49,10 +51,10 @@
 				{include file="modules/main.tpl"}
 			</section>
 			[not-aviable=main]{content}[/not-aviable]
-			{include file="/modules/footer.tpl"}
-
 			<!-- () Выводим ошибки () -->
 			{info}
+			{include file="/modules/footer.tpl"}
+
 		</div>
 	</div>
 	<button id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
@@ -332,26 +334,26 @@
 		}
 		new Sim();
 	</script>
-		<!-- Yandex.Metrika counter -->
-		<script type="text/javascript">
-			(function (m, e, t, r, i, k, a) {
-				m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-				m[i].l = 1 * new Date();
-				for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
-				k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
-			})
-				(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-	
-			ym(96107019, "init", {
-				clickmap: true,
-				trackLinks: true,
-				accurateTrackBounce: true
-			});
-		</script>
-		<noscript>
-			<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
-		</noscript>
-		<!-- /Yandex.Metrika counter -->
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (m, e, t, r, i, k, a) {
+			m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+			m[i].l = 1 * new Date();
+			for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+			k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+		})
+			(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+		ym(96107019, "init", {
+			clickmap: true,
+			trackLinks: true,
+			accurateTrackBounce: true
+		});
+	</script>
+	<noscript>
+		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
+	<!-- /Yandex.Metrika counter -->
 </body>
 
 </html>
