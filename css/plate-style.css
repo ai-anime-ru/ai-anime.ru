@@ -35,7 +35,7 @@ ul li {
     position: relative;
     display: block;
     columns: 3;
-    padding: 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .box {
@@ -54,20 +54,19 @@ ul li {
 }
 
 @media (max-width: 1280px) {
-    .main-container {
+    .items_news {
         columns: 3;
-        left: 40px;
     }
 }
 
 @media (max-width: 768px) {
-    .main-container {
+    .items_news {
         columns: 2;
     }
 }
 
 @media (max-width: 480px) {
-    .main-container {
+    .items_news {
         columns: 1;
     }
 }
