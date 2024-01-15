@@ -223,9 +223,10 @@ ul li {
     margin-left: 20px;
     margin-top: 20px;
     background-color: #393949;
-    width: 100%;
+    width: 360px;
     height: 1300px;
     border-radius: 15px;
+    padding: 20px;
 }
 
 .top-block-main {
@@ -348,4 +349,14 @@ footer {
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
+}
+
+/* --------- РАСПИСАНИЕ SIDE BLOCK ---------*/
+
+.side-block-main .calendar__item {
+    max-width: 100%;
+}
+
+.side-block-main .calendar__item-date {
+    display: none;
 }
