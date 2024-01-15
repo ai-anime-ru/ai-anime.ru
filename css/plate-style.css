@@ -184,14 +184,6 @@ ul li {
     opacity: 0.5;
 }
 
-.poster-box .badge {
-    position: absolute;
-    z-index: 1;
-    margin: 10px;
-    background-color: #1e1e26;
-    color: white;
-}
-
 
 .box:hover {
     box-shadow: 0 0px 17px #00000060;

@@ -72,7 +72,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="index.php?action=logout">
                         <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
                         <div class="text" id="logoutButton">Вход</div>
                     </a>
