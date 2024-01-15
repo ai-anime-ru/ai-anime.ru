@@ -433,11 +433,15 @@ footer {
 }
 
 .page_next-prev {
-    color: #adadad;
+    color: #929292;
 }
 
 .page_next-prev {
     float: right;
     height: 36px;
     font-size: 35px;
+}
+
+.page_next-prev a {
+    color: white
 }
