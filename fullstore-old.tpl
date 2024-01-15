@@ -6,7 +6,6 @@
                     [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                         src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 </div>
-                {user_subscribed}
             </article>
         </div>
         <div class="about-anime">
@@ -159,11 +158,9 @@
             </div>
             <div class="dot"></div>
             <div class="bookmarks-icon" onclick="toggleBookmark()">
-                [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
-                        name="bookmark-outline"></ion-icon></div>[/add-favorites]
-
-                [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
-                        name="bookmark-outline"></ion-icon></div>[/del-favorites]
+                [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки" name="bookmark-outline"></ion-icon></div>[/add-favorites]
+                
+                [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок" name="bookmark-outline"></ion-icon></div>[/del-favorites]
             </div>
         </div>
     </div>
@@ -232,6 +229,7 @@
         <div class="sim-slider-dots"></div>
     </div>
     [not-group=5]
+    [xfgiven_kodik_iframe]
     <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
         data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
         <div class="room-invite__image" id="room-poster">
@@ -250,25 +248,29 @@
                 <span class=""></span>
             </div>
 
+            [/xfgiven_kodik_iframe]
             [/not-group]
-            <!--
-            <label for="playerSelector"></label>
+            <!--<label for="playerSelector"></label>
             <select id="playerSelector" onchange="changePlayer()">
                 <option value="player-kodik1">Плеер 1</option>
                 <option value="player-kodik2">Плеер 2</option>
-            </select>
-            -->
+            </select>-->
+
             <div id="cinema" class="full_player tabs_box">
 
                 <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                     <h1></h1>
-                    [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
-                        allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                    [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" width="1200"
+                        height="500" frameborder="0" allowfullscreen
+                        allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                 </div>
                 <div class="player player-kodik2" id="player-kodik2" style="display:none;">
                     <h1></h1>
-                    <!--{include file="/player/player.tpl"}-->
+                    [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" width="1200"
+                        height="500" frameborder="0" allowfullscreen
+                        allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                 </div>
+
                 <div class="player-info">
                     <ul class="in-voice-acting">
                         <li>
