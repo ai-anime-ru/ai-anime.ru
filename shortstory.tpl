@@ -4,7 +4,7 @@
             <div class="poster-box">
                 <div class="poster-badge">
                     <span class="badge">[xfvalue_shikimori_status_ru]</span>
-                    <span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
+                    <!--<span class="badge">Серий: [xfvalue_shikimori_episodes]</span>-->
                 </div>
                 [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                     src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
