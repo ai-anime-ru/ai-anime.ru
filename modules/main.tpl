@@ -11,6 +11,7 @@
             <div class="items_news" id="items_news">
                 {custom template="shortstory" navigation='yes' from='0' }
             </div>
+            {navigation}
         </section>
         <div class="side-block-main">
             <div class="calendar box-body-s">
