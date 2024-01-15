@@ -434,14 +434,12 @@ footer {
 
 .page_next-prev {
     color: #929292;
-}
-
-.page_next-prev {
     float: right;
     height: 36px;
-    font-size: 35px;
+    font-size: 1.5em;
+    padding: 6px 10px;
 }
 
 .page_next-prev a {
-    color: white
+    color: white;
 }
