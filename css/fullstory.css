@@ -547,8 +547,28 @@ span.sim-dot {
     background-color: #1e1e26;
     padding: 15px;
     margin-bottom: 10px;
+    display: flex;
 }
 
-.news-page-static .news-block-hidden {
+.items_news .news-block-hidden {
+    display: none;
+}
+
+.news-block-hidden {
+    position: relative;
+    display: flex;
+}
+
+.news-block .title-text {
+    margin-left: 20px;
     display: block;
+}
+
+.news-block>.description-short-box {
+    margin-left: 20px;
+    display: block;
+}
+
+.news-block a {
+    text-decoration: none;
 }
