@@ -1,4 +1,6 @@
 <div class="full-story-body">
+    <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
+        src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
     <div class="full-story">
         <div class="full-box">
             <article class="full-box-story">
@@ -279,8 +281,6 @@
             </div>
         </div>
     </div>
-    <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-            src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
 </div>
 <script> //Скрипт для скролла по элементам
     document.getElementById('description').addEventListener('click', function () {
