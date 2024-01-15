@@ -191,14 +191,28 @@ ul li {
 /* ---------- SIDE BLOCK ---------*/
 
 .main {
-    display: flex;
+    display: block;
+    margin: auto;
+    width: 1300px;
 }
 
 .side-block-main {
+    margin-top: 90px;
     background-color: #393949;
-    width: 200px;
-    height: 1200px;
+    width: 350px;
+    height: 1300px;
+    border-radius: 15px;
 }
+
+.top-block-main {
+    position: relative;
+    margin-top: 90px;
+    background-color: #393949;
+    width: 1300px;
+    height: 150px;
+    border-radius: 15px;
+}
+
 
 /* --------- FOOTER -------------*/
 
