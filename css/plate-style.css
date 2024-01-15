@@ -205,11 +205,15 @@ ul li {
     right: 0;
     color: white;
     z-index: 1;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
-.box p:hover {
+.poster-box:hover p {
     opacity: 1;
+}
+
+.description {
+    background-color: black;
 }
 
 

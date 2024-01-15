@@ -14,10 +14,12 @@
                 <div class="title-overlay">
                     <div class"title-text">
                         <h2 class="title">{title}</h2>
-                        <h3 class="description">[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot]
-                            [xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
-                            [/xfnotgiven_shikimori_plot]
-                        </h3>
+                        <div class="description-box">
+                            <h3 class="description">[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot]
+                                [xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
+                                [/xfnotgiven_shikimori_plot]
+                            </h3>
+                        </div>
                     </div>
                 </div>
             </div>
