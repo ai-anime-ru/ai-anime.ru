@@ -10,6 +10,7 @@
                     src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 {user_subscribed}
                 <div class="play-button"><ion-icon name="play-outline"></ion-icon></div>
+                <p>Серий: [xfvalue_shikimori_episodes]</p>
                 <div class="title-overlay">
                     <div class"title-text">
                         <h2 class="title">{title}</h2>

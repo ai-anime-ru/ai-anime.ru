@@ -37,7 +37,9 @@
                         <td><a class="first-info">Статус:</a></td>
                         <td>
                             <span class="badge">
-                                <a class="genre-shiki">[xfvalue_shikimori_status_ru]</a>
+                                <a class="genre-shiki">[xfvalue_kodik_status_ru][xfnotgiven_kodik_status_ru]
+                                    [xfgiven_shikimori_status_ru][xfvalue_shikimori_status_ru][/xfgiven_shikimori_status_ru]
+                                    [/xfnotgiven_kodik_status_ru]</a>
                             </span>
                         </td>
                     </tr>
