@@ -244,15 +244,9 @@ footer {
     position: absolute;
     height: auto;
     width: 100%;
-    background-color: rgb(23, 0, 49);
+    background-color: #273655;
+    margin-top: 20px;
 }
-
-/*
-.line {
-    border-top: 1px dashed rgba(255, 255, 255, 0.267);
-    height: 18px;
-}
-*/
 
 
 .footerColumns {
