@@ -1,10 +1,9 @@
-/*
-СТИЛЬ ДЛЯ ПЛЕЕРОВ
+/*СТИЛЬ ДЛЯ ПЛЕЕРОВ*/
 .tabs_b .video_box {
     text-align: center;
     margin-top: 20px; 
 }
-#cinema {
+.cinema {
     display: flex;
 }
 .tabs_b {
@@ -12,10 +11,9 @@
 }
 .kodik-player {
     width: 610px;
-    height: 370px;
+    height: 100%;
     border: 0;
 }
-*/
 
 
 .description-short-box {

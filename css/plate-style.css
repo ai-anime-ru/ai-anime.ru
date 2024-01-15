@@ -212,10 +212,6 @@ ul li {
     opacity: 1;
 }
 
-.description {
-    background-color: black;
-}
-
 
 .box:hover {
     box-shadow: 0 0px 17px #00000060;
