@@ -399,11 +399,6 @@ footer {
     text-align: left;
 }
 
-.dark .pages span {
-    --tw-text-opacity: 1;
-    color: rgb(212 212 212);
-}
-
 .dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
     background-color: #202020;
 }
@@ -430,14 +425,11 @@ footer {
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
     background-color: rgb(224 231 255/var(--tw-bg-opacity));
     border-radius: 0.5rem;
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    font-size: 1em;
 }
 
 .page_next-prev {
     float: right;
     height: 36px;
-}
-
-.page_next-prev  {
-    font-size: 25px;
+    font-size: 35px;
 }
