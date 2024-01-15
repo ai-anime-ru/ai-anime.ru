@@ -10,11 +10,11 @@ ul li {
 
 .main-container {
 	position: relative;
+    display: block;
     width: 900px;
     max-width: 1200px;
     margin: 90px auto;
     columns: 3;
-    column-gap: 20px;
     background-color: #393949;;
     padding: 20px;
 
@@ -28,6 +28,7 @@ ul li {
 }
 
 .main-container .box {
+    margin: auto;
     margin-bottom: 20px;
     break-inside: avoid;
     height: 423px;
