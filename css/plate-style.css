@@ -413,7 +413,7 @@ footer {
 }
 
 .pages a {
-    color: white;
+    color: #dddddd;
     transition: 0.3s;
 }
 
@@ -426,10 +426,10 @@ footer {
     --tw-bg-opacity: 1;
     --tw-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
     --tw-shadow-colored: 0 1px 2px 0 ;
-    background-color: #1e1e26;;
+    background-color: #1e1e26;
     border-radius: 0.5rem;
     font-size: 1em;
-    color: white;
+    color: #ffffff;
 }
 
 .page_next-prev {
