@@ -199,7 +199,17 @@ ul li {
 }
 
 .poster-box p {
+    opacity: 0;
+    margin: 10px;
     position: absolute;
+    right: 0;
+    color: white;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.box p:hover {
+    opacity: 1;
 }
 
 
