@@ -386,6 +386,10 @@ footer {
 
 /* --------- NAVIGATION ---------*/
 
+.navigation {
+    width: 100%;
+}
+
 .dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
     background-color: #202020;
 }

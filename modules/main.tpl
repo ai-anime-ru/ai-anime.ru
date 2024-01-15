@@ -9,7 +9,7 @@
             <h1>Последние аниме</h1>
             <div class="line"></div>
             <div class="items_news" id="items_news">
-                {custom template="shortstory" from='0' }
+                {custom template="shortstory" navigation='yes' from='0' }
             </div>
         </section>
         <div class="side-block-main">
