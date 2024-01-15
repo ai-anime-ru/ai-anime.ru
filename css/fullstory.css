@@ -549,6 +549,6 @@ span.sim-dot {
     margin-bottom: 10px;
 }
 
-.news-page-static article .news-block-hidden {
+.news-page-static .news-block-hidden {
     display: block;
 }
