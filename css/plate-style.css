@@ -117,6 +117,10 @@ ul li {
   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
+.news-container .description {
+    display: none;
+}
+
 .play-button {
     position: absolute;
     top: 50%;
@@ -129,14 +133,28 @@ ul li {
     transition: opacity 0.5s ease-in-out;
 }
 
+.news-container .play-button {
+    display: none;
+}
+
 .poster-box:hover .description {
   transform: translateY(-20px);
   opacity: 1;
 }
 
+.poster-box:hover .description {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+
 .poster-box:hover .play-button {
   opacity: 1;
 }
+
+.news-container .poster-box:hover img {
+    transform: none;
+    opacity: 1;
+  }
 
 .poster-box:hover img {
   transform: scale(1.1);
@@ -146,6 +164,10 @@ ul li {
 .box:hover {
    box-shadow: 0 0px 17px #00000060;
 }
+
+.news-container .box:hover {
+    box-shadow: none;
+ }
 
 .play-scale {
     position: absolute;
