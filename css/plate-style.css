@@ -9,16 +9,33 @@ ul li {
 }
 
 .main-container {
-	position: relative;
-    display: block;
+    background-color: #393949;
     width: 920px;
     max-width: 1200px;
-    margin: 20px auto;
-    columns: 3;
-    background-color: #393949;
-    padding: 20px;
+    margin-top: 20px;
     border-radius: 15px;
+}
 
+.main-container h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.line {
+    padding-top: 10px;
+    margin: auto;
+    border-bottom: 1px solid #8d8d8d;
+    width: 880px;
+}
+
+.items_news {
+    position: relative;
+    display: block;
+    columns: 3;
+    padding: 20px;
 }
 
 .box {
@@ -203,9 +220,10 @@ ul li {
 }
 
 .side-block-main {
+    margin-left: 20px;
     margin-top: 20px;
     background-color: #393949;
-    width: 350px;
+    width: 100%;
     height: 1300px;
     border-radius: 15px;
 }
