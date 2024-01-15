@@ -10,11 +10,12 @@ ul li {
 
 .main-container {
 	position: relative;
-    width: 1200px;
+    width: 880px;
     max-width: 1200px;
     margin: 90px auto;
-    columns: 4;
+    columns: 3;
     column-gap: 20px;
+    background-color: black;
 
 }
 
