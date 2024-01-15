@@ -61,7 +61,7 @@
 
             <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
                 <a href="/">
-                    <img style="width: 135px; height: 135pxs;" src="{THEME}/images/logo.png">
+                    <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png">
                 </a>
             </li>
         </nav>
