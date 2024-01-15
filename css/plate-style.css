@@ -13,7 +13,7 @@ ul li {
     display: block;
     width: 920px;
     max-width: 1200px;
-    margin: 90px auto;
+    margin: 20px auto;
     columns: 3;
     background-color: #393949;
     padding: 20px;
@@ -191,13 +191,19 @@ ul li {
 /* ---------- SIDE BLOCK ---------*/
 
 .main {
+    position: relative;
     display: block;
     margin: auto;
     width: 1300px;
 }
 
+
+.contaner-flex {
+    display: flex;
+}
+
 .side-block-main {
-    margin-top: 90px;
+    margin-top: 20px;
     background-color: #393949;
     width: 350px;
     height: 1300px;
