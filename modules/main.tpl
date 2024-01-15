@@ -3,7 +3,7 @@
     {info}
     [/aviable]
     [aviable=main]
-    <div class="top-block-main">{custom order="lastviewed"}</div>
+    <div class="top-block-main"></div>
     <div class="contaner-flex">
         <section class="main-container">
             <h1>Последние аниме</h1>

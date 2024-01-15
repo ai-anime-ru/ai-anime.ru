@@ -159,9 +159,11 @@
             </div>
             <div class="dot"></div>
             <div class="bookmarks-icon" onclick="toggleBookmark()">
-                [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки" name="bookmark-outline"></ion-icon></div>[/add-favorites]
-                
-                [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок" name="bookmark-outline"></ion-icon></div>[/del-favorites]
+                [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
+                        name="bookmark-outline"></ion-icon></div>[/add-favorites]
+
+                [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
+                        name="bookmark-outline"></ion-icon></div>[/del-favorites]
             </div>
         </div>
     </div>
@@ -276,12 +278,12 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-            src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
+            <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
+                    src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
             {addcomments}
             {comments}
+        </div>
+    </div>
 </div>
 <script> //Скрипт для скролла по элементам
     document.getElementById('description').addEventListener('click', function () {
