@@ -1,0 +1,418 @@
+@font-face {
+    font-family: 'ubuntu';
+    src: url('/templates/dle-default/fonts/ubuntu-medium.woff2');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'ubuntu';
+}
+
+:root {
+    --clr: #1e1e26
+}
+
+body {
+	display: block;
+    min-height: 100vh;
+    background: var(--clr);
+    font-family: 'ubuntu';
+}
+
+.sidebar-main {
+    z-index: 1000;
+    position: fixed;
+    width: 80px;
+    height: 100vh;
+    background-color: #273655;
+    transition: 0.5s;
+    padding-left: 5px;
+    overflow: hidden;
+    top: 0;
+}
+
+.sidebar-main.active {
+    width: 300px;
+}
+
+.sidebar-main>ul {
+    position: relative;
+    height: 100vh;
+
+}
+
+.sidebar-main ul li {
+    position: relative;
+    list-style: none;
+}
+
+.sidebar-main ul li.active {
+    background: var(--clr);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.sidebar-main ul li.active::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 5px 5px 0 5px var(--clr);
+    background: transparent;
+
+}
+
+.sidebar-main ul li.active::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 5px -5px 0 5px var(--clr);
+    background: transparent;
+
+}
+
+.sidebar-main ul li.logo {
+    margin-bottom: 25px;
+
+}
+
+.sidebar-main ul li.logo .icon{
+    font-size: 2em;
+    color: var(--clr);
+}
+
+.sidebar-main ul li.logo .text{
+    font-size: 2em;
+    color: #d1e1f9;
+}
+
+.sidebar-main ul li a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-main ul li a {
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar-main ul li a .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    padding-left: 10px;
+    height: 70px;
+    font-size: 1.5em;
+    color: #d1e1f9;
+    transition: 0.5s;
+}
+
+.sidebar-main ul li a .text {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #d1e1f9;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.sidebar-main ul li.active a .icon { 
+    color: #fff;
+   }
+
+.sidebar-main ul li.active a .text {
+    color: white;
+}
+
+.sidebar-main ul li:hover a .icon,
+.sidebar-main ul li:hover a .text {
+    color: white;
+    text-shadow: 0 0 5px #d1e1f9;
+}
+
+.sidebar-main ul li.active a .icon::before {
+    content: '';
+    position: absolute;
+    inset: 5px;
+    width: 60px;
+    background: var(--bg);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.sidebar-main ul li:hover.active a .icon::before {
+    background: #273655;
+    
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: inline;
+}
+
+.imgBx {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.site-logo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.site-logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*REG*/
+.page_form__inner{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-form {
+  list-style-type: none;
+}
+.page_form__form {
+  
+  background-color: #273655; /* Цвет фона формы */
+  border-radius: 10px; /* Скругление углов формы */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень формы */
+  padding: 20px;
+  width: 300px; /* Ширина формы */
+}
+.page_form__form h1 {
+  text-align: center;
+  text-shadow: 0 0 5px #d1e1f9;
+  color: #d1e1f9; /* Цвет заголовка */
+}
+.form-group {
+  color: #d1e1f9; /* Цвет текста */
+}
+/* Стили для полей ввода и кнопок */
+.page_form__form input,
+.page_form__form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Стили для результатов проверки */
+#result-registration {
+  margin-top: 10px;
+  color: #d1e1f9; /* Цвет текста для ошибок */
+}
+
+/* Стили для кнопки "Зарегистрироваться" */
+.form_submit button {
+  font-family: 'ubuntu';
+  background-color: #4d658c;  /* Цвет кнопки */
+  color: #d1e1f9;  /* Цвет текста */
+  cursor: pointer;
+  font-family: 'ubuntu';
+}
+.form_submit button:hover {
+  background-color: #1e1e26; /* Цвет кнопки при наведении */
+}
+.login_check button{	
+  font-family: 'ubuntu';
+  background-color: #4d658c; /* Цвет кнопки проверить */
+  cursor: pointer;
+}
+.login_check button:hover {
+  background-color: #1e1e26; /* Цвет кнопки при наведении */
+}
+/*Страничка входа*/
+#login_pane {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.btn-border {
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    display: inline-block;
+}
+
+.dropdown-form {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-form {
+    display: block;
+}
+
+.login_pane__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    margin-right: 10px;
+}
+
+.avatar span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+.login_pane__admin {
+    margin-left: auto;
+}
+
+.login_pane__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login_pane__menu li {
+    margin-bottom: 10px;
+}
+
+.login_pane__foot {
+    margin-top: 10px;
+}
+
+a.right {
+    float: right;
+    margin-left: 10px;
+}
+
+.plus_icon {
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.circle {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.login_form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login_form li {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.login_input-btn {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login_form__foot {
+    margin-top: 10px;
+}
+
+
+/* СТИЛИ ДЛЯ КНОПКИ ВВЕРХ */
+#scrollToTopBtn {
+    position: fixed;
+    text-align: center;
+    display: flex;
+    bottom: 20px;
+    right: 20px;
+    visibility: hidden;
+    color: black;
+    background-color: #d1e1f9;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#scrollToTopBtn.show {
+    visibility: visible;
+    opacity: 1;
+}
