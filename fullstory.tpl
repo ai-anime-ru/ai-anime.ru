@@ -171,15 +171,15 @@
             </div>
         </div>
     </div>
-
+<!--
     [xfgiven_next_episode_date]
     <div class="pretimer">
         <div class="lt">
             <div class="countdown-title">
                 <p>До выхода новой серии в Японии осталось:</p>
             </div>
-           <!--- <div class="countdown-text">Новая серия аниме выходит на экраны <span>{timer_out}</span><br> в соответствии
-                c японским временем</div>-->
+            <div class="countdown-text">Новая серия аниме выходит на экраны <span>{timer_out}</span><br> в соответствии
+                c японским временем</div>
         </div>
         <div class="rt">
             <ul class="countdown-wrp">
@@ -208,6 +208,7 @@
         <script type="text/javascript"> var timer_timestamp = "[xfvalue_next_episode_date]"; </script>
     </div>
     [/xfgiven_next_episode_date]
+-->
 
 
     {include file="relatednews.tpl"}
