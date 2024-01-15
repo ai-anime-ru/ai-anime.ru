@@ -58,6 +58,12 @@
                     </li>
                 </ul>
             </div>
+
+            <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
+                <a href="/">
+                    <img style="width: 135px; height: 135pxs;" src="{THEME}/images/logo.png">
+                </a>
+            </li>
         </nav>
         <div class="copyright-footer"></div>
         <p class="copyright-footer-text">Ⓒ 2024 Copyright: <a href="/" class="copyright-link">AI ANIME</a>.
