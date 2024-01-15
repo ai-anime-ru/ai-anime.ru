@@ -398,7 +398,7 @@ footer {
 
 .pages a, .pages span {
     height: 38px;
-    line-height: 24px;
+    line-height: 23px;
     min-width: 40px;
     text-decoration: none!important;
 }
@@ -430,6 +430,10 @@ footer {
     border-radius: 0.5rem;
     font-size: 1em;
     color: #ffffff;
+}
+
+.page_next-prev {
+    color: #adadad;
 }
 
 .page_next-prev {
