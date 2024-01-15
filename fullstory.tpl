@@ -262,8 +262,7 @@
 
                 <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                     <h1></h1>
-                    [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" width="1200"
-                        height="500" frameborder="0" allowfullscreen
+                    [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0" allowfullscreen
                         allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                 </div>
                 <div class="player player-kodik2" id="player-kodik2" style="display:none;">
@@ -279,11 +278,11 @@
                 </div>
             </div>
             <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                    src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
-            {addcomments}
-            {comments}
-        </div>
+                src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
+        {addcomments}
+        {comments}
     </div>
+        </div>
 </div>
 <script> //Скрипт для скролла по элементам
     document.getElementById('description').addEventListener('click', function () {
