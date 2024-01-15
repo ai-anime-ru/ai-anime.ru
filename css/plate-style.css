@@ -388,6 +388,7 @@ footer {
 
 .navigation {
     width: 100%;
+    margin: 25px 0;
 }
 
 .dark .page_next-prev, .dark .pages a:hover, .dark .pages span {
