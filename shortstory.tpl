@@ -33,4 +33,5 @@
             </div>
         </article>
     </div>
+    <div class="side-block"></div>
 </a>
