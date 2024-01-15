@@ -374,9 +374,18 @@ footer {
 }
 
 .side-block-main .calendar__item-weekday h3 {
+    text-align: left;
     color: white;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .side-block-main .show-more-schedules {
+    color: white;
+}
+
+/* --------- NAVIGATION ---------*/
+
+.pages {
     color: white;
 }
