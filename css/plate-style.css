@@ -188,6 +188,12 @@ ul li {
     transition: opacity 0.5s ease-in-out;
 }
 
+/* ---------- SIDE BLOCK ---------*/
+
+.side-block {
+    background-color: #393949;
+}
+
 /* --------- FOOTER -------------*/
 
 .footer-copyright {
