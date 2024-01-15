@@ -260,14 +260,20 @@ footer {
 }
 
 .column-list-item {
-    font-family: 'Noto Sans', sans-serif;
-    color: rgb(219, 219, 219);
-    font-size: 0.8em;
-    margin-top: 10px;
     cursor: pointer;
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
+}
+
+.column-list-item a{
+    color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    -webkit-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+    text-decoration: none;
 }
 
 .column-list-item:hover {
