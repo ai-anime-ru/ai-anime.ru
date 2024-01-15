@@ -2,6 +2,7 @@
     <div class="box">
         <article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
             <div class="poster-box">
+                <span class="badge">[xfvalue_shikimori_status_ru]</span>
                 [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                     src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 {user_subscribed}

@@ -184,6 +184,12 @@ ul li {
   opacity: 0.5;
 }
 
+.poster-box .badge {
+    position: absolute;
+    
+}
+
+
 .box:hover {
    box-shadow: 0 0px 17px #00000060;
 }
