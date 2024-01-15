@@ -529,6 +529,14 @@ span.sim-dot {
 
 /* НОВОСТИ */
 
+.title-news {
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
 .news-page-static {
     position: relative;
     width: 1200px;
@@ -545,8 +553,8 @@ span.sim-dot {
 .news-container .box{
     max-width: 100%;
     background-color: #1e1e26;
-    padding: 15px;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
     display: flex;
 }
 
