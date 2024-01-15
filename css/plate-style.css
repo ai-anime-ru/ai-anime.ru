@@ -226,7 +226,7 @@ ul li {
     width: 360px;
     height: 1300px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .top-block-main {
@@ -355,6 +355,9 @@ footer {
 
 .side-block-main .calendar__item {
     max-width: 100%;
+    background-color: #1e1e26;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .side-block-main .calendar__item-date {
@@ -370,6 +373,10 @@ footer {
     margin-right: 2px;
 }
 
-.side-block-main .h3 {
+.side-block-main .calendar__item-weekday h3 {
+    color: white;
+}
+
+.side-block-main .show-more-schedules {
     color: white;
 }
