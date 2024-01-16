@@ -177,7 +177,6 @@
             </div>
         </div>
 
-        <!--
         [xfgiven_next_episode_date]
         <div class="pretimer">
             <div class="lt">
@@ -215,7 +214,6 @@
             <script type="text/javascript"> var timer_timestamp = "[xfvalue_next_episode_date]"; </script>
         </div>
         [/xfgiven_next_episode_date]
-        -->
 
 
         {include file="relatednews.tpl"}
@@ -226,22 +224,21 @@
                 <p>[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot][xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
                     [/xfnotgiven_shikimori_plot]</p>
             </div>
-        </div>
-
-        <div class="sim-slider">
-            <div class="slider-title">
-                <a>Скриншоты из «{title}»</a>
+            <div class="sim-slider">
+                <div class="slider-title">
+                    <a>Скриншоты из «{title}»</a>
+                </div>
+                <ul class="sim-slider-list">
+                    <li class="sim-slider-element"><img src="[xfvalue_kadr_1]" alt="0"></li>
+                    <li class="sim-slider-element"><img src="[xfvalue_kadr_2]" alt="1"></li>
+                    <li class="sim-slider-element"><img src="[xfvalue_kadr_3]" alt="2"></li>
+                    <li class="sim-slider-element"><img src="[xfvalue_kadr_4]" alt="3"></li>
+                    <li class="sim-slider-element"><img src="[xfvalue_kadr_5]" alt="4"></li>
+                </ul>
+                <div class="sim-slider-arrow-left"></div>
+                <div class="sim-slider-arrow-right"></div>
+                <div class="sim-slider-dots"></div>
             </div>
-            <ul class="sim-slider-list">
-                <li class="sim-slider-element"><img src="[xfvalue_kadr_1]" alt="0"></li>
-                <li class="sim-slider-element"><img src="[xfvalue_kadr_2]" alt="1"></li>
-                <li class="sim-slider-element"><img src="[xfvalue_kadr_3]" alt="2"></li>
-                <li class="sim-slider-element"><img src="[xfvalue_kadr_4]" alt="3"></li>
-                <li class="sim-slider-element"><img src="[xfvalue_kadr_5]" alt="4"></li>
-            </ul>
-            <div class="sim-slider-arrow-left"></div>
-            <div class="sim-slider-arrow-right"></div>
-            <div class="sim-slider-dots"></div>
         </div>
         [not-group=5]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
@@ -344,6 +341,4 @@
             dropdown.classList.remove('show');
         }
     });
-
-
 </script>
