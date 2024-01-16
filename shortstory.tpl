@@ -6,6 +6,7 @@
                     <span class="badge">[xfvalue_shikimori_status_ru]</span>
                     <!--<span class="badge">Серий: [xfvalue_shikimori_episodes]</span>-->
                 </div>
+                
                 [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                     src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 {user_subscribed}
@@ -18,6 +19,13 @@
                             <div class="release-date"><p>[xfvalue_shikimori_aired_on_2]</p></div>
                         </div>
                     </div>
+                </div>
+                <div class="title-bookmarks-icon" onclick="toggleBookmark()">
+                    [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
+                            name="bookmark-outline"></ion-icon></div>[/add-favorites]
+    
+                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
+                            name="bookmark-outline"></ion-icon></div>[/del-favorites]
                 </div>
             </div>
             <div class="news-block-hidden">
