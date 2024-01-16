@@ -6,7 +6,6 @@
                     <span class="badge">[xfvalue_shikimori_status_ru]</span>
                     <!--<span class="badge">Серий: [xfvalue_shikimori_episodes]</span>-->
                 </div>
-                <p>Серий: [xfvalue_shikimori_episodes]</p>
                 [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                     src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 {user_subscribed}
@@ -14,10 +13,9 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <div class="description">
-                            <span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
+                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
                             <div class="dot"></div>
-                            <a>[xfvalue_shikimori_aired_on_2]</a>
+                            <div class="release-date">[xfvalue_shikimori_aired_on_2]</div>
                         </div>
                     </div>
                 </div>
