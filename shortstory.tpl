@@ -14,7 +14,7 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <h3 class="description"><span class="badge title-badge">Серий: [xfvalue_shikimori_episodes]</span></h3>
+                        <h3 class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes]</span> <div class="dot"></div></h3>
                     </div>
                 </div>
             </div>

@@ -128,6 +128,8 @@ ul li {
 }
 
 .description {
+    display: flex;
+    align-items: center;
     margin: 0;
     padding-top: 80px;
     padding-bottom: 25px;
@@ -182,7 +184,7 @@ ul li {
 .description .badge {
     background-color: white;
     color: black;
-    margin-left: 0px;
+    margin-left: 3px;
 }
 
 .poster-badge .badge {
