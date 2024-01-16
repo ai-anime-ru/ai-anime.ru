@@ -15,7 +15,7 @@
                         <h2 class="title">{title}</h2>
                         <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
                             <div class="dot"></div>
-                            <div class="release-date">[xfvalue_shikimori_aired_on_2]</div>
+                            <p>[xfvalue_shikimori_aired_on_2]</p>
                         </div>
                     </div>
                 </div>
