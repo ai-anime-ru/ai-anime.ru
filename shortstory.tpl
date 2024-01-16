@@ -14,10 +14,7 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <span class="badge title-badge">[xfvalue_shikimori_status_ru]</span>
-                        <h3 class="description">[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot]
-                            [xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
-                            [/xfnotgiven_shikimori_plot]
+                        <h3 class="description"><span class="badge title-badge">Серий: [xfvalue_shikimori_episodes]</span>
                         </h3>
                     </div>
                 </div>

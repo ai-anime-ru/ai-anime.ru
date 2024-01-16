@@ -169,11 +169,6 @@ ul li {
     opacity: 1;
 }
 
-.poster-box:hover .description {
-    transform: translateY(-20px);
-    opacity: 1;
-}
-
 .poster-box:hover .play-button {
     opacity: 1;
 }
