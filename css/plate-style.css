@@ -94,7 +94,7 @@ ul li {
     left: 0;
     width: 100%;
     height: 150px;
-    padding: 20px;
+    padding: 15px;
     background: linear-gradient(0deg, #000000, #00000000);
     overflow: hidden;
 }
@@ -182,6 +182,7 @@ ul li {
 .description .badge {
     background-color: white;
     color: black;
+    margin-left: 0px;
 }
 
 .poster-badge .badge {
