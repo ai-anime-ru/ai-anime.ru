@@ -171,7 +171,7 @@
             </div>
         </div>
     </div>
-<!--
+    
     [xfgiven_next_episode_date]
     <div class="pretimer">
         <div class="lt">
@@ -208,7 +208,6 @@
         <script type="text/javascript"> var timer_timestamp = "[xfvalue_next_episode_date]"; </script>
     </div>
     [/xfgiven_next_episode_date]
--->
 
 
     {include file="relatednews.tpl"}
@@ -252,7 +251,7 @@
         <div class="full-player-box">
             <div class="box-player-title-name">
                 <span class="is-active">Смотреть онлайн</span>
-                <span class=""></span>
+                <span class="">ПЛЕЕР 2</span>
             </div>
 
             [/not-group]
