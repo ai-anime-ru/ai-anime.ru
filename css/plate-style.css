@@ -99,10 +99,6 @@ ul li {
     overflow: hidden;
 }
 
-.title-badge {
-    bottom: 0;
-}
-
 .news-container .title-overlay {
     display: none;
 }
@@ -133,7 +129,7 @@ ul li {
 
 .description {
     margin: 0;
-    padding-top: 25px;
+    padding-top: 80px;
     padding-bottom: 25px;
     color: #d3d3d3;
     font-family: Arial, sans-serif;
@@ -183,7 +179,12 @@ ul li {
     opacity: 0.5;
 }
 
-.poster-box .badge {
+.description .badge {
+    background-color: white;
+    color: black;
+}
+
+.poster-badge .badge {
     background-color: #1e1e26;
     color: white;
     margin: 0;
