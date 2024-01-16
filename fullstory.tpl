@@ -219,10 +219,12 @@
         {include file="relatednews.tpl"}
 
         <div class="description-full-box">
-            <h1>Об аниме:</h1>
-            <div class="description-full-text">
-                <p>[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot][xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
-                    [/xfnotgiven_shikimori_plot]</p>
+            <div>
+                <h1>Об аниме:</h1>
+                <div class="description-full-text">
+                    <p>[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot][xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
+                        [/xfnotgiven_shikimori_plot]</p>
+                </div>
             </div>
             <div class="sim-slider">
                 <div class="slider-title">
