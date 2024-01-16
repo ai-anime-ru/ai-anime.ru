@@ -255,7 +255,7 @@
 }
 
 .anime-information {
-    width: auto;
+    max-width: 41%;
     justify-content: center;
     bottom: 20px;
     position: absolute;
@@ -368,7 +368,7 @@
     font-size: 16px;
     font-weight: 400;
     grid-column: 1/-1;
-    padding: 20px 0px 10px;
+    padding: 10px 0px 10px;
     color: white;
     text-align: center;
 
@@ -442,7 +442,7 @@
 }
 
 .slider-title {
-    padding-bottom: 10px;
+    padding: 10px 0px 10px;
 }
 
 .slider-title a {
@@ -462,7 +462,7 @@
     padding: 0;
     list-style-type: none;
     position: relative;
-    height: 500px;
+    height: 435px;
     overflow: hidden;
     border-radius: 15px;
 }
