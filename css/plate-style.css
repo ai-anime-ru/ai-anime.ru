@@ -269,7 +269,7 @@ ul li {
     margin-top: 20px;
     background-color: #393949;
     width: 360px;
-    height: 1300px;
+    height: auto;
     border-radius: 15px;
     padding: 10px;
 }

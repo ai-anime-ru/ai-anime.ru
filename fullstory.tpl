@@ -165,7 +165,7 @@
                     </span>
                 </div>
                 <div class="dot"></div>
-                <div class="bookmarks-icon" onclick="toggleBookmark()">pretimer
+                <div class="bookmarks-icon" onclick="toggleBookmark()">
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]
 

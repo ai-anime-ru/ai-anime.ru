@@ -20,7 +20,7 @@
 }
 
 .full-player-box {
-    width: 1200px;
+    width: 920px;
 }
 
 
@@ -85,8 +85,12 @@
 .full-story-body {
     position: relative;
     display: flex;
-    margin: auto;
+    margin: 90px auto;
     width: 1300px;
+}
+
+.full-story-body .side-block-main {
+    margin-top: 0px;
 }
 
 .full-story-container{
@@ -171,7 +175,7 @@
 .box-player {
     position: relative;
     left: -20px;
-    width: 1200px;
+    width: 920px;
     height: auto;
     background-color: #1e1e26;
     margin: auto;
