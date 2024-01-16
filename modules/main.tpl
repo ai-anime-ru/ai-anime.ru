@@ -13,16 +13,7 @@
             </div>
             {navigation}
         </section>
-        <div class="side-block-main">
-            <div class="calendar box-body-s">
-                <div class="calendar__item">
-                   <div class="calendar__item-weekday">
-                      <h3>Сегодня</h3>
-                   </div>
-                   {today-ongoings}
-                </div>
-            </div>
-        </div>
+        {include file="/modules/side-block-main.tpl"}
     </div>
     [/aviable]
     <div class="bg_overlay"></div>
