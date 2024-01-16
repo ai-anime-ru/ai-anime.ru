@@ -13,7 +13,9 @@
                 </article>
             </div>
             <div class="about-anime">
-                <a class="title-text">{title}</a>
+                <div class="title-text-container">
+                    <a class="title-text">{title}</a>
+                </div>
                 <div class="original-title"><a>[xfvalue_shikimori_english]</a></div>
                 <div class="description-short-box">
                     <div class="description-short"><a>Краткое описание:</a></div>
@@ -213,7 +215,7 @@
             <script type="text/javascript"> var timer_timestamp = "[xfvalue_next_episode_date]"; </script>
         </div>
         [/xfgiven_next_episode_date]
-        -->
+        -->ayer-box
 
 
         {include file="relatednews.tpl"}
