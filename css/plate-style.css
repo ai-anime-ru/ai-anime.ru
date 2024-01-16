@@ -148,10 +148,14 @@ ul li {
 }
 
 .title-bookmarks-icon {
+    color: white;
     position: absolute;
     right: 0;
     top: 0;
     font-size: 2em;
+    margin: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .release-date {
@@ -180,6 +184,10 @@ ul li {
 
 .poster-box:hover .description {
     transform: translateY(-20px);
+    opacity: 1;
+}
+
+.poster-box:hover .title-bookmarks-icon {
     opacity: 1;
 }
 
