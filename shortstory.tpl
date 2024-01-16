@@ -12,8 +12,9 @@
                 {user_subscribed}
                 <div class="play-button"><ion-icon name="play-outline"></ion-icon></div>
                 <div class="title-overlay">
-                    <div class"title-text">
+                    <div>
                         <h2 class="title">{title}</h2>
+                        <span class="badge title-badge">[xfvalue_shikimori_status_ru]</span>
                         <h3 class="description">[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot]
                             [xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
                             [/xfnotgiven_shikimori_plot]

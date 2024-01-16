@@ -99,6 +99,10 @@ ul li {
     overflow: hidden;
 }
 
+.title-badge {
+    bottom: 0;
+}
+
 .news-container .title-overlay {
     display: none;
 }
@@ -187,7 +191,6 @@ ul li {
 .poster-box .badge {
     background-color: #1e1e26;
     color: white;
-    display: flex;
     margin: 0;
 }
 
