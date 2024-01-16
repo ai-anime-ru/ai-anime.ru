@@ -215,7 +215,7 @@
             <script type="text/javascript"> var timer_timestamp = "[xfvalue_next_episode_date]"; </script>
         </div>
         [/xfgiven_next_episode_date]
-        -->ayer-box
+        -->
 
 
         {include file="relatednews.tpl"}
