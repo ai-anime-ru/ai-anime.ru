@@ -15,15 +15,10 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        
                         <div class="description">
-                            [xfgiven_shikimori_episodes]
                             <span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
-                            [/xfgiven_shikimori_episodes]
                             <div class="dot"></div>
-                            [xfgiven_shikimori_aired_on_2]
                             <div class="release-date"><p>[xfvalue_shikimori_aired_on_2]</p></div>
-                            [/xfgiven_shikimori_aired_on_2]
                         </div>
                     </div>
                 </div>
@@ -42,13 +37,13 @@
                             <a>Краткое описание:</a>
                         </div>
                         <h3>
-                        [xfvalue_kodik_plot]
-                        [xfnotgiven_kodik_plot]
-                        [xfvalue_shikimori_plot]
-                        [/xfnotgiven_shikimori_plot]
-                        [xfnotgiven_shikimori_plot]
-                        Данная новость получена в автоматическом режиме, увы описание отсутствует
-                        [/xfnotgiven_kodik_plot]
+                            [xfvalue_kodik_plot]
+                            [xfnotgiven_kodik_plot]
+                            [xfvalue_shikimori_plot]
+                            [/xfnotgiven_shikimori_plot]
+                            [xfnotgiven_shikimori_plot]
+                            Данная новость получена в автоматическом режиме, увы описание отсутствует
+                            [/xfnotgiven_kodik_plot]
                         </h3>
                         <a href="{full-link}">
                             <span>Подробнее</span>
