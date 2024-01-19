@@ -19,8 +19,13 @@
                 <div class="original-title"><a>[xfvalue_shikimori_english]</a></div>
                 <div class="description-short-box">
                     <div class="description-short"><a>Краткое описание:</a></div>
-                    <h3>[xfvalue_kodik_plot][xfnotgiven_kodik_plot]
-                        [xfgiven_shikimori_plot][xfvalue_shikimori_plot][/xfgiven_shikimori_plot]
+                    <h3>
+                        [xfvalue_kodik_plot]
+                        [xfnotgiven_kodik_plot]
+                        [xfvalue_shikimori_plot]
+                        [xfnotgiven_shikimori_plot]
+                        Нам не удалось найти описание для этого аниме!
+                        [/xfnotgiven_shikimori_plot]
                         [/xfnotgiven_kodik_plot]
                     </h3>
                     <span id="description">Подробнее</span>
@@ -162,9 +167,11 @@
             </div>
             <div class="bottom-items">
                 <div class="series">
+                    [xfgiven_shikimori_episodes]
                     <span class="badge">
                         <a>Серий: [xfvalue_shikimori_episodes]</a>
                     </span>
+                    [/xfgiven_shikimori_episodes]
                 </div>
                 <div class="dot"></div>
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
@@ -222,8 +229,15 @@
             <div>
                 <h1>Об аниме:</h1>
                 <div class="description-full-text">
-                    <p>[xfvalue_shikimori_plot][xfnotgiven_shikimori_plot][xfgiven_kodik_plot][xfvalue_kodik_plot][/xfgiven_kodik_plot]
-                        [/xfnotgiven_shikimori_plot]</p>
+                    <p>
+                        [xfvalue_kodik_plot]
+                        [xfnotgiven_kodik_plot]
+                        [xfvalue_shikimori_plot]
+                        [xfnotgiven_shikimori_plot]
+                        Нам не удалось найти описание для этого аниме!
+                        [/xfnotgiven_shikimori_plot]
+                        [/xfnotgiven_kodik_plot]
+                    </p>
                 </div>
             </div>
             <div class="sim-slider">
