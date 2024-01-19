@@ -5,7 +5,7 @@
                 [xfgiven_shikimori_status_ru]
                 <div class="poster-badge">
                     <span class="badge">[xfvalue_shikimori_status_ru]</span>
-                    <!--<span class="badge">Серий: [xfvalue_shikimori_episodes]</span>-->
+                    <!--<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</span>-->
                 </div>
                 [/xfgiven_shikimori_status_ru]
                 [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
@@ -15,7 +15,7 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
+                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] </span>
                             <div class="dot"></div>
                             <div class="release-date"><p>[xfvalue_shikimori_aired_on_2]</p></div>
                         </div>

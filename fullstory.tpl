@@ -192,7 +192,7 @@
             <div class="bottom-items">
                 <div class="series">
                     <span class="badge">
-                        <a>Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode_1][/xfnotgiven_shikimori_episodes_aired]</a>
+                        <a>Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
                     </span>
                 </div>
                 <div class="dot"></div>
