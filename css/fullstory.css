@@ -490,15 +490,15 @@ div.sim-slider-arrow-right {
 }
 
 div.sim-slider-arrow-left {
-    left: 70px;
-    top: 50%;
+    left: 360px;
+    top: 87%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
 }
 
 div.sim-slider-arrow-right {
-    right: 70px;
-    top: 50%;
+    right: 360px;
+    top: 87%;
     display: block;
     background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
 }
