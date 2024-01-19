@@ -36,7 +36,7 @@
                 </a>
             </li>
             <li style="--bg:#4d658c;" id="schedule">
-                <a href="/rooms/">
+                <a href="index.php?do=rooms">
                     <div class="icon"><ion-icon name="people-outline"></ion-icon></div>
                     <div class="text">Совместный просмотр</div>
                 </a>
@@ -60,7 +60,7 @@
                     </a>
                 </li>
                 <li style="--bg:#4d658c;" class="hideorno">
-                    <a href="/favorites">
+                    <a href="index.php?do=favorites">
                         <div class="icon"><ion-icon name="bookmarks-outline"></ion-icon></div>
                         <div class="text">Закладки</div>
                     </a>

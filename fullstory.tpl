@@ -24,7 +24,7 @@
                         [xfnotgiven_kodik_plot]
                         [xfvalue_shikimori_plot]
                         [xfnotgiven_shikimori_plot]
-                        Нам не удалось найти описание для этого аниме!
+                        Нам не удалось найти описание для этого аниме
                         [/xfnotgiven_shikimori_plot]
                         [/xfnotgiven_kodik_plot]
                     </h3>
