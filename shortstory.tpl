@@ -17,7 +17,7 @@
                         <h2 class="title">{title}</h2>
                         <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>
                             <div class="dot"></div>
-                            <div class="release-date"><p>[xfvalue_shikimori_aired_on_4][xfnotgiven_shikimori_aired_on_4][xfvalue_kodik_premiere_world][/xfnotgiven_shikimori_aired_on_4]</p></div>
+                            <div class="release-date"><p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p></div>
                         </div>
                     </div>
                 </div>
