@@ -160,13 +160,13 @@
     color: white;
     font-family: Arial, sans-serif;
     font-weight: lighter;
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: normal;
     white-space: break-spaces;
 }
 
 .title-text-container {
-    max-width: 83%;
+    max-width: 75%;
 }
 
 .original-title {
