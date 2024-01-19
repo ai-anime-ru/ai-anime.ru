@@ -8,27 +8,21 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<link rel="shortcut icon" href="{THEME}/images/logo.png">
-	<link rel="apple-touch-icon" href="{THEME}/images/logo.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="{THEME}/images/logo.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="{THEME}/images/logo.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="{THEME}/images/logo.png">
-	{include file="{THEME}/css/engine.css"}
-	{include file="{THEME}/css/header.css"}
-	{include file="{THEME}/css/schedule.css"}
-	{include file="{THEME}/css/fullstory.css"}
-	{include file="{THEME}/css/plate-style.css"}
-	{include file="{THEME}/css/sidebar.css"}
-	{include file="{THEME}/css/full-story.css"}
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-		integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-		crossorigin="anonymous" />
-	<!-- <https://fontawesome.com/> -->
-	<script src="https://kit.fontawesome.com/429dc96de0.js" crossorigin="anonymous"></script>
-	<script src="/js/slider.js"></script>
+	<link rel="shortcut icon" href="https://ai-anime.ru/templates/dle-default/images/logo.png">
+	<link rel="apple-touch-icon" href="https://ai-anime.ru/templates/dle-default/images/logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://ai-anime.ru/templates/dle-default/images/logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://ai-anime.ru/templates/dle-default/images/logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://ai-anime.ru/templates/dle-default/images/logo.png">
+	<link href="https://ai-anime.ru/templates/dle-default/css/engine.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/header.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/schedule.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/fullstory.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/plate-style.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/sidebar.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/dle-default/css/full-story.css" rel="stylesheet" type="text/css">
+	<script src="https://ai-anime.ru/js/slider.js"></script>
 	<!-- <https://ionic.io/ionicons> -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	<!-- <Google tag (gtag.js)> -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script>
@@ -41,8 +35,6 @@
 
 <body>{AJAX}
 	[push_subscribe]{push_subscribe}[/push_subscribe]
-
-
 	<div class="wrap">
 		<div class="block center fx-col">
 			{include file="/modules/header.tpl"}
