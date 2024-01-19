@@ -15,16 +15,21 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
+                        
+                        <div class="description">
+                            [xfgiven_shikimori_episodes]
+                            <span class="badge">Серий: [xfvalue_shikimori_episodes]</span>
+                            [/xfgiven_shikimori_episodes]
                             <div class="dot"></div>
+                            [xfgiven_shikimori_aired_on_2]
                             <div class="release-date"><p>[xfvalue_shikimori_aired_on_2]</p></div>
+                            [/xfgiven_shikimori_aired_on_2]
                         </div>
                     </div>
                 </div>
                 <div class="title-bookmarks-icon" onclick="toggleBookmark()">
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]
-    
                     [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
                             name="bookmark-outline"></ion-icon></div>[/del-favorites]
                 </div>
