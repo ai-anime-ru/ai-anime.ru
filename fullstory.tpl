@@ -146,15 +146,15 @@
                                 <span class="badge">
                                     <a class="genre-shiki">
                                         [xfvalue_shikimori_aired_on]
-                                        [xfnotgiven_shikimori_aired_on]
-                                            [xfvalue_kodik_premiere_ru]
-                                            [xfnotgiven_kodik_premiere_ru]
-                                                [xfvalue_kodik_premiere_world]
-                                                [xfnotgiven_kodik_premiere_world]
-                                                    Информация отсутствует
-                                                [/xfnotgiven_kodik_premiere_world]
-                                            [/xfnotgiven_kodik_premiere_ru]
-                                        [/xfnotgiven_shikimori_aired_on]
+                                            [xfnotgiven_shikimori_aired_on]
+                                                [xfvalue_kodik_premiere_ru]
+                                                [xfnotgiven_kodik_premiere_ru]
+                                                    [xfvalue_kodik_premiere_world]
+                                                    [xfnotgiven_kodik_premiere_world]
+                                                        Информация отсутствует
+                                                    [/xfnotgiven_kodik_premiere_world]
+                                                [/xfnotgiven_kodik_premiere_ru]
+                                            [/xfnotgiven_shikimori_aired_on]
                                     </a>
                                 </span>
                             </td>
