@@ -130,13 +130,29 @@
                                         </svg>[xfvalue_kodik_imdb_rating]</a>
                                 </span>
                                 [/xfgiven_kodik_imdb_rating]
+                                [xfnotgiven_shikimori_score]
+                                    [xfnotgiven_kodik_kinopoisk_rating]
+                                        [xfnotgiven_kodik_imdb_rating]
+                                            <span class="badge">Информация отсутствует</span>
+                                        [/xfnotgiven_kodik_imdb_rating]
+                                    [/xfnotgiven_kodik_kinopoisk_rating]
+                                [/xfnotgiven_shikimori_score]
+
                             </td>
                         </tr>
                         <tr>
                             <td><a class="first-info">Дата выхода:</a></td>
                             <td>
                                 <span class="badge">
-                                    <a class="genre-shiki">[xfvalue_shikimori_aired_on_2]</a>
+                                    <a class="genre-shiki">
+                                        [xfvalue_shikimori_aired_on_2]
+                                        [xfnotgiven_shikimori_aired_on_2]
+                                        [xfvalue_kodik_premiere_ru]
+                                            [xfnotgiven_kodik_premiere_ru]
+                                                Информация отсутствует
+                                            [/xfnotgiven_kodik_premiere_ru]
+                                        [/xfnotgiven_shikimori_aired_on_2]
+                                    </a>
                                 </span>
                             </td>
                         </tr>
@@ -144,7 +160,15 @@
                             <td><a class="first-info">Длительность:</a></td>
                             <td>
                                 <span class="badge">
-                                    <a class="genre-shiki">[xfvalue_shikimori_duration_3]</a>
+                                    <a class="genre-shiki">
+                                        [xfvalue_shikimori_duration_3]
+                                        [xfnotgiven_shikimori_duration_3]
+                                        [xfvalue_kodik_duration_3]
+                                            [xfnotgiven_kodik_duration_3]
+                                                Информация отсутствует
+                                            [/xfnotgiven_kodik_duration_3]
+                                        [/xfnotgiven_shikimori_duration_3]
+                                    </a>
                                 </span>
                             </td>
                         </tr>
