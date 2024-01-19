@@ -45,11 +45,10 @@
                         <a href="https://github.com/ai-anime-ru/ai-anime.ru" target="_blank" class="column-item">GitHub</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="#" target="_blank">Discrod Сервер</a>
+                        <a href="https://discord.gg/BXGzzWx7HN" target="_blank">Discrod Сервер</a>
                     </li>
                 </ul>
             </div>
-
             <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
                 <a href="/">
                     <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png">
@@ -58,11 +57,7 @@
         </nav>
         <div class="copyright-footer"></div>
         <p class="copyright-footer-text">Ⓒ 2024 Copyright: <a href="/" class="copyright-link">AI ANIME</a>.
-            Все
-            права защищены</p>
-        <!--
-        <p class="copyright-footer-text-dev">Разработано в гараже: <a class="development" target="_blank"
-                href="https://elondie.space/">Elondie</a></p>
-                -->
+            Все права защищены
+        </p>
     </div>
 </footer>
