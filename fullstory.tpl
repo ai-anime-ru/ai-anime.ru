@@ -191,11 +191,9 @@
             </div>
             <div class="bottom-items">
                 <div class="series">
-                    [xfgiven_shikimori_episodes]
                     <span class="badge">
-                        <a>Серий: [xfvalue_shikimori_episodes]</a>
+                        <a>Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode_1][/xfnotgiven_shikimori_episodes_aired]</a>
                     </span>
-                    [/xfgiven_shikimori_episodes]
                 </div>
                 <div class="dot"></div>
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
