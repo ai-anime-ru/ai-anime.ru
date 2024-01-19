@@ -53,7 +53,7 @@
 	<!-- () Обрезаем длину названия () -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 27;
+			var maxLength = 25;
 			var textElements = document.querySelectorAll(".title");
 
 			textElements.forEach(function (textElement) {
