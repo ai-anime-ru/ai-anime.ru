@@ -33,10 +33,17 @@
                 <div class="news-block">
                     <a class="title-text">{title}</a>
                     <div class="description-short-box">
-                        <div class="description-short"><a>Краткое описание:</a></div>
-                        <h3>[xfvalue_kodik_plot][xfnotgiven_kodik_plot]
-                            [xfgiven_shikimori_plot][xfvalue_shikimori_plot][/xfgiven_shikimori_plot]
-                            [/xfnotgiven_kodik_plot]
+                        <div class="description-short">
+                            <a>Краткое описание:</a>
+                        </div>
+                        <h3>
+                        [xfvalue_kodik_plot]
+                        [xfnotgiven_kodik_plot]
+                        [xfvalue_shikimori_plot]
+                        [/xfnotgiven_shikimori_plot]
+                        [xfnotgiven_shikimori_plot]
+                        Данная новость получена в автоматическом режиме, увы описание отсутствует
+                        [/xfnotgiven_kodik_plot]
                         </h3>
                         <a href="{full-link}">
                             <span>Подробнее</span>
