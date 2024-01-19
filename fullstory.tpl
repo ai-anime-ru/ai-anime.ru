@@ -283,7 +283,7 @@
         </div>
         [not-group=5]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]?poster=https://i.vgy.me/O1GHuf.jpg" data-shikimori_id="[xfvalue_shikimori_id]">
+            data-news_iframe="[xfvalue_kodik_iframe]?poster=https://ai-anime.ru/miku.jpg" data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
                 [xfvalue_poster]
             </div>
