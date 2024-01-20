@@ -40,9 +40,15 @@
                             <td><a class="first-info">Статус:</a></td>
                             <td>
                                 <span class="badge">
-                                    <a class="genre-shiki">[xfvalue_kodik_status_ru][xfnotgiven_kodik_status_ru]
-                                        [xfgiven_shikimori_status_ru][xfvalue_shikimori_status_ru][/xfgiven_shikimori_status_ru]
-                                        [/xfnotgiven_kodik_status_ru]</a>
+                                    <a class="genre-shiki">
+                                        [xfvalue_kodik_status_ru]
+                                        [xfnotgiven_kodik_status_ru]
+                                        [xfvalue_shikimori_status_ru]
+                                        [xfnotgiven_shikimori_status_ru]
+                                        Информация отсутствует
+                                        [/xfnotgiven_shikimori_status_ru]
+                                        [/xfnotgiven_kodik_status_ru]
+                                    </a>
                                 </span>
                             </td>
                         </tr>
@@ -259,6 +265,7 @@
                     </p>
                 </div>
             </div>
+            [xfgiven_kadr_1]
             <div class="sim-slider">
                 <div class="slider-title">
                     <a>Скриншоты из «{title}»</a>
@@ -274,8 +281,9 @@
                 <div class="sim-slider-arrow-right"></div>
                 <div class="sim-slider-dots"></div>
             </div>
+            [/xfgiven_kadr_1]
         </div>
-        [not-group=5]
+        [xfgiven_kodik_iframe]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
             data-news_iframe="[xfvalue_kodik_iframe]?poster=https://ai-anime.ru/miku.jpg" data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
@@ -288,6 +296,7 @@
                         совместного просмотра</span></div>
             </div>
         </div>
+        [/xfgiven_kodik_iframe]
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">
@@ -295,7 +304,7 @@
                     <span class="">ПЛЕЕР 2</span>
                 </div>
 
-                [/not-group]
+                
                 <!--
             <label for="playerSelector"></label>
             <select id="playerSelector" onchange="changePlayer()">
@@ -307,17 +316,14 @@
 
                     <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                         <h1></h1>
-                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
-                            allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
-                    </div>
-                    <div class="player player-kodik2" id="player-kodik2" style="display:none;">
-                        <h1></h1>
-                        <!--{include file="/player/player.tpl"}-->
+                        [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
+                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0" allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                     </div>
                     <div class="player-info">
                         <ul class="in-voice-acting">
                             <li>
-                                <span>В переводе: </span> <a>[xfvalue_kodik_translation]</a>
+                                [xfgiven_kodik_translation]<span>В переводе: </span> <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
+                                [xfnotgiven_kodik_translation]<span>Перевод: </span> <a>отсутствует</a>[/xfnotgiven_kodik_translation]
                             </lI>
                         </ul>
                     </div>
