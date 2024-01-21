@@ -4,7 +4,7 @@
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
 		<div class="profile hideorno">
-			<a  onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
+			<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
 				href="/user/{profile-login}">
 				<Div class="icon">
 					<div class="imgBx-header">
@@ -13,6 +13,17 @@
 				</div>
 			</a>
 			<div class="profile-link-header">
+				<div class="profile-link-title-in">
+					<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
+						href="/user/{profile-login}">
+						<Div class="icon">
+							<div class="imgBx-header">
+								<img src="{foto}">
+							</div>
+						</div>
+						<div class="text">{profile-login}</div>
+					</a>
+				</div>
 				<ul>
 					<li style=>
 						<a href="#">

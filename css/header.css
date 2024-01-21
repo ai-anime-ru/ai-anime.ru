@@ -177,3 +177,7 @@ form {
 .profile-link-header li a div{
     display: inline-block;
 }
+
+.profile-link-title-in {
+    display: flex;
+}
