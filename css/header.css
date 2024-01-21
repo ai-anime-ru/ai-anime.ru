@@ -22,7 +22,7 @@
 .search-container {
   position: relative;
   float: right;
-  left: 315px;
+  margin-top: 4px;
 }
 
 form {
@@ -98,23 +98,4 @@ form {
     .header-link{
         left: 65px;
     }
-}
-.header-admin {
-    width: 140px;
-    left: 1380px;
-    position: absolute;
-    background-color: #1e1e26;
-    border-radius: 15px;
-    height: 50px;
-}
-.admin-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 85%;
-    color: #d1e1f9;
-    padding-left: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
 }

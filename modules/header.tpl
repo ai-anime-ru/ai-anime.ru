@@ -1,15 +1,8 @@
 <header class="header">
 	<div class="in-header-content">
         <div class="header-title">
-            <a class="text" href="/">AI ANIME</a>
+            <a class="header-link" href="/">AI ANIME</a>
         </div>
-		<ul>
-			[admin-link]
-			<div class="header-admin">
-				<a class="admin-link" href="{admin-link}">Админ</a>
-			</div>
-			[/admin-link]
-		</ul>
 		<div class="search-container" id="search-container">
 			<div class="d3">
 					<form id="q_search" action="/index.php" method="get">
@@ -24,4 +17,15 @@
 			</div>
 		</div>
 	</div>
+	<ul>
+		[admin-link]
+		<li style="--bg:#4d658c;">
+			<a class="admin-link" href="{admin-link}">
+				<div class="text">
+					Админ
+				</div>
+			</a>
+		</li>
+		[/admin-link]
+	</ul>
 </header>
