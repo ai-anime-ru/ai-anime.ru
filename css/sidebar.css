@@ -17,7 +17,7 @@
 body {
 	display: block;
     min-height: 100vh;
-    background: var(--clr);
+    background: #0c0c0f;
     font-family: 'ubuntu';
 }
 
