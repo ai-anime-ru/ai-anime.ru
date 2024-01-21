@@ -279,10 +279,11 @@ ul li {
     margin-top: 90px;
     background-color: #393949;
     width: 1300px;
-    height: 150px;
+    height: 250px;
     border-radius: 15px;
+    background-image: url(/templates/ai-anime/images/head-img.jpg);
+    background-size: 100%;
 }
-
 
 /* --------- FOOTER -------------*/
 

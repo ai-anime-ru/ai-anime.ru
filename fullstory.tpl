@@ -175,6 +175,14 @@
                                 </span>
                             </td>
                         </tr>
+                        <tr>
+                            <td><a class="first-info">Теги:</a></td>
+                            <td>
+                                <span class="badge">
+                                    {tags}
+                                </span>
+                            </td>
+                        </tr>
                     </table>
                 </div>
             </div>
@@ -346,7 +354,7 @@
             </div>
         </div>
     </div>
-    {include file="/modules/side-block-main.tpl"}
+    {include file="/modules/side-block-main-related-news.tpl"}
 </div>
 <script> //Скрипт для скролла по элементам
     document.getElementById('description').addEventListener('click', function () {

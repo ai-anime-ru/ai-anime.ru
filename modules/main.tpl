@@ -3,11 +3,11 @@
     {info}
     [/aviable]
     [aviable=main]
-    <div class="top-block-main">[banner_test]{banner_test}[/banner_test]</div>
+    <div class="top-block-main">{catmenu}</div>
     <div class="contaner-flex">
         <section class="main-container">
             <h1>Последние аниме</h1>
-            <div class="line">{catmenu}</div>
+            <div class="line"></div>
             <div class="items_news" id="items_news">
                 {custom template="shortstory" navigation='yes' from='0' }
             </div>
