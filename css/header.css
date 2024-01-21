@@ -187,4 +187,23 @@ form {
     height: 50px;
     justify-content: left;
     align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.profile-link-header ul li a:hover,
+.profile-link-header ul li a .text:hover{
+    background-color: #d1e1f9;
+    color: black;
+    border-radius: 15px;
+}
+
+.profile-link-header ul li a:hover .profile-link-header ul li a .text {
+    color: black;
+}
+
+.profile-link-header ul li a:hover .profile-link-header ul li a .icon {
+    color: black;
 }
