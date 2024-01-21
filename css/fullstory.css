@@ -85,7 +85,7 @@
 .full-story-body {
     position: relative;
     display: flex;
-    margin: 70px auto;
+    margin: 90px auto;
     width: 1300px;
 }
 
@@ -93,7 +93,7 @@
     margin-top: 0px;
 }
 .side-block-related-news{
-    margin-top: 80px;
+    margin-top: 0px;
 }
 .full-story-container{
     position: relative;
@@ -102,7 +102,6 @@
     font-size: 14px;
     line-height: 18px;
     overflow: hidden;
-    margin-top: 80px;
     background-color: var(--main);
     border-radius: 15px;
     padding: 20px;
@@ -117,12 +116,6 @@
 
 .bo{
     display: none;
-}
-
-.full-story-body .top-menu-block{
-    position: absolute;
-    top: 0;
-
 }
 
 
@@ -191,7 +184,7 @@
     left: -20px;
     width: 920px;
     height: auto;
-    background-color: #1e1e26;
+    background-color: var(--clr);
     margin: auto;
     display: flex;
     justify-content: center;
@@ -226,7 +219,7 @@
 
 .box-player-title-name span.is-active,
 .tabs-block__select span:hover {
-    background: #d1e1f9;
+    background: var(--active);
     color: #000;
 }
 #watch-online {
@@ -395,7 +388,7 @@
     color: white;
     border-radius: 2px;
     grid-column: 1/-1;
-    background-color: #1e1e26;
+    background-color: var(--clr);
     padding: 15px;
     font-family: Arial, sans-serif;
     font-size: 1em;
@@ -434,7 +427,7 @@
 }
 
 .dropdown-content-watch-online button:hover {
-    background-color: var(--active);
+    background-color: #d1e1f9;
     color: black;
 }
 

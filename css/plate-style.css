@@ -340,7 +340,7 @@ footer {
     position: absolute;
     height: auto;
     width: 100%;
-    background-color: #393949;
+    background-color: var(--main);
     margin-top: 20px;
 }
 
