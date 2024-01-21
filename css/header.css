@@ -137,13 +137,12 @@ form {
 }
 
 .profile-link-header {
-    margin: 15px -70px;
+    margin: 20px -50px;
     border-radius: 0.5rem;
     width: auto;
     position: absolute;
     background-color: #2e2e3896;
     backdrop-filter: blur(40px);
-    min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
 }
@@ -155,22 +154,22 @@ form {
     align-items: center;
     padding-left: 10px;
     height: 30px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #d1e1f9;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .profile-link-header ul li a .text {
     position: relative;
     align-items: center;
-    font-size: 1em;
+    font-size: 0.8em;
     color: #d1e1f9;
     padding-left: 15px;
+    padding-right: 15px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    transition: 0.5s;
+    transition: 0.3s;
     text-decoration: none;
-    margin-left: 0px;
 }
 
 .profile-link-header li a div{
