@@ -316,6 +316,17 @@ ul li {
     display: inline-block;
     font-size: 14px;
     padding: 22px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.top-menu-block li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-menu-block li:hover {
+    background-color: #1e1e26;
 }
 
 /* --------- FOOTER -------------*/
