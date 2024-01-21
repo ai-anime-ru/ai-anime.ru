@@ -21,7 +21,5 @@
 21.01.2024 
 Скругление на странице полной новости для блоков в <div class="box-player">
 Запрет выделения чего либа (Текста, картинок, ссылок и т.д зажатой ЛКМ)
-
-<h1 align="center">Hi there, I'm <a href="https://daniilshat.ru/" target="_blank">Daniil</a> 
-<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
-<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
+Смена кнопок при нажатии
+[Смена кнопок при нажатии](https://github.com/ai-anime-ru/ai-anime.ru/assets/65695997/5e03a193-e319-463f-84e5-c429ef21320a)
