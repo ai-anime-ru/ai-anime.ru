@@ -3,7 +3,8 @@
     {info}
     [/aviable]
     [aviable=main]
-    <div class="top-block-main">{catmenu}</div>
+    <div class="top-block-main"></div>
+    <div class="top-menu-block"></div>
     <div class="contaner-flex">
         <section class="main-container">
             <h1>Последние аниме</h1>

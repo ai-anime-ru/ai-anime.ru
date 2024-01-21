@@ -285,6 +285,16 @@ ul li {
     background-size: 100%;
 }
 
+.top-menu-block {
+    height: 60px;
+    width: 100%;
+    position: relative;
+    background-color: #393949;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    top: 20px;
+}
+
 /* --------- FOOTER -------------*/
 
 footer {
