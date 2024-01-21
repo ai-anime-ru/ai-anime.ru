@@ -190,7 +190,6 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-radius: 15px;
 }
 
 .box-player a {
@@ -222,7 +221,6 @@
 .tabs-block__select span:hover {
     background: #d1e1f9;
     color: #000;
-    border-radius: 15px;
 }
 #watch-online {
     cursor: pointer;

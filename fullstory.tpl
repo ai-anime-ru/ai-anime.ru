@@ -131,11 +131,11 @@
                                 </span>
                                 [/xfgiven_kodik_imdb_rating]
                                 [xfnotgiven_shikimori_score]
-                                    [xfnotgiven_kodik_kinopoisk_rating]
-                                        [xfnotgiven_kodik_imdb_rating]
-                                            <span class="badge">Информация отсутствует</span>
-                                        [/xfnotgiven_kodik_imdb_rating]
-                                    [/xfnotgiven_kodik_kinopoisk_rating]
+                                [xfnotgiven_kodik_kinopoisk_rating]
+                                [xfnotgiven_kodik_imdb_rating]
+                                <span class="badge">Информация отсутствует</span>
+                                [/xfnotgiven_kodik_imdb_rating]
+                                [/xfnotgiven_kodik_kinopoisk_rating]
                                 [/xfnotgiven_shikimori_score]
 
                             </td>
@@ -146,15 +146,15 @@
                                 <span class="badge">
                                     <a class="genre-shiki">
                                         [xfvalue_shikimori_aired_on]
-                                            [xfnotgiven_shikimori_aired_on]
-                                                [xfvalue_kodik_premiere_ru]
-                                                [xfnotgiven_kodik_premiere_ru]
-                                                    [xfvalue_kodik_premiere_world]
-                                                    [xfnotgiven_kodik_premiere_world]
-                                                        Информация отсутствует
-                                                    [/xfnotgiven_kodik_premiere_world]
-                                                [/xfnotgiven_kodik_premiere_ru]
-                                            [/xfnotgiven_shikimori_aired_on]
+                                        [xfnotgiven_shikimori_aired_on]
+                                        [xfvalue_kodik_premiere_ru]
+                                        [xfnotgiven_kodik_premiere_ru]
+                                        [xfvalue_kodik_premiere_world]
+                                        [xfnotgiven_kodik_premiere_world]
+                                        Информация отсутствует
+                                        [/xfnotgiven_kodik_premiere_world]
+                                        [/xfnotgiven_kodik_premiere_ru]
+                                        [/xfnotgiven_shikimori_aired_on]
                                     </a>
                                 </span>
                             </td>
@@ -167,9 +167,9 @@
                                         [xfvalue_shikimori_duration_3]
                                         [xfnotgiven_shikimori_duration_3]
                                         [xfvalue_kodik_duration_3]
-                                            [xfnotgiven_kodik_duration_3]
-                                                Информация отсутствует
-                                            [/xfnotgiven_kodik_duration_3]
+                                        [xfnotgiven_kodik_duration_3]
+                                        Информация отсутствует
+                                        [/xfnotgiven_kodik_duration_3]
                                         [/xfnotgiven_shikimori_duration_3]
                                     </a>
                                 </span>
@@ -203,7 +203,10 @@
             <div class="bottom-items">
                 <div class="series">
                     <span class="badge">
-                        <a>Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
+                        <a>Серий:
+                            [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]
+                            из
+                            [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
                     </span>
                 </div>
                 <div class="dot"></div>
@@ -293,7 +296,8 @@
         </div>
         [xfgiven_kodik_iframe]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]?poster=https://ai-anime.ru/miku.jpg" data-shikimori_id="[xfvalue_shikimori_id]">
+            data-news_iframe="[xfvalue_kodik_iframe]?poster=https://ai-anime.ru/miku.jpg"
+            data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
                 [xfvalue_poster]
             </div>
@@ -315,19 +319,19 @@
                     // Получаем ссылки на элементы по их ID
                     var watchonline = document.getElementById('watch-online');
                     var player2 = document.getElementById('player-2');
-                
+
                     // Назначаем обработчики событий при нажатии на кнопки
-                    watchonline.addEventListener('click', function() {
+                    watchonline.addEventListener('click', function () {
                         player2.classList.remove('is-active');
                         watchonline.classList.add('is-active');
                     });
-                
-                    player2.addEventListener('click', function() {
+
+                    player2.addEventListener('click', function () {
                         player2.classList.add('is-active');
                         watchonline.classList.remove('is-active');
                     });
-                  </script>
-                
+                </script>
+
                 <!--
             <label for="playerSelector"></label>
             <select id="playerSelector" onchange="changePlayer()">
@@ -340,13 +344,16 @@
                     <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                         <h1></h1>
                         [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0" allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
+                            allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                     </div>
                     <div class="player-info">
                         <ul class="in-voice-acting">
                             <li>
-                                [xfgiven_kodik_translation]<span>В переводе: </span> <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
-                                [xfnotgiven_kodik_translation]<span>Перевод: </span> <a>отсутствует</a>[/xfnotgiven_kodik_translation]
+                                [xfgiven_kodik_translation]<span>В переводе: </span>
+                                <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
+                                [xfnotgiven_kodik_translation]<span>Перевод: </span>
+                                <a>отсутствует</a>[/xfnotgiven_kodik_translation]
                             </lI>
                         </ul>
                     </div>
