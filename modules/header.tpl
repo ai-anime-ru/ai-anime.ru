@@ -3,6 +3,11 @@
         <div class="header-title">
             <a class="header-link" href="/">AI ANIME</a>
         </div>
+		[admin-link]
+		<div class="header-admin">
+			<a class="admin-link" href="{admin-link}">Админ панель</a>
+		</div>
+		[/admin-link]
 		<div class="search-container" id="search-container">
 			<div class="d3">
 					<form id="q_search" action="/index.php" method="get">

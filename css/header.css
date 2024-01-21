@@ -99,3 +99,8 @@ form {
         left: 65px;
     }
 }
+.header-admin {
+    width: 130px;
+    left: 1100px;
+    position: absolute;
+}

@@ -5,11 +5,7 @@
     [aviable=main]
     <div class="top-block-main"></div>
     <div class="top-menu-block">
-        <ul>
-            <li>
-                <a href="#">Жанр</a> 
-            </li>
-        </ul>
+        {catmenu}
     </div>
     <div class="contaner-flex">
         <section class="main-container">
