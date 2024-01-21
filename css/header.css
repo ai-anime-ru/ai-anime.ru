@@ -47,8 +47,7 @@ form {
     border: none;
     outline: none;
     background: transparent;
-    color: white;
-    place-content: 0;
+    color: rgb(223, 223, 223);
 }
 
 .d3 input {
@@ -70,11 +69,11 @@ form {
     content: "";
     font-family: FontAwesome;
     font-size: 16px;
-    color: #F9F0DA;
+    color: #daf5f9;
 }
 
 .search-icon {
-    color: #ffffff;
+    color: #daf5f9;
 }
 
 .header-link {
