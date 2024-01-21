@@ -152,10 +152,9 @@ form {
 }
 
 .profile-link-header {
-    display: flex;
+    margin: 0 auto;
     border-radius: 0.5rem;
     width: 200px;
-    position: absolute;
     background-color: #2e2e3896;
     backdrop-filter: blur(40px);
     min-width: 160px;
