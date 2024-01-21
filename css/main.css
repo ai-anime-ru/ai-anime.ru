@@ -10,7 +10,7 @@
     width: 1100px;
     background-color: var(--main);
     color: rgb(223, 223, 223);
-    padding: 20px;
+    padding: 20px 70px;
     border-radius: 15px;
     line-height: 20px;
 }
