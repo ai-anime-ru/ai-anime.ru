@@ -3,6 +3,16 @@
 		<div class="header-title">
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
+		<div class="profile">
+			<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
+				href="/user/{profile-login}">
+				<Div class="icon">
+					<div class="imgBx-header">
+						<img src="{foto}">
+					</div>
+				</div>
+			</a>
+		</div>
 		<div class="search-container" id="search-container">
 			<div class="d3">
 				<form id="q_search" action="/index.php" method="get">
@@ -15,16 +25,6 @@
 					<input type="hidden" name="subaction" value="search">
 				</form>
 			</div>
-		</div>
-		<div class="profile">
-			<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
-				href="/user/{profile-login}">
-				<Div class="icon">
-					<div class="imgBx">
-						<img src="{foto}">
-					</div>
-				</div>
-			</a>
 		</div>
 	</div>
 	<ul>
