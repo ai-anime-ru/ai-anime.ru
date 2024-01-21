@@ -2,20 +2,21 @@
     <div class="box">
         <article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
             <div class="poster-box">
-                [xfgiven_kodik_status_ru]
                 <div class="poster-badge">
-                    <span class="badge">[xfvalue_shikimori_status_ru][xfnotgiven_shikimori_status_ru][xfvalue_kodik_status_ru][/xfnotgiven_shikimori_status_ru]</span>
+                    [xfgiven_kodik_status_ru]<span class="badge">[xfvalue_shikimori_status_ru][xfnotgiven_shikimori_status_ru][xfvalue_kodik_status_ru][/xfnotgiven_shikimori_status_ru]</span>[/xfgiven_kodik_status_ru]
                     <!--<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</span>-->
+                    [xfnotgiven_kodik_status_ru]
+                    <span class="badge">Информация отсутствует</span>
+                    [/xfnotgiven_kodik_status_ru]
                 </div>
-                [/xfgiven_kodik_status_ru]
-                [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                    src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
+                [xfvalue_poster]
+                [xfnotgiven_poster]<img class="xfieldimage poster" src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                 {user_subscribed}
                 <div class="play-button"><ion-icon name="play-outline"></ion-icon></div>
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>
+                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>
                             <div class="dot"></div>
                             <div class="release-date"><p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p></div>
                         </div>
