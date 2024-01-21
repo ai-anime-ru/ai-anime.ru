@@ -4,7 +4,7 @@
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
 		<div class="profile">
-			<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
+			<a  onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
 				href="/user/{profile-login}">
 				<Div class="icon">
 					<div class="imgBx-header">
