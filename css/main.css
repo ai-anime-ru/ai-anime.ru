@@ -4,6 +4,14 @@
     --active: #d1e1f9;
 }
 
+.privacy-policy {
+    position: relative;
+    margin: 90px auto;
+    width: 1300px;
+    background-color: var(--main);
+    color: rgb(223, 223, 223);
+}
+
 #searchsuggestions {
     z-index: 2200;
     width: 300px;
