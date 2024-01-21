@@ -150,6 +150,7 @@ form {
 
 .profile-link-header ul li a .icon {
     position: relative;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10px;
@@ -161,7 +162,6 @@ form {
 
 .profile-link-header ul li a .text {
     position: relative;
-    height: 30px;
     align-items: center;
     font-size: 1em;
     color: #d1e1f9;
@@ -179,4 +179,12 @@ form {
 
 .profile-link-title-in {
     display: flex;
+}
+
+.profile-link-header ul li a{
+    position: relative;
+    display: flex;
+    height: 50px;
+    justify-content: left;
+    align-items: center;
 }
