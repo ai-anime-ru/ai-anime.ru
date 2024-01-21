@@ -175,13 +175,8 @@ form {
 
 .profile-link-header li a div{
     display: inline-block;
-    margin: 10px;
 }
 
 .profile-link-title-in {
     display: flex;
-}
-
-.profile-link-header ul li a {
-    height: 30px;
 }
