@@ -300,10 +300,23 @@
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">
-                    <span class="is-active">Смотреть онлайн</span>
-                    <span class="">ПЛЕЕР 2</span>
+                    <span id="watch-online" class="is-active" onclick="toggleButtons('watch-online')">Смотреть онлайн</span>
+                    <span id="player-2" class="" onclick="toggleButtons('player-2')">ПЛЕЕР 2</span>
                 </div>
-
+                <script>
+                    // Получаем ссылки на элементы по их ID
+                    var watchonline = document.getElementById('watch-online');
+                    var player2 = document.getElementById('player-2');
+                
+                    // Назначаем обработчики событий при нажатии на кнопки
+                    watchonline.addEventListener('click', function() {
+                        myElement.classList.toggle('is-active');
+                    });
+                
+                    player2.addEventListener('click', function() {
+                        myElement.classList.toggle('is-active');
+                    });
+                  </script>
                 
                 <!--
             <label for="playerSelector"></label>
