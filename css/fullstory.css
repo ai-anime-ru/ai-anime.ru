@@ -89,10 +89,12 @@
     width: 1300px;
 }
 
-.full-story-body .side-block-main .side-block-related-news{
+.full-story-body .side-block-main {
     margin-top: 0px;
 }
-
+.side-block-related-news{
+    margin-top: 0px;
+}
 .full-story-container{
     position: relative;
     width: 920px;

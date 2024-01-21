@@ -21,8 +21,13 @@ ul li {
     color: white;
     margin-left: 20px;
     font-size: 1.5em;
-    font-weight: 500;
-    margin-top: 15px;
+    font-weight: 200;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.main-container-title-svg {
+    margin-right: 5px;
 }
 
 .line {
@@ -37,6 +42,7 @@ ul li {
     display: block;
     columns: 3;
     padding: 20px 20px 0px 20px;
+    сolor: var(--clr);
 }
 
 .box {
@@ -274,7 +280,14 @@ ul li {
     border-radius: 15px;
     padding: 10px;
 }
-
+.side-block-related-news{
+    margin-left: 20px;
+    background-color: #393949;
+    width: 360px;
+    height: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
 .top-block-main {
     position: relative;
     margin-top: 90px;
