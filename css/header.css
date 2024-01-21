@@ -148,3 +148,11 @@ form {
     height: 100%;
     object-fit: cover;
 }
+
+.profile-link-header {
+    position: absolute;
+    float: right;
+    height: auto;
+    width: auto;
+    background-color: black;
+}
