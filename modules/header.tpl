@@ -3,9 +3,8 @@
 		<div class="header-title">
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
-		<div class="profile hideorno">
-			<a  onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
-				href="/user/{profile-login}">
+		<div class="profile hideorno" onclick="showProfileLink()">
+			<a>
 				<Div class="icon">
 					<div class="imgBx-header">
 						<img src="{foto}">
@@ -15,7 +14,8 @@
 			<div class="profile-link-header">
 				<ul>
 					<li style=>
-						<a href="#">
+						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
+						href="/user/{profile-login}">
 							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
 							<div class="text color-in-header-menu">Профиль</div>
 						</a>
@@ -73,3 +73,15 @@
 		[/admin-link]
 	</ul>
 </header>
+
+<script>
+	function showProfileLink() {
+		var profileLinkHeader = document.getElementById("profile-link-header");
+
+		// Проверяем текущее состояние display
+		var currentDisplay = profileLinkHeader.style.display;
+
+		// Если блок скрыт, то отображаем его, и наоборот
+		profileLinkHeader.style.display = (currentDisplay === "block" ? "none" : "block");
+	}
+</script>

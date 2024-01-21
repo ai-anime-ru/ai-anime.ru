@@ -137,11 +137,12 @@ form {
 }
 
 .profile-link-header {
-    margin: 20px -50px;
+    display: none;
+    margin: 15px -50px;
     border-radius: 0.5rem;
     width: auto;
     position: absolute;
-    background-color: #2e2e3896;
+    background-color: #2e2e38;
     backdrop-filter: blur(40px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
@@ -187,7 +188,7 @@ form {
     justify-content: left;
     align-items: center;
     width: 100%;
-    border-radius: 15px;
+    border-radius: 0.5rem;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -195,7 +196,7 @@ form {
 .profile-link-header ul li a:hover {
     background-color: #d1e1f9;
     color: black;
-    border-radius: 15px;
+    border-radius: 0.5rem;
 }
 
 .profile-link-header ul li a:hover .color-in-header-menu {
