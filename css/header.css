@@ -39,6 +39,7 @@ form {
 
 .d3 form {
     color: white;
+    background-color: #2e2e38;
 }
 
 .d3 input,
@@ -46,6 +47,8 @@ form {
     border: none;
     outline: none;
     background: transparent;
+    color: white;
+    place-content: 0;
 }
 
 .d3 input {
@@ -102,9 +105,9 @@ form {
 }
 .admin-link {
     width: 140px;
-    left: 1380px;
+    right: 20px;
     position: absolute;
-    background-color: #1e1e26;
+    background-color: #2e2e38;
     border-radius: 15px;
     height: 50px;
 }
