@@ -310,6 +310,7 @@ ul li {
 
 .top-menu-block ul {
     display: flex;
+    justify-content: center;
 }
 
 .top-menu-block a{
@@ -327,7 +328,8 @@ ul li {
 }
 
 .top-menu-block a:hover {
-    background-color: #1e1e26;
+    background-color: #d1e1f9;
+    color: black;
 }
 
 /* --------- FOOTER -------------*/
