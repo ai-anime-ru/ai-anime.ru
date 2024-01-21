@@ -21,9 +21,11 @@
 }
 #searchsuggestions a {
     color: #dfdfdf;
+    transition: 0.3s;
 }
 #searchsuggestions a:hover {
-    background-color: #f7f7f7;
+    background-color: #d1e1f9;
+    color: black;
 }
 #searchsuggestions a span {
     display: block;

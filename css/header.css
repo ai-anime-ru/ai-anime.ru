@@ -47,7 +47,7 @@ form {
     border: none;
     outline: none;
     background: transparent;
-    color: rgb(223, 223, 223);
+    color: #dfdfdf;
 }
 
 .d3 input {
