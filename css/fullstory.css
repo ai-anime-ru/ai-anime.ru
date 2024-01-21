@@ -85,7 +85,7 @@
 .full-story-body {
     position: relative;
     display: flex;
-    margin: 90px auto;
+    margin: 70px auto;
     width: 1300px;
 }
 
@@ -93,7 +93,7 @@
     margin-top: 0px;
 }
 .side-block-related-news{
-    margin-top: 0px;
+    margin-top: 80px;
 }
 .full-story-container{
     position: relative;
@@ -102,6 +102,7 @@
     font-size: 14px;
     line-height: 18px;
     overflow: hidden;
+    margin-top: 80px;
     background-color: var(--main);
     border-radius: 15px;
     padding: 20px;
@@ -116,6 +117,12 @@
 
 .bo{
     display: none;
+}
+
+.full-story-body .top-menu-block{
+    position: absolute;
+    top: 0;
+
 }
 
 
