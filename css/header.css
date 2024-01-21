@@ -152,12 +152,44 @@ form {
 }
 
 .profile-link-header {
-    margin: 0 auto;
+    display: flex;
+    margin: 15px -50px;
     border-radius: 0.5rem;
-    width: 200px;
+    width: auto;
+    position: absolute;
     background-color: #2e2e3896;
     backdrop-filter: blur(40px);
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
+}
+
+.profile-link-header ul li a .icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    padding-left: 10px;
+    height: 30px;
+    font-size: 1.5em;
+    color: #d1e1f9;
+    transition: 0.5s;
+}
+
+.profile-link-header ul li a .text {
+    position: relative;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #d1e1f9;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.profile-link-header li {
+    display: flex;
 }
