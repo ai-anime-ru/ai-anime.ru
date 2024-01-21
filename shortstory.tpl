@@ -20,7 +20,11 @@
                             [xfgiven_kodik_last_episode]<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>[/xfgiven_kodik_last_episode]
                             [xfnotgiven_kodik_last_episode]<span class="badge">Серий: ?</span>[/xfnotgiven_kodik_last_episode]
                             <div class="dot"></div>
-                            <div class="release-date"><p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_kodik_premiere_world]Нет информации[/xfnotgiven_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p></div>
+                            <div class="release-date">
+                                [xfgiven_kodik_premiere_world]<p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p>[/xfgiven_kodik_premiere_world]
+                                [xfnotgiven_kodik_premiere_world]<p>Нет информации</p>[/xfnotgiven_kodik_premiere_world]
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
