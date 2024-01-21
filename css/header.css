@@ -127,6 +127,7 @@ form {
 }
 
 .profile {
+    position: relative;
     float: right;
     margin-top: 4px;
     margin-left: 20px;
@@ -150,9 +151,12 @@ form {
 }
 
 .profile-link-header {
+    display: flex;
+    border-radius: 0.5rem;
+    width: 200px;
     position: absolute;
-    float: right;
-    height: auto;
-    width: auto;
-    background-color: black;
+    background-color: var(--clr);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
 }
