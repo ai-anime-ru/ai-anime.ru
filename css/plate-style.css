@@ -42,7 +42,6 @@ ul li {
     display: block;
     columns: 3;
     padding: 20px 20px 0px 20px;
-    сolor: var(--clr);
 }
 
 .box {

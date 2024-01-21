@@ -4,7 +4,13 @@
     [/aviable]
     [aviable=main]
     <div class="top-block-main"></div>
-    <div class="top-menu-block"></div>
+    <div class="top-menu-block">
+        <ul>
+            <li>
+                <a href="#">Жанр</a> 
+            </li>
+        </ul>
+    </div>
     <div class="contaner-flex">
         <section class="main-container">
             <h1><ion-icon name="sparkles-outline" class="main-container-title-svg"></ion-icon>Недавно добавленное аниме</h1>
