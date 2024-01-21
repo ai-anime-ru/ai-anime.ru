@@ -131,6 +131,7 @@ form {
     float: right;
     margin-top: 4px;
     margin-left: 20px;
+    justify-content: space-evenly;
 }
 
 .imgBx-header {
@@ -155,7 +156,8 @@ form {
     border-radius: 0.5rem;
     width: 200px;
     position: absolute;
-    background-color: var(--clr);
+    background-color: #2e2e3896;
+    backdrop-filter: blur(40px);
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
