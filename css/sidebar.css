@@ -19,8 +19,6 @@ body {
     min-height: 100vh;
     background: var(--clr);
     font-family: 'ubuntu';
-    background-image: url(/templates/ai-anime/images/background.jpg);
-    background-size: 100%;
 }
 
 .sidebar-main {

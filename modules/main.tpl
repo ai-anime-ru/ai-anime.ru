@@ -9,7 +9,7 @@
     </div>
     <div class="contaner-flex">
         <section class="main-container">
-            <h1><ion-icon name="sparkles-outline" class="main-container-title-svg"></ion-icon>Недавно добавленное аниме</h1>
+            <h1><ion-icon name="sparkles-outline" class="main-container-title-svg"></ion-icon>Недавно добавленное аниме<ion-icon name="sparkles-outline" class="main-container-title-svg"></ion-icon></h1>
             <!--<div class="line"></div>-->
             <div class="items_news" id="items_news">
                 {custom template="shortstory" navigation='yes' from='0' }

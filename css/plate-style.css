@@ -24,10 +24,12 @@ ul li {
     font-weight: 200;
     margin-top: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .main-container-title-svg {
-    margin-right: 5px;
+    margin-right: 7px;
+    margin-left: 7px;
 }
 
 .line {
