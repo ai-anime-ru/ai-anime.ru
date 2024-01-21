@@ -268,7 +268,7 @@
     justify-content: center;
     bottom: 20px;
     position: absolute;
-    background: #1e1e26;
+    background: var(--clr);
     border-spacing: 1px;
     border-radius: 15px;
     padding: 15px;
@@ -328,7 +328,7 @@
     margin-bottom: 3px;
     width: 200px;
     color: white;
-    background-color: #1e1e26;
+    background-color: var(--clr);
     border-color: #ff5c57;
 
     display: inline-block;
@@ -427,7 +427,7 @@
 }
 
 .dropdown-content-watch-online button:hover {
-    background-color: #d1e1f9;
+    background-color: var(--active);
     color: black;
 }
 

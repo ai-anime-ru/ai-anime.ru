@@ -275,7 +275,7 @@ ul li {
 .side-block-main {
     margin-left: 20px;
     margin-top: 20px;
-    background-color: #393949;
+    background-color: var(--main);
     width: 360px;
     height: auto;
     border-radius: 15px;
@@ -450,7 +450,7 @@ footer {
 
 .side-block-main .calendar__item {
     max-width: 100%;
-    background-color: var(--main);
+    background-color: var(--clr);
     border-radius: 15px;
     padding: 15px;
 }

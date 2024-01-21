@@ -10,12 +10,6 @@
 	font-family: 'ubuntu';
 }
 
-:root {
-    --clr: #1e1e26;
-    --main: #393949;
-    --active: #d1e1f9;
-}
-
 body {
 	display: block;
     min-height: 100vh;
