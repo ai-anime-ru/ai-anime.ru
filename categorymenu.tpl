@@ -5,5 +5,11 @@
 		[sub-prefix]<ul>[/sub-prefix]{sub-item}[sub-suffix]</ul>[/sub-suffix]
 	</li>
 	[/item]
+	<li>
+		<a href="">Расписание</a>
+	</li>
+	<li>
+		<a href="">Совместный просмотр</a>
+	</li>
 	[root]
 </ul>[/root]
