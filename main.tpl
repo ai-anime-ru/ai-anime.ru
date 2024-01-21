@@ -321,6 +321,7 @@
 		};
 
 		function toggleBookmark() {
+			var xhr = new XMLHttpRequest();
 			var bookmarkIcon = document.getElementsByClassName("bookmarks-icon")[0];
 			setTimeout(function () { window.location.reload(); }, 0);
 		}
