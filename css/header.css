@@ -110,21 +110,6 @@ form {
     border-radius: 15px;
     height: 50px;
 }
-.header ul li a .text {
-    position: relative;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    font-size: 1em;
-    color: #d1e1f9;
-    padding-left: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-    text-decoration: none;
-    margin-top: -12.5px;
-    margin-left: 25px;
-}
 
 .profile {
     position: relative;
@@ -153,13 +138,13 @@ form {
 
 .profile-link-header {
     display: flex;
-    margin: 15px -50px;
+    margin: 15px -70px;
     border-radius: 0.5rem;
     width: auto;
     position: absolute;
     background-color: #2e2e3896;
     backdrop-filter: blur(40px);
-    min-width: 160px;
+    min-width: 200px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
 }
@@ -168,7 +153,6 @@ form {
     position: relative;
     justify-content: center;
     align-items: center;
-    min-width: 60px;
     padding-left: 10px;
     height: 30px;
     font-size: 1.5em;
@@ -190,5 +174,6 @@ form {
     margin-left: 0px;
 }
 
-.profile-link-header li {
+.profile-link-header li a div{
+    display: inline-block;
 }
