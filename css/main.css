@@ -10,6 +10,9 @@
     width: 1300px;
     background-color: var(--main);
     color: rgb(223, 223, 223);
+    padding: 20px;
+    border-radius: 15px;
+    line-height: 35px;
 }
 
 #searchsuggestions {
