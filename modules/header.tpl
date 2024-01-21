@@ -3,7 +3,7 @@
 		<div class="header-title">
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
-		<div class="profile hideorno" onclick="showProfileLink()">
+		<div class="profile hideorno" onclick="toggleDropdownHeader()">
 			<a>
 				<Div class="icon">
 					<div class="imgBx-header">
@@ -11,7 +11,7 @@
 					</div>
 				</div>
 			</a>
-			<div class="profile-link-header">
+			<div class="profile-link-header" id="myDropdownHeader">
 				<ul>
 					<li style=>
 						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
@@ -74,14 +74,23 @@
 	</ul>
 </header>
 
-<script>
-	function showProfileLink() {
-		var profileLinkHeader = document.getElementById("profile-link-header");
+<script> //Скрипт открытия и закрытия Списков
+    // Функция для отображения/скрытия выпадающего меню
+    function toggleDropdownHeader() {
+        var dropdown = document.getElementById("myDropdownHeader");
+        dropdown.classList.toggle("show");
+    }
 
-		// Проверяем текущее состояние display
-		var currentDisplay = profileLinkHeader.style.display;
-
-		// Если блок скрыт, то отображаем его, и наоборот
-		profileLinkHeader.style.display = (currentDisplay === "block" ? "none" : "block");
-	}
+    // Закрывать меню, если пользователь кликает вне него
+    window.onclick = function (event) {
+        if (!event.target.matches('.profile')) {
+            var dropdowns = document.getElementsByClassName("profile-link-header");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
 </script>
