@@ -217,6 +217,7 @@
 .tabs-block__select span:hover {
     background: #d1e1f9;
     color: #000;
+    border-radius: 15px;
 }
 
 .background-fullstory img {
@@ -340,7 +341,7 @@
 }
 
 .player-info {
-    border-radius: 2px;
+    border-radius: 15px;
     grid-column: 1/-1;
     background-color: #1e1e26;
     padding: 8px;
