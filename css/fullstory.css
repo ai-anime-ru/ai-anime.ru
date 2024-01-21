@@ -221,7 +221,12 @@
     color: #000;
     border-radius: 15px;
 }
-
+#watch-online {
+    cursor: pointer;
+}
+#player-2 {
+    cursor: pointer;
+}
 .background-fullstory img {
     height: 500px;
     width: 1200px;
