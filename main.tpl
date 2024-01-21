@@ -346,6 +346,14 @@
 		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+	<script>
+		// Отключение выделения текста с помощью JavaScript
+		document.addEventListener('mousedown', function(e) {
+		  if (e.button === 0) { // Левая кнопка мыши
+			e.preventDefault();
+		  }
+		});
+	  </script>
 </body>
 
 </html>
