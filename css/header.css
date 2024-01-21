@@ -205,3 +205,8 @@ form {
 .profile-link-header ul li a:hover .color-in-header-menu {
     color: black;
 }
+
+.show {
+    visibility: visible;
+    opacity: 1;
+}

@@ -93,4 +93,12 @@
             }
         }
     }
+
+	    // Закрывать меню при убирании мыши с него
+		var dropdown = document.getElementById("myDropdownHeader");
+    dropdown.addEventListener("mouseleave", function () {
+        if (dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        }
+    });
 </script>
