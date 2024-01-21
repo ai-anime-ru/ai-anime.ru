@@ -188,6 +188,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-radius: 15px;
 }
 
 .box-player a {
@@ -202,6 +203,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    border-radius: 15px;
 }
 
 .box-player-title-name span {
@@ -363,6 +365,7 @@
 
 .description-full-box {
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .description-full-box h1 {
