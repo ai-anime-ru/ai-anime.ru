@@ -65,7 +65,7 @@
 			});
 		});
 	</script>
-	<!-- () Обрезаем длину описания () -->
+<!-- () Обрезаем длину описания () 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var maxLength = 105;
@@ -81,6 +81,7 @@
 			});
 		});
 	</script>
+-->
 
 	<!-- () Обрезаем длину описания в фулл стори -->
 	<script>
