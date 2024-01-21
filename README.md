@@ -21,3 +21,7 @@
 21.01.2024 
 Скругление на странице полной новости для блоков в <div class="box-player">
 Запрет выделения чего либа (Текста, картинок, ссылок и т.д зажатой ЛКМ)
+
+<h1 align="center">Hi there, I'm <a href="https://daniilshat.ru/" target="_blank">Daniil</a> 
+<img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
+<h3 align="center">Computer science student, IT news writer from Russia 🇷🇺</h3>
