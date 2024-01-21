@@ -1,4 +1,8 @@
+
 <div class="full-story-body">
+    <div class="top-menu-block">
+        {catmenu}
+    </div>
     <div class="full-story-container">
         <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                 src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
