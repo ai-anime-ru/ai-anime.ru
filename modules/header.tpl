@@ -11,7 +11,7 @@
 					</div>
 				</div>
 			</a>
-			<div class="profile-link-header">
+			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
 					<li style=>
 						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
@@ -73,3 +73,35 @@
 		[/admin-link]
 	</ul>
 </header>
+
+<script> //Скрипт открытия и закрытия Списков
+    // Функция для отображения/скрытия выпадающего меню
+	function toggleDropdownHeader() {
+    var dropdown = document.getElementById("myDropdownMenu");
+    dropdown.classList.toggle("show");
+}
+
+// Закрывать меню, если пользователь кликает вне него
+window.onclick = function (event) {
+    if (!event.target.matches('.profile')) {
+       var dropdowns = document.getElementsByClassName("profile-link-header");
+       for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+             openDropdown.classList.remove('show');
+          }
+       }
+    }
+}
+
+// Закрывать меню при убирании мыши с него
+var dropdown = document.getElementById("myDropdownMenu");
+dropdown.setAttribute("SameSite", "Lax");
+dropdown.addEventListener("mouseleave", function () {
+    if (dropdown.classList.contains('show')) {
+       dropdown.classList.remove('show');
+    }
+});
+
+window.onclick = function (event) {}
+</script>
