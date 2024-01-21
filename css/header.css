@@ -119,4 +119,7 @@ form {
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
+    text-decoration: none;
+    margin-top: -12.5px;
+    margin-left: 25px;
 }

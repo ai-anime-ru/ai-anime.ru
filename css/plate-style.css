@@ -314,8 +314,10 @@ ul li {
 }
 
 .top-menu-block a{
+    display: flex;
     font-size: 14px;
     padding: 22px;
+    margin: 0px;
     transition: 0.2s;
     cursor: pointer;
 }
