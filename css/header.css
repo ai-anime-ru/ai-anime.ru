@@ -5,7 +5,7 @@
 
 .header {
     position: fixed;
-    background-color: #273655;
+    background-color: var(--clr);
     height: 70px;
     z-index: 1000;
     width: 100%;

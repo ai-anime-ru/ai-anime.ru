@@ -32,7 +32,6 @@
 </head>
 
 <body>{AJAX}
-	[push_subscribe]{push_subscribe}[/push_subscribe]
 	<div class="wrap">
 		<div class="block center fx-col">
 			{include file="/modules/header.tpl"}

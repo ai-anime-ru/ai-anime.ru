@@ -22,6 +22,7 @@ body {
 }
 
 .sidebar-main {
+    display: none;
     z-index: 1000;
     position: fixed;
     width: 80px;
