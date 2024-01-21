@@ -210,9 +210,10 @@
     height: 40px;
     line-height: 40px;
     padding: 0 15px;
-    margin-right: 10px;
+    margin-right: 0px;
     font-weight: 500;
     color: white;
+    cursor: pointer;
 }
 
 .box-player-title-name span.is-active,
