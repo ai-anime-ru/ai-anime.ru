@@ -16,32 +16,32 @@
 				<ul>
 					<li style=>
 						<a href="#">
-							<div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-							<div class="text">Профиль</div>
+							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+							<div class="text color-in-header-menu">Профиль</div>
 						</a>
 					</li>
 					<li style=>
 						<a href="#">
-							<div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-							<div class="text">Сообщения</div>
+							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+							<div class="text color-in-header-menu">Сообщения</div>
 						</a>
 					</li>
 					<li style=>
 						<a href="index.php?do=favorites">
-							<div class="icon"><ion-icon name="bookmarks-outline"></ion-icon></div>
-							<div class="text">Закладки</div>
+							<div class="icon color-in-header-menu"><ion-icon name="bookmarks-outline"></ion-icon></div>
+							<div class="text color-in-header-menu">Закладки</div>
 						</a>
 					</li>
 					<li style=>
 						<a href="#">
-							<div class="icon"><ion-icon name="stats-chart-outline"></ion-icon></div>
-							<div class="text">Статистика</div>
+							<div class="icon color-in-header-menu"><ion-icon name="stats-chart-outline"></ion-icon></div>
+							<div class="text color-in-header-menu">Статистика</div>
 						</a>
 					</li>
 					<li>
 						<a href="index.php?action=logout">
-							<div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-							<div class="text" id="logoutButton">Вход</div>
+							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
+							<div class="text color-in-header-menu" id="logoutButton">Вход</div>
 						</a>
 					</li>
 				</ul>

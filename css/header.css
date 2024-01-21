@@ -193,17 +193,12 @@ form {
     text-decoration: none;
 }
 
-.profile-link-header ul li a:hover,
-.profile-link-header ul li a .text:hover{
+.profile-link-header ul li a:hover {
     background-color: #d1e1f9;
     color: black;
     border-radius: 15px;
 }
 
-.profile-link-header ul li a:hover .profile-link-header ul li a .text {
-    color: black;
-}
-
-.profile-link-header ul li a:hover .profile-link-header ul li a .icon {
+.profile-link-header ul li a:hover .color-in-header-menu {
     color: black;
 }
