@@ -22,7 +22,7 @@
 .search-container {
   position: relative;
   float: right;
-  margin-top: 4px;
+  left: 315px;
 }
 
 form {
@@ -100,7 +100,13 @@ form {
     }
 }
 .header-admin {
-    width: 130px;
-    left: 1100px;
+    width: 140px;
+    left: 1380px;
     position: absolute;
+    background-color: #1e1e26;
+    border-radius: 15px;
+    height: 50px;
+}
+.admin-link {
+    margin: 1px;
 }

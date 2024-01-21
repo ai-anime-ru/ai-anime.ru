@@ -308,8 +308,14 @@ ul li {
     top: 20px;
 }
 
-.top-menu-block ul{
-    
+.top-menu-block ul {
+    text-align: center;
+}
+
+.top-menu-block li{
+    display: inline-block;
+    font-size: 14px;
+    padding: 20px;
 }
 
 /* --------- FOOTER -------------*/
