@@ -76,30 +76,31 @@
 
 <script> //Скрипт открытия и закрытия Списков
     // Функция для отображения/скрытия выпадающего меню
-	document.cookie = "myCookie=myValue; SameSite=None; Secure";
-    function toggleDropdownHeader() {
-        var dropdown = document.getElementById("myDropdownHeader");
-        dropdown.classList.toggle("show");
-    }
+	function toggleDropdownHeader() {
+    var dropdown = document.getElementById("myDropdownHeader");
+    dropdown.classList.toggle("show");
+}
 
-    // Закрывать меню, если пользователь кликает вне него
-    window.onclick = function (event) {
-        if (!event.target.matches('.profile')) {
-            var dropdowns = document.getElementsByClassName("profile-link-header");
-            for (var i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
+// Закрывать меню, если пользователь кликает вне него
+window.onclick = function (event) {
+    if (!event.target.matches('.profile')) {
+       var dropdowns = document.getElementsByClassName("profile-link-header");
+       for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+             openDropdown.classList.remove('show');
+          }
+       }
     }
+}
 
-	    // Закрывать меню при убирании мыши с него
-		var dropdown = document.getElementById("myDropdownHeader");
-    dropdown.addEventListener("mouseleave", function () {
-        if (dropdown.classList.contains('show')) {
-            dropdown.classList.remove('show');
-        }
-    });
+// Закрывать меню при убирании мыши с него
+var dropdown = document.getElementById("myDropdownHeader");
+dropdown.setAttribute("SameSite", "Lax");
+dropdown.addEventListener("mouseleave", function () {
+    if (dropdown.classList.contains('show')) {
+       dropdown.classList.remove('show');
+    }
+});
+</script>
 </script>
