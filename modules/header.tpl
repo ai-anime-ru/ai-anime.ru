@@ -76,6 +76,7 @@
 
 <script> //Скрипт открытия и закрытия Списков
     // Функция для отображения/скрытия выпадающего меню
+	document.cookie = "myCookie=myValue; SameSite=None; Secure";
     function toggleDropdownHeader() {
         var dropdown = document.getElementById("myDropdownHeader");
         dropdown.classList.toggle("show");
