@@ -6,10 +6,10 @@
 	</li>
 	[/item]
 	<li>
-		<a href="">Расписание</a>
+		<a href="/index.php?do=schedule">Расписание</a>
 	</li>
 	<li>
-		<a href="">Совместный просмотр</a>
+		<a href="/index.php?do=rooms">Совместный просмотр</a>
 	</li>
 	[root]
 </ul>[/root]
