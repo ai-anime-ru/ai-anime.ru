@@ -23,6 +23,7 @@
   position: relative;
   float: right;
   margin-top: 4px;
+  left: 315px;
 }
 
 form {
@@ -98,4 +99,24 @@ form {
     .header-link{
         left: 65px;
     }
+}
+.admin-link {
+    width: 140px;
+    left: 1380px;
+    position: absolute;
+    background-color: #1e1e26;
+    border-radius: 15px;
+    height: 50px;
+}
+.header ul li a .text {
+    position: relative;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    color: #d1e1f9;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }

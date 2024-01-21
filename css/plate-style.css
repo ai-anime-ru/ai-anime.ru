@@ -310,22 +310,22 @@ ul li {
 
 .top-menu-block ul {
     text-align: center;
+    display: flex;
 }
 
-.top-menu-block li{
-    display: inline-block;
+.top-menu-block a{
     font-size: 14px;
     padding: 22px;
     transition: 0.2s;
     cursor: pointer;
 }
 
-.top-menu-block li a {
+.top-menu-block a {
     color: #fff;
     text-decoration: none;
 }
 
-.top-menu-block li:hover {
+.top-menu-block a:hover {
     background-color: #1e1e26;
 }
 
