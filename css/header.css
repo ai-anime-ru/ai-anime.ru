@@ -108,5 +108,14 @@ form {
     height: 50px;
 }
 .admin-link {
-    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    font-size: 1em;
+    color: #d1e1f9;
+    padding-left: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
 }
