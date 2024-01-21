@@ -5,7 +5,8 @@
 
 .header {
     position: fixed;
-    background-color: var(--clr);
+    background-color: #1e1e269f;
+    backdrop-filter: blur(40px);
     height: 70px;
     z-index: 1000;
     width: 100%;
@@ -23,7 +24,6 @@
   position: relative;
   float: right;
   margin-top: 4px;
-  left: 315px;
 }
 
 form {
@@ -38,7 +38,7 @@ form {
 }
 
 .d3 form {
-    background: #d1e1f9;;
+    color: white;
 }
 
 .d3 input,
@@ -71,7 +71,7 @@ form {
 }
 
 .search-icon {
-    color: #273655;
+    color: #ffffff;
 }
 
 .header-link {
