@@ -6,7 +6,7 @@
                     [xfgiven_kodik_status_ru]<span class="badge">[xfvalue_shikimori_status_ru][xfnotgiven_shikimori_status_ru][xfvalue_kodik_status_ru][/xfnotgiven_shikimori_status_ru]</span>[/xfgiven_kodik_status_ru]
                     <!--<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</span>-->
                     [xfnotgiven_kodik_status_ru]
-                    <span class="badge">Информация отсутствует</span>
+                    <span class="badge">Нет информации</span>
                     [/xfnotgiven_kodik_status_ru]
                 </div>
                 [xfvalue_poster]
@@ -16,9 +16,11 @@
                 <div class="title-overlay">
                     <div>
                         <h2 class="title">{title}</h2>
-                        <div class="description"><span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>
+                        <div class="description">
+                            [xfgiven_kodik_last_episode]<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>[/xfgiven_kodik_last_episode]
+                            [xfnotgiven_kodik_last_episode]<span class="badge">Серий: ?</span>[/xfnotgiven_kodik_last_episode]
                             <div class="dot"></div>
-                            <div class="release-date"><p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p></div>
+                            <div class="release-date"><p>[xfvalue_shikimori_aired_on][xfnotgiven_shikimori_aired_on][xfvalue_kodik_premiere_world][/xfnotgiven_kodik_premiere_world]Нет информации[/xfnotgiven_kodik_premiere_world][/xfnotgiven_shikimori_aired_on]</p></div>
                         </div>
                     </div>
                 </div>
