@@ -606,10 +606,6 @@ footer {
     margin-bottom: 5px;
 }
 
-.bb-editor textarea:focus {
-    border-color: #ff0000;
-}
-
 .form_submit {
     display: flex;
 }
