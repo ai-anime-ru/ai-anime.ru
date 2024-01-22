@@ -361,6 +361,9 @@
                 </div>
             </div>
         </div>
+        {addcomments}
+        {comments}
+        {navigation}
     </div>
     {include file="/modules/side-block-main-related-news.tpl"}
 </div>

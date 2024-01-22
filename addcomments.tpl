@@ -1,4 +1,4 @@
-<div class="comment-box" style="display: none;">
+<div class="comment-box">
 	<div id="addcomment" class="addcomment">
 		<div class="plus_icon"><span>Добавить комментарий</span></div>
 		<div class="box_in">
