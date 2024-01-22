@@ -669,14 +669,31 @@ footer {
     display: flex;
 }
 
+.comm-right {
+    margin-left: 15px;
+}
+
 .comm-left img{
     border-radius: 50%;
     max-width: 50px
 }
 
-.comm-author {
-    font-size: 1em;
+.comm-author a{
+    font-size: 1.15em;
+    font-weight: normal;
+    color: var(--active);
+    text-decoration: none;
 }
 
+.comm-two {
+    font-size: 1em;
+    color: white;
+    font-weight: normal;
+}
+
+.online {
+    color: #fff;
+    text-align: center;
+}
 
 

@@ -9,7 +9,7 @@
 	</div>
 	<div class="comm-right">
 		<div class="comm-one clearfix">
-			<span class="comm-author">Автор: {author}</span>
+			<span class="comm-author">{author}</span>
 	
 		</div>
 		<div class="comm-two clearfix full-text">
