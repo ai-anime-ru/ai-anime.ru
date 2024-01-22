@@ -725,5 +725,23 @@ footer {
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
+    color: white;
+    font-weight: normal;
+}
+
+.mass_comments_action select{
+    background-color: var(--clr);
+    border-color: #6d6d6d;
+    color: white;
+    margin-left: 2px;
+}
+
+.mass_comments_action input {
+    background-color: var(--active);  
+    color: black;
+    border: none;
+    padding: 1px;
+    border-radius: 0.15rem;
 }
 
