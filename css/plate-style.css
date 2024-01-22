@@ -579,19 +579,20 @@ footer {
     display: flex;
 }
 
-.combo_field {
+.combo_field input{
     --tw-border-opacity: 1;
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
     background-color: var(--clr);
 
     --tw-border-opacity: 1;
-    border-color: rgb(229 229 229/var(--tw-border-opacity));
     border-radius: 0.5rem;
+    border: none;
     display: block;
     font-size: .875rem;
     line-height: 1.25rem;
     padding: 0.75rem 1rem;
+    margin-top: 5px;
 }
 
 .bb-editor textarea {
