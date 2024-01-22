@@ -200,7 +200,9 @@ body {
     height: 100%;
     object-fit: cover;
 }
-/*REG*/
+
+
+/*REG
 .page_form__inner{
   flex: 1;
   display: flex;
@@ -212,20 +214,22 @@ body {
 }
 .page_form__form {
   
-  background-color: #273655; /* Цвет фона формы */
-  border-radius: 10px; /* Скругление углов формы */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень формы */
+  background-color: #273655; 
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   padding: 20px;
-  width: 300px; /* Ширина формы */
+  width: 300px; 
 }
 .page_form__form h1 {
   text-align: center;
   text-shadow: 0 0 5px #d1e1f9;
-  color: #d1e1f9; /* Цвет заголовка */
+  color: #d1e1f9; 
 }
 .form-group {
-  color: #d1e1f9; /* Цвет текста */
+  color: #d1e1f9; 
 }
+*/
+
 /* Стили для полей ввода и кнопок */
 .page_form__form input,
 .page_form__form button {
