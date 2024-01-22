@@ -654,5 +654,12 @@ footer {
 }
 
 
+.comments-tree-list {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
 
 
