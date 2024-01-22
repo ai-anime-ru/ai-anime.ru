@@ -603,7 +603,6 @@ footer {
     color: #ddd;
     padding: 15px;
     margin-top: 5px;
-    margin-bottom: 5px;
 }
 
 .form_submit {
@@ -621,13 +620,17 @@ footer {
     margin-right: 5px;
     max-height: 40px;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+}
+
+.form_submit b {
+    font-weight: normal;
 }
 
 .c-captcha {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .c-captcha input{
