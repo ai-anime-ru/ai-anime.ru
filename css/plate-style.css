@@ -606,8 +606,8 @@ footer {
     margin-bottom: 5px;
 }
 
-.bb-editor textarea:active {
-    background-color: #000000;
+.bb-editor textarea:focus {
+    border-color: #ff0000;
 }
 
 .form_submit {
