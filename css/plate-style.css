@@ -551,7 +551,7 @@ footer {
 
 .comment-box {
     width: 100%;
-    margin-top: 5rem;
+    margin-top: 1.5rem;
 }
 
 .addcomment {
@@ -622,6 +622,16 @@ footer {
     cursor: pointer;
     font-size: 1em;
     font-weight: normal;
+    transition: 0.3s;
+}
+
+.form_submit button:hover {
+    background-color: var(--active);
+    color: black;
+}
+
+.form_submit button:active {
+    background-color: white;
 }
 
 .form_submit b {
