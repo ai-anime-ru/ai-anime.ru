@@ -661,5 +661,12 @@ footer {
     margin-top: 10px;
 }
 
+.comm-item {
+    background-color: var(--clr);
+    padding: 15px;
+    border-radius: 0.75rem;
+    margin-top: 10px;
+}
+
 
 
