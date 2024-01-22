@@ -720,6 +720,7 @@ footer {
 
 .comm-three li{
     margin-right: 5px;
+    text-align: end;
 }
 
 .mass_comments_action {
