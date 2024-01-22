@@ -563,7 +563,7 @@ footer {
 .plus_icon {
     background-color: var(--clr);
     text-align: center;
-    padding: 0.75rem;
+    padding: 0.75rem;   
     border-radius: 0.75rem;
     align-items: center;
     color: white;
@@ -593,6 +593,17 @@ footer {
     line-height: 1.25rem;
     padding: 0.75rem 1rem;
 }
+
+.bb-editor textarea {
+    background-color: var(--clr);
+    width: 42rem;
+    border-radius: 0.75rem;
+    border-color: #000000;
+    color: #ddd;
+    padding: 15px;
+    margin: 5px;
+}
+
 
 
 
