@@ -685,15 +685,23 @@ footer {
     text-decoration: none;
 }
 
+
 .comm-two {
     font-size: 1em;
     color: white;
+    font-size: 1.03em;
     font-weight: normal;
+    margin-top: 3px;
 }
 
 .online {
-    color: #fff;
+    color: #15ff00;
     text-align: center;
+}
+
+.offline {
+    color: #a5a5a5;
+    text-align: center;   
 }
 
 
