@@ -605,16 +605,18 @@ footer {
 }
 
 .form_submit {
-    position: flex;
+    display: flex;
     margin-top: 10px;
 }
 
 .form_submit button {
     background-color: var(--clr);
     color: white;
-    
-}
-
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+]
 
 
 

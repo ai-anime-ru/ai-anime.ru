@@ -228,9 +228,7 @@ body {
 .form-group {
   color: #d1e1f9; 
 }
-*/
 
-/* Стили для полей ввода и кнопок */
 .page_form__form input,
 .page_form__form button {
   width: 100%;
@@ -239,32 +237,31 @@ body {
   box-sizing: border-box;
 }
 
-/* Стили для результатов проверки */
 #result-registration {
   margin-top: 10px;
-  color: #d1e1f9; /* Цвет текста для ошибок */
+  color: #d1e1f9; 
 }
 
-/* Стили для кнопки "Зарегистрироваться" */
+
 .form_submit button {
   font-family: 'ubuntu';
-  background-color: #4d658c;  /* Цвет кнопки */
-  color: #d1e1f9;  /* Цвет текста */
+  background-color: #4d658c;  
+  color: #d1e1f9;  
   cursor: pointer;
   font-family: 'ubuntu';
 }
 .form_submit button:hover {
-  background-color: #1e1e26; /* Цвет кнопки при наведении */
+  background-color: #1e1e26; 
 }
 .login_check button{	
   font-family: 'ubuntu';
-  background-color: #4d658c; /* Цвет кнопки проверить */
+  background-color: #4d658c; 
   cursor: pointer;
 }
 .login_check button:hover {
-  background-color: #1e1e26; /* Цвет кнопки при наведении */
+  background-color: #1e1e26;
 }
-/*Страничка входа*/
+/*Страничка входа
 #login_pane {
     list-style: none;
     margin: 0;
@@ -385,7 +382,7 @@ button {
 .login_form__foot {
     margin-top: 10px;
 }
-
+*/
 
 /* СТИЛИ ДЛЯ КНОПКИ ВВЕРХ */
 #scrollToTopBtn {
