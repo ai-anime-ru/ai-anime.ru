@@ -11,11 +11,8 @@
 			[/not-logged]
 				<li id="comment-editor">
 					{editor}
-					[image-upload]
-						<a onclick="ShowCommentsUploader(); return false" href="#">Прикрепить изображения</a>
-						<div id="hidden-image-uploader" style="display: none">{image-upload}</div>
-					[/image-upload]
 				</li>
+				<!--
 			[allow-comments-subscribe]
 				<li>{comments-subscribe}</li>
 			[/allow-comments-subscribe]
@@ -28,6 +25,7 @@
 					<input placeholder="Ответ" type="text" name="question_answer" id="question_answer" class="wide" required>
 				</li>
 			[/question]
+			-->
 			</ul>
 			<div class="form_submit">
 			[sec_code]

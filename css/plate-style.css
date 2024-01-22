@@ -601,8 +601,20 @@ footer {
     border-color: #000000;
     color: #ddd;
     padding: 15px;
-    margin: 5px;
+    margin-top: 10px;
 }
+
+.form_submit {
+    position: flex;
+    margin-top: 10px;
+}
+
+.form_submit button {
+    background-color: var(--clr);
+    color: white;
+    
+}
+
 
 
 
