@@ -623,6 +623,22 @@ footer {
     cursor: pointer;
 }
 
+.c-captcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-captcha input{
+    background-color: var(--clr);
+    border: none;
+    color: white;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    max-height: 40px;
+    margin-left: 5px;
+}
 
 
 
