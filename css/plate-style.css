@@ -554,7 +554,8 @@ footer {
     margin-top: 1.5rem;
 }
 
-.addcomment {
+.addcomment, 
+.comm-item{
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
@@ -743,5 +744,6 @@ footer {
     border: none;
     padding: 1px;
     border-radius: 0.15rem;
+    cursor: pointer;
 }
 
