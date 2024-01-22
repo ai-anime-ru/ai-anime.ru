@@ -6,7 +6,7 @@
 			[not-logged]
 				<li class="form-group combo">
 					<div class="combo_field"><input placeholder="Ваше имя" type="text" name="name" id="name" class="wide" required></div>
-					<div class="combo_field"><input placeholder="Ваш e-mail" type="email" name="mail" id="mail" class="wide"></div>
+					<div class="combo_field combo_field_left"><input placeholder="Ваш e-mail" type="email" name="mail" id="mail" class="wide"></div>
 				</li>
 			[/not-logged]
 				<li id="comment-editor">
