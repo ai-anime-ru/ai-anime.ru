@@ -717,4 +717,13 @@ footer {
     transition: 0.3s;
 }
 
+.comm-three li{
+    margin-right: 5px;
+}
+
+.mass_comments_action {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
