@@ -66,7 +66,7 @@
     rewrite ^(.*)$ /uploads/tags_pages.xml break;
     rewrite ^/news_pages(\d*?).xml$ /uploads/news_pages$1.xml break;
     if (!-e $request_filename) {
-        rewrite ^/([a-zA-Z0-9_-]+)/?$ /index.php?do=profile&user=$1 last;
-        rewrite ^/([a-zA-Z0-9_-]+)/page/([0-9]+)/?$ /index.php?do=profile&user=$1&page=$2 last;
+        rewrite ^/([a-zA-Z0-9_-]+)/?$ /index.php?newsid=$1 last;
+        rewrite ^/([a-zA-Z0-9_-]+)/page/([0-9]+)/?$ /index.php?do=newsid&user=$1&page=$2 last;
         rewrite ^/category/([0-9]+)/page/([0-9]+)/?$ /index.php?do=cat&id=$1&page=$2 last;
     }

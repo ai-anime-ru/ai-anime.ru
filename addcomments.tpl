@@ -1,5 +1,5 @@
 <!--noindex-->
-<div class="add-comm-form clearfix" id="add-comm-form">
+<div class="add-comm-form clearfix" id="addcomment">
 		
 	<div class="ac-title">Прокомментировать</div>
 	
