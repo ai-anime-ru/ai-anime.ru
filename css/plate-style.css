@@ -546,7 +546,7 @@ footer {
     color: white;
 }
 
-
+/* -------------- COMMENT --------------*/
 
 
 .comment-box {
@@ -566,6 +566,13 @@ footer {
     padding: 0.75rem;
     border-radius: 0.75rem;
     align-items: center;
+    color: white;
+}
+
+.ui-form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 

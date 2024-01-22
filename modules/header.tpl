@@ -21,7 +21,7 @@
 						</a>
 					</li>
 					<li style=>
-						<a href="#">
+						<a href="index.php?do=pm">
 							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
 							<div class="text color-in-header-menu">Сообщения</div>
 						</a>

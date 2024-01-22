@@ -337,14 +337,6 @@ a.right {
     margin-left: 10px;
 }
 
-.plus_icon {
-    background-color: #4CAF50;
-    color: #fff;
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 5px;
-}
-
 .circle {
     display: inline-block;
     border-radius: 50%;
