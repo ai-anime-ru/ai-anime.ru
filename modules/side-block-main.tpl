@@ -7,4 +7,5 @@
             {today-ongoings}
         </div>
     </div>
+    {include file="/modules/lastcomments.tpl"}
 </div>
