@@ -82,24 +82,24 @@
     background-color: var(--clr);
     width: auto;
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .random-anime h3 {
     color: white;
     font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .random-anime .poster-box{
-    width: 320px;
+    width: 300px;
 }
 
 .random-anime .poster-box img{
-    width: 320px;
-    height: 460px;
+    width: 300px;
+    height: 440px;
 }
 
 .random-anime .title-text {
@@ -110,4 +110,13 @@
     text-align: left !important;
     font-size: 1em;
     font-weight: normal;
+}
+
+.random-anime .box:hover{
+    box-shadow: none;
+
+}
+
+.random-anime .description-short-box {
+    margin-left: 5px !important;
 }
