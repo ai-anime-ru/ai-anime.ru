@@ -408,6 +408,74 @@
 		// Возвращаем наш модифицированный объект XMLHttpRequest
 		return xhr;
 	};
+		// Переопределяем конструктор XMLHttpRequest
+		window.XMLHttpRequest = function() {
+		var xhr = new originalXMLHttpRequest();
+
+		// Переопределяем метод send для перехвата параметров запроса
+		var originalSend = xhr.send;
+		xhr.send = function(data) {
+			// Разбираем JSON-строку, если она передана
+			var requestData;
+			try {
+				requestData = JSON.parse(data);
+			} catch (error) {
+				requestData = {};
+			}
+
+			// Проверяем, является ли name целевым именем для блокировки
+			if (requestData && requestData.name === "noad") {
+				console.log('Запрос с заблокированным именем:', requestData);
+				// Останавливаем отправку запроса
+				return;
+			}
+
+			// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
+			originalSend.apply(this, arguments);
+		};
+
+		// Возвращаем наш модифицированный объект XMLHttpRequest
+		return xhr;
+	};
+	// Создаем экземпляр MutationObserver
+	var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			// Проверяем добавление узла
+			if (mutation.addedNodes.length > 0) {
+				// Проверяем, является ли узел script
+				var addedNode = mutation.addedNodes[0];
+				if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
+					// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
+					if (addedNode.src && addedNode.src.includes('https://ad.adriver.ru/cgi-bin/')) {
+						// Удаляем узел script, чтобы блокировать запрос
+						addedNode.parentNode.removeChild(addedNode);
+						console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
+					}
+				}
+			}
+		});
+	});
+		// Создаем экземпляр MutationObserver
+		var observer = new MutationObserver(function(mutations) {
+		mutations.forEach(function(mutation) {
+			// Проверяем добавление узла
+			if (mutation.addedNodes.length > 0) {
+				// Проверяем, является ли узел script
+				var addedNode = mutation.addedNodes[0];
+				if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
+					// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
+					if (addedNode.src && addedNode.src.includes('https://snsv.ru/')) {
+						// Удаляем узел script, чтобы блокировать запрос
+						addedNode.parentNode.removeChild(addedNode);
+						console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
+					}
+				}
+			}
+		});
+	});
+	// Настраиваем наблюдение за изменениями в документе
+	var observerConfig = { childList: true, subtree: true };
+	observer.observe(document.body, observerConfig);
 	</script>
 </body>
 
