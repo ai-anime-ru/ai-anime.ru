@@ -2,8 +2,15 @@
     <div class="calendar box-body-s">
         <div class="calendar__item">
             <div class="calendar__item-weekday">
-                <h3>Случайное аниме</h3>
+                
             </div>
+        </div>
+    </div>
+    <div class="random-anime">
+        <div>
+            <h3>Случайное аниме</h3>
+        </div>
+        <div>
             {include file="/modules/random-anime.tpl"}
         </div>
     </div>

@@ -74,3 +74,17 @@
 #searchsuggestions .break {
     display: none;
 }
+
+
+/* ------- random anime ------*/
+
+.random-anime {
+    background-color: var(--clr);
+    width: auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.random-anime .poster-box{
+    width: 320px;
+}
