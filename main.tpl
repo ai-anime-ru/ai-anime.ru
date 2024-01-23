@@ -13,6 +13,7 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link href="https://ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/header.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
@@ -21,6 +22,16 @@
 	<link href="https://ai-anime.ru/templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/full-story.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
+	<script>
+		// Дожидаемся полной загрузки страницы
+		document.addEventListener("DOMContentLoaded", function () {
+		  // Устанавливаем задержку в 3 секунды перед скрытием анимации
+		  setTimeout(function () {
+			// Скрыть анимацию загрузки
+			document.querySelector('.loader-container').style.display = 'none';
+		  }, 1000);
+		});
+	</script>
 	<!-- <https://ionic.io/ionicons> -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<!-- <Google tag (gtag.js)> -->
@@ -37,13 +48,6 @@
 	<div class="loader-container">
 		<div class="loader"></div>
 	</div>
-	<script>
-		// Дожидаемся полной загрузки страницы
-		document.addEventListener("DOMContentLoaded", function () {
-		  // Скрыть анимацию загрузки
-		  document.querySelector('.loader-container').style.display = 'none';
-		});
-	</script>
 	{AJAX}
 	<div class="wrap">
 		<div class="block center fx-col">
