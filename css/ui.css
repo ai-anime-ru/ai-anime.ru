@@ -10,26 +10,27 @@
 	* html .ui-helper-clearfix { height: 1% }
 	.ui-helper-clearfix { display: block }
 	.ui-dialog {
-		text-align: left;
-		overflow: hidden;
+        background-color: #1e1e269f;
+        backdrop-filter: blur(40px);
+        z-index: 1000;
+        top: 0;
 		padding: 0;
 		position: absolute;
 		width: 370px;
-		border-radius: 2px;
+		border-radius: 15px;
 		box-shadow: 0 8px 40px -10px rgba(0,0,0,0.3);
-		border: 1px solid #e6e6e6; border-color: rgba(0,0,0,0.1);
-		background-color: #f7f7f7;
 		background-clip: padding-box;
 		outline: none;
 	}
 	.ui-dialog-titlebar { 
 		padding: 10px 15px; 
 		position: relative;
-		background-color: #517fa4 !important;
-    color: #fff;
+		background-color: #1e1e269f;
+        backdrop-filter: blur(40px);
+        z-index: 1000;
 
 	}
-	.ui-dialog-title { float: left; font-weight: 600; font-size:.9rem; text-shadow: 0 1px #333;}
+	.ui-dialog-title { float: left; font-weight: 600; font-size:.9rem; text-shadow: 0 1px #333; color: rgb(255, 255, 255);}
 	.ui-dialog-titlebar-close {
 		position: absolute;
 		right: 10px; top: 50%;
@@ -89,7 +90,7 @@
 	.ui-dialog-titlebar-close:hover .ui-icon { opacity: 1; }
 	.ui-icon, .ui-button-icon-only { overflow: hidden; text-indent: -9999px; }
 	.ui-dialog label { color: #575757; }
-	.ui-dialog-content { padding: 20px; border: 1px solid #fff; overflow: auto; position: relative; zoom: 1; }
+	.ui-dialog-content { padding: 20px; overflow: auto; position: relative; zoom: 1; }
 	.loginbox.ui-dialog, .loginbox .ui-dialog-content { overflow: visible !important; }
 	.ui-dialog-content h2 { display: inline; font-size: 1em; font-weight: bold }
 	.ui-dialog .ui-dialog-buttonpane { padding: 15px; text-align: center; }
