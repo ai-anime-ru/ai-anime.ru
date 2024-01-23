@@ -82,14 +82,13 @@
     background-color: var(--clr);
     width: auto;
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 0 10px 20px;
 }
 
 .random-anime h3 {
     color: white;
     font-weight: normal;
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
