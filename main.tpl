@@ -493,6 +493,7 @@
 		});
 	}
 	</script>
+	{custom category="1-100" template="modules/custom-random" order="rand" from="0" limit="1" cache="no"}
 </body>
 
 </html>
