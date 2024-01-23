@@ -33,7 +33,18 @@
 	</script>
 </head>
 
-<body>{AJAX}
+<body>
+	<div class="loader-container">
+		<div class="loader"></div>
+	</div>
+	<script>
+		// Дожидаемся полной загрузки страницы
+		document.addEventListener("DOMContentLoaded", function () {
+		  // Скрыть анимацию загрузки
+		  document.querySelector('.loader-container').style.display = 'none';
+		});
+	</script>
+	{AJAX}
 	<div class="wrap">
 		<div class="block center fx-col">
 			{include file="/modules/header.tpl"}
