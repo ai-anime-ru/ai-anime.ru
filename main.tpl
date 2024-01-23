@@ -8,12 +8,12 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
+	<link href="https://ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
 	<link rel="shortcut icon" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="76x76" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/header.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
