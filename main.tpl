@@ -467,7 +467,7 @@
 					if (addedNode.src && addedNode.src.includes('https://snsv.ru/')) {
 						// Удаляем узел script, чтобы блокировать запрос
 						addedNode.parentNode.removeChild(addedNode);
-						console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
+						console.log('Блокирован запрос к snsv.ru/');
 					}
 				}
 			}
@@ -476,6 +476,25 @@
 	// Настраиваем наблюдение за изменениями в документе
 	var observerConfig = { childList: true, subtree: true };
 	observer.observe(document.body, observerConfig);
+	// Поиск и удаление элементов, содержащих слова рекламы в тексте
+	var adTextKeywords = ['ad', 'ads', 'advert', 'advertisement'];
+	adTextKeywords.forEach(function(keyword) {
+		var elementsWithAdText = document.querySelectorAll(':contains(' + keyword + ')');
+		elementsWithAdText.forEach(function(element) {
+			element.parentNode.removeChild(element);
+		});
+	});
+	// Функция для удаления элементов с атрибутами, содержащими ключевые слова рекламы
+	function removeAdElements() {
+		var adKeywords = ['ad', 'ads', 'advert', 'advertisement'];
+		
+		adKeywords.forEach(function(keyword) {
+			var elements = document.querySelectorAll('[*|' + keyword + '], [' + keyword + '*], [' + keyword + ']');
+			elements.forEach(function(element) {
+				element.parentNode.removeChild(element);
+			});
+		});
+	}
 	</script>
 </body>
 
