@@ -85,6 +85,29 @@
     padding: 10px;
 }
 
+.random-anime h3 {
+    color: white;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .random-anime .poster-box{
     width: 320px;
+}
+
+.random-anime .poster-box img{
+    width: 320px;
+    height: 460px;
+}
+
+.random-anime .title-text {
+    display: none !important;
+}
+
+.random-anime .description-short-box h3 {
+    text-align: left !important;
+    font-size: 1em;
+    font-weight: normal;
 }
