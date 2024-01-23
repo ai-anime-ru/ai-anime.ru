@@ -350,14 +350,32 @@
 
 	<!--Блок рекламы-->
 	<script>
-	var adElement = document.getElementById('AdVideoComplete');
-	if (adElement) {
-		adElement.style.display = 'none';
+	// Функция для удаления блока рекламы
+	function removeAdvPlayer() {
+		var advPlayer = document.querySelector('.adv-player');
+		if (advPlayer) {
+			advPlayer.parentNode.removeChild(advPlayer);
+		}
 	}
-	var adElement = document.getElementById('adv-player');
-	if (adElement) {
-		adElement.style.display = 'none';
-	}
+
+	// Создаем экземпляр MutationObserver с функцией обратного вызова
+	var observer = new MutationObserver(function(mutations) {
+		// Проверяем каждое изменение в структуре документа
+		mutations.forEach(function(mutation) {
+			// Проверяем, добавлен ли новый элемент с классом "adv-player"
+			if (mutation.addedNodes.length > 0) {
+				// Вызываем функцию для удаления блока рекламы
+				removeAdvPlayer();
+			}
+		});
+	});
+
+	// Настраиваем наблюдение за изменениями в документе
+	var observerConfig = { childList: true, subtree: true };
+	observer.observe(document.body, observerConfig);
+
+	// Вызываем функцию удаления сразу при загрузке страницы
+	removeAdvPlayer();
 	</script>
 </body>
 
