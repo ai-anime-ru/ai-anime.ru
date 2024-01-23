@@ -7,5 +7,4 @@
             {today-ongoings}
         </div>
     </div>
-    {custom template="/modules/lastcomments"}
 </div>
