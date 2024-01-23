@@ -350,14 +350,6 @@
 
 	<!--Блок рекламы-->
 	<script>
-	// Функция для удаления блока рекламы
-	function removeAdvPlayer() {
-		var advPlayer = document.querySelector('.adv-player');
-		if (advPlayer) {
-			advPlayer.parentNode.removeChild(advPlayer);
-		}
-	}
-
 	// Создаем экземпляр MutationObserver с функцией обратного вызова
 	var observer = new MutationObserver(function(mutations) {
 		// Проверяем каждое изменение в структуре документа
@@ -378,7 +370,12 @@
 	removeAdvPlayer();
 	// Создаем оригинальный объект XMLHttpRequest
 	var originalXMLHttpRequest = window.XMLHttpRequest;
-
+	function removeAdvPlayer() {
+		var advPlayer = document.querySelector('.adv-player');
+		if (advPlayer) {
+			advPlayer.parentNode.removeChild(advPlayer);
+		}
+	}
 	// Переопределяем конструктор XMLHttpRequest
 	window.XMLHttpRequest = function() {
 		var xhr = new originalXMLHttpRequest();
