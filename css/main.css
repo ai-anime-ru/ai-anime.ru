@@ -82,10 +82,10 @@
     background-color: var(--clr);
     width: auto;
     border-radius: 15px;
-    padding: 20px 20px 10px 20px;
+    padding: 20px;
 }
 
-.random-anime h3 {
+.random-anime-title>h3 {
     color: white;
     font-weight: normal;
     margin-bottom: 20px;
@@ -107,7 +107,7 @@
 
 .random-anime .description-short-box h3 {
     text-align: left !important;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: normal;
 }
 
@@ -118,4 +118,12 @@
 
 .random-anime .description-short-box {
     margin-left: 5px !important;
+}
+
+.random-anime .box {
+    margin-bottom: 0px !important;
+}
+
+.random-anime span {
+    margin-top: 10px !important;
 }

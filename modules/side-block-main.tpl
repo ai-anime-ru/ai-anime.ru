@@ -2,12 +2,12 @@
     <div class="calendar box-body-s">
         <div class="calendar__item">
             <div class="calendar__item-weekday">
-                
+
             </div>
         </div>
     </div>
     <div class="random-anime">
-        <div>
+        <div class="random-anime-title">
             <h3>Случайное аниме</h3>
         </div>
         <div>
