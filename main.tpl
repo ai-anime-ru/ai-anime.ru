@@ -354,6 +354,10 @@
 	if (adElement) {
 		adElement.style.display = 'none';
 	}
+	var adElement = document.getElementById('adv-player');
+	if (adElement) {
+		adElement.style.display = 'none';
+	}
 	</script>
 </body>
 
