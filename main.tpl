@@ -347,6 +347,14 @@
 		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
+	<!--Блок рекламы-->
+	<script>
+	var adElement = document.getElementById('AdVideoComplete');
+	if (adElement) {
+		adElement.style.display = 'none';
+	}
+	</script>
 </body>
 
 </html>
