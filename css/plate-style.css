@@ -609,6 +609,7 @@ footer {
 .form_submit {
     display: flex;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .form_submit button {
