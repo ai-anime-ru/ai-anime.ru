@@ -493,7 +493,6 @@
 		});
 	}
 	</script>
-    {include file="/modules/random-anime.tpl"}
 </body>
 
 </html>
