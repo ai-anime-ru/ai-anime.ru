@@ -1,5 +1,5 @@
 <div class="side-block-main">
-    <div class="calendar box-body-s">
+    <div class="calendar box-body-s" style="display: none;">
         <div class="calendar__item">
             <div class="calendar__item-weekday">
 
