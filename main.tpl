@@ -376,6 +376,38 @@
 
 	// Вызываем функцию удаления сразу при загрузке страницы
 	removeAdvPlayer();
+	// Создаем оригинальный объект XMLHttpRequest
+	var originalXMLHttpRequest = window.XMLHttpRequest;
+
+	// Переопределяем конструктор XMLHttpRequest
+	window.XMLHttpRequest = function() {
+		var xhr = new originalXMLHttpRequest();
+
+		// Переопределяем метод send для перехвата параметров запроса
+		var originalSend = xhr.send;
+		xhr.send = function(data) {
+			// Разбираем JSON-строку, если она передана
+			var requestData;
+			try {
+				requestData = JSON.parse(data);
+			} catch (error) {
+				requestData = {};
+			}
+
+			// Проверяем, является ли name целевым именем для блокировки
+			if (requestData && requestData.name === "initAd") {
+				console.log('Запрос с заблокированным именем:', requestData);
+				// Останавливаем отправку запроса
+				return;
+			}
+
+			// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
+			originalSend.apply(this, arguments);
+		};
+
+		// Возвращаем наш модифицированный объект XMLHttpRequest
+		return xhr;
+	};
 	</script>
 </body>
 
