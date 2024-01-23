@@ -117,7 +117,6 @@
     select, textarea, input[type="text"], input[type="password"], input[type="file"],
 input[type="datetime"], input[type="datetime-local"], input[type="date"],
 input[type="month"], input[type="time"], input[type="week"], input[type="number"],
-input[type="email"], input[type="url"], input[type="search"], input[type="tel"],
 input[type="color"] {
 	display: inline-block;
 	width: 302px;
@@ -134,7 +133,6 @@ input[type="color"] {
 	input[type="file"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus,
 	input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus,
 	input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus,
-	input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus,
 	input[type="color"]:focus, .uneditable-input:focus {
 		border-color: #109aceed;
 	}
@@ -142,21 +140,12 @@ input[type="color"] {
 	input[type="file"], input[type="image"],
 	input[type="submit"], input[type="reset"],
 	input[type="button"], input[type="radio"],
-	input[type="checkbox"] { width: auto; }
-	input[type="search"] {
-		-webkit-box-sizing: content-box;
-		-moz-box-sizing: content-box;
-		box-sizing: content-box;
-	}
-	input[type="search"]::-webkit-search-cancel-button,
-	input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 	select[multiple], select[size], textarea { height: auto; }
 	input::-moz-placeholder, textarea::-moz-placeholder, input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { opacity: 0.6; }
 
 	input:focus { outline: none; }
 	input[type="file"], input[type="image"] { padding: 0; border-width: 0; background-color: transparent; }
 	.wide, .bb-editor textarea, .ui-dialog textarea, select#category, .timezoneselect, .twofactorselect, .quick-edit-text { width: 100% !important; }
-	#searchuser, #searchinput { width: 100% !important; margin-bottom: 10px; }
 	.btn > .icon { fill: #fff; }
 	.btn-white > .icon { fill: #0c5f7eed; }
 	.btn-white { background-color: #fff; color: #0c5f7eed; }
