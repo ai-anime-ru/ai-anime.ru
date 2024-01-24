@@ -750,3 +750,7 @@ footer {
     cursor: pointer;
 }
 
+.combo_field input:focus {
+    border: 1px !important;
+    border-color: var(--active) !important;
+}
