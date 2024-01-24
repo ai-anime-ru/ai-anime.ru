@@ -83,6 +83,7 @@
     width: auto;
     border-radius: 15px;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 .random-anime-title>h3 {
@@ -124,6 +125,8 @@
     margin-bottom: 0px !important;
 }
 
-.discord-side-block {
-    margin-top: 10px;
+.discord-widget {
+    border-radius: 15px;
+    overflow: hidden;
+    height: 500px;
 }
