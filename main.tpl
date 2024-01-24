@@ -52,7 +52,7 @@
 	<div class="wrap">
 		<div class="block center fx-col">
 			{include file="/modules/header.tpl"}
-			<div class="welcome-message" id="welcome-message">
+			<div class="welcome-message show" id="welcome-message">
 				<div class="welcome-message-content">
 					<div class="welcome-message-text">
 						<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику конфиденцальности</a><p>и</p><a href="/?do=rules">правила</a>
@@ -91,7 +91,7 @@
 	</script>
 	<script>
 		
-		var isLoggedIn = false;
+		var isLoggedIn = true;
 
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
