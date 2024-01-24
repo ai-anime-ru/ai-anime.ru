@@ -29,12 +29,29 @@
   animation: hideLoaderAnimation 0.3s ease forwards;
 }
 
+.show-loader {
+  animation: hideLoaderAnimation 0.3s ease forwards;
+}
+
+
 @keyframes hideLoaderAnimation {
   100% {
     opacity: 1;
     visibility: visible;
   }
   0% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@keyframes showLoaderAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
     opacity: 0;
     visibility: hidden;
     display: none;

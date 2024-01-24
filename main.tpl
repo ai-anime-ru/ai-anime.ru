@@ -538,31 +538,39 @@
 	</script>
 
 <!--Скрипт лоадера страницы-->
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+		setTimeout(function () {
+			document.querySelector('.loader-container').classList.add('hide-loader');
+		}, 1000);
+	});
+</script>
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
 	// Показать лоадер при каждом переходе
 	$(document).on('click', 'a', function(event) {
-		event.preventDefault(); // Предотвращаем обычное поведение ссылки
-		var targetUrl = $(this).attr('href');
+		var href = $(this).attr('href');
 
-		// Показываем лоадер
-		showLoader();
+		// Проверяем наличие атрибута href
+		if (href) {
+			event.preventDefault(); // Предотвращаем обычное поведение ссылки
+			showLoader(); // Показываем лоадер
 
-		// Загружаем новую страницу
-		setTimeout(function() {
-			window.location.href = targetUrl;
-		}, 500); // Представим, что загрузка занимает 0.5 секунды
+			// Загружаем новую страницу
+			setTimeout(function() {
+				window.location.href = href;
+			}, 500); // Представим, что загрузка занимает 0.5 секунды
+		}
 	});
 
 	// Показать лоадер
 	function showLoader() {
-		document.querySelector('.loader-container').classList.add('hide-loader');
+		document.querySelector('.loader-container').classList.add('show-loader');
 	}
 
 	// Скрыть лоадер
 	function hideLoader() {
-		document.querySelector('.loader-container').classList.remove('hide-loader');
+		document.querySelector('.loader-container').classList.remove('show-loader');
 	}
 </script>
 </body>
