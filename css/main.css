@@ -130,3 +130,20 @@
     overflow: hidden;
     height: 500px;
 }
+
+
+.welcome-message {
+    position: fixed;
+    bottom: 20px;
+    background-color: var(--clr);
+    border-radius: 15px;
+    z-index: 9999;
+    padding: 1.25rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.welcome-message-content {
+    display: flex;
+}

@@ -25,11 +25,11 @@
 	<script>
 		// Дожидаемся полной загрузки страницы
 		document.addEventListener("DOMContentLoaded", function () {
-		  // Устанавливаем задержку в 3 секунды перед скрытием анимации
-		  setTimeout(function () {
-			// Скрыть анимацию загрузки
-			document.querySelector('.loader-container').style.display = 'none';
-		  }, 1000);
+			// Устанавливаем задержку в 3 секунды перед скрытием анимации
+			setTimeout(function () {
+				// Скрыть анимацию загрузки
+				document.querySelector('.loader-container').style.display = 'none';
+			}, 1000);
 		});
 	</script>
 	<!-- <https://ionic.io/ionicons> -->
@@ -52,6 +52,12 @@
 	<div class="wrap">
 		<div class="block center fx-col">
 			{include file="/modules/header.tpl"}
+			<div class="welcome-message">
+				<div class="welcome-message-content">
+					<p>Добро пожаловать на наш сайт! Мы рады, что вы здесь.</p>
+					<button onclick="closeWelcomeMessage()">Закрыть</button>
+				</div>
+			</div>
 			{include file="/modules/sidebar.tpl"}
 			<section class="main__content">
 				{include file="modules/main.tpl"}
@@ -60,10 +66,6 @@
 			<!-- () Выводим ошибки () -->
 			{info}
 			{include file="/modules/footer.tpl"}
-			<div class="welcome-message">
-				    <p>Добро пожаловать на наш сайт! Мы рады, что вы здесь.</p>
-    <button onclick="closeWelcomeMessage()">Закрыть</button>
-			</div>
 
 		</div>
 	</div>
@@ -84,32 +86,32 @@
 			});
 		});
 	</script>
-<script>
-    // Предполагаемая переменная для проверки статуса авторизации
-    var isLoggedIn = false;
+	<script>
+		// Предполагаемая переменная для проверки статуса авторизации
+		var isLoggedIn = false;
 
-    // Функция для закрытия приветственного сообщения
-    function closeWelcomeMessage() {
-        document.getElementById('welcome-message').style.display = 'none';
+		// Функция для закрытия приветственного сообщения
+		function closeWelcomeMessage() {
+			document.getElementById('welcome-message').style.display = 'none';
 
-        // Сохраняем информацию о том, что сообщение было закрыто
-        localStorage.setItem('welcomeMessageClosed', 'true');
-    }
+			// Сохраняем информацию о том, что сообщение было закрыто
+			localStorage.setItem('welcomeMessageClosed', 'true');
+		}
 
-    // Функция для проверки, нужно ли показывать приветственное сообщение
-    function checkWelcomeMessage() {
-        var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
+		// Функция для проверки, нужно ли показывать приветственное сообщение
+		function checkWelcomeMessage() {
+			var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
 
-        // Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
-        if (!welcomeMessageClosed && !isLoggedIn) {
-            document.getElementById('welcome-message').style.display = 'block';
-        }
-    }
+			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
+			if (!welcomeMessageClosed && !isLoggedIn) {
+				document.getElementById('welcome-message').style.display = 'block';
+			}
+		}
 
-    // Вызываем функцию проверки при загрузке страницы
-    window.onload = checkWelcomeMessage;
-</script>
-<!-- () Обрезаем длину описания () 
+		// Вызываем функцию проверки при загрузке страницы
+		window.onload = checkWelcomeMessage;
+	</script>
+	<!-- () Обрезаем длину описания () 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var maxLength = 105;
@@ -394,148 +396,148 @@
 
 	<!--Блок рекламы-->
 	<script>
-	// Создаем экземпляр MutationObserver с функцией обратного вызова
-	var observer = new MutationObserver(function(mutations) {
-		// Проверяем каждое изменение в структуре документа
-		mutations.forEach(function(mutation) {
-			// Проверяем, добавлен ли новый элемент с классом "adv-player"
-			if (mutation.addedNodes.length > 0) {
-				// Вызываем функцию для удаления блока рекламы
-				removeAdvPlayer();
-			}
+		// Создаем экземпляр MutationObserver с функцией обратного вызова
+		var observer = new MutationObserver(function (mutations) {
+			// Проверяем каждое изменение в структуре документа
+			mutations.forEach(function (mutation) {
+				// Проверяем, добавлен ли новый элемент с классом "adv-player"
+				if (mutation.addedNodes.length > 0) {
+					// Вызываем функцию для удаления блока рекламы
+					removeAdvPlayer();
+				}
+			});
 		});
-	});
 
-	// Настраиваем наблюдение за изменениями в документе
-	var observerConfig = { childList: true, subtree: true };
-	observer.observe(document.body, observerConfig);
+		// Настраиваем наблюдение за изменениями в документе
+		var observerConfig = { childList: true, subtree: true };
+		observer.observe(document.body, observerConfig);
 
-	// Вызываем функцию удаления сразу при загрузке страницы
-	removeAdvPlayer();
-	// Создаем оригинальный объект XMLHttpRequest
-	var originalXMLHttpRequest = window.XMLHttpRequest;
-	function removeAdvPlayer() {
-		var advPlayer = document.querySelector('.adv-player');
-		if (advPlayer) {
-			advPlayer.parentNode.removeChild(advPlayer);
+		// Вызываем функцию удаления сразу при загрузке страницы
+		removeAdvPlayer();
+		// Создаем оригинальный объект XMLHttpRequest
+		var originalXMLHttpRequest = window.XMLHttpRequest;
+		function removeAdvPlayer() {
+			var advPlayer = document.querySelector('.adv-player');
+			if (advPlayer) {
+				advPlayer.parentNode.removeChild(advPlayer);
+			}
 		}
-	}
-	// Переопределяем конструктор XMLHttpRequest
-	window.XMLHttpRequest = function() {
-		var xhr = new originalXMLHttpRequest();
-
-		// Переопределяем метод send для перехвата параметров запроса
-		var originalSend = xhr.send;
-		xhr.send = function(data) {
-			// Разбираем JSON-строку, если она передана
-			var requestData;
-			try {
-				requestData = JSON.parse(data);
-			} catch (error) {
-				requestData = {};
-			}
-
-			// Проверяем, является ли name целевым именем для блокировки
-			if (requestData && requestData.name === "initAd") {
-				console.log('Запрос с заблокированным именем:', requestData);
-				// Останавливаем отправку запроса
-				return;
-			}
-
-			// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
-			originalSend.apply(this, arguments);
-		};
-
-		// Возвращаем наш модифицированный объект XMLHttpRequest
-		return xhr;
-	};
 		// Переопределяем конструктор XMLHttpRequest
-		window.XMLHttpRequest = function() {
-		var xhr = new originalXMLHttpRequest();
+		window.XMLHttpRequest = function () {
+			var xhr = new originalXMLHttpRequest();
 
-		// Переопределяем метод send для перехвата параметров запроса
-		var originalSend = xhr.send;
-		xhr.send = function(data) {
-			// Разбираем JSON-строку, если она передана
-			var requestData;
-			try {
-				requestData = JSON.parse(data);
-			} catch (error) {
-				requestData = {};
-			}
+			// Переопределяем метод send для перехвата параметров запроса
+			var originalSend = xhr.send;
+			xhr.send = function (data) {
+				// Разбираем JSON-строку, если она передана
+				var requestData;
+				try {
+					requestData = JSON.parse(data);
+				} catch (error) {
+					requestData = {};
+				}
 
-			// Проверяем, является ли name целевым именем для блокировки
-			if (requestData && requestData.name === "noad") {
-				console.log('Запрос с заблокированным именем:', requestData);
-				// Останавливаем отправку запроса
-				return;
-			}
+				// Проверяем, является ли name целевым именем для блокировки
+				if (requestData && requestData.name === "initAd") {
+					console.log('Запрос с заблокированным именем:', requestData);
+					// Останавливаем отправку запроса
+					return;
+				}
 
-			// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
-			originalSend.apply(this, arguments);
+				// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
+				originalSend.apply(this, arguments);
+			};
+
+			// Возвращаем наш модифицированный объект XMLHttpRequest
+			return xhr;
 		};
+		// Переопределяем конструктор XMLHttpRequest
+		window.XMLHttpRequest = function () {
+			var xhr = new originalXMLHttpRequest();
 
-		// Возвращаем наш модифицированный объект XMLHttpRequest
-		return xhr;
-	};
-	// Создаем экземпляр MutationObserver
-	var observer = new MutationObserver(function(mutations) {
-		mutations.forEach(function(mutation) {
-			// Проверяем добавление узла
-			if (mutation.addedNodes.length > 0) {
-				// Проверяем, является ли узел script
-				var addedNode = mutation.addedNodes[0];
-				if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
-					// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
-					if (addedNode.src && addedNode.src.includes('https://ad.adriver.ru/cgi-bin/')) {
-						// Удаляем узел script, чтобы блокировать запрос
-						addedNode.parentNode.removeChild(addedNode);
-						console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
-					}
+			// Переопределяем метод send для перехвата параметров запроса
+			var originalSend = xhr.send;
+			xhr.send = function (data) {
+				// Разбираем JSON-строку, если она передана
+				var requestData;
+				try {
+					requestData = JSON.parse(data);
+				} catch (error) {
+					requestData = {};
 				}
-			}
-		});
-	});
+
+				// Проверяем, является ли name целевым именем для блокировки
+				if (requestData && requestData.name === "noad") {
+					console.log('Запрос с заблокированным именем:', requestData);
+					// Останавливаем отправку запроса
+					return;
+				}
+
+				// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
+				originalSend.apply(this, arguments);
+			};
+
+			// Возвращаем наш модифицированный объект XMLHttpRequest
+			return xhr;
+		};
 		// Создаем экземпляр MutationObserver
-		var observer = new MutationObserver(function(mutations) {
-		mutations.forEach(function(mutation) {
-			// Проверяем добавление узла
-			if (mutation.addedNodes.length > 0) {
-				// Проверяем, является ли узел script
-				var addedNode = mutation.addedNodes[0];
-				if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
-					// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
-					if (addedNode.src && addedNode.src.includes('https://snsv.ru/')) {
-						// Удаляем узел script, чтобы блокировать запрос
-						addedNode.parentNode.removeChild(addedNode);
-						console.log('Блокирован запрос к snsv.ru/');
+		var observer = new MutationObserver(function (mutations) {
+			mutations.forEach(function (mutation) {
+				// Проверяем добавление узла
+				if (mutation.addedNodes.length > 0) {
+					// Проверяем, является ли узел script
+					var addedNode = mutation.addedNodes[0];
+					if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
+						// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
+						if (addedNode.src && addedNode.src.includes('https://ad.adriver.ru/cgi-bin/')) {
+							// Удаляем узел script, чтобы блокировать запрос
+							addedNode.parentNode.removeChild(addedNode);
+							console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
+						}
 					}
 				}
-			}
+			});
 		});
-	});
-	// Настраиваем наблюдение за изменениями в документе
-	var observerConfig = { childList: true, subtree: true };
-	observer.observe(document.body, observerConfig);
-	// Поиск и удаление элементов, содержащих слова рекламы в тексте
-	var adTextKeywords = ['ad', 'ads', 'advert', 'advertisement'];
-	adTextKeywords.forEach(function(keyword) {
-		var elementsWithAdText = document.querySelectorAll(':contains(' + keyword + ')');
-		elementsWithAdText.forEach(function(element) {
-			element.parentNode.removeChild(element);
+		// Создаем экземпляр MutationObserver
+		var observer = new MutationObserver(function (mutations) {
+			mutations.forEach(function (mutation) {
+				// Проверяем добавление узла
+				if (mutation.addedNodes.length > 0) {
+					// Проверяем, является ли узел script
+					var addedNode = mutation.addedNodes[0];
+					if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
+						// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
+						if (addedNode.src && addedNode.src.includes('https://snsv.ru/')) {
+							// Удаляем узел script, чтобы блокировать запрос
+							addedNode.parentNode.removeChild(addedNode);
+							console.log('Блокирован запрос к snsv.ru/');
+						}
+					}
+				}
+			});
 		});
-	});
-	// Функция для удаления элементов с атрибутами, содержащими ключевые слова рекламы
-	function removeAdElements() {
-		var adKeywords = ['ad', 'ads', 'advert', 'advertisement'];
-		
-		adKeywords.forEach(function(keyword) {
-			var elements = document.querySelectorAll('[*|' + keyword + '], [' + keyword + '*], [' + keyword + ']');
-			elements.forEach(function(element) {
+		// Настраиваем наблюдение за изменениями в документе
+		var observerConfig = { childList: true, subtree: true };
+		observer.observe(document.body, observerConfig);
+		// Поиск и удаление элементов, содержащих слова рекламы в тексте
+		var adTextKeywords = ['ad', 'ads', 'advert', 'advertisement'];
+		adTextKeywords.forEach(function (keyword) {
+			var elementsWithAdText = document.querySelectorAll(':contains(' + keyword + ')');
+			elementsWithAdText.forEach(function (element) {
 				element.parentNode.removeChild(element);
 			});
 		});
-	}
+		// Функция для удаления элементов с атрибутами, содержащими ключевые слова рекламы
+		function removeAdElements() {
+			var adKeywords = ['ad', 'ads', 'advert', 'advertisement'];
+
+			adKeywords.forEach(function (keyword) {
+				var elements = document.querySelectorAll('[*|' + keyword + '], [' + keyword + '*], [' + keyword + ']');
+				elements.forEach(function (element) {
+					element.parentNode.removeChild(element);
+				});
+			});
+		}
 	</script>
 </body>
 
