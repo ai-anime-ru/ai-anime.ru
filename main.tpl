@@ -565,6 +565,7 @@
 
 	// Показать лоадер
 	function showLoader() {
+		document.querySelector('.loader-container').classList.remove('hide-loader')
 		document.querySelector('.loader-container').classList.add('show-loader');
 	}
 

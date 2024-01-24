@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   z-index: 9999;
+  visibility: visible;
 }
 
 .loader {
@@ -30,7 +31,7 @@
 }
 
 .show-loader {
-  animation: hideLoaderAnimation 0.3s ease forwards;
+  animation: showLoaderAnimation 0.3s ease forwards;
 }
 
 
@@ -48,16 +49,16 @@
 
 @keyframes showLoaderAnimation {
   0% {
-    opacity: 1;
-    visibility: visible;
-  }
-  100% {
     opacity: 0;
     visibility: hidden;
     display: none;
   }
-}
 
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
 
 /*
 .loader-container {
