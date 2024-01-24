@@ -159,6 +159,8 @@
     font-size: 0.90em;
     margin-left: 3px;
     margin-right: 3px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .welcome-message span {

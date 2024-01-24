@@ -55,10 +55,10 @@
 			<div class="welcome-message" id="welcome-message">
 				<div class="welcome-message-content">
 					<div class="welcome-message-text">
-						<p>Перед использованием сайта, прочтите </p><a> политику конфиденцальности</a><p>и</p><a>правила</a>
+						<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику конфиденцальности</a><p>и</p><a href="/?do=rules">правила</a>
 						<p>(✿◡‿◡)</p>
 					</div>
-					<span onclick="aianimecloseWelcomeMessage()">Готово</span>
+					<span onclick="closeWelcomeMessage()">Готово</span>
 				</div>
 			</div>
 			{include file="/modules/sidebar.tpl"}
