@@ -16,6 +16,11 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
 }
 
 .loader .miku-dance {
