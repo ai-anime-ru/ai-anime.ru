@@ -90,6 +90,7 @@
 		});
 	</script>
 	<script>
+		
 		var isLoggedIn = false;
 
 		// Функция для закрытия приветственного сообщения
@@ -101,14 +102,14 @@
 		}
 
 		// Функция для проверки, нужно ли показывать приветственное сообщение
-		function checkWelcomeMessage() {
+		setTimeout(function checkWelcomeMessage() {
 			var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
 
 			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
 			if (!welcomeMessageClosed && !isLoggedIn) {
 				document.getElementById('welcome-message').style.display = 'block';
 			}
-		}
+		}, 5000);
 
 		// Вызываем функцию проверки при загрузке страницы
 		window.onload = checkWelcomeMessage;
