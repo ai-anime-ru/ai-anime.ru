@@ -143,9 +143,37 @@
     right: 0;
     left: 0;
     margin: auto;
+    box-shadow: 0 0px 15px #0000009c;
+}
+
+.welcome-message p {
+    color: #ddd;
+    font-weight: normal;
+    font-size: 0.90em;
+}
+
+.welcome-message span {
+    background-color: #d1e1f9;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 97px;
+    padding: 5px;
+    transition: 0.3s;
+}
+
+.welcome-message span:hover {
+    background-color: white;
 }
 
 .welcome-message-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
