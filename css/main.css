@@ -139,7 +139,7 @@
     border-radius: 15px;
     z-index: 9999;
     padding: 1.25rem;
-    max-width: 40rem;
+    max-width: 60rem;
     right: 0;
     left: 0;
     margin: auto;
@@ -161,6 +161,7 @@
     height: auto;
     cursor: pointer;
     border-radius: 0.5rem;
+    font-size: 0.85em;
     font-weight: 500;
     white-space: nowrap;
     width: 97px;

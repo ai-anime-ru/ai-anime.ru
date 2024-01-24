@@ -54,7 +54,9 @@
 			{include file="/modules/header.tpl"}
 			<div class="welcome-message">
 				<div class="welcome-message-content">
-					<p>Добро пожаловать на наш сайт! Мы рады, что вы здесь.</p>
+					<div>
+					<p>Перед использованием сайта, прочтите </p><a>политику конфиденцальности</a><p>(✿◡‿◡)</p>
+				</div>
 					<span onclick="closeWelcomeMessage()">Закрыть</span>
 				</div>
 			</div>
