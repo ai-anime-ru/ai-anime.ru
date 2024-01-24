@@ -55,7 +55,9 @@
 			<div class="welcome-message" id="welcome-message">
 				<div class="welcome-message-content">
 					<div class="welcome-message-text">
-						<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику конфиденцальности</a><p>и</p><a href="/?do=rules">правила</a>
+						<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
+							конфиденцальности</a>
+						<p>и</p><a href="/?do=rules">правила</a>
 						<p>(✿◡‿◡)</p>
 					</div>
 					<span onclick="closeWelcomeMessage()">Готово</span>
@@ -90,6 +92,14 @@
 		});
 	</script>
 	<script>
+		// Функция для проверки статуса авторизации пользователя в DLE
+		function isUserLoggedIn() {
+			// Вернуть true, если пользователь авторизован, и false в противном случае
+			return (parseInt(window.DLE.member_id) > 0);
+		}
+
+		isLoggedIn = isUserLoggedIn();
+
 		var isLoggedIn = false;
 
 		// Функция для закрытия приветственного сообщения
