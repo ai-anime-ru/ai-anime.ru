@@ -105,8 +105,6 @@
 		// Функция для проверки, нужно ли показывать приветственное сообщение
 		setTimeout(function checkWelcomeMessage() {
 			var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
-			console.log(welcomeMessageClosed);
-			console.log(isLoggedIn);
 			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
 			if (!welcomeMessageClosed && !isLoggedIn) {
 				document.getElementById('welcome-message').classList.add('show');
