@@ -95,7 +95,7 @@
 
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
-			document.getElementById('welcome-message').style.display = 'none';
+			document.getElementById('welcome-message').classList.remove('show');
 
 			// Сохраняем информацию о том, что сообщение было закрыто
 			localStorage.setItem('welcomeMessageClosed', 'true');
@@ -107,7 +107,7 @@
 
 			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
 			if (!welcomeMessageClosed && !isLoggedIn) {
-				document.getElementById('welcome-message').style.display = 'block';
+				document.getElementById('welcome-message').classList.add('show');
 			}
 		}, 5000);
 
