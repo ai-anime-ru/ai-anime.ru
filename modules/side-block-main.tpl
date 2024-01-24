@@ -13,7 +13,6 @@
             {include file="/modules/random-anime.tpl"}
         </div>
     </div>
-    <div class="collections"></div>
     <div class="discord-widget">
         <iframe src="https://discord.com/widget?id=1186951554444558368&theme=dark" width="340" height="500"
             allowtransparency="true" frameborder="0" padding-top="10px"
