@@ -152,6 +152,14 @@
     font-size: 0.90em;
 }
 
+.welcome-message a {
+    color: #6fa9ff;
+    font-weight: normal;
+    font-size: 0.90em;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+
 .welcome-message span {
     background-color: #d1e1f9;
     display: flex;
@@ -177,4 +185,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.welcome-message-text {
+    display: flex;
 }

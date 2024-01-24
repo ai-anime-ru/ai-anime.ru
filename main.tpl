@@ -54,10 +54,11 @@
 			{include file="/modules/header.tpl"}
 			<div class="welcome-message">
 				<div class="welcome-message-content">
-					<div>
-					<p>Перед использованием сайта, прочтите </p><a>политику конфиденцальности</a><p>(✿◡‿◡)</p>
-				</div>
-					<span onclick="closeWelcomeMessage()">Закрыть</span>
+					<div class="welcome-message-text">
+						<p>Перед использованием сайта, прочтите </p><a> политику конфиденцальности</a><p>и</p><a>правила</a>
+						<p>(✿◡‿◡)</p>
+					</div>
+					<span onclick="closeWelcomeMessage()">Готово</span>
 				</div>
 			</div>
 			{include file="/modules/sidebar.tpl"}
