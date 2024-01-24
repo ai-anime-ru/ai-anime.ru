@@ -98,12 +98,12 @@
         document.getElementById('welcome-message').style.display = 'none';
 
         // Сохраняем информацию о том, что сообщение было закрыто
-        localStorage.setItem('welcomeMessageClosed', 'true');
+        document.cookie = 'welcomeMessageClosed=true; SameSite=None; Secure;';
     }
 
     // Функция для проверки, нужно ли показывать приветственное сообщение
     function checkWelcomeMessage() {
-        var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
+        var welcomeMessageClosed = document.cookie = 'welcomeMessageClosed; SameSite=None; Secure;';
 
         // Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
         if (!welcomeMessageClosed && !isLoggedIn) {
