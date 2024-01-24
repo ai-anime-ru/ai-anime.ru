@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+	<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.gif">
 	{headers}
 	<meta name="HandheldFriendly" content="true">
 	<meta name="format-detection" content="telephone=no">
