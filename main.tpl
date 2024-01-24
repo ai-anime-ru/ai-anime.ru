@@ -60,6 +60,10 @@
 			<!-- () Выводим ошибки () -->
 			{info}
 			{include file="/modules/footer.tpl"}
+			<div class="welcome-message">
+				    <p>Добро пожаловать на наш сайт! Мы рады, что вы здесь.</p>
+    <button onclick="closeWelcomeMessage()">Закрыть</button>
+			</div>
 
 		</div>
 	</div>
@@ -80,6 +84,31 @@
 			});
 		});
 	</script>
+<script>
+    // Предполагаемая переменная для проверки статуса авторизации
+    var isLoggedIn = false;
+
+    // Функция для закрытия приветственного сообщения
+    function closeWelcomeMessage() {
+        document.getElementById('welcome-message').style.display = 'none';
+
+        // Сохраняем информацию о том, что сообщение было закрыто
+        localStorage.setItem('welcomeMessageClosed', 'true');
+    }
+
+    // Функция для проверки, нужно ли показывать приветственное сообщение
+    function checkWelcomeMessage() {
+        var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
+
+        // Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
+        if (!welcomeMessageClosed && !isLoggedIn) {
+            document.getElementById('welcome-message').style.display = 'block';
+        }
+    }
+
+    // Вызываем функцию проверки при загрузке страницы
+    window.onload = checkWelcomeMessage;
+</script>
 <!-- () Обрезаем длину описания () 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
