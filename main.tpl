@@ -92,7 +92,6 @@
 		});
 	</script>
 	<script>
-		var isLoggedIn = false;
 
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
