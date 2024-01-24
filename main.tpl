@@ -543,7 +543,7 @@
 		// Устанавливаем задержку в 3 секунды перед скрытием анимации
 		setTimeout(function () {
 			 //Скрыть анимацию загрузки
-			document.querySelector('.loader-container').style.display = 'none';
+			document.querySelector('.loader-container').classList.add('hide-loader');
 		}, 1000);
 	});
 </script>
