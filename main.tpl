@@ -24,13 +24,13 @@
 	<link href="https://ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
 	<script>
 		// Дожидаемся полной загрузки страницы
-		document.addEventListener("DOMContentLoaded", function () {
+		//document.addEventListener("DOMContentLoaded", function () {
 			// Устанавливаем задержку в 3 секунды перед скрытием анимации
-			setTimeout(function () {
+			//setTimeout(function () {
 				// Скрыть анимацию загрузки
-				document.querySelector('.loader-container').style.display = 'none';
-			}, 1000);
-		});
+				//document.querySelector('.loader-container').style.display = 'none';
+			//}, //1000);
+		//});
 	</script>
 	<!-- <https://ionic.io/ionicons> -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -45,7 +45,7 @@
 </head>
 
 <body>
-	<div class="loader-container">
+	<div class="loader-container" id="loader-container">
 		<div class="loader">
 			<div class="miku-dance"></div>
 		</div>
@@ -77,6 +77,12 @@
 		</div>
 	</div>
 	<button id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
+	<script>
+        function hideLoader() {
+            document.getElementById('loader-container').style.display.set = 'none';
+        }
+	</script>
+	
 	<!-- () Обрезаем длину названия () -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
