@@ -8,7 +8,6 @@
 
 .loader {
   position: fixed;
-  background-image: url(/templates/ai-anime/images/miku-loader.gif);
   width: 332px;
   height: 358px;
   position: absolute;
@@ -17,6 +16,12 @@
   bottom: 0;
   left: 0;
   margin: auto;
+}
+
+.miku-dance {
+  background-image: url(/templates/ai-anime/images/miku-loader.gif);
+  width: 332px;
+  height: 358px;
 }
 
 
