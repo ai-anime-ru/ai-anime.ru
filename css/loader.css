@@ -1,12 +1,9 @@
 .loader-container {
-  visibility: visible;
   position: fixed;
   background-color: var(--clr);
   width: 100%;
   height: 100%;
   z-index: 9999;
-  opacity: 1;
-  transition: opacity 0.3s ease;
 }
 
 .loader {
@@ -29,7 +26,21 @@
 }
 
 .hide-loader {
-  opacity: 0;
+  animation: hideLoaderAnimation 0.3s ease forwards;
+}
+
+@keyframes hideLoaderAnimation {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    backdrop-filter: blur(20px);
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+    backdrop-filter: blur(0px);
+  }
 }
 
 
