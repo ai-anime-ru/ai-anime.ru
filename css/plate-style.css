@@ -647,13 +647,20 @@ footer {
 
 .c-captcha input{
     background-color: var(--clr) !important;
-    border: none !important;
+    border-color: #000000 !important;
     color: white !important;
     padding: 0.75rem !important;
     border-radius: 0.75rem !important;
     max-height: 40px !important;
     margin-left: 5px !important;
     width: 170px !important;
+    transition: border 0.2s linear 0s;
+}
+
+.c-captcha input:focus,
+.mass_comments_action input:focus
+{
+    border-color: var(--active) !important;
 }
 
 
