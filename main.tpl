@@ -542,7 +542,7 @@
 	document.addEventListener("DOMContentLoaded", function () {
 		setTimeout(function () {
 			document.querySelector('.loader-container').classList.add('hide-loader');
-		}, 1000);
+		}, 500);
 	});
 </script>
 
@@ -559,7 +559,7 @@
 			// Загружаем новую страницу
 			setTimeout(function() {
 				window.location.href = href;
-			}, 500); // Представим, что загрузка занимает 0.5 секунды
+			}, 0); // Представим, что загрузка занимает 0.5 секунды
 		}
 	});
 
