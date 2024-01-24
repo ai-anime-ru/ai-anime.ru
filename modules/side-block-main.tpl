@@ -14,4 +14,9 @@
             {include file="/modules/random-anime.tpl"}
         </div>
     </div>
+    <div class="discord">
+        <iframe src="https://discord.com/widget?id=1186951554444558368&theme=dark" width="350" height="500"
+            allowtransparency="true" frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
 </div>
