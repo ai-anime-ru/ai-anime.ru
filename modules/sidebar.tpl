@@ -99,24 +99,25 @@
 </script>
 <!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
 <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function () {
-
-  const logoutButton = document.querySelector("#logoutButton");
-  const hideornoElements = document.querySelectorAll(".hideorno");
-
-  const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== "";
-
-  logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
-
-  hideornoElements.forEach((element) => {
-    element.style.display = isLoggedIn ? "block" : "none";
-  });
-
-  logoutButton.addEventListener("click", function () {
-    // Здесь вы можете добавить логику выхода, если это необходимо
-  });
-});
-</script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+      const logoutButton = document.querySelector(".logoutButton");
+      const hideornoElements = document.querySelectorAll(".hideorno");
+    
+      const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== "";
+    
+      // logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
+      logoutButton.style.display = isLoggedIn ? "block" : "none";
+    
+      hideornoElements.forEach((element) => {
+        element.style.display = isLoggedIn ? "block" : "none";
+      });
+    
+      logoutButton.addEventListener("click", function () {
+        // Здесь вы можете добавить логику выхода, если это необходимо
+      });
+    });
+    </script>
 
 <!--Скрипт активной кнопки/вкладки-->
 <script>
