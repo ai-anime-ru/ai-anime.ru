@@ -187,6 +187,7 @@
 .profile-link-header ul li a{
     position: relative;
     display: flex;
+    min-width: 140px;
     height: 50px;
     justify-content: left;
     align-items: center;
