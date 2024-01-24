@@ -13,6 +13,15 @@
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
+					[admin-link]
+					<li style=>
+						<a href="{admin-link}">
+							<div class="text" style="text-align: center;">
+								Админ панель
+							</div>
+						</a>
+					</li>
+					[/admin-link]
 					<li class="hideorno">
 						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
 							href="/user/{profile-login}">
@@ -65,15 +74,6 @@
 		</div>
 	</div>
 	<ul>
-		[admin-link]
-		<li style=>
-			<a class="admin-link" href="{admin-link}">
-				<div class="text">
-					Админ
-				</div>
-			</a>
-		</li>
-		[/admin-link]
 	</ul>
 </header>
 
