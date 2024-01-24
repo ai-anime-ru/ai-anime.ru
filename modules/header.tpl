@@ -3,9 +3,9 @@
 		<div class="header-title">
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
-		<div class="profile hideorno" onclick="toggleDropdownHeader()">
+		<div class="profile" onclick="toggleDropdownHeader()">
 			<a>
-				<Div class="icon">
+				<div class="icon">
 					<div class="imgBx-header">
 						<img src="{foto}">
 					</div>
@@ -13,28 +13,31 @@
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
-					<li style=>
+					<li class="hideorno">
 						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
-						href="/user/{profile-login}">
-							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+							href="/user/{profile-login}">
+							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon>
+							</div>
 							<div class="text color-in-header-menu">Профиль</div>
 						</a>
 					</li>
-					<li style=>
+					<li class="hideorno">
 						<a href="/index.php?do=pm">
-							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon></div>
+							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon>
+							</div>
 							<div class="text color-in-header-menu">Сообщения</div>
 						</a>
 					</li>
-					<li style=>
+					<li class="hideorno">
 						<a href="index.php?do=favorites">
 							<div class="icon color-in-header-menu"><ion-icon name="bookmarks-outline"></ion-icon></div>
 							<div class="text color-in-header-menu">Закладки</div>
 						</a>
 					</li>
-					<li style=>
+					<li class="hideorno">
 						<a href="/index.php?do=stats">
-							<div class="icon color-in-header-menu"><ion-icon name="stats-chart-outline"></ion-icon></div>
+							<div class="icon color-in-header-menu"><ion-icon name="stats-chart-outline"></ion-icon>
+							</div>
 							<div class="text color-in-header-menu">Статистика</div>
 						</a>
 					</li>
@@ -75,33 +78,33 @@
 </header>
 
 <script> //Скрипт открытия и закрытия Списков
-    // Функция для отображения/скрытия выпадающего меню
+	// Функция для отображения/скрытия выпадающего меню
 	function toggleDropdownHeader() {
-    var dropdown = document.getElementById("myDropdownMenu");
-    dropdown.classList.toggle("show");
-}
+		var dropdown = document.getElementById("myDropdownMenu");
+		dropdown.classList.toggle("show");
+	}
 
-// Закрывать меню, если пользователь кликает вне него
-window.onclick = function (event) {
-    if (!event.target.matches('.profile')) {
-       var dropdowns = document.getElementsByClassName("profile-link-header");
-       for (var i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-             openDropdown.classList.remove('show');
-          }
-       }
-    }
-}
+	// Закрывать меню, если пользователь кликает вне него
+	window.onclick = function (event) {
+		if (!event.target.matches('.profile')) {
+			var dropdowns = document.getElementsByClassName("profile-link-header");
+			for (var i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	}
 
-// Закрывать меню при убирании мыши с него
-var dropdown = document.getElementById("myDropdownMenu");
-dropdown.setAttribute("SameSite", "Lax");
-dropdown.addEventListener("mouseleave", function () {
-    if (dropdown.classList.contains('show')) {
-       dropdown.classList.remove('show');
-    }
-});
+	// Закрывать меню при убирании мыши с него
+	var dropdown = document.getElementById("myDropdownMenu");
+	dropdown.setAttribute("SameSite", "Lax");
+	dropdown.addEventListener("mouseleave", function () {
+		if (dropdown.classList.contains('show')) {
+			dropdown.classList.remove('show');
+		}
+	});
 
-window.onclick = function (event) {}
+	window.onclick = function (event) { }
 </script>
