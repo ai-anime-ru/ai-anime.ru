@@ -58,7 +58,7 @@
 						<p>Перед использованием сайта, прочтите </p><a> политику конфиденцальности</a><p>и</p><a>правила</a>
 						<p>(✿◡‿◡)</p>
 					</div>
-					<span onclick="closeWelcomeMessage()">Готово</span>
+					<span onclick="aianimecloseWelcomeMessage()">Готово</span>
 				</div>
 			</div>
 			{include file="/modules/sidebar.tpl"}
@@ -89,31 +89,30 @@
 			});
 		});
 	</script>
-<script>
-    // Предполагаемая переменная для проверки статуса авторизации
-    var isLoggedIn = false;
+	<script>
+		var isLoggedIn = false;
 
-    // Функция для закрытия приветственного сообщения
-    function closeWelcomeMessage() {
-        document.getElementById('welcome-message').style.display = 'none';
+		// Функция для закрытия приветственного сообщения
+		function closeWelcomeMessage() {
+			document.getElementById('welcome-message').style.display = 'none';
 
-        // Сохраняем информацию о том, что сообщение было закрыто
-        document.cookie = 'welcomeMessageClosed=true; SameSite=None; Secure;';
-    }
+			// Сохраняем информацию о том, что сообщение было закрыто
+			localStorage.setItem('welcomeMessageClosed', 'true');
+		}
 
-    // Функция для проверки, нужно ли показывать приветственное сообщение
-    function checkWelcomeMessage() {
-        var welcomeMessageClosed = document.cookie = 'welcomeMessageClosed; SameSite=None; Secure;';
+		// Функция для проверки, нужно ли показывать приветственное сообщение
+		function checkWelcomeMessage() {
+			var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
 
-        // Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
-        if (!welcomeMessageClosed && !isLoggedIn) {
-            document.getElementById('welcome-message').style.display = 'block';
-        }
-    }
+			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
+			if (!welcomeMessageClosed && !isLoggedIn) {
+				document.getElementById('welcome-message').style.display = 'block';
+			}
+		}
 
-    // Вызываем функцию проверки при загрузке страницы
-    window.onload = checkWelcomeMessage;
-</script>
+		// Вызываем функцию проверки при загрузке страницы
+		window.onload = checkWelcomeMessage;
+	</script>
 	<!-- () Обрезаем длину описания () 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {

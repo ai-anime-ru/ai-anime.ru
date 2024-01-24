@@ -133,6 +133,7 @@
 
 
 .welcome-message {
+    display: none;
     position: fixed;
     bottom: 20px;
     background-color: var(--clr);
