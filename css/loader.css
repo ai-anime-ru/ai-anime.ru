@@ -33,13 +33,11 @@
   0% {
     opacity: 1;
     visibility: visible;
-    backdrop-filter: blur(20px);
   }
   100% {
     opacity: 0;
     visibility: hidden;
     display: none;
-    backdrop-filter: blur(0px);
   }
 }
 

@@ -537,12 +537,10 @@
 		}
 	</script>
 
+<!--Скрипт лоадера страницы-->
 <script>
-	// Дожидаемся полной загрузки страницы
 	document.addEventListener("DOMContentLoaded", function () {
-		// Устанавливаем задержку в 3 секунды перед скрытием анимации
 		setTimeout(function () {
-			 //Скрыть анимацию загрузки
 			document.querySelector('.loader-container').classList.add('hide-loader');
 		}, 1000);
 	});
