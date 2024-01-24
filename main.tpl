@@ -91,36 +91,44 @@
 			});
 		});
 	</script>
-	<script>
+<script>
+	document.addEventListener("DOMContentLoaded", function () {
+
+		const welcomeMessage = document.getElementById('welcome-message');
+		const welcomeMessageCloseButton = document.getElementById('welcome-message-close-button');
+
 		// Функция для проверки статуса авторизации пользователя в DLE
 		function isUserLoggedIn() {
-			// Вернуть true, если пользователь авторизован, и false в противном случае
-			return (parseInt(window.DLE.member_id) > 0);
+			return parseInt(window.DLE.member_id) > 0;
 		}
-
-		var isLoggedIn = isUserLoggedIn()
 
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
-			document.getElementById('welcome-message').classList.remove('show');
+			welcomeMessage.classList.remove('show');
 
 			// Сохраняем информацию о том, что сообщение было закрыто
 			localStorage.setItem('welcomeMessageClosed', 'true');
 		}
 
 		// Функция для проверки, нужно ли показывать приветственное сообщение
-		setTimeout(function checkWelcomeMessage() {
+		function checkWelcomeMessage() {
 			var welcomeMessageClosed = localStorage.getItem('welcomeMessageClosed');
 
 			// Показываем приветственное сообщение, если не было закрыто ранее и пользователь не авторизован
-			if (!welcomeMessageClosed && !isLoggedIn) {
-				document.getElementById('welcome-message').classList.add('show');
+			if (!welcomeMessageClosed && !isUserLoggedIn()) {
+				welcomeMessage.classList.add('show');
 			}
-		}, 5000);
+		}
 
 		// Вызываем функцию проверки при загрузке страницы
-		window.onload = checkWelcomeMessage;
-	</script>
+		checkWelcomeMessage();
+
+		// Добавляем обработчик клика для кнопки закрытия приветственного сообщения
+		welcomeMessageCloseButton.addEventListener('click', function () {
+			closeWelcomeMessage();
+		});
+	});
+</script>
 	<!-- () Обрезаем длину описания () 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
