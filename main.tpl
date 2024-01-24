@@ -39,6 +39,7 @@
 	<div class="loader-container">
 		<div class="loader">
 			<div class="miku-dance"></div>
+			<div class="loader-spin"></div>
 		</div>
 	</div>
 	{AJAX}
