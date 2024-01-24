@@ -43,7 +43,7 @@ ul li {
     position: relative;
     display: block;
     columns: 3;
-    padding: 20px 10px 10px 20px;
+    padding: 20px 20px 0px 20px;
 }
 
 .box {
@@ -581,15 +581,15 @@ footer {
 }
 
 .combo_field input{
-    background-color: var(--clr);
-    border-radius: 0.5rem;
-    border: none;
-    display: block;
-    font-size: .875rem;
-    line-height: 1.25rem;
-    padding: 0.75rem 1rem;
-    margin-top: 5px;
-    color: #ddd;
+    background-color: var(--clr) !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    display: block !important;
+    font-size: .875rem !important;
+    line-height: 1.25rem !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: 5px !important;
+    color: #ddd !important;
 }
 
 .combo_field_left {
@@ -646,13 +646,14 @@ footer {
 }
 
 .c-captcha input{
-    background-color: var(--clr);
-    border: none;
-    color: white;
-    padding: 0.75rem;
-    border-radius: 0.75rem;
-    max-height: 40px;
-    margin-left: 5px;
+    background-color: var(--clr) !important;
+    border: none !important;
+    color: white !important;
+    padding: 0.75rem !important;
+    border-radius: 0.75rem !important;
+    max-height: 40px !important;
+    margin-left: 5px !important;
+    width: 170px !important;
 }
 
 
