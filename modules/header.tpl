@@ -16,9 +16,9 @@
 					[admin-link]
 					<li style=>
 						<a href="{admin-link}">
-							<div class="text" style="text-align: center;">
-								Админ панель
+							<div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
 							</div>
+							<div class="text color-in-header-menu">Админ пан.</div>
 						</a>
 					</li>
 					[/admin-link]
@@ -73,8 +73,6 @@
 			</div>
 		</div>
 	</div>
-	<ul>
-	</ul>
 </header>
 
 <script> //Скрипт открытия и закрытия Списков
