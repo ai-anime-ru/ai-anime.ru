@@ -538,12 +538,32 @@
 	</script>
 
 <!--Скрипт лоадера страницы-->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
-	document.addEventListener("DOMContentLoaded", function () {
-		setTimeout(function () {
-			document.querySelector('.loader-container').classList.add('hide-loader');
-		}, 1000);
+	// Показать лоадер при каждом переходе
+	$(document).on('click', 'a', function(event) {
+		event.preventDefault(); // Предотвращаем обычное поведение ссылки
+		var targetUrl = $(this).attr('href');
+
+		// Показываем лоадер
+		showLoader();
+
+		// Загружаем новую страницу
+		setTimeout(function() {
+			window.location.href = targetUrl;
+		}, 500); // Представим, что загрузка занимает 0.5 секунды
 	});
+
+	// Показать лоадер
+	function showLoader() {
+		document.querySelector('.loader-container').classList.add('hide-loader');
+	}
+
+	// Скрыть лоадер
+	function hideLoader() {
+		document.querySelector('.loader-container').classList.remove('hide-loader');
+	}
 </script>
 </body>
 
