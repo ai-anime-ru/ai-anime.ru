@@ -597,13 +597,13 @@ footer {
 }
 
 .bb-editor textarea {
-    background-color: var(--clr);
-    width: 42rem;
-    border-radius: 0.75rem;
-    border-color: #000000;
-    color: #ddd;
-    padding: 15px;
-    margin-top: 5px;
+    width: 42rem !important;
+    border-radius: 0.75rem !important;
+    background-color: var(--clr) !important;
+    border: none !important;
+    color: #ddd !important;
+    padding: 15px !important;
+    margin-top: 5px !important;
 }
 
 .form_submit {
@@ -654,15 +654,7 @@ footer {
     max-height: 40px !important;
     margin-left: 5px !important;
     width: 170px !important;
-    transition: border 0.2s linear 0s;
 }
-
-.c-captcha input:focus,
-.mass_comments_action input:focus
-{
-    border-color: var(--active) !important;
-}
-
 
 .comments-tree-list {
     max-width: 42rem;
