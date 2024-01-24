@@ -98,9 +98,7 @@
 			return (parseInt(window.DLE.member_id) > 0);
 		}
 
-		isLoggedIn = isUserLoggedIn();
-
-		var isLoggedIn = false;
+		var isLoggedIn = isUserLoggedIn()
 
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
