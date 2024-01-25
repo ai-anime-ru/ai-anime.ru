@@ -1335,7 +1335,22 @@ footer {
     }
 
     .pretimer {
-        border-radius: 15px;
+        margin-top: 10px !important;
+        border-radius: 15px !important;
+        display: flex !important;
+        align-items: center !important;
+        flex-direction: column;
+    }
+
+    .pretimer .rt {
+        width: 100% !important;
+    }
+
+    .pretimer .value {
+        font-size: 2em !important;
+        color: white;
+        font-weight: 100;
+        padding: 20px 15px 20px 15px;
     }
 }
 
