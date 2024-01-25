@@ -686,7 +686,7 @@ footer {
     max-width: 100%;
     background-color: var(--clr);
     border-radius: 15px;
-    padding: 15px;
+    padding: 20px;
 }
 
 .side-block-main .calendar__item-date {
@@ -779,6 +779,13 @@ footer {
 
 .page_next-prev a {
     color: white;
+}
+
+.calendar__item h3 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* -------------- COMMENT --------------*/

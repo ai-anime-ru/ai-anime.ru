@@ -1,5 +1,4 @@
 <div class="side-block-main">
-    </div>
     <div class="random-anime">
         <div class="random-anime-title">
             <h3>Случайное аниме</h3>
@@ -10,10 +9,12 @@
     </div>
     <div class="calendar box-body-s">
         <div class="calendar__item">
+            <h3>Сегодня:</h3>
             <div class="calendar__item-weekday">
                 {today-ongoings}
             </div>
         </div>
+    </div>
     <div class="discord-widget">
         <iframe src="https://discord.com/widget?id=1186951554444558368&theme=dark" width="340" height="500"
             allowtransparency="true" frameborder="0" padding-top="10px"
