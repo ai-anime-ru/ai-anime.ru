@@ -1279,5 +1279,32 @@ footer {
         left: 0;
     }
 
+    .header form {
+        width: auto !important;
+    }
+    
+    .full-poster-box {
+        top: 45px;
+    }
+
+    .background-fullstory {
+        height: 500px !important;
+    }
+
+    .js-toggle-fav span {
+        margin-top: -2px !important;
+    }
+    
+    .full-box {
+        height: 500px !important;  
+    } 
+
+    .title-text-container {
+        text-align: center;
+    }
+
+    .about-anime {
+        max-width: 100%;
+    }
 }
 

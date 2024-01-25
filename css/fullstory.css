@@ -284,7 +284,7 @@
     width: 100% !important;
     font-weight: 300 !important;
     padding: 8px !important;
-    margin-top: -48px !important;
+    margin-top: -48px;
     z-index: 9999 !important;
     color: white !important;
     text-align: center !important;
