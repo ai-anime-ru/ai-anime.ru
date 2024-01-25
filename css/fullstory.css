@@ -555,8 +555,7 @@ span.sim-dot {
 .rooms-invite {
     background-color: var(--clr) !important;
     border-radius: 15px !important;
-    border: 1px !important;
-    border-color: #1f1f1f !important;
+    border: 1px solid #000 !important; 
     padding: 10px !important;
     transition: 0.3s;
 }
@@ -574,13 +573,6 @@ span.sim-dot {
 }
 
 .rooms-invite:hover {
-    background-color: var(--active) !important;
-}
-
-.rooms-invite:hover .room-invite__title {
-    color: black !important;
-}
-
-.rooms-invite:hover .room-invite__desc {
-    color: #2b2b2b !important;
+    background-color: #2b2b2b !important;
+    border: 1px solid var(--active)!important; 
 }
