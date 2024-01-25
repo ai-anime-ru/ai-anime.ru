@@ -10,7 +10,7 @@
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                             src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                     </div>
-                    {user_subscribed}
+                    [push_subscribe]{push_subscribe}[/push_subscribe]
                 </article>
             </div>
             <div class="about-anime">
