@@ -324,12 +324,14 @@
 }
 
 .watch-online,
-.dropbtn-watch-online {
+.dropbtn-watch-online,
+.js-toggle-fav {
     cursor: pointer;
     margin-bottom: 3px;
+    margin-top: 0px !important;
     width: 200px;
-    color: white;
-    background-color: var(--clr);
+    color: white !important;
+    background-color: var(--clr) !important;
     border-color: #ff5c57;
 
     display: inline-block;
@@ -344,9 +346,10 @@
 }
 
 .watch-online:hover,
-.dropbtn-watch-online:hover {
-    background-color: #d1e1f9;
-    color: black;
+.dropbtn-watch-online:hover,
+.js-toggle-fav:hover {
+    background-color: #d1e1f9 !important;
+    color: black !important;
 }
 
 .player-info {

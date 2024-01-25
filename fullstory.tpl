@@ -10,7 +10,6 @@
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                             src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                     </div>
-                    [push_subscribe]{push_subscribe}[/push_subscribe]
                 </article>
             </div>
             <div class="about-anime">
@@ -189,6 +188,7 @@
             </div>
             <div class="watch-pannel">
                 <a class="watch-online">Смотреть онлайн</a>
+                [push_subscribe]{push_subscribe}[/push_subscribe]
                 <div class="dropdown-watch-online">
                     <button onclick="toggleDropdown()" class="dropbtn-watch-online">+ Добавить в список</button>
                     <div id="myDropdown" class="dropdown-content-watch-online">
