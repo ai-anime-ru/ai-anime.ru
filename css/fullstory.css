@@ -586,14 +586,15 @@ span.sim-dot {
     text-align: center;
     background: none !important;
     border: none !important;
+    margin-bottom: 0px !important;
 
 }
 
 .pretimer .value {
-    font-size: 2em;
+    font-size: 4em;
     color: white;
-    font-weight: bolder;
-    padding: 40px;
+    font-weight: 100;
+    padding: 25px;
 }
 
 .countdown-wrp {
@@ -604,4 +605,14 @@ span.sim-dot {
     color: #ddd;
     font-size: 1em;
     font-weight: normal;
+}
+
+.countdown-title {
+    color: white;
+    font-size: 1.2em;
+}
+
+.countdown-text {
+    display: none !important;
+
 }
