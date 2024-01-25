@@ -583,11 +583,28 @@ span.sim-dot {
 .pretimer {
     display: flex;
     align-items: center;
+    align-items: center;
     text-align: center;
-    background: none !important;
+    background: var(--clr) !important;
     border: none !important;
     margin-bottom: 0px !important;
+    flex-direction: column;
+    border-radius: 15px;
 
+}
+
+.pretimer .lt {
+    vertical-align: top;
+    width: 55%;
+    display: table-cell;
+    padding: 20px 0 0 !important;
+}
+
+.pretimer .rt {
+    vertical-align: top;
+    width: 45%;
+    display: table-cell;
+    padding: 10px 0 0 !important;
 }
 
 .pretimer .value {
