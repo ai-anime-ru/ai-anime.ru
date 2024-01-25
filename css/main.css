@@ -340,6 +340,7 @@ ul li {
 
 .random-anime .title-text {
     display: none !important;
+    font-size: 1.5em !important;
 }
 
 .random-anime .description-short-box h3 {
@@ -1269,6 +1270,7 @@ footer {
     .title-text-container,
     .original-title {
         text-align: center;
+        font-size: 1.35em !important; 
     }
     
     .watch-pannel {
@@ -1403,6 +1405,10 @@ footer {
 
     .form_submit button{
         margin-top: 10px;
+    }
+    
+    .welcome-message-text {
+        display: block !important;
     }
 }
 
