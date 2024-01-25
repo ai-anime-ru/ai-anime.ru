@@ -588,21 +588,22 @@ span.sim-dot {
     border: none !important;
     margin-bottom: 0px !important;
     border-radius: 0 0 15px 15px;
-
+    padding: 20px !important;
 }
 
 .pretimer .lt {
     vertical-align: top;
     width: 55%;
     display: table-cell;
-    padding: 20px 0 0 !important;
+    padding: 0px 0 0 !important;
 }
 
 .pretimer .rt {
     vertical-align: top;
     width: 45%;
     display: table-cell;
-    padding: 20px 0 !important;
+    padding: 0px 0 !important;
+    width: 50% !important;
 }
 
 .pretimer .value {
@@ -625,9 +626,10 @@ span.sim-dot {
 .countdown-title {
     color: white;
     font-size: 1.2em;
+    margin-bottom: 3px;
 }
 
 .countdown-text {
-    display: none !important;
-
+    color: #ddd !important;
+    font-size: 1em !important;
 }
