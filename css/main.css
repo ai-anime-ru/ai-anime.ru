@@ -539,18 +539,20 @@ ul li {
   .top-menu-content {
     padding: 15px;
     background-color: var(--clr);
-    height: 500px;
     z-index: 9999;
-    visibility: hidden
+    transition: height 0.5s;
+    overflow: hidden;
+    height: 0px;
+    margin: 15px;
+    border-radius: 15px;
   }
   
   .expanded {
-    padding: 15px;
     height: 700px;
   }
 
 .visible-content {
-    visibility: visible;
+    height: 500px;
 }
 
 /* ----------------- FOOTER -----------------*/
