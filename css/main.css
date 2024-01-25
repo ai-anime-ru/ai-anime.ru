@@ -522,6 +522,16 @@ ul li {
     color: black;
 }
 
+.icon-menu {
+    color: white;
+    display: flex;
+    font-size: 25px;
+    padding: 17px;
+    margin: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 /* ----------------- FOOTER -----------------*/
 
 footer {
