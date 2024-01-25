@@ -233,10 +233,6 @@
             </div>
             <div class="rt">
                 <ul class="countdown-wrp">
-                    <li class="weeks">
-                        <div class="value">0</div>
-                        <div class="unit">недель</div>
-                    </li>
                     <li class="days">
                         <div class="value">0</div>
                         <div class="unit">дней</div>
@@ -256,68 +252,49 @@
                 </ul>
             </div><!--[xfvalue_next_episode_date]-->
             <script type="text/javascript"> 
-                        
-                var initialDateStr = "27.01.2024 17:30:00";
-                var timer_timestamp = "27.01.2024 17:30:00";
+            var countdownElement = document.getElementById("timer_out");
 
-                function timer(timestamp) {
-                    if (timestamp < 0) timestamp = 0;
-                
-                    var week = Math.floor( ((timestamp/60/60) / 168));
-                    var day = Math.floor( ((timestamp/60/60) / 24));
-                    var lday = Math.floor( ((timestamp/60/60) / 24) - (7*week));
-                    var hour = Math.floor(timestamp/60/60);
-                    var mins = Math.floor((timestamp - hour*60*60)/60);
-                    var secs = Math.floor(timestamp - hour*60*60 - mins*60); 
-                    var lhour = Math.floor( (timestamp - day*24*60*60) / 60 / 60 );
-                
-                    if(String(week).length == 1){week="0" + week;}
-                    $('.countdown_wrp .weeks .value').text(week);
-                
-                    if(String(lday).length == 1){lday="0" + lday;}
-                    $('.countdown_wrp .days .value').text(lday);
-                
-                    if(String(lhour).length == 1){lhour="0" + lhour;}
-                    $('.countdown_wrp .hours .value').text(lhour);
-                
-                    if(String(mins).length == 1){mins="0" + mins;}
-                    $('.countdown_wrp .minutes .value').text(mins);
-
-                    if(String(secs).length == 1){secs="0" + secs;}
-                    $('.countdown_wrp .seconds .value').text(secs);
-                
-                    $('.countdown_wrp .weeks .unit').text(numpf(week, "неделя", "недели", "недель"));
-                    $('.countdown_wrp .days .unit').text(numpf(lday, "день", "дня", "дней"));
-                    $('.countdown_wrp .hours .unit').text(numpf(lhour, "час", "часа", "часов"));
-                    $('.countdown_wrp .minutes .unit').text(numpf(mins, "минута", "минуты", "минут"));
-                    $('.countdown_wrp .seconds .unit').text(numpf(secs, "секунда", "секунды", "секунд")); 
+            // Переменная с датой и временем выхода новой серии
+            var releaseDateTime = "27.01.2024 17:30:00";
+            // Устанавливаем значение timer_out
+            var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
+            document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
+            function getUnitLabel(number, singular, genitiveSingular, genitivePlural) {
+                if (number === 1 || (number > 20 && number % 10 === 1)) {
+                    return singular;
+                } else if ((number >= 2 && number <= 4) || (number > 20 && number % 10 >= 2 && number % 10 <= 4)) {
+                    return genitiveSingular;
+                } else {
+                    return genitivePlural;
                 }
+            }
+            // Обновляем таймер каждую секунду
+            setInterval(function () {
+                // Получаем текущую дату и время
+                var currentDateTime = moment();
 
-                $(document).ready(function(){
-                    if ( typeof initialDateStr !== 'undefined' ) {
-                        // Изменил формат даты на "yyyy-mm-dd"
-                        var initialDate = new Date(initialDateStr.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1'));
-                        var unixTimestampNew = Math.floor(initialDate.getTime() / 1000);
-                        var currentUnixTimestamp = Math.floor(new Date().getTime() / 1000);
-                        var timeDifference = unixTimestampNew - currentUnixTimestamp;
-                        var timer_timestamp = timeDifference > 0 ? timeDifference : 0;
-                        if (typeof timer_timestamp !== "undefined" && timer_timestamp > 0) {
-                            setInterval(function(){
-                                timer_timestamp = timer_timestamp - 1;
-                                timer(timer_timestamp);
-                            }, 1000);
-                        }
-                    }
-                });
+                // Получаем дату и время выхода новой серии из переменной
+                var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
 
-                function numpf(t, e, i, n) {
-                    var o = t % 10;
-                    return 1 == o && (1 == t || t > 20) ? e : o > 1 && 5 > o && (t > 20 || 10 > t) ? i : n;
-                }
+                // Расчитываем разницу во времени
+                var diff = releaseMoment.diff(currentDateTime);
 
-                var timerOutDate = new Date("[xfvalue_next_episode_date]");
-                var timer_out = timerOutDate.toLocaleDateString();  // или используйте свой собственный формат вывода даты
-                $("#timer_out").text(timer_out);
+                // Расчитываем количество недель, дней, часов, минут и секунд
+                var days = Math.floor((diff % (7 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+                var hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                var minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+                var seconds = Math.floor((diff % (60 * 1000)) / 1000);
+
+                // Обновляем значения на странице
+                document.querySelector(".countdown-wrp .days .value").textContent = days;
+                document.querySelector(".countdown-wrp .hours .value").textContent = hours;
+                document.querySelector(".countdown-wrp .minutes .value").textContent = minutes;
+                document.querySelector(".countdown-wrp .seconds .value").textContent = seconds;
+                document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
+                document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
+                document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
+                document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
+            }, 1000);
             </script>
             
         </div>
@@ -361,7 +338,7 @@
         </div>
         [xfgiven_kodik_iframe]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]?poster=https://ai-anime.ru/miku.jpg"
+            data-news_iframe="[xfvalue_kodik_iframe]"
             data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
                 [xfvalue_poster]
