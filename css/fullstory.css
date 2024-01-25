@@ -674,7 +674,7 @@ span.sim-dot {
 .countdown-text {
     color: #d4d4d4 !important;
     font-size: 1em !important;
-    text-align: left !important;
+    text-align: left;
 }
 
 .countdown-text span {

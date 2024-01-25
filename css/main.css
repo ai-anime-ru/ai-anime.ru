@@ -1345,19 +1345,30 @@ footer {
 
     .pretimer .rt {
         width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
     }
 
     .pretimer .lt {
         width: 100% !important;
     }
 
-    .countdown-title {
+    .countdown-title,
+    .countdown-text {
         text-align: center !important;
     }
 
     .pretimer .value,
     .pretimer .points {
         font-size: 2em !important;
+    }
+    
+    .sim-slider-list {
+        height: 209px !important;
+    }
+
+    .div.sim-slider-arrow-left {
+        top: 50% !important;
     }
 }
 
