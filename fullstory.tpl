@@ -239,13 +239,22 @@
                         <div class="value">0</div>
                         <div class="unit">дней</div>
                     </li>
+                    <li>
+                        <p>:</p>
+                    </li>
                     <li class="hours">
                         <div class="value">0</div>
                         <div class="unit">часов</div>
                     </li>
+                    <li>
+                        <p>:</p>
+                    </li>
                     <li class="minutes">
                         <div class="value">0</div>
                         <div class="unit">минут</div>
+                    </li>
+                    <li>
+                        <p>:</p>
                     </li>
                     <li class="seconds">
                         <div class="value">0</div>
