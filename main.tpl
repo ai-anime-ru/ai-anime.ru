@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<!--<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.gif">-->
+	<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.gif">
 	{headers}
 	<meta name="HandheldFriendly" content="true">
 	<meta name="format-detection" content="telephone=no">
@@ -570,7 +570,7 @@
 	});
 </script>
 
-<!--Отключи если зае**т-->
+Отключи если зае**т
 <script>
 	// Показать лоадер при каждом переходе
 	$(document).on('click', 'a', function(event) {
@@ -578,12 +578,10 @@
 
 		// Проверяем наличие атрибута href
 		if (href) {
-			event.preventDefault(); // Предотвращаем обычное поведение ссылки
 			showLoader(); // Показываем лоадер
 
 			// Загружаем новую страницу
 			setTimeout(function() {
-				window.location.href = href;
 			}, 0); // Представим, что загрузка занимает 0.5 секунды
 		}
 	});
