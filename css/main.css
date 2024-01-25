@@ -1412,5 +1412,9 @@ footer {
     .welcome-message-text {
         display: block !important;
     }
+
+    .scrollToTopBtn {
+        display: none !important;
+    }
 }
 

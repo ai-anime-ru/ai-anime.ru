@@ -93,7 +93,7 @@
 
 		</div>
 	</div>
-	<button id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
+	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
 	
 	<!-- () Обрезаем длину названия () -->
 	<script>
