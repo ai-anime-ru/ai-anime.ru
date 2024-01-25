@@ -1304,7 +1304,12 @@ footer {
     }
 
     .about-anime {
-        max-width: 100%;
+        max-width: 100% !important;
+        height: 340px !important;
+    }
+
+    .bottom-items {
+        right: unset !important;
     }
 }
 
