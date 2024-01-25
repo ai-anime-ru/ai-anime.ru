@@ -1235,11 +1235,11 @@ footer {
 
     .main {
         margin: auto;
-        width: auto;
+        width: 920px;
     }
 
     .full-story-body {
-        width: 920px;
+        width: 920px !important;
     }
     
     .side-block-related-news {
