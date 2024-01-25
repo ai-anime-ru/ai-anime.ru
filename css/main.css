@@ -535,11 +535,23 @@ ul li {
 .top-menu-block {
     transition: height 0.5s;
   }
+
+  .top-menu-content {
+    padding: 15px;
+    background-color: var(--clr);
+    height: 500px;
+    z-index: 9999;
+    visibility: hidden
+  }
   
   .expanded {
     padding: 15px;
-    height: 500px;
+    height: 700px;
   }
+
+.visible-content {
+    visibility: visible;
+}
 
 /* ----------------- FOOTER -----------------*/
 

@@ -19,10 +19,13 @@
 	[root]
 </ul>[/root]
 
+<div class="top-menu-content"></div>
+
 <script>
   $(document).ready(function() {
     $('.icon-menu').on('click', function() {
       $('.top-menu-block').toggleClass('expanded');
+	  $('.top-menu-content').toggleClass('visible-content');
     });
   });
 </script>
