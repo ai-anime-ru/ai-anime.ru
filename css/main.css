@@ -1367,8 +1367,26 @@ footer {
         height: 209px !important;
     }
 
-    .div.sim-slider-arrow-left {
-        top: 50% !important;
+    .sim-slider-arrow-right {
+        right: 10px !important;
+        top: 50% !important; 
+    }
+
+    .sim-slider-arrow-left {
+        left: 10px !important;
+        top: 50% !important; 
+    }
+
+    .sim-slider-dots {
+        bottom: 0 !important;
+    }
+    
+    .box-player {
+        width: 412px !important;
+    }
+
+    .kodik-player {
+        height: 233px !important;
     }
 }
 
