@@ -280,22 +280,21 @@
     color: white;
 }
 
-.js-toggle-fav {
+.js-toggle-fav span{
+    position: absolute !important;
     width: 100% !important;
     box-shadow: 0 1px 3px rgb(0 0 0 / 30%) !important;
     font-weight: 300 !important;
     padding: 10px !important;
-    margin-top: -37px !important;
+    margin-top: -52px !important;
     z-index: 9999 !important;
     color: white !important;
     text-align: center !important;
-    position: absolute !important;
+    border-radius: 0 0 15px 15px !important;
     background-color: #1e1e269f !important;
     backdrop-filter: blur(3px) !important;
-}
-
-.js-toggle-fav span {
-    border-radius: 0 0 15px 15px !important; 
+    left: 0 !important;
+    cursor: pointer;
 }
 
 .genre-shiki {
