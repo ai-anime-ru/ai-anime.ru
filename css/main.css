@@ -1135,6 +1135,13 @@ footer {
     padding: 20px;
 }
 
+.feedback-box h4{
+    color: white;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
 .form-group {
     margin-bottom: 10px;
 }
@@ -1176,3 +1183,4 @@ footer {
     border-color: black;
     color: white;
 }
+

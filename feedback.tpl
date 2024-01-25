@@ -1,6 +1,6 @@
 <div class="feedback-container">
 	<div class="feedback-box">
-		<h4 class="title h1">Обратная связь</h4>
+		<h4>Форма обратной связи</h4>
 		<div class="addform">
 			<ul class="ui-form">
 				[not-logged]
