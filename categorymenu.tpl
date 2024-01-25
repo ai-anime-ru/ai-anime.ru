@@ -18,7 +18,14 @@
 </ul>[/root]
 
 <div class="top-menu-content">
-	
+	<div class="calendar box-body-s">
+		<div class="calendar__item">
+		   <div class="calendar__item-weekday">
+			  <h3>Аниме на сегодня</h3>
+		   </div>
+		   {today-ongoings}
+		</div>
+ </div>
 </div>
 
 <script>

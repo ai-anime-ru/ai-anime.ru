@@ -1,9 +1,4 @@
 <div class="side-block-main">
-    <div class="calendar box-body-s" style="display: none;">
-        <div class="calendar__item">
-            <div class="calendar__item-weekday">
-            </div>
-        </div>
     </div>
     <div class="random-anime">
         <div class="random-anime-title">
@@ -13,6 +8,12 @@
             {include file="/modules/random-anime.tpl"}
         </div>
     </div>
+    <div class="calendar box-body-s">
+        <div class="calendar__item">
+            <div class="calendar__item-weekday">
+                {today-ongoings}
+            </div>
+        </div>
     <div class="discord-widget">
         <iframe src="https://discord.com/widget?id=1186951554444558368&theme=dark" width="340" height="500"
             allowtransparency="true" frameborder="0" padding-top="10px"
