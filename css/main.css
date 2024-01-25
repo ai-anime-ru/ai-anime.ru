@@ -1215,6 +1215,9 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .main__content {
+        max-width: 412px !important;
+    }
     .main-container {
         max-width: 412px !important;
     }
@@ -1226,6 +1229,23 @@ footer {
     }
 
     .side-block-main {
+        display: none;
+    }
+
+    .header {
+        width: 412px;
+    }
+    
+    .top-block-main {
+        width: 412px;
+        height: 79px;
+    }
+
+    .logo-footer {
+        display: none;
+    }
+
+    .top-menu-block {
         display: none;
     }
 }
