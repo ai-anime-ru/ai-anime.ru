@@ -1234,9 +1234,16 @@ footer {
     }
 
     .main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        margin: auto;
+        width: auto;
+    }
+
+    .full-story-body {
+        width: 920px;
+    }
+    
+    .side-block-related-news {
+        display: none;
     }
 }
 
