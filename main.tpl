@@ -33,7 +33,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-SK44Z46F4Y');
 	</script>
-    <!--        
+<!--        
                ##
               ####
              ######
@@ -56,7 +56,7 @@
           ############
 
 		ТУТ БЫЛ ELONDIE
--->   
+-->
 </head>
 
 <body>
