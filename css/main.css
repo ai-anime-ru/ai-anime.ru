@@ -1391,5 +1391,18 @@ footer {
     .kodik-player {
         height: 233px !important;
     }
+
+    .feedback-container {
+        width: 395px !important;
+    }
+
+    .form_submit {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_submit button{
+        margin-top: 10px;
+    }
 }
 
