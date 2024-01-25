@@ -1340,17 +1340,24 @@ footer {
         display: flex !important;
         align-items: center !important;
         flex-direction: column;
+        text-align: center;
     }
 
     .pretimer .rt {
         width: 100% !important;
     }
 
-    .pretimer .value {
+    .pretimer .lt {
+        width: 100% !important;
+    }
+
+    .countdown-title {
+        text-align: center !important;
+    }
+
+    .pretimer .value,
+    .pretimer .points {
         font-size: 2em !important;
-        color: white;
-        font-weight: 100;
-        padding: 20px 15px 20px 15px;
     }
 }
 
