@@ -1272,6 +1272,7 @@ footer {
     }
     
     .watch-pannel {
+        position: relative !important;
         text-align: center !important;
         right: unset !important;
         bottom: 0 !important; 
@@ -1321,7 +1322,7 @@ footer {
     }
 
     .about-anime {
-        height: 340px !important;
+        height: auto !important;
         display: inline;
     }
 
@@ -1332,6 +1333,8 @@ footer {
     .anime-information {
         max-width: 100% !important;
         bottom: unset !important;
+        position: relative !important;
+        box-shadow: 0 0px 25px #0000004f !important;
     }
 
     .pretimer {
