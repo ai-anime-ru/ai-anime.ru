@@ -9,7 +9,9 @@
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                             src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                     </div>
+                    [push_subscribe]
                     {push_subscribe}
+                    [/push_subscribe]
                 </article>
             </div>
             <div class="about-anime">
@@ -217,10 +219,6 @@
                     [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
                             name="bookmark-outline"></ion-icon></div>[/del-favorites]
                 </div>
-                <div class="dot"></div>
-                [push_subscribe]
-                <div class="icon-push"><ion-icon name="notifications-outline"></ion-icon></div>
-                [/push_subscribe]
             </div>
         </div>
 
