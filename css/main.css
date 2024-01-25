@@ -1208,3 +1208,19 @@ footer {
 
 /* ---------- OPTIMIZATION ----------*/
 
+@media (max-width: 1280px) {
+    .full-story-body {
+        width: 1260px;
+    }
+}
+
+@media (max-width: 412px) {
+    .main-container {
+        max-width: 411px;
+    }
+
+    .side-block-main {
+        display: none;
+    }
+}
+
