@@ -1124,3 +1124,13 @@ footer {
 
 /*---------- ОБРАТНАЯ СВЯЗЬ -----------*/
 
+.feedback-container {
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 900px;
+    margin-top: 70px;
+    border-radius: 15px;
+    background-color: var(--main);
+    padding: 20px;
+}
