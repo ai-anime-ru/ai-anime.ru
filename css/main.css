@@ -1216,6 +1216,14 @@ footer {
     }
 }
 
+@media (max-width: 830px) {
+    .rules-page,
+    .privacy-policy {
+        width: auto;
+        padding: 30px;
+    }
+}
+
 @media (max-width: 1322px) {
     .side-block-main {
         display: none;
