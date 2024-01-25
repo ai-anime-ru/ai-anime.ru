@@ -475,6 +475,24 @@ ul li {
     padding: 10px;
 }
 
+.side-block-related-news .box{
+    background-color: var(--clr);
+    width: auto;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.side-block-related-news .news-block .title-text{
+    display: none;
+}
+
+.side-block-related-news .description-short {
+    color: white;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
 /* ------------ TOP MENU ------------*/
 
 .top-block-main {

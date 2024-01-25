@@ -227,7 +227,7 @@
                 <div class="countdown-title"">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class="countdown-text">Новая серия аниме выходит на экраны <span>{timer_out}</span><br> в
+                <div class="countdown-text">Новая серия аниме выходит на экраны <span id="timer_out">{timer_out}</span><br> в
                     соответствии
                     c японским временем</div>
             </div>
@@ -293,16 +293,16 @@
                     $('.countdown_wrp .seconds .unit').text(numpf(secs, "секунда", "секунды", "секунд")); 
                 }
 
-                $(document).ready(function () {
-                    if (typeof initialDateStr !== 'undefined') {
-                        var initialDate = new Date(initialDateStr.replace(/(\d{2}).(\d{2}).(\d{4}) (\d{2}):(\d{2}):(\d{2})/, '$3-$2-$1T$4:$5:$6'));
+                $(document).ready(function(){
+                    if ( typeof initialDateStr !== 'undefined' ) {
+                        // Изменил формат даты на "yyyy-mm-dd"
+                        var initialDate = new Date(initialDateStr.replace(/(\d{2}).(\d{2}).(\d{4})/, '$3-$2-$1'));
                         var unixTimestampNew = Math.floor(initialDate.getTime() / 1000);
                         var currentUnixTimestamp = Math.floor(new Date().getTime() / 1000);
                         var timeDifference = unixTimestampNew - currentUnixTimestamp;
                         var timer_timestamp = timeDifference > 0 ? timeDifference : 0;
-
                         if (typeof timer_timestamp !== "undefined" && timer_timestamp > 0) {
-                            setInterval(function () {
+                            setInterval(function(){
                                 timer_timestamp = timer_timestamp - 1;
                                 timer(timer_timestamp);
                             }, 1000);
@@ -314,6 +314,10 @@
                     var o = t % 10;
                     return 1 == o && (1 == t || t > 20) ? e : o > 1 && 5 > o && (t > 20 || 10 > t) ? i : n;
                 }
+
+                var timerOutDate = new Date("[xfvalue_next_episode_date]");
+                var timer_out = timerOutDate.toLocaleDateString();  // или используйте свой собственный формат вывода даты
+                $("#timer_out").text(timer_out);
             </script>
             
         </div>
