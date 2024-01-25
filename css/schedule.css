@@ -150,7 +150,7 @@
 }
 
 .calendar__item-names a:hover {
-    color: #68a5ff;
+    color: #68a5ff !important;
 }
 
 .calendar__item-date {
