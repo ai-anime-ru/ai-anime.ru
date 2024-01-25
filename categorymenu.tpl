@@ -20,7 +20,9 @@
 	[root]
 </ul>[/root]
 
-<div class="top-menu-content"></div>
+<div class="top-menu-content">
+	{include file="schedule.tpl"}
+</div>
 
 <script>
   $(document).ready(function() {
