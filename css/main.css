@@ -1263,7 +1263,22 @@ footer {
     .title-text-container,
     .original-title
      {
-        max-width: 412px;
+        max-width: 412px !important;
+    }
+
+    .title-text-container,
+    .original-title {
+        text-align: center;
+    }
+    
+    .watch-pannel {
+        text-align: center !important;
+        right: unset !important;
+        bottom: 0 !important; 
+    }
+
+    .original-title {
+        margin-bottom: 10px;
     }
 
     .full-story {
@@ -1306,7 +1321,6 @@ footer {
     }
 
     .about-anime {
-        max-width: 100% !important;
         height: 340px !important;
         display: inline;
     }
@@ -1318,6 +1332,10 @@ footer {
     .anime-information {
         max-width: 100% !important;
         bottom: unset !important;
+    }
+
+    .pretimer {
+        border-radius: 15px;
     }
 }
 
