@@ -1,4 +1,9 @@
 [root]<ul>[/root]
+	<li>
+		<div class="icon-menu">
+			<ion-icon name="grid-outline"></ion-icon>
+		</div>
+	</li>
 	[item]
 	<li>[active]<b>[/active]<a href="{url}">{name} <span
 					style="float: right;"></span></a>[active]</b>[/active]
