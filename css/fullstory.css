@@ -638,7 +638,14 @@ span.sim-dot {
     font-size: 4em;
     color: white;
     font-weight: 100;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 15px 20px 15px;
+}
+
+.pretimer .points {
+    font-size: 4em;
+    color: white;
+    font-weight: 100;
+    padding: 20px 0px 20px 0px;
 }
 
 .countdown-wrp {
