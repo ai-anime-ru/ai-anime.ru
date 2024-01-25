@@ -532,6 +532,14 @@ ul li {
     cursor: pointer;
 }
 
+.top-menu-block {
+    transition: height 0.5s; /* Анимация изменения высоты */
+  }
+  
+  .expanded {
+    height: 500px; /* Установите желаемую высоту при раскрытии */
+  }
+
 /* ----------------- FOOTER -----------------*/
 
 footer {
