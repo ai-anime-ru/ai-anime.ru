@@ -224,7 +224,7 @@
         [xfgiven_next_episode_date]
         <div class="pretimer">
             <div class="lt">
-                <div class="countdown-title">
+                <div class="countdown-title"">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
                 <div class="countdown-text">Новая серия аниме выходит на экраны <span>{timer_out}</span><br> в
