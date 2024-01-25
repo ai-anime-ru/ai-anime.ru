@@ -16,7 +16,7 @@
 						class="wide" required>
 				</li>
 				<li class="form-group">
-					<label>Получатель</label>
+					<label>Получатель:</label>
 					{recipient}
 				</li>
 				<li class="form-group">
