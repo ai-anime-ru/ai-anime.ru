@@ -9,6 +9,7 @@
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                             src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
                     </div>
+                    {push_subscribe}
                 </article>
             </div>
             <div class="about-anime">
@@ -218,7 +219,6 @@
                 </div>
                 <div class="dot"></div>
                 [push_subscribe]
-                {push_subscribe}
                 <div class="icon-push"><ion-icon name="notifications-outline"></ion-icon></div>
                 [/push_subscribe]
             </div>
