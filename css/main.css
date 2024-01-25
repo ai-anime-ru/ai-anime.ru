@@ -1216,6 +1216,21 @@ footer {
     }
 }
 
+@media (max-width: 1322px) {
+    .side-block-main {
+        display: none;
+    }
+    .contaner-flex {
+    }
+
+    .top-block-main,
+    .top-menu-block {
+        width: 900px;
+    }
+}
+
+
+
 @media (max-width: 480px) {
     .main__content {
         max-width: 412px !important;
