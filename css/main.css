@@ -1212,6 +1212,7 @@ footer {
 @media (max-width: 1280px) {
     .full-story-body {
         width: 1260px;
+        margin: 70px auto !important;
     }
 }
 
@@ -1281,7 +1282,7 @@ footer {
     }
 
     .original-title {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 
     .full-story {
@@ -1321,6 +1322,7 @@ footer {
 
     .title-text-container {
         text-align: center;
+        font-weight: 700;
     }
 
     .about-anime {
