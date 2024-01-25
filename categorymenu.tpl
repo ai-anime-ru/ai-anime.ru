@@ -12,9 +12,6 @@
 	</li>
 	[/item]
 	<li>
-		<a href="/index.php?do=schedule">Расписание</a>
-	</li>
-	<li>
 		<a href="/index.php?do=rooms">Совместный просмотр</a>
 	</li>
 	[root]
