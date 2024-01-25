@@ -1229,7 +1229,9 @@ footer {
     }
 
     .side-block-main,
-    .side-block-related-news{
+    .side-block-related-news,
+    .description-short-box
+    {
         display: none;
     }
 
@@ -1256,7 +1258,11 @@ footer {
         margin-right: 35px;
     }
 
-    .full-story-body {
+    .full-story-body,
+    .about-anime,
+    .title-text-container,
+    .original-title
+     {
         max-width: 412px;
     }
 
@@ -1264,5 +1270,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .d3 {
+        width: 162px;
+    }
+
+    .header-link {
+        left: 0;
+    }
+
 }
 
