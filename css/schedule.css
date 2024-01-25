@@ -148,6 +148,11 @@
     padding-top: 3px;
     flex-shrink: 2;
 }
+
+.calendar__item-names a:hover {
+    color: #68a5ff;
+}
+
 .calendar__item-date {
     display: flex;
     flex-direction: column;
