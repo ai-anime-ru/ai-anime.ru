@@ -1228,11 +1228,14 @@ footer {
         align-items: center;
     }
 
-    .side-block-main {
+    .side-block-main,
+    .side-block-related-news{
         display: none;
     }
 
-    .header {
+    .header,
+    .contaner-flex,
+    .main {
         width: 412px;
     }
     
@@ -1247,6 +1250,19 @@ footer {
 
     .top-menu-block {
         display: none;
+    }
+
+    .footerColumns .column {
+        margin-right: 35px;
+    }
+
+    .full-story-body {
+        max-width: 412px;
+    }
+
+    .full-story {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
