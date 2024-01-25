@@ -255,8 +255,9 @@
                     </li>
                 </ul>
             </div>
-            <script 
-                type="text/javascript"> var timestamp = "[xfvalue_next_episode_date]"; 
+            <script type="text/javascript"> 
+                var timer_timestamp = "[xfvalue_next_episode_date]"; 
+                var initialDateStr = "[xfvalue_next_episode_date]";
                 function timer(timestamp){
                     if (timestamp < 0) timestamp = 0;
                 

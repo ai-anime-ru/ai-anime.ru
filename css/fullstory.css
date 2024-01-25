@@ -604,6 +604,7 @@ span.sim-dot {
     display: table-cell;
     padding: 0px 0 !important;
     width: 50% !important;
+
 }
 
 .pretimer .value {
@@ -626,10 +627,11 @@ span.sim-dot {
 .countdown-title {
     color: white;
     font-size: 1.2em;
-    margin-bottom: 3px;
+    text-align: left !important;
 }
 
 .countdown-text {
     color: #ddd !important;
     font-size: 1em !important;
+    text-align: left !important;
 }
