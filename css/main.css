@@ -555,6 +555,18 @@ ul li {
   .visible-content {
     height: 505px;
   }
+.hide-ico {
+    display: none;
+}
+
+.up {
+    display: none;
+}
+
+.visible-ico {
+    display: block;
+}
+  
 
 /* ----------------- FOOTER -----------------*/
 

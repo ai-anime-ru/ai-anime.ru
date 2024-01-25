@@ -1,7 +1,8 @@
 [root]<ul>[/root]
 	<li>
 		<div class="icon-menu">
-			<ion-icon name="grid-outline"></ion-icon>
+			<ion-icon class="down" name="grid-outline"></ion-icon>
+			<ion-icon class="up" name="chevron-up-outline"></ion-icon>
 		</div>
 	</li>
 	[item]
@@ -26,6 +27,8 @@
     $('.icon-menu').on('click', function() {
       $('.top-menu-block').toggleClass('expanded');
 	  $('.top-menu-content').toggleClass('visible-content');
+	  $('.down').toggleClass('hide-ico');
+	  $('.up').toggleClass('visible-ico');
     });
   });
 </script>
