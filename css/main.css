@@ -1184,3 +1184,10 @@ footer {
     color: white;
 }
 
+.feedback-box .combo_field {
+    margin-right: 10px;
+}
+
+.feedback-box .form_submit button{
+    margin-right: 0px !important;
+}
