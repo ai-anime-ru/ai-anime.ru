@@ -293,8 +293,11 @@
     align-items: center;
 }
 
-.bookmarks-icon {
-    font-size: 2em;
+.bookmarks-icon,
+.icon-push {
+    color: white;
+    font-size: 1.75em;
+    cursor: pointer;
 }
 
 .series a {
@@ -307,8 +310,8 @@
     border-radius: 9999px;
     width: 0.25rem;
     height: 0.25rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
 }
 
 .watch-pannel {
@@ -324,14 +327,12 @@
 }
 
 .watch-online,
-.dropbtn-watch-online,
-.js-toggle-fav {
+.dropbtn-watch-online {
     cursor: pointer;
     margin-bottom: 3px;
-    margin-top: 0px !important;
     width: 200px;
-    color: white !important;
-    background-color: var(--clr) !important;
+    color: white;
+    background-color: var(--clr);
     border-color: #ff5c57;
 
     display: inline-block;
@@ -346,10 +347,9 @@
 }
 
 .watch-online:hover,
-.dropbtn-watch-online:hover,
-.js-toggle-fav:hover {
-    background-color: #d1e1f9 !important;
-    color: black !important;
+.dropbtn-watch-online:hover {
+    background-color: #d1e1f9;
+    color: black;
 }
 
 .player-info {
@@ -547,6 +547,7 @@ span.sim-dot {
 
 .bookmark-outline-add {
     color: white;
+
 }
 
 .bookmark-outline-remove {

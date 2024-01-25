@@ -715,6 +715,10 @@ footer {
 
 /* --------- РАСПИСАНИЕ SIDE BLOCK ---------*/
 
+.calendar {
+    margin-bottom: 10px !important;
+}
+
 .side-block-main .calendar__item {
     max-width: 100%;
     background-color: var(--clr);

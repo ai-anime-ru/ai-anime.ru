@@ -1,4 +1,3 @@
-
 <div class="full-story-body">
     <div class="full-story-container">
         <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
@@ -188,7 +187,6 @@
             </div>
             <div class="watch-pannel">
                 <a class="watch-online">Смотреть онлайн</a>
-                [push_subscribe]{push_subscribe}[/push_subscribe]
                 <div class="dropdown-watch-online">
                     <button onclick="toggleDropdown()" class="dropbtn-watch-online">+ Добавить в список</button>
                     <div id="myDropdown" class="dropdown-content-watch-online">
@@ -218,6 +216,11 @@
                     [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
                             name="bookmark-outline"></ion-icon></div>[/del-favorites]
                 </div>
+                <div class="dot"></div>
+                [push_subscribe]
+                {push_subscribe}
+                <div class="icon-push"><ion-icon name="notifications-outline"></ion-icon></div>
+                [/push_subscribe]
             </div>
         </div>
 
@@ -227,7 +230,8 @@
                 <div class="countdown-title"">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class="countdown-text">Новая серия аниме выходит на экраны <span id="timer_out">{timer_out}</span><br> в
+                <div class=" countdown-text">Новая серия аниме выходит на экраны <span
+                        id="timer_out">{timer_out}</span><br> в
                     соответствии
                     c японским временем</div>
             </div>
@@ -251,52 +255,52 @@
                     </li>
                 </ul>
             </div><!--[xfvalue_next_episode_date]-->
-            <script type="text/javascript"> 
-            var countdownElement = document.getElementById("timer_out");
+            <script type="text/javascript">
+                var countdownElement = document.getElementById("timer_out");
 
-            // Переменная с датой и временем выхода новой серии
-            var releaseDateTime = "27.01.2024 17:30:00";
-            // Устанавливаем значение timer_out
-            var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
-            document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
-            function getUnitLabel(number, singular, genitiveSingular, genitivePlural) {
-                if (number === 1 || (number > 20 && number % 10 === 1)) {
-                    return singular;
-                } else if ((number >= 2 && number <= 4) || (number > 20 && number % 10 >= 2 && number % 10 <= 4)) {
-                    return genitiveSingular;
-                } else {
-                    return genitivePlural;
+                // Переменная с датой и временем выхода новой серии
+                var releaseDateTime = "27.01.2024 17:30:00";
+                // Устанавливаем значение timer_out
+                var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
+                document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
+                function getUnitLabel(number, singular, genitiveSingular, genitivePlural) {
+                    if (number === 1 || (number > 20 && number % 10 === 1)) {
+                        return singular;
+                    } else if ((number >= 2 && number <= 4) || (number > 20 && number % 10 >= 2 && number % 10 <= 4)) {
+                        return genitiveSingular;
+                    } else {
+                        return genitivePlural;
+                    }
                 }
-            }
-            // Обновляем таймер каждую секунду
-            setInterval(function () {
-                // Получаем текущую дату и время
-                var currentDateTime = moment();
+                // Обновляем таймер каждую секунду
+                setInterval(function () {
+                    // Получаем текущую дату и время
+                    var currentDateTime = moment();
 
-                // Получаем дату и время выхода новой серии из переменной
-                var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
+                    // Получаем дату и время выхода новой серии из переменной
+                    var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
 
-                // Расчитываем разницу во времени
-                var diff = releaseMoment.diff(currentDateTime);
+                    // Расчитываем разницу во времени
+                    var diff = releaseMoment.diff(currentDateTime);
 
-                // Расчитываем количество недель, дней, часов, минут и секунд
-                var days = Math.floor((diff % (7 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
-                var hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
-                var minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
-                var seconds = Math.floor((diff % (60 * 1000)) / 1000);
+                    // Расчитываем количество недель, дней, часов, минут и секунд
+                    var days = Math.floor((diff % (7 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
+                    var hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
+                    var minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
+                    var seconds = Math.floor((diff % (60 * 1000)) / 1000);
 
-                // Обновляем значения на странице
-                document.querySelector(".countdown-wrp .days .value").textContent = days;
-                document.querySelector(".countdown-wrp .hours .value").textContent = hours;
-                document.querySelector(".countdown-wrp .minutes .value").textContent = minutes;
-                document.querySelector(".countdown-wrp .seconds .value").textContent = seconds;
-                document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
-                document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
-                document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
-                document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
-            }, 1000);
+                    // Обновляем значения на странице
+                    document.querySelector(".countdown-wrp .days .value").textContent = days;
+                    document.querySelector(".countdown-wrp .hours .value").textContent = hours;
+                    document.querySelector(".countdown-wrp .minutes .value").textContent = minutes;
+                    document.querySelector(".countdown-wrp .seconds .value").textContent = seconds;
+                    document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
+                    document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
+                    document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
+                    document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
+                }, 1000);
             </script>
-            
+
         </div>
         [/xfgiven_next_episode_date]
 
@@ -338,8 +342,7 @@
         </div>
         [xfgiven_kodik_iframe]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]"
-            data-shikimori_id="[xfvalue_shikimori_id]">
+            data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
                 [xfvalue_poster]
             </div>
