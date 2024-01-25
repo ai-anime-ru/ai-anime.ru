@@ -228,10 +228,10 @@
                 <div class="countdown-title"">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class=" countdown-text">Новая серия аниме выходит на экраны <span
+                <div class="countdown-text">Новая серия аниме выходит на экраны: <span
                         id="timer_out">{timer_out}</span><br> в
                     соответствии
-                    c японским временем</div>
+                    c японским временем.</div>
             </div>
             <div class="rt">
                 <ul class="countdown-wrp">
@@ -240,7 +240,7 @@
                         <div class="unit">дней</div>
                     </li>
                     <li>
-                        <p class="points">•</p>
+                        <p class="points">:</p>
                     </li>
                     <li class="hours">
                         <div class="value">0</div>

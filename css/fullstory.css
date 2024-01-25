@@ -617,6 +617,12 @@ span.sim-dot {
     padding: 20px !important;
 }
 
+.pretimer li, .pretimer ul {
+    padding: 0px;
+    margin: 0px;
+    float: right;
+}
+
 .pretimer .lt {
     vertical-align: top;
     width: 55%;
@@ -669,4 +675,8 @@ span.sim-dot {
     color: #d4d4d4 !important;
     font-size: 1em !important;
     text-align: left !important;
+}
+
+.countdown-text span {
+    color: var(--active);
 }
