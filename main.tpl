@@ -570,20 +570,7 @@
 	});
 </script>
 
-<!--Отключи если зае**т-->
 <script>
-	// Показать лоадер при каждом переходе
-	$(document).on('click', 'a', function(event) {
-		var href = $(this).attr('href');
-
-		// Проверяем наличие атрибута href
-		if (href) {
-			showLoader(); // Показываем лоадер
-			// Загружаем новую страницу
-				hideLoader()
-		}
-	});
-
 	// Показать лоадер
 	function showLoader() {
 		document.querySelector('.loader-container').classList.remove('hide-loader')
