@@ -549,3 +549,18 @@ span.sim-dot {
     color: yellow;
     visibility: visible;
 }
+
+/*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
+
+.rooms-invite {
+    background-color: var(--clr) !important;
+    border-radius: 15px !important;
+    border: 1px !important;
+    border-color: #1f1f1f !important;
+    padding: 15px !important;
+}
+
+.room-invite__title {
+    color: white !important;
+    font-weight: normal !important;
+}
