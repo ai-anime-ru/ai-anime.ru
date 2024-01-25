@@ -254,11 +254,13 @@
                         <div class="unit">секунды</div>
                     </li>
                 </ul>
-            </div>
+            </div><!--[xfvalue_next_episode_date]-->
             <script type="text/javascript"> 
-                var timer_timestamp = "[xfvalue_next_episode_date]"; 
-                var initialDateStr = "[xfvalue_next_episode_date]";
-                function timer(timestamp){
+                        
+                var initialDateStr = "27.01.2024 17:30:00";
+                var timer_timestamp = "27.01.2024 17:30:00";
+
+                function timer(timestamp) {
                     if (timestamp < 0) timestamp = 0;
                 
                     var week = Math.floor( ((timestamp/60/60) / 168));
@@ -290,16 +292,17 @@
                     $('.countdown_wrp .minutes .unit').text(numpf(mins, "минута", "минуты", "минут"));
                     $('.countdown_wrp .seconds .unit').text(numpf(secs, "секунда", "секунды", "секунд")); 
                 }
-                
-                $(document).ready(function(){
-                    if ( typeof initialDateStr !== 'undefined' ) {
+
+                $(document).ready(function () {
+                    if (typeof initialDateStr !== 'undefined') {
                         var initialDate = new Date(initialDateStr.replace(/(\d{2}).(\d{2}).(\d{4}) (\d{2}):(\d{2}):(\d{2})/, '$3-$2-$1T$4:$5:$6'));
                         var unixTimestampNew = Math.floor(initialDate.getTime() / 1000);
                         var currentUnixTimestamp = Math.floor(new Date().getTime() / 1000);
                         var timeDifference = unixTimestampNew - currentUnixTimestamp;
                         var timer_timestamp = timeDifference > 0 ? timeDifference : 0;
+
                         if (typeof timer_timestamp !== "undefined" && timer_timestamp > 0) {
-                            setInterval(function(){
+                            setInterval(function () {
                                 timer_timestamp = timer_timestamp - 1;
                                 timer(timer_timestamp);
                             }, 1000);
@@ -310,7 +313,7 @@
                 function numpf(t, e, i, n) {
                     var o = t % 10;
                     return 1 == o && (1 == t || t > 20) ? e : o > 1 && 5 > o && (t > 20 || 10 > t) ? i : n;
-                }            
+                }
             </script>
             
         </div>
