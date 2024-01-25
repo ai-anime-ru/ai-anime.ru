@@ -33,7 +33,7 @@
                         <a href="?do=rules" target="_blank">Правила</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="/index.php?do=static&page=privacy-policy">Политика конфиденцальности</a>
+                        <a href="do=static&page=privacy-policy">Политика конфиденцальности</a>
                     </li>
                 </ul>
             </div>

@@ -294,10 +294,11 @@
     backdrop-filter: blur(3px) !important;
     left: 0 !important;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .js-toggle-fav span:hover {
-    
+    background-color: #000000af !important;
 }
 
 .genre-shiki {
