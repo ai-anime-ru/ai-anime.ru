@@ -1211,7 +1211,7 @@ footer {
 
 @media (max-width: 1280px) {
     .full-story-body {
-        width: 1260px;
+        width: 920px;
         margin: 70px auto !important;
     }
 }
@@ -1221,11 +1221,22 @@ footer {
         display: none;
     }
     .contaner-flex {
+        width: 920px;
     }
 
     .top-block-main,
     .top-menu-block {
-        width: 900px;
+        width: 920px;
+    }
+
+    .top-block-main {
+        height: 177px;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
