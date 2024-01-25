@@ -1134,3 +1134,35 @@ footer {
     background-color: var(--main);
     padding: 20px;
 }
+
+.form-group input{
+    background-color: var(--clr) !important;
+    border-radius: 0.5rem !important;
+    border: none !important;
+    display: block !important;
+    font-size: .875rem !important;
+    line-height: 1.25rem !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: 5px !important;
+    color: #ddd !important;
+}
+
+.form-group textarea{
+    width: 42rem !important;
+    border-radius: 0.75rem !important;
+    background-color: var(--clr) !important;
+    border: none !important;
+    color: #ddd !important;
+    padding: 15px !important;
+    margin-top: 5px !important;
+}
+
+.form-group label{
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 10px;
+}
