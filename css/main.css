@@ -533,11 +533,12 @@ ul li {
 }
 
 .top-menu-block {
-    transition: height 0.5s; /* Анимация изменения высоты */
+    transition: height 0.5s;
   }
   
   .expanded {
-    height: 500px; /* Установите желаемую высоту при раскрытии */
+    padding: 15px;
+    height: 500px;
   }
 
 /* ----------------- FOOTER -----------------*/

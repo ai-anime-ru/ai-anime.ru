@@ -19,13 +19,10 @@
 	[root]
 </ul>[/root]
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
   $(document).ready(function() {
-    // Обработчик события при клике на иконку меню
     $('.icon-menu').on('click', function() {
-      // Увеличиваем или уменьшаем высоту блока top-menu-block
-      $('.top-menu-block').class.add('expanded');
+      $('.top-menu-block').toggleClass('expanded');
     });
   });
 </script>
