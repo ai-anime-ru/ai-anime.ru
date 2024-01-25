@@ -1196,5 +1196,12 @@ footer {
 /* ----------- RULES PAGE ----------*/
 
 .rules-page {
-    
+    position: relative;
+    margin: 90px auto;
+    width: 800px;
+    background-color: var(--main);
+    color: rgb(223, 223, 223);
+    padding: 100px 100px 100px 100px;
+    border-radius: 15px;
+    line-height: 20px;
 }

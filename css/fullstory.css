@@ -448,6 +448,7 @@
     border: none;
     background-color: inherit;
     cursor: pointer;
+    color: white;
     border-radius: 0.5rem;
 }
 
