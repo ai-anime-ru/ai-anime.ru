@@ -496,6 +496,7 @@ ul li {
     margin-bottom: 20px;
     border-radius: 15px;
     top: 20px;
+    overflow: hidden;
 }
 
 .top-menu-block ul {
@@ -542,18 +543,18 @@ ul li {
     z-index: 9999;
     transition: height 0.5s;
     overflow: hidden;
-    height: 0px;
     margin: 15px;
+    height: 0px;
     border-radius: 15px;
   }
   
   .expanded {
-    height: 700px;
+    height: 600px;
   }
 
-.visible-content {
-    height: 500px;
-}
+  .visible-content {
+    height: 505px;
+  }
 
 /* ----------------- FOOTER -----------------*/
 
