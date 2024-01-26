@@ -565,8 +565,13 @@ span.sim-dot {
 }
 
 .bookmark-outline-remove {
-    color: yellow;
+    color: #ffffff;
     visibility: visible;
+    transition: 0.3s;
+}
+
+.bookmark-outline-remove:hover {
+    color: red;
 }
 
 /*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/

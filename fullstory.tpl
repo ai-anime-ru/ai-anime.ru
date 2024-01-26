@@ -216,7 +216,8 @@
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]
 
-                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon name="checkmark-circle-outline"></ion-icon></div>[/del-favorites]
+                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
+                            name="checkmark-circle-outline"></ion-icon></div>[/del-favorites]
                 </div>
             </div>
         </div>
@@ -227,7 +228,7 @@
                 <div class="countdown-title"">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class="countdown-text">Новая серия аниме выходит на экраны: <span
+                <div class=" countdown-text">Новая серия аниме выходит на экраны: <span
                         id="timer_out">{timer_out}</span><br> в
                     соответствии
                     c японским временем.</div>
