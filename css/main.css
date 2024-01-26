@@ -4,9 +4,14 @@
 }
 
 :root {
+    color-scheme: dark;
     --clr: #1e1e26;
     --main: #393949;
     --active: #d1e1f9;
+    --main-text: #fff;
+    --second-text: #d4d4d4;
+    --second-text-2: #c4c4c4;
+    --badje: #E9E9E9;
 }
 
 * {
