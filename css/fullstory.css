@@ -104,7 +104,6 @@
     line-height: 18px;
     overflow: hidden;
     background-color: var(--main);
-    background: linear-gradient(180deg, var(--main), #1a1a21);
     border-radius: 15px;
     padding: 20px;
 }

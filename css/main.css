@@ -24,6 +24,10 @@
     --btn-play-poster: #fff;
     --main-h1: #fff;
     --line: #8d8d8d;
+    /*
+    --left-light: #265157;
+    --right-light: #28414b;
+    */
 }
 
 /*
@@ -36,8 +40,6 @@
     --second-text: #d4d4d4;
     --second-text-2: #c4c4c4;
     --badje: #E9E9E9;
-    --left-light: #503cc0;
-    --right-light: #ffffff;
 }
 */
 
@@ -63,7 +65,7 @@ ul li {
     margin-top: 90px;
 }
 
-/*------------- BACK LIGHT -----------
+/*------------- BACK LIGHT ----------- 
 
 .left-light {
     position: absolute;
@@ -538,7 +540,6 @@ ul li {
 .side-block-related-news{
     margin-left: 20px;
     background-color: var(--main);
-    background: linear-gradient(180deg, var(--main), #1a1a21);
     width: 360px;
     height: auto;
     border-radius: 15px;

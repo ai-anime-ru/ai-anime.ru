@@ -67,8 +67,10 @@
 			<div class="miku-dance"></div>
 		</div>
 	</div>
+	<!---
 	<div class="left-light"></div>
 	<div class="right-light"></div>
+	-->
 	{AJAX}
 	<div class="wrap">
 		<div class="block center fx-col">
