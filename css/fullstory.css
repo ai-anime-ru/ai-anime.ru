@@ -569,19 +569,30 @@ span.sim-dot {
     transition: 0.3s;
 }
 
-.remove-book {
-    display: 1; /* Изначально все значки скрыты */
-    transition: opacity 0.3s; /* Плавное изменение прозрачности */
+.bookmark-outline-remove svg {
+}
+
+.remove-book:first-child {
+    display: flex;
+    transition: opacity 0.5s;
+    position: absolute;
+    font-size: 24px;
   }
 
-  .bookmark-outline-remove :hover .remove-book:first-child {
-    display: block; /* Показываем первый значок при наведении */
-    opacity: 0; /* Прячем его */
+  .remove-book:last-child{
+    display: ;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  .bookmark-outline-remove:hover .remove-book:first-child {
+    display: ;
+    opacity: 0;
   }
   
-  .bookmark-outline-remove :hover .remove-book-2:last-child {
-    display: block; /* Показываем второй значок при наведении */
-    opacity: 1; /* Показываем его полностью */
+  .bookmark-outline-remove:hover .remove-book:last-child {
+    display: flex; 
+    opacity: 1; 
   }
 
 /*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
