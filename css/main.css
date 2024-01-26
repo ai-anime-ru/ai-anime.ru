@@ -5,16 +5,34 @@
 
 :root {
     color-scheme: dark;
+    /* clr менять вместе с header-back-clr 
+    #131318 -> (9f)
+    */
     --clr: #131318;
+    --header-back-clr: #1313189f;
     --main: #262630;
     --active: #d1e1f9;
     --main-text: #fff;
     --second-text: #d4d4d4;
     --second-text-2: #c4c4c4;
     --badje: #E9E9E9;
-    --left-light: #d1e1f9;
-    --right-light: #204a72;
+    --search-form: #1f1f25;
 }
+
+/*
+:root {
+    color-scheme: dark;
+    --clr: #1e1e26;
+    --main: #393949;
+    --active: #d1e1f9;
+    --main-text: #fff;
+    --second-text: #d4d4d4;
+    --second-text-2: #c4c4c4;
+    --badje: #E9E9E9;
+    --left-light: #503cc0;
+    --right-light: #ffffff;
+}
+*/
 
 * {
     margin: 0;
@@ -34,7 +52,11 @@ ul li {
     list-style: none;
 }
 
-/*------------- BACK LIGHT -----------*/
+.wrap {
+    margin-top: 90px;
+}
+
+/*------------- BACK LIGHT -----------
 
 .left-light {
     position: absolute;
@@ -61,7 +83,7 @@ ul li {
     background-image: radial-gradient(closest-side at 50% 50%,var(--right-light),transparent);
     transform: translateX(50%) translateY(50%);
 }
-
+*/
 /*--------------- privacy-policy -------------*/
 
 .privacy-policy {
@@ -139,7 +161,10 @@ ul li {
 
 .header {
     position: fixed;
+    /*
     background-color: #1e1e269f;
+    */
+    background-color: var(--header-back-clr);
     backdrop-filter: blur(40px);
     height: 70px;
     z-index: 1000;
@@ -173,7 +198,7 @@ ul li {
 
 .d3 form {
     color: white;
-    background-color: #2e2e38;
+    background-color: var(--search-form);
 }
 
 .d3 input,
@@ -548,7 +573,6 @@ ul li {
 
 .top-block-main {
     position: relative;
-    margin-top: 70px;
     background-color: #393949;
     width: 1300px;
     height: 250px;
