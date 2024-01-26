@@ -216,8 +216,8 @@
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]
 
-                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon title="Удалить из закладок"
-                            name="checkmark-circle-outline"></ion-icon></div>[/del-favorites]
+                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon class="remove-book" title="Удалить из закладок"
+                            name="checkmark-circle-outline"></ion-icon><ion-icon class="remove-book-2 name="close-circle-outline"></ion-icon></div>[/del-favorites]
                 </div>
             </div>
         </div>
