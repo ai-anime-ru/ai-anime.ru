@@ -367,9 +367,8 @@
 }
 
 .player-info {
-    border-radius: 15px;
     grid-column: 1/-1;
-    background-color: #1e1e26;
+    background-color: var(--clr);
     padding: 8px;
     padding: 20px;
     height: auto;

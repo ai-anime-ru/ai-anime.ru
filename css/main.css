@@ -10,6 +10,7 @@
     */
     --clr: #131318;
     --header-back-clr: #1313189f;
+    
     --main: #262630;
     --active: #d1e1f9;
     --main-text: #fff;
@@ -97,7 +98,7 @@ ul li {
     margin: 90px auto;
     width: 800px;
     background-color: var(--main);
-    color: rgb(223, 223, 223);
+    color: var(--second-text);
     padding: 100px 100px 100px 100px;
     border-radius: 15px;
     line-height: 20px;
@@ -309,11 +310,12 @@ ul li {
     border-radius: 0.5rem;
     width: auto;
     position: absolute;
-    background-color: #2e2e38;
+    background-color: var(--main);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+    box-shadow: 0 0px 17px #00000062;
 }
 
 .profile-link-header ul li a .icon {
