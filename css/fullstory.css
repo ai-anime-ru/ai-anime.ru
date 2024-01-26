@@ -565,7 +565,7 @@ span.sim-dot {
 }
 
 .bookmark-outline-add:hover {
-    color: #ffe600;;
+    color: #ffe600;
 }
 
 .bookmark-outline-remove {
@@ -577,22 +577,22 @@ span.sim-dot {
     display: flex;
     transition: opacity 0.5s;
     position: absolute;
-  }
+}
 
-  .remove-book:last-child{
+.remove-book:last-child{
     opacity: 0;
     transition: 0.5s;
-  }
+}
 
-  .bookmark-outline-remove:hover .remove-book:first-child {
+.bookmark-outline-remove:hover .remove-book:first-child {
     opacity: 0;
-  }
+}
   
-  .bookmark-outline-remove:hover .remove-book:last-child {
+.bookmark-outline-remove:hover .remove-book:last-child {
     display: flex; 
     opacity: 1; 
-    color: #ff6363;
-  }
+    color: #ff6161;
+}
 
 /*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
 
