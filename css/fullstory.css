@@ -569,24 +569,18 @@ span.sim-dot {
     transition: 0.3s;
 }
 
-.bookmark-outline-remove svg {
-}
-
 .remove-book:first-child {
     display: flex;
     transition: opacity 0.5s;
     position: absolute;
-    font-size: 24px;
   }
 
   .remove-book:last-child{
-    display: ;
     opacity: 0;
     transition: 0.5s;
   }
 
   .bookmark-outline-remove:hover .remove-book:first-child {
-    display: ;
     opacity: 0;
   }
   
