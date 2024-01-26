@@ -538,6 +538,7 @@ ul li {
 .side-block-related-news{
     margin-left: 20px;
     background-color: var(--main);
+    background: linear-gradient(180deg, var(--main), #1a1a21);
     width: 360px;
     height: auto;
     border-radius: 15px;
