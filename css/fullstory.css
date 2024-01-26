@@ -246,7 +246,7 @@
 .badge {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
-    background-color: #E9E9E9;
+    background-color: var(--badge-bright);
     border-radius: 0.5rem;
     color: rgb(0 0 0/var(--tw-text-opacity));
     display: inline-block;

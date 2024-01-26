@@ -15,8 +15,14 @@
     --main-text: #fff;
     --second-text: #d4d4d4;
     --second-text-2: #c4c4c4;
-    --badje: #E9E9E9;
+    --badge-bright: #E9E9E9;
+    --badge-dark: #1e1e26;
     --search-form: #1f1f25;
+    --badge-poster-box: #fff;
+    --box-shadow-hover: #00000060;
+    --btn-play-poster: #fff;
+    --main-h1: #fff;
+    --line: #8d8d8d;
 }
 
 /*

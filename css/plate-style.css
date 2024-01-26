@@ -8,7 +8,7 @@
 
 .main-container h1 {
     display: flex;
-    color: white;
+    color: var(--main-h1);
     margin-left: 20px;
     font-size: 1.5em;
     font-weight: 200;
@@ -25,7 +25,7 @@
 .line {
     padding-top: 10px;
     margin: auto;
-    border-bottom: 1px solid #8d8d8d;
+    border-bottom: 1px solid var(--line);
     width: 880px;
 }
 
@@ -73,7 +73,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 15px;
-    background-color: black;
+    background-color: var(--clr);
 }
 
 .poster-box img {
@@ -107,7 +107,7 @@
 .title-overlay .title-text {
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
-    color: #ffffff;
+    color: var(--main-text);
     text-decoration: none;
     font-size: 0.7em;
 }
@@ -119,7 +119,7 @@
     font-family: inherit;
     left: 10px;
     padding: 10px;
-    color: #fff;
+    color: var(--main-text);
     transform: translateY(0);
     transition: transform 0.5s ease-in-out, margin-top 0.5s ease-in-out;
 }
@@ -130,7 +130,7 @@
     margin: 0;
     padding-top: 80px;
     padding-bottom: 25px;
-    color: #d3d3d3;
+    color: var(--second-text);
     font-family: Arial, sans-serif;
     line-height: normal;
     font-weight: lighter;
@@ -140,12 +140,12 @@
 }
 
 .description p {
-    color: white;
+    color: var(--main-text);
     line-height: 1rem;
 }
 
 .title-bookmarks-icon {
-    color: white;
+    color: var(--btn-play-poster);
     position: absolute;
     right: 0;
     top: 0;
@@ -169,7 +169,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 60px;
-    color: #fff;
+    color: var(--btn-play-poster);
     font-size: 4em;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -203,14 +203,14 @@
 }
 
 .description .badge {
-    background-color: white;
+    background-color: var(--badge-poster-box);
     color: black;
     margin-left: 3px;
 }
 
 .poster-badge .badge {
-    background-color: #1e1e26;
-    color: white;
+    background-color: var(--badge-dark);
+    color: var(--main-text);
     margin: 0;
 }
 
@@ -228,7 +228,7 @@
 
 
 .box:hover {
-    box-shadow: 0 0px 17px #00000060;
+    box-shadow: 0 0px 17px var(--box-shadow-hover);
 }
 
 .news-container .box:hover {
@@ -241,7 +241,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     min-width: 60px;
-    color: #fff;
+    color: var(--btn-play-poster);
     font-size: 4em;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
