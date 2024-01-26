@@ -561,7 +561,11 @@ span.sim-dot {
 
 .bookmark-outline-add {
     color: white;
+    transition: 0.3s;
+}
 
+.bookmark-outline-add:hover {
+    color: #ffe600;;
 }
 
 .bookmark-outline-remove {
@@ -587,6 +591,7 @@ span.sim-dot {
   .bookmark-outline-remove:hover .remove-book:last-child {
     display: flex; 
     opacity: 1; 
+    color: #ff6363;
   }
 
 /*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
