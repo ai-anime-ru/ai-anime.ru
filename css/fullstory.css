@@ -637,7 +637,10 @@ span.sim-dot {
     font-size: 4em;
     color: white;
     font-weight: 100;
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 15px 15px;
+    background: linear-gradient(180deg, #ffffff 55%, #dbdbdb 66%, #cecece);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .pretimer .points {
