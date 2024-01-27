@@ -16,8 +16,10 @@
 			</div>
 		</div>
 		[info]
-		<h4 class="heading-info">О себе:</h4>
-		<p class="info-profile">{info}</p>
+		<div class="profile-info">
+			<h4 class="heading-info">О себе:</h4>
+			<p class="info-profile">{info}</p>
+		</div>
 		[/info] 
 		<div class="line"></div>
 		<div class="box_in">
