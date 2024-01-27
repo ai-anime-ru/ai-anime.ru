@@ -1327,13 +1327,10 @@ footer {
 
 .user-info .form-group {
     display: flex;
+    flex-direction: column;
 }
 
 .user-info .user-1 {
-    display: flex;
-}
-
-.user-info .user-1 .form-group {
     display: flex;
 }
 
