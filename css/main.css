@@ -1506,6 +1506,45 @@ footer {
     display: block;
 }
 
+
+/* ---------- PM ----------*/
+
+.pm-container {
+    position: relative;
+    overflow: hidden;
+    width: 920px;
+    margin: 70px auto;
+    background-color: var(--main);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.pm-container .box:hover{
+    box-shadow: none;
+
+}
+
+.pm-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pm-menu span {
+    background-color: var(--clr);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+    margin-right: 5px;
+    max-height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
