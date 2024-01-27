@@ -250,9 +250,8 @@
 										<div class="form_submit">
 											<button class="btn btn-big" name="submit"
 												type="submit"><b>Сохранить</b></button>
-												<button class="edit-btn" id="edit-btn" name="close"
-												type="close"><b>Закрыть</b></button>
 											[delete]<b>Удалить аккаунт</b>[/delete]
+										<button class="close-btn" id="close-btn" type="button">Редактировать профиль</button>
 											<input name="submit" type="hidden" id="submit" value="submit">
 										</div>
 									</div>
@@ -269,29 +268,31 @@
 </div>
 
 <script>
-	document.getElementById('edit-btn').addEventListener('click', function () {
-		var userInfoEdit = document.getElementById('user-info-edit');
+// Открывает блок при нажатии на первую кнопку
+document.getElementsByClassName('edit-btn')[0].addEventListener('click', function () {
+    var editBox = document.querySelector('.user-info-edit');
 
-		// Проверка наличия элемента
-		if (userInfoEdit) {
-			// Переключение класса для анимации
-			(userInfoEdit.classList.toggle('expanded'));
-			userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
-			userInfoEdit.style.display = 'block';
+    if (editBox) {
+        var offset = 70; // Ваш отступ
+        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
 
+        setTimeout(function() {
+            window.scrollTo({
+                top: editBoxTop,
+                behavior: 'smooth'
+            });
+        }, 300); // Задержка в 0.3 секунды (300 миллисекунд)
+    }
+});
 
-			// Если блок отображается, скрываем его, иначе показываем
-			if (userInfoEdit.classList.contains('expanded')) {
-				userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
-				userInfoEdit.style.display = 'block';
-			} else {
-				userInfoEdit.style.height = '0';
-				userInfoEdit.addEventListener('transitionend', function () {
-					userInfoEdit.style.display = '';
-				}, { once: true });
-			}
-		}
-	});
+// Закрывает блок при нажатии на вторую кнопку
+document.getElementById('close-btn').addEventListener('click', function () {
+    var userInfoEdit = document.querySelector('.user-info-edit');
+
+    // Скрытие блока
+    userInfoEdit.classList.remove('expanded');
+    userInfoEdit.style.maxHeight = '0';
+});
 </script>
 
 <script>
