@@ -7,7 +7,10 @@
 					<img class="avatar-photo" src="{foto}">
 				</div>
 				<span>{usertitle}</span>
-				[not-group=5]{pm}[/not-group]
+				[not-group=5]
+				{pm}
+				{dofriends}
+				[/not-group]
 			</div>
 		</div>
 		<!--[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]-->
