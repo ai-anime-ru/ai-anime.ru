@@ -16,45 +16,41 @@
 			<div class="tab-content">
 				<div class="tab-pane active" id="user1">
 					<div class="table-1">
-						<div>
-							<table>
-								<tbody>
-									<tr>
-										<td class="ui-c1 grey">Имя</td>
-										<td class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</td>
-									</tr>
-									<tr>
-										<td class="ui-c1 grey">Место жительства</td>
-										<td class="ui-c2">{land}[not-land]Неизвестно[/not-land]</td>
-									</tr>
-									<tr>
-										<td class="ui-c1 grey">Группа</td>
-										<td class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div>
-							<table>
-								<tbody>
-									<tr>
-										<td class="ui-c1 grey">Зарегистрирован</td>
-										<td class="ui-c2">{registration}</td>
-									</tr>
-									<tr>
-										<td class="ui-c1 grey">Последняя активность
-										</td>
-										<td class="ui-c2">{lastdate}</td>
-									</tr>
-									<tr>
-										<td class="ui-c1 grey">Статус</td>
-										<td class="ui-c2">[online]<span
-												style="color: #70bb39;">Онлайн</span>[/online][offline]Офлайн[/offline]
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
+						<table>
+							<tbody>
+								<tr>
+									<th class="ui-c1 grey">Имя</th>
+									<th class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</th>
+								</tr>
+								<tr>
+									<th class="ui-c1 grey">Место жительства</th>
+									<th class="ui-c2">{land}[not-land]Неизвестно[/not-land]</th>
+								</tr>
+								<tr>
+									<th class="ui-c1 grey">Группа</th>
+									<th class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</th>
+								</tr>
+							</tbody>
+						</table>
+						<table>
+							<tbody>
+								<tr>
+									<th class="ui-c1 grey">Зарегистрирован</th>
+									<th class="ui-c2">{registration}</th>
+								</tr>
+								<tr>
+									<th class="ui-c1 grey">Последняя активность
+									</th>
+									<th class="ui-c2">{lasthate}</th>
+								</tr>
+								<tr>
+									<th class="ui-c1 grey">Статус</th>
+									<th class="ui-c2">[online]<span
+											style="color: #70bb39;">Онлайн</span>[/online][offline]Офлайн[/offline]
+									</th>
+								</tr>
+							</tbody>
+						</table>
 					</div>
 					<ul class="usinf">
 						<li>

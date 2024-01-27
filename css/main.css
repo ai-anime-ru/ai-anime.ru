@@ -1359,7 +1359,7 @@ footer {
 
 .tab-pane {
     margin: 20px auto;
-    width: 80%;
+    padding: 15px;
 }
 
 .form-group textarea {
@@ -1369,6 +1369,27 @@ footer {
 
 .table-1 {
     display: flex;
+    min-width: 100%;
+}
+
+.table-1 table {
+    max-width: 50%;
+    margin: 15px;
+}
+
+.table-1 tr {
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-align: left;
+}
+
+.table-1 th{
+    border-bottom: 1px solid #ffffff !important;
+    box-sizing: border-box;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem 
 }
 
 /* ---------- OPTIMIZATION ----------*/

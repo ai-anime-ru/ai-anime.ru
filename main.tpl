@@ -36,6 +36,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-SK44Z46F4Y');
 	</script>
+	<script src="./js/ad.js" defer></script>
 <!--        
                ##
               ####
@@ -61,7 +62,6 @@
 		ТУТ БЫЛ ELONDIE
 -->
 </head>
-
 <body>
 	<div class="loader-container">
 		<div class="loader">
