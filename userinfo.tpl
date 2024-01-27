@@ -251,7 +251,8 @@
 											<button class="btn btn-big" name="submit"
 												type="submit"><b>Сохранить</b></button>
 											[delete]<b>Удалить аккаунт</b>[/delete]
-										<button class="close-btn" id="close-btn" type="button">Редактировать профиль</button>
+											<button class="close-btn" id="close-btn" type="button">Закрыть
+												редактор</button>
 											<input name="submit" type="hidden" id="submit" value="submit">
 										</div>
 									</div>
@@ -278,46 +279,64 @@
 			userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
 			userInfoEdit.style.display = 'block';
 
-
-			// Если блок отображается, скрываем его, иначе показываем
+			// Если блок отображается, изменяем текст кнопки, иначе возвращаем исходный текст
 			if (userInfoEdit.classList.contains('expanded')) {
 				userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
 				userInfoEdit.style.display = 'block';
+				document.getElementById('edit-btn').innerText = 'Закрыть редактор';
 			} else {
 				userInfoEdit.style.height = '0';
 				userInfoEdit.addEventListener('transitionend', function () {
 					userInfoEdit.style.display = '';
+					document.getElementById('edit-btn').innerText = 'Редактировать профиль';
 				}, { once: true });
 			}
 		}
 	});
 
-	document.getElementById('close-btn').addEventListener('click', function () {
-            var userInfoEdit = document.getElementById('user-info-edit');
 
-            // Скрытие блока
-            userInfoEdit.classList.remove('expanded');
-            userInfoEdit.style.height = '0';
-            userInfoEdit.addEventListener('transitionend', function () {
-                userInfoEdit.style.display = '';
-            }, { once: true });
-        });
+	document.getElementById('close-btn').addEventListener('click', function () {
+		var userInfoEdit = document.getElementById('user-info-edit');
+
+		// Скрытие блока
+		userInfoEdit.classList.remove('expanded');
+		userInfoEdit.style.height = '0';
+		userInfoEdit.addEventListener('transitionend', function () {
+			userInfoEdit.style.display = '';
+			document.getElementById('edit-btn').innerText = 'Редактировать профиль';
+		}, { once: true });
+	});
 </script>
 
 <script>
-document.getElementsByClassName('edit-btn')[0].addEventListener('click', function () {
-    var editBox = document.querySelector('.user-info-edit');
+	document.getElementsByClassName('edit-btn')[0].addEventListener('click', function () {
+		var editBox = document.querySelector('.user-info-edit');
 
-    if (editBox) {
-        var offset = 70;
-        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
+		if (editBox) {
+			var offset = 70;
+			var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
 
-        setTimeout(function() {
-            window.scrollTo({
-                top: editBoxTop,
-                behavior: 'smooth'
-            });
-        }, 200);
-    }
-});
+			setTimeout(function () {
+				window.scrollTo({
+					top: editBoxTop,
+					behavior: 'smooth'
+				});
+			}, 200);
+		}
+	});
+
+	document.getElementsByClassName('close-btn')[0].addEventListener('click', function () {
+		var editBox = document.querySelector('.header');
+
+		if (editBox) {
+			var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
+
+			setTimeout(function () {
+				window.scrollTo({
+					top: editBoxTop,
+					behavior: 'smooth'
+				});
+			}, 0);
+		}
+	});
 </script>

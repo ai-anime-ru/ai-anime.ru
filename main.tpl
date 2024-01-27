@@ -31,8 +31,8 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-	<script src="{THEME}/js/friends.js"></script> 
-	<script src="{THEME}/js/classie.js"></script>
+	<script src="https://ai-anime.ru/templates/ai-anime/js/friends.js"></script> 
+	<script src="https://ai-anime.ru/templates/ai-anime/js/classie.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
