@@ -7,8 +7,9 @@
 				[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]
 				[not-group=5]<div>{pm}</div>[/not-group]
 			</ul>
-			<div class="avatar">
-				<img src="{foto}">
+			<div class="avatar" background="{foto}">
+				<div class="background-photo"><img src="{foto}"></div>
+				<img class="avatar-photo" src="{foto}">
 				<span>{usertitle}</span>
 			</div>
 		</div>
