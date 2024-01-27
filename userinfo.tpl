@@ -15,14 +15,14 @@
 				<span>{usertitle}</span>
 			</div>
 		</div>
+		[info]
+		<h4 class="heading-info">О себе:</h4>
+		<p class="info-profile">{info}</p>
+		[/info] 
 		<div class="line"></div>
 		<div class="box_in">
 			<div class="tab-content">
 				<div class="tab-pane active" id="user1">
-					[info]
-					<h4 class="heading-info">О себе:</h4>
-					<p class="info-profile">{info}</p>
-					[/info] 
 					<div class="table-1">
 						<table>
 							<tbody>
