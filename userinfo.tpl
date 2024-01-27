@@ -326,15 +326,9 @@
 	});
 
 	document.getElementsByClassName('close-btn')[0].addEventListener('click', function () {
-    var editBox = document.querySelector('.user-info');
-
-    if (editBox) {
-        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY;
-
-        window.scrollTo({
-            top: editBoxTop,
-            behavior: 'smooth'
-        });
-    }
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 });
 </script>
