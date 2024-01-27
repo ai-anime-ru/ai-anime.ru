@@ -100,7 +100,7 @@
 								</div>
 								<div class="user-1">
 									<div class="form-group">
-										<label for="land">Место проживания</label>
+										<label for="land">Эу! Дай знать где ты находишься</label>
 										<input type="text" name="land" id="land" value="{land}" class="wide">
 									</div>
 									<div class="form-group">

@@ -920,13 +920,12 @@ footer {
 }
 
 .ui-form {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
 }
 
 .form-group {
     display: flex;
+    width: 100%;
 }
 
 .combo_field input{
@@ -1255,6 +1254,10 @@ footer {
     border-radius: 0.5rem !important;
 }
 
+.form-group:first-child {
+    margin-right: 0.5em;
+}
+
 .feedback-box .combo_field {
     margin-right: 10px;
 }
@@ -1328,6 +1331,11 @@ footer {
 .user-info .form-group {
     display: flex;
     flex-direction: column;
+
+}
+
+.user-info input {
+    width: unset;
 }
 
 .user-info .user-1 {
@@ -1342,6 +1350,10 @@ footer {
 .tab-pane {
     margin: 20px auto;
     width: 80%;
+}
+
+.form-group textarea {
+    width: 100%;
 }
 
 /* ---------- OPTIMIZATION ----------*/

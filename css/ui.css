@@ -251,7 +251,7 @@ input[type="week"],
 input[type="number"],
 input[type="color"] {
     display: inline-block;
-    width: 302px;
+    width: auto;
     padding: 6px;
     vertical-align: middle;
     border-radius: 3px;
