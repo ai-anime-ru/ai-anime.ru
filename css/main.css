@@ -1402,6 +1402,7 @@ footer {
 .table-1 table {
     max-width: 50%;
     margin: 15px;
+    width: 100%;
     border-collapse: collapse;
 }
 
@@ -1418,16 +1419,12 @@ footer {
     text-align: right;
 }
 
-.ui-c2 span {
-    right: 0;
-}
-
 .table-1 th{
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
-    border-bottom: 1px solid var(--badge-bright);
+    border-bottom: 1px solid var(--line);
 }
 
 /* ---------- OPTIMIZATION ----------*/
