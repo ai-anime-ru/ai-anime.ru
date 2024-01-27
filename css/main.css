@@ -1290,7 +1290,7 @@ footer {
     box-shadow: unset;
 }
 
-.user-info .avatar span{
+.user-info .avatar img{
     width: 400px;
     height: 400px;
     object-fit: cover;
