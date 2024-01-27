@@ -75,7 +75,7 @@
 					</ul>
 					</table>
 					<h4 class="heading">О себе</h4>
-					<p>{info}</p>
+					<p class="info-profile">{info}</p>
 					[signature]
 					<h4 class="heading">Подпись</h4>
 					{signature}

@@ -1294,9 +1294,12 @@ footer {
     overflow: hidden;
     width: 920px;
     margin: 70px auto;
-    padding: 15px;
     background-color: var(--main);
     border-radius: 15px;
+}
+
+.user-info .title {
+    display: none;
 }
 
 .user-info .box:hover {
@@ -1385,7 +1388,7 @@ footer {
 
 .tab-pane {
     margin: 0 auto;
-    padding: 15px;
+    padding: 30px;
 }
 
 .form-group textarea {
@@ -1425,6 +1428,11 @@ footer {
     padding-bottom: 1rem;
     padding-top: 1rem;
     border-bottom: 1px solid var(--line);
+}
+
+
+.info-profile {
+    
 }
 
 /* ---------- OPTIMIZATION ----------*/
