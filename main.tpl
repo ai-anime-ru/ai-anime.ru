@@ -23,6 +23,7 @@
 	<link href="https://ai-anime.ru/templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/full-story.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
+	<link href="https://ai-anime.ru/templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
 	<!-- <https://ionic.io/ionicons> -->
 	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 	<!-- <Google tag (gtag.js)> -->
@@ -589,5 +590,4 @@
 	}
 </script>
 </body>
-
 </html>

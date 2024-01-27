@@ -7,7 +7,7 @@
 				[not-group=5]<li>{pm}</li>[/not-group]
 			</ul>
 			<div class="avatar">
-				<a href="#"><span class="cover" style="background-image: url({foto});">{usertitle}</span></a>
+				<a href="#"><span class="cover" style="background-image: url({foto});"></span></a>
 			</div>
 		</div>
 		<div class="box_in">
