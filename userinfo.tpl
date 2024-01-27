@@ -15,9 +15,14 @@
 				<span>{usertitle}</span>
 			</div>
 		</div>
+		<div class="line"></div>
 		<div class="box_in">
 			<div class="tab-content">
 				<div class="tab-pane active" id="user1">
+					[info]
+					<h4 class="heading-info">О себе:</h4>
+					<p class="info-profile">{info}</p>
+					[/info] 
 					<div class="table-1">
 						<table>
 							<tbody>
@@ -74,11 +79,9 @@
 						</li>
 					</ul>
 					</table>
-					<h4 class="heading-info">О себе:</h4>
-					<p class="info-profile">{info}</p>
 					[signature]
-					<h4 class="heading">Подпись</h4>
-					{signature}
+					<h4 class="heading-info">Подпись</h4>
+					<p class="info-profile">{signature}</p>
 					[/signature]
 				</div>
 				[not-logged]
