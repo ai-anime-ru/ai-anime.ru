@@ -1524,13 +1524,27 @@ footer {
 
 }
 
+.pm-menu {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    background-color: var(--clr);
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .pm-menu ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.pm-menu span {
+.pm-menu a {
     background-color: var(--clr);
     color: white;
     padding: 0.75rem;
