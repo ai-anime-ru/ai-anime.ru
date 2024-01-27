@@ -85,7 +85,7 @@
 				</div>
 				[not-logged]
 				<div class="edit-profile">
-					<button id="edit-btn" type="button">Редактировать профиль</button>
+					<button class="edit-btn" id="edit-btn" type="button">Редактировать профиль</button>
 				</div>
 				[/not-logged]
 				[not-logged]
@@ -293,8 +293,8 @@ document.getElementById('edit-btn').addEventListener('click', function() {
 </script>
 
 <script>
-	    document.getElementsByClassName('.edit-btn').addEventListener('click', function () {
-        var editBox = document.querySelector('.tab-pane');
+	    document.getElementsById('edit-btn').addEventListener('click', function () {
+        var editBox = document.querySelector('.user-info-edit');
         var editBoxTop = editBox.offsetTop;
 
         window.scrollTo({
