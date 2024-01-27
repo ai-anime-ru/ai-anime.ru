@@ -326,17 +326,15 @@
 	});
 
 	document.getElementsByClassName('close-btn')[0].addEventListener('click', function () {
-		var editBox = document.querySelector('.header');
+    var editBox = document.querySelector('.user-info');
 
-		if (editBox) {
-			var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
+    if (editBox) {
+        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY;
 
-			setTimeout(function () {
-				window.scrollTo({
-					top: editBoxTop,
-					behavior: 'smooth'
-				});
-			}, 0);
-		}
-	});
+        window.scrollTo({
+            top: editBoxTop,
+            behavior: 'smooth'
+        });
+    }
+});
 </script>
