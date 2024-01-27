@@ -1351,8 +1351,10 @@ footer {
 }
 
 .heading {
-    margin-top: 1.5em;
+    font-weight: normal;
+    font-size: 1.7em;
     text-align: center;
+    margin-bottom: 1em;
 }
 
 .tab-pane {
