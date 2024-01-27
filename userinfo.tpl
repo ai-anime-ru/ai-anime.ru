@@ -107,8 +107,8 @@
 										{timezones}
 									</div>
 								</div>
-									<div class="form-group form-sep">
-										<div class="user-1">
+								<div class="form-group form-sep">
+									<div class="user-1">
 										<div class="form-group">
 											<label for="image">Загрузите аватар</label>
 											<input type="file" name="image" id="image" class="wide">
@@ -118,35 +118,33 @@
 											<input placeholder="Использовать Gravatar" type="text" name="gravatar"
 												id="gravatar" value="{gravatar}" class="wide">
 										</div>
-										<div class="form-group">
-											<div class="checkbox"><input type="checkbox" name="del_foto" id="del_foto"
-													value="yes" />
-													 <label for="del_foto">Удалить
-													аватар</label></div>
-										</div>
 									</div>
-										<div class="safety">
-											<h4 class="heading">Безопасность</h4>
+									<div class="checkbox"><input type="checkbox" name="del_foto" id="del_foto"
+											value="yes" />
+										 <label for="del_foto">Удалить аватар</label>
+									</div>
+									<div class="safety">
+										<h4 class="heading">Безопасность</h4>
+										<div class="form-group form-sep">
+											<div class="form-group">
+												<label for="altpass">Старый пароль</label>
+												<input type="password" name="altpass" id="altpass" class="wide">
+											</div>
+											<div class="form-group">
+												<label for="password1">Новый пароль</label>
+												<input type="password" name="password1" id="password1" class="wide">
+											</div>
+											<div class="form-group">
+												<label for="password2">Повторите новый пароль</label>
+												<input type="password" name="password2" id="password2" class="wide">
+											</div>
 											<div class="form-group form-sep">
 												<div class="form-group">
-													<label for="altpass">Старый пароль</label>
-													<input type="password" name="altpass" id="altpass" class="wide">
-												</div>
-												<div class="form-group">
-													<label for="password1">Новый пароль</label>
-													<input type="password" name="password1" id="password1" class="wide">
-												</div>
-												<div class="form-group">
-													<label for="password2">Повторите новый пароль</label>
-													<input type="password" name="password2" id="password2" class="wide">
-												</div>
-												<div class="form-group form-sep">
-													<div class="form-group">
-														<label>Двухфакторная авторизация</label>
-														{twofactor-auth}
-													</div>
+													<label>Двухфакторная авторизация</label>
+													{twofactor-auth}
 												</div>
 											</div>
+										</div>
 										<div class="form-group form-sep"></div>
 										<div class="form-group">
 											<label for="signature">Список игнорируемых пользователей:</label>
