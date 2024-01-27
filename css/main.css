@@ -1295,12 +1295,11 @@ footer {
 }
 
 .user-info .avatar span{
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 400px;
     height: 400px;
     object-fit: cover;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
 }
 
 /* ---------- OPTIMIZATION ----------*/

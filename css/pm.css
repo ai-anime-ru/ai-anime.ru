@@ -1,4 +1,4 @@
-body>.wrap>.box>.box_in>h1 {
-    position: relative!inherit;
+body .block .wrap .box .box_in .title {
+    position: relative;
 
 }
