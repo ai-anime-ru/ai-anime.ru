@@ -250,6 +250,8 @@
 										<div class="form_submit">
 											<button class="btn btn-big" name="submit"
 												type="submit"><b>Сохранить</b></button>
+												<button class="edit-btn" id="edit-btn" name="close"
+												type="close"><b>Закрыть</b></button>
 											[delete]<b>Удалить аккаунт</b>[/delete]
 											<input name="submit" type="hidden" id="submit" value="submit">
 										</div>
@@ -297,14 +299,15 @@ document.getElementsByClassName('edit-btn')[0].addEventListener('click', functio
     var editBox = document.querySelector('.user-info-edit');
 
     if (editBox) {
-        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY;
+        var offset = 70;
+        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
 
         setTimeout(function() {
             window.scrollTo({
                 top: editBoxTop,
                 behavior: 'smooth'
             });
-        }, 300);
+        }, 200);
     }
 });
 </script>
