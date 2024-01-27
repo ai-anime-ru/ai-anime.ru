@@ -1,21 +1,16 @@
 <div class="user-info">
 	<article class="box story">
 		<div class="box_in dark_top userinfo_top">
-			<ul class="title user_tab h1">
-				<div class="active"><a href="#user1" data-toggle="tab">[group=5]Пользователь [/group]{usertitle}</a>
-				</div>
-				[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]
-				[not-group=5]<div>{pm}</div>[/not-group]
-			</ul>
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
 				<div class="avatar-photo-box">
 					<img class="avatar-photo" src="{foto}">
 				</div>
 				<span>{usertitle}</span>
+				[not-group=5]{pm}[/not-group]
 			</div>
 		</div>
-		[not-group=5]<div>{pm}</div>[/not-group]
+		<!--[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]-->
 		[info]
 		<div class="profile-info">
 			<h4 class="heading-info">О себе:</h4>

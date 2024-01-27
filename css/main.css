@@ -1458,6 +1458,16 @@ footer {
     margin: 15px;
 }
 
+.avatar a {
+    color: var(--second-text);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.avatar a:hover {
+    color: var(--active);
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
