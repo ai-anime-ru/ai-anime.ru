@@ -108,19 +108,23 @@
 									</div>
 								</div>
 									<div class="form-group form-sep">
+										<div class="user-1">
 										<div class="form-group">
 											<label for="image">Загрузите аватар</label>
 											<input type="file" name="image" id="image" class="wide">
 										</div>
 										<div class="form-group">
+											<label for="image">Использовать Gravatar</label>
 											<input placeholder="Использовать Gravatar" type="text" name="gravatar"
 												id="gravatar" value="{gravatar}" class="wide">
 										</div>
 										<div class="form-group">
 											<div class="checkbox"><input type="checkbox" name="del_foto" id="del_foto"
-													value="yes" /> <label for="del_foto">Удалить
+													value="yes" />
+													 <label for="del_foto">Удалить
 													аватар</label></div>
 										</div>
+									</div>
 										<div class="safety">
 											<h4 class="heading">Безопасность</h4>
 											<div class="form-group form-sep">

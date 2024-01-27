@@ -1253,6 +1253,7 @@ footer {
     border-color: black;
     color: white;
     border-radius: 0.5rem !important;
+    height: 44px;
 }
 
 .form-group:first-child {
@@ -1265,6 +1266,10 @@ footer {
 
 .feedback-box .form_submit button{
     margin-right: 0px !important;
+}
+
+.checkbox {
+    display: flex;
 }
 
 /* ----------- RULES PAGE ----------*/
