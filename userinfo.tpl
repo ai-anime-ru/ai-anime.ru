@@ -268,31 +268,40 @@
 </div>
 
 <script>
-// Открывает блок при нажатии на первую кнопку
-document.getElementsByClassName('edit-btn')[0].addEventListener('click', function () {
-    var editBox = document.querySelector('.user-info-edit');
+	document.getElementById('edit-btn').addEventListener('click', function () {
+		var userInfoEdit = document.getElementById('user-info-edit');
 
-    if (editBox) {
-        var offset = 70; // Ваш отступ
-        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY - offset;
+		// Проверка наличия элемента
+		if (userInfoEdit) {
+			// Переключение класса для анимации
+			(userInfoEdit.classList.toggle('expanded'));
+			userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
+			userInfoEdit.style.display = 'block';
 
-        setTimeout(function() {
-            window.scrollTo({
-                top: editBoxTop,
-                behavior: 'smooth'
-            });
-        }, 300); // Задержка в 0.3 секунды (300 миллисекунд)
-    }
-});
 
-// Закрывает блок при нажатии на вторую кнопку
-document.getElementById('close-btn').addEventListener('click', function () {
-    var userInfoEdit = document.querySelector('.user-info-edit');
+			// Если блок отображается, скрываем его, иначе показываем
+			if (userInfoEdit.classList.contains('expanded')) {
+				userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
+				userInfoEdit.style.display = 'block';
+			} else {
+				userInfoEdit.style.height = '0';
+				userInfoEdit.addEventListener('transitionend', function () {
+					userInfoEdit.style.display = '';
+				}, { once: true });
+			}
+		}
+	});
 
-    // Скрытие блока
-    userInfoEdit.classList.remove('expanded');
-    userInfoEdit.style.maxHeight = '0';
-});
+	document.getElementById('close-btn').addEventListener('click', function () {
+            var userInfoEdit = document.getElementById('user-info-edit');
+
+            // Скрытие блока
+            userInfoEdit.classList.remove('expanded');
+            userInfoEdit.style.height = '0';
+            userInfoEdit.addEventListener('transitionend', function () {
+                userInfoEdit.style.display = '';
+            }, { once: true });
+        });
 </script>
 
 <script>
