@@ -1335,7 +1335,13 @@ footer {
 }
 
 .heading {
-    margin-top: 1em;
+    margin-top: 1.5em;
+    text-align: center;
+}
+
+.tab-pane {
+    margin: 20px auto;
+    width: 80%;
 }
 
 /* ---------- OPTIMIZATION ----------*/

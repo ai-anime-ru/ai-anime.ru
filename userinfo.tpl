@@ -87,8 +87,7 @@
 									</div>
 								</div>
 								<div class="user-1">
-									<div class="form-group form-sep">
-										<div class="form-group">
+									<div class="form-group">
 											<label for="info">О себе</label>
 											<textarea name="info" id="info" rows="5"
 												class="wide">{editinfo}</textarea>
