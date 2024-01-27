@@ -1334,6 +1334,10 @@ footer {
     display: flex;
 }
 
+.heading {
+    margin-top: 1em;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
