@@ -1292,7 +1292,7 @@ footer {
 .user-info {
     position: relative;
     overflow: hidden;
-    width: 900px;
+    width: 920px;
     margin: 70px auto;
     padding: 15px;
     background-color: var(--main);
@@ -1334,7 +1334,7 @@ footer {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 .user-info .avatar {
@@ -1345,7 +1345,7 @@ footer {
 
 .user-info .avatar span {
     font-size: 2em;
-    margin-top: 0.5em;
+    margin-top: 0;
 }
 
 .user-info .usinf li{
@@ -1384,7 +1384,7 @@ footer {
 }
 
 .tab-pane {
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 15px;
 }
 
@@ -1396,7 +1396,7 @@ footer {
 .table-1 {
     display: flex;
     min-width: 100%;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .table-1 table {
@@ -1408,7 +1408,18 @@ footer {
 .table-1 tr {
     font-size: .875rem;
     line-height: 1.25rem;
+}
+
+.ui-c1 {
     text-align: left;
+}
+
+.ui-c2 {
+    text-align: right;
+}
+
+.ui-c2 span {
+    right: 0;
 }
 
 .table-1 th{
