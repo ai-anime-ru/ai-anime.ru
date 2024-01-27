@@ -12,11 +12,13 @@
 				[/not-group]
 			</div>
 		</div>
+		[not-logged]
 		<ul>
-		<li><a href="{friends-link}">Мои друзья {request-count}</a></li>
-		<li><a href="{feed-link}">Новости друзей</a></li>
-		<li>{dofriends}</li>
+			<li><a href="{friends-link}">Мои друзья {request-count}</a></li>
+			<li><a href="{feed-link}">Новости друзей</a></li>
+			<li>{dofriends}</li>
 		</ul>
+		[/not-logged]
 		<!--[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]-->
 		[info]
 		<div class="profile-info">
@@ -99,16 +101,18 @@
 				<div class="user-info-edit" id="user-info-edit" style="display: none;">
 					[friends]
 					<div class="friends ussep">
-							<span class="grey">Друзья ({friends-count}) [friends-link]Все друзья[/friends-link] [requests]{requests-count} ожидающих подтверждения[/requests]</span>
-							{friends}
-							<div class="clr"></div>
+						<span class="grey">Друзья ({friends-count}) [friends-link]Все друзья[/friends-link]
+							[requests]{requests-count} ожидающих подтверждения[/requests]</span>
+						{friends}
+						<div class="clr"></div>
 					</div>
 					[/friends]
 					[common-friends]
 					<div class="friends ussep">
-							<span class="grey">Общие друзья ({common-count}) [common-link]Все общие друзья[/common-link]</span>
-							{common-friends}
-							<div class="clr"></div>
+						<span class="grey">Общие друзья ({common-count}) [common-link]Все общие
+							друзья[/common-link]</span>
+						{common-friends}
+						<div class="clr"></div>
 					</div>
 					[/common-friends]
 					[not-logged]
@@ -144,12 +148,19 @@
 									<tr>
 										<td class="label">Друзья:</td>
 										<td>
-										<div class="checkbox">{friends_status_f} <label for="friends_status_f">Разрешить добавлять меня в друзья</label></div>
-										<div class="checkbox">{friends_info_mail} <label for="friends_info_mail">Получать уведомления о предложениях дружбы на E-mail</label></div>
-										<div class="checkbox">{friends_info_pm} <label for="friends_info_pm">Получать уведомления о предложениях дружбы в ЛС</label></div>
-										<div class="checkbox">{friends_pm} <label for="friends_pm">Получать <strong>личные сообщения</strong> только от друзей</label></div>
+											<div class="checkbox">{friends_status_f} <label
+													for="friends_status_f">Разрешить добавлять меня в друзья</label>
+											</div>
+											<div class="checkbox">{friends_info_mail} <label
+													for="friends_info_mail">Получать уведомления о предложениях дружбы
+													на E-mail</label></div>
+											<div class="checkbox">{friends_info_pm} <label
+													for="friends_info_pm">Получать уведомления о предложениях дружбы в
+													ЛС</label></div>
+											<div class="checkbox">{friends_pm} <label for="friends_pm">Получать
+													<strong>личные сообщения</strong> только от друзей</label></div>
 										</td>
-									  </tr>
+									</tr>
 									<div class="user-1">
 										<div class="form-group">
 											<label for="land">Эу! Дай знать где ты находишься</label>
@@ -356,9 +367,9 @@
 	});
 
 	document.getElementsByClassName('close-btn')[0].addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+	});
 </script>

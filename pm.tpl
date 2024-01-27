@@ -66,7 +66,9 @@
 		<div class="comment" id="{comment-id}">
 			<div class="com_info">
 				<div class="avatar">
-					<span class="cover" style="background-image: url({foto});"></span>
+					<div class="avatar-pm-box">
+						<img class="avatar-pm" src="{foto}">
+					</div>
 					[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online]
 				</div>
 				<div class="com_user">

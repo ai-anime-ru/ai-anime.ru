@@ -1584,6 +1584,11 @@ footer {
     color: var(--main-h1);
 }
 
+.pm-container img {
+    border-radius: 50%;
+    max-width: 50px;
+}
+
 
 /* ---------- OPTIMIZATION ----------*/
 
