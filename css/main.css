@@ -1386,13 +1386,6 @@ footer {
     margin-bottom: 1em;
 }
 
-.panel-clr {
-    background-color: var(--clr);
-    border-radius: 15px;
-    margin: 30px;
-    padding: 15px;
-}
-
 .tab-pane {
     margin: 0 auto;
     padding: 30px;
@@ -1401,6 +1394,13 @@ footer {
 .form-group textarea {
     width: 100%;
     height: 100%;
+}
+
+.panel-clr {
+    background-color: var(--clr);
+    border-radius: 15px;
+    margin: 30px;
+    padding: 15px;
 }
 
 .table-1 {
@@ -1451,7 +1451,7 @@ footer {
 }
 
 .profile-info {
-    padding: 0 30px 5px 30px;
+    padding: 0 30px 15px 30px;
 }
 
 /* ---------- OPTIMIZATION ----------*/
