@@ -1454,6 +1454,10 @@ footer {
     padding: 0 30px 15px 30px;
 }
 
+.usinf {
+    margin: 15px;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {

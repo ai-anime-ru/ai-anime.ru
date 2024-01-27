@@ -21,6 +21,11 @@
 			<p class="info-profile">{info}</p>
 		</div>
 		[/info] 
+
+		[signature]
+		<h4 class="heading-info">Подпись</h4>
+		<p class="info-profile">{signature}</p>
+		[/signature]
 		<div class="line"></div>
 		<div class="box_in">
 			<div class="tab-content">
@@ -81,10 +86,6 @@
 						</li>
 					</ul>
 					</table>
-					[signature]
-					<h4 class="heading-info">Подпись</h4>
-					<p class="info-profile">{signature}</p>
-					[/signature]
 				</div>
 				[not-logged]
 				<div class="tab-pane" id="user2">
