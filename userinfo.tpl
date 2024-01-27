@@ -16,7 +16,7 @@
 			<div class="tab-content">
 				<div class="tab-pane active" id="user1">
 					<table>
-						<ul class="usinf">
+						<tbody>
 							<tr>
 								<tb class="ui-c1 grey">Имя</tb>
 								<tb class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</tb>
@@ -29,7 +29,9 @@
 								<tb class="ui-c1 grey">Группа</tb>
 								<tb class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</tb>
 							</tr>
-						</ul>
+						</tbody>
+					</table>
+					<table>
 						<ul>
 							<li>
 								<div class="ui-c1 grey">Зарегистрирован</div>
