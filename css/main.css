@@ -1245,6 +1245,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     margin-right: 10px;
+    margin-bottom: 0.3em;
 }
 
 .form-group select {
