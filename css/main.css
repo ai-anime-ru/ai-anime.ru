@@ -1574,6 +1574,17 @@ footer {
     display: none;
 }
 
+.pm_list a {
+    color: var(--active);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pm_list a:hover {
+    color: var(--main-h1);
+}
+
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {

@@ -11,7 +11,7 @@
 					</ul>
 				</nav>
 				<div class="pm_status">
-					{pm-progress-bar}
+					<!--{pm-progress-bar}-->
 					{proc-pm-limit} % / ({pm-limit} сообщений)
 				</div>
 			</div>
@@ -66,7 +66,7 @@
 		<div class="comment" id="{comment-id}">
 			<div class="com_info">
 				<div class="avatar">
-					<span class="cover" style="background-image: url({foto});">{login}</span>
+					<span class="cover" style="background-image: url({foto});"></span>
 					[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online]
 				</div>
 				<div class="com_user">
