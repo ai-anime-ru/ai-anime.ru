@@ -17,7 +17,6 @@
 		<li><a href="{feed-link}">Новости друзей</a></li>
 		<li>{dofriends}</li>
 		</ul>
-		{include file="engine/modules/friends_random.php"}
 		<!--[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]-->
 		[info]
 		<div class="profile-info">
