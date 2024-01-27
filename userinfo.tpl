@@ -24,7 +24,7 @@
 		<div class="line"></div>
 		<div class="box_in">
 			<div class="tab-content">
-				<div class="tab-pane active" id="user1">
+				<div class="panel-clr tab-pane active" id="user1">
 					<div class="table-1">
 						<table>
 							<tbody>
