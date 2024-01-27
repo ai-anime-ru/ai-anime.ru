@@ -1276,6 +1276,16 @@ footer {
     line-height: 20px;
 }
 
+/*------------ USER INFO -------------*/
+
+.user-info {
+    width: 900px;
+    margin: 70px auto;
+    padding: 15px;
+    background-color: var(--main);
+    border-radius: 15px;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
