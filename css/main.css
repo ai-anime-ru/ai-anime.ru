@@ -1290,12 +1290,11 @@ footer {
     box-shadow: unset;
 }
 
-.user-info .avatar img{
-    width: 400px;
-    height: 400px;
+.user-info .avatar img {
+    width: 70px;
+    height: 70px;
     object-fit: cover;
-    background-size: 400px 400px;
-    background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
 /* ---------- OPTIMIZATION ----------*/

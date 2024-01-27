@@ -8,6 +8,7 @@
 			</ul>
 			<div class="avatar">
 				<img src="{foto}">
+				<span>{usertitle}</span>
 			</div>
 		</div>
 		<div class="box_in">
