@@ -24,6 +24,8 @@
     --btn-play-poster: #fff;
     --main-h1: #fff;
     --line: #8d8d8d;
+    --active-2: #68a5ff;
+    --btn-active-font-clr: #000;
     /*
     --left-light: #265157;
     --right-light: #28414b;
@@ -1465,7 +1467,33 @@ footer {
 }
 
 .avatar a:hover {
-    color: var(--active);
+    color: var(--active-2);
+}
+
+.edit-profile {
+    padding: 0 0 0 30px;
+}
+
+.edit-profile button{
+    background-color: var(--clr);
+    display: flex;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+    margin-right: 5px;
+    max-height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.edit-profile button:hover {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr)
 }
 
 /* ---------- OPTIMIZATION ----------*/
