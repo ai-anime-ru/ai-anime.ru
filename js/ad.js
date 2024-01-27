@@ -1,8 +1,12 @@
 function runAdblockScript() {
+    console.log('Executing adblock script...');
+
     // Загружаем фильтры адблока
     fetch('./adblock.txt')
         .then(response => response.text())
         .then(adBlockFilters => {
+            console.log('Filters loaded successfully.');
+
             const filtersArray = adBlockFilters.split('\n').filter(filter => filter.trim() !== '');
 
             // Переопределяем функцию fetch для блокировки запросов
@@ -15,6 +19,8 @@ function runAdblockScript() {
                 }
                 return window.originalFetch(url, options);
             };
+
+            console.log('Adblock script execution complete.');
         })
         .catch(error => console.error('Failed to load ad block filters:', error));
 }
@@ -22,5 +28,5 @@ function runAdblockScript() {
 // Запускаем скрипт сразу при загрузке страницы
 runAdblockScript();
 
-// Запускаем скрипт каждые 5 минут (или другой интервал по вашему выбору)
-const intervalId = setInterval(runAdblockScript, 5 * 1000); // 5 секунд
+// Запускаем скрипт каждые 5 секунд
+const intervalId = setInterval(runAdblockScript, 30 * 1000);

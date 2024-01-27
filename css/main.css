@@ -1370,11 +1370,13 @@ footer {
 .table-1 {
     display: flex;
     min-width: 100%;
+    justify-content: center;
 }
 
 .table-1 table {
     max-width: 50%;
     margin: 15px;
+    border-collapse: collapse;
 }
 
 .table-1 tr {
@@ -1384,12 +1386,11 @@ footer {
 }
 
 .table-1 th{
-    border-bottom: 1px solid #ffffff !important;
-    box-sizing: border-box;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     padding-bottom: 1rem;
-    padding-top: 1rem 
+    padding-top: 1rem;
+    border-bottom: 1px solid var(--badge-bright);
 }
 
 /* ---------- OPTIMIZATION ----------*/
