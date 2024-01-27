@@ -15,6 +15,7 @@
 				<span>{usertitle}</span>
 			</div>
 		</div>
+		[not-group=5]<div>{pm}</div>[/not-group]
 		[info]
 		<div class="profile-info">
 			<h4 class="heading-info">О себе:</h4>
@@ -43,7 +44,7 @@
 								</tr>
 								<tr>
 									<th class="ui-c1 grey">Группа</th>
-									<th class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</th>
+									<th class="ui-c2">{status}[ignore]Игнорировать[/ignore]</th>
 								</tr>
 							</tbody>
 						</table>
@@ -86,6 +87,9 @@
 						</li>
 					</ul>
 					</table>
+				</div>
+				<div class="edit-profile">
+					<button class="btn">Редактировать</button>
 				</div>
 				[not-logged]
 				<div class="tab-pane" id="user2">
