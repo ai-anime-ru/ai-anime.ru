@@ -19,7 +19,7 @@
 			<li>{dofriends}</li>
 		</ul>
 		[/not-logged]
-		<!--[not-logged]<div><a href="#user2" data-toggle="tab">Редактировать</a></div>[/not-logged]-->
+		<!--<div><a href="#user2" data-toggle="tab">Редактировать</a></div>-->
 		[info]
 		<div class="profile-info">
 			<h4 class="heading-info">О себе:</h4>
