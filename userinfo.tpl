@@ -44,7 +44,7 @@
 								<tr>
 									<th class="ui-c1 grey">Последняя активность
 									</th>
-									<th class="ui-c2">{lasthate}</th>
+									<th class="ui-c2">{lastdate}</th>
 								</tr>
 								<tr>
 									<th class="ui-c1 grey">Статус</th>
@@ -74,7 +74,7 @@
 						</li>
 					</ul>
 					</table>
-					<h4 class="heading">О себе</h4>
+					<h4 class="heading-info">О себе:</h4>
 					<p class="info-profile">{info}</p>
 					[signature]
 					<h4 class="heading">Подпись</h4>

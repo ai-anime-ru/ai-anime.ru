@@ -1430,9 +1430,17 @@ footer {
     border-bottom: 1px solid var(--line);
 }
 
+.heading-info {
+    color: var(--main-h1);
+    font-size: 1.2em;
+    text-align: center;
+    margin: 10px;
+}
 
 .info-profile {
-    
+    background-color: var(--clr);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 /* ---------- OPTIMIZATION ----------*/
