@@ -1563,11 +1563,15 @@ footer {
 
 .pm-container .pm tbody{
     background-color: var(--clr);
-    padding: 5px;
 }
 
-.pm-container .pm tb{
+.pm tbody tr td{
     padding: 5px;
+    border-radius: 0.25rem;
+}
+
+.pm-container .title{
+    display: none;
 }
 
 /* ---------- OPTIMIZATION ----------*/
