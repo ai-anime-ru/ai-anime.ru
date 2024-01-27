@@ -1297,6 +1297,38 @@ footer {
     border-radius: 50%;
 }
 
+.user-info .avatar {
+    display: flex;
+    align-items: center;
+}
+
+.user-info .avatar span {
+    font-size: 2.5em;
+    margin-left: 0.3em;
+}
+
+.user-info .box_in {
+    margin-top: 1em;
+}
+
+.user-info .usinf li{
+    display: flex;
+    margin-right: 1em;
+}
+
+.user-info .usinf li div:first-child{
+    margin-right: 0.4em;
+}
+
+.user-info .usinf li div:last-child{
+    margin-right: 0.4em;
+    color: var(--active);
+}
+
+.user-info input {
+    width: 200px;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
