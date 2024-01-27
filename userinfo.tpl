@@ -15,56 +15,65 @@
 		<div class="box_in">
 			<div class="tab-content">
 				<div class="tab-pane active" id="user1">
-					<table>
-						<tbody>
-							<tr>
-								<td class="ui-c1 grey">Имя</td>
-								<td class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</td>
-							</tr>
-							<tr>
-								<td class="ui-c1 grey">Место жительства</td>
-								<td class="ui-c2">{land}[not-land]Неизвестно[/not-land]</td>
-							</tr>
-							<tr>
-								<td class="ui-c1 grey">Группа</td>
-								<td class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</td>
-							</tr>
-						</tbody>
-					</table>
-					<table>
-						<tbody>
-							<tr>
-								<td class="ui-c1 grey">Зарегистрирован</td>
-								<td class="ui-c2">{registration}</td>
-							</tr>
-							<tr>
-								<td class="ui-c1 grey">Последняя активность</div>
-								<td class="ui-c2">{lastdate}</td>
-							</tr>
-							<tr>
-								<td class="ui-c1 grey">Статус</td>
-								<td class="ui-c2">[online]<span
-										style="color: #70bb39;">Онлайн</span>[/online][offline]Офлайн[/offline]</td>
-							</tr>
-						<tbody>
-							<ul class="usinf">
-								<li>
-									<div class="ui-c1 grey">Кол-во публикаций</div>
-									<div class="ui-c2">{news-num}&nbsp;&nbsp; [ {news} ]</div>
-								</li>
-								<li>
-									<div class="ui-c1 grey">Кол-во комментариев</div>
-									<div class="ui-c2">{comm-num}&nbsp;&nbsp; [ {comments} ]</div>
-								</li>
-								<li>
-									<div class="ui-c1 grey">Рейтинг публикаций</div>
-									<div class="ui-c2">{rate}</div>
-								</li>
-								<li>
-									<div class="ui-c1 grey">Рейтинг комментариев</div>
-									<div class="ui-c2">{commentsrate}</div>
-								</li>
-							</ul>
+					<div class="table-1">
+						<div>
+							<table>
+								<tbody>
+									<tr>
+										<td class="ui-c1 grey">Имя</td>
+										<td class="ui-c2">{fullname}[not-fullname]Неизвестно[/not-fullname]</td>
+									</tr>
+									<tr>
+										<td class="ui-c1 grey">Место жительства</td>
+										<td class="ui-c2">{land}[not-land]Неизвестно[/not-land]</td>
+									</tr>
+									<tr>
+										<td class="ui-c1 grey">Группа</td>
+										<td class="ui-c2">{status} &nbsp;&nbsp; [ignore]Игнорировать[/ignore]</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div>
+							<table>
+								<tbody>
+									<tr>
+										<td class="ui-c1 grey">Зарегистрирован</td>
+										<td class="ui-c2">{registration}</td>
+									</tr>
+									<tr>
+										<td class="ui-c1 grey">Последняя активность
+										</td>
+										<td class="ui-c2">{lastdate}</td>
+									</tr>
+									<tr>
+										<td class="ui-c1 grey">Статус</td>
+										<td class="ui-c2">[online]<span
+												style="color: #70bb39;">Онлайн</span>[/online][offline]Офлайн[/offline]
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<ul class="usinf">
+						<li>
+							<div class="ui-c1 grey">Кол-во публикаций</div>
+							<div class="ui-c2">{news-num}&nbsp;&nbsp; [ {news} ]</div>
+						</li>
+						<li>
+							<div class="ui-c1 grey">Кол-во комментариев</div>
+							<div class="ui-c2">{comm-num}&nbsp;&nbsp; [ {comments} ]</div>
+						</li>
+						<li>
+							<div class="ui-c1 grey">Рейтинг публикаций</div>
+							<div class="ui-c2">{rate}</div>
+						</li>
+						<li>
+							<div class="ui-c1 grey">Рейтинг комментариев</div>
+							<div class="ui-c2">{commentsrate}</div>
+						</li>
+					</ul>
 					</table>
 					<h4 class="heading">О себе</h4>
 					<p>{info}</p>

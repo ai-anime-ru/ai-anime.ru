@@ -1367,6 +1367,10 @@ footer {
     height: 100%;
 }
 
+.table-1 {
+    display: flex;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
