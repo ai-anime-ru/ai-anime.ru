@@ -23,8 +23,7 @@
 					</li>
 					[/admin-link]
 					<li class="hideorno">
-						<a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
-							href="/user/{profile-login}">
+						<a href="index.php?subaction=userinfo&user={profile-login}">
 							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon>
 							</div>
 							<div class="text color-in-header-menu">Профиль</div>
