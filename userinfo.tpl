@@ -9,7 +9,9 @@
 			</ul>
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
-				<img class="avatar-photo" src="{foto}">
+				<div class="avatar-photo-box">
+					<img class="avatar-photo" src="{foto}">
+				</div>
 				<span>{usertitle}</span>
 			</div>
 		</div>
