@@ -72,16 +72,19 @@
 					<div id="options">
 						<div class="addform">
 							<ul class="ui-form">
-								<li class="form-group">
-									<label for="fullname">Ваше имя</label>
-									<input type="text" name="fullname" id="fullname" value="{fullname}" class="wide">
-								</li>
-								<li class="form-group">
-									<label for="email">Ваш e-mail</label>
-									<input type="email" name="email" id="email" value="{editmail}" class="wide"
-										required>
-									<div class="checkbox">{hidemail}</div>
-								</li>
+								<div class="user-1">
+										<div class="form-group">
+											<label for="fullname">Ваше имя</label>
+											<input type="text" name="fullname" id="fullname" value="{fullname}"
+												class="wide">
+										</div>
+										<div class="form-group">
+											<label for="email">Ваш e-mail</label>
+											<input type="email" name="email" id="email" value="{editmail}" class="wide"
+												required>
+											<div class="checkbox">{hidemail}</div>
+										</div>
+								</div>
 								<li class="form-group">
 									<label for="land">Место проживания</label>
 									<input type="text" name="land" id="land" value="{land}" class="wide">

@@ -1329,6 +1329,14 @@ footer {
     display: flex;
 }
 
+.user-info .user-1 {
+    display: flex;
+}
+
+.user-info .user-1 .form-group {
+    display: flex;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
