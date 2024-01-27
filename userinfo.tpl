@@ -89,7 +89,7 @@
 				</div>
 				[/not-logged]
 				[not-logged]
-				<div class="user-info-edit" id="user-info-edit">
+				<div class="user-info-edit" id="user-info-edit" style="display: none;">
 					[not-logged]
 					<div class="tab-pane" id="user2">
 						<!-- Настройки пользователя -->
@@ -273,7 +273,10 @@ document.getElementById('edit-btn').addEventListener('click', function() {
     // Проверка наличия элемента
     if (userInfoEdit) {
         // Переключение класса для анимации
-        userInfoEdit.classList.toggle('expanded');
+        (userInfoEdit.classList.toggle('expanded'));
+		userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
+		userInfoEdit.style.display = 'block';
+		
 
         // Если блок отображается, скрываем его, иначе показываем
         if (userInfoEdit.classList.contains('expanded')) {
@@ -282,9 +285,21 @@ document.getElementById('edit-btn').addEventListener('click', function() {
         } else {
             userInfoEdit.style.height = '0';
             userInfoEdit.addEventListener('transitionend', function() {
-                userInfoEdit.style.display = 'none';
+                userInfoEdit.style.display = '';
             }, { once: true });
         }
     }
 });
+</script>
+
+<script>
+	    document.getElementsByClassName('.edit-btn').addEventListener('click', function () {
+        var editBox = document.querySelector('.tab-pane');
+        var editBoxTop = editBox.offsetTop;
+
+        window.scrollTo({
+            top: editBoxTop,
+            behavior: 'smooth'
+        });
+    });
 </script>
