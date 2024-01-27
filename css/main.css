@@ -1325,8 +1325,8 @@ footer {
     color: var(--active);
 }
 
-.user-info input {
-    width: 200px;
+.user-info .form-group {
+    display: flex;
 }
 
 /* ---------- OPTIMIZATION ----------*/
