@@ -267,39 +267,44 @@
 </div>
 
 <script>
-document.getElementById('edit-btn').addEventListener('click', function() {
-    var userInfoEdit = document.getElementById('user-info-edit');
+	document.getElementById('edit-btn').addEventListener('click', function () {
+		var userInfoEdit = document.getElementById('user-info-edit');
 
-    // Проверка наличия элемента
-    if (userInfoEdit) {
-        // Переключение класса для анимации
-        (userInfoEdit.classList.toggle('expanded'));
-		userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
-		userInfoEdit.style.display = 'block';
-		
+		// Проверка наличия элемента
+		if (userInfoEdit) {
+			// Переключение класса для анимации
+			(userInfoEdit.classList.toggle('expanded'));
+			userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
+			userInfoEdit.style.display = 'block';
 
-        // Если блок отображается, скрываем его, иначе показываем
-        if (userInfoEdit.classList.contains('expanded')) {
-            userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
-            userInfoEdit.style.display = 'block';
-        } else {
-            userInfoEdit.style.height = '0';
-            userInfoEdit.addEventListener('transitionend', function() {
-                userInfoEdit.style.display = '';
-            }, { once: true });
-        }
-    }
-});
+
+			// Если блок отображается, скрываем его, иначе показываем
+			if (userInfoEdit.classList.contains('expanded')) {
+				userInfoEdit.style.height = userInfoEdit.scrollHeight + 'px';
+				userInfoEdit.style.display = 'block';
+			} else {
+				userInfoEdit.style.height = '0';
+				userInfoEdit.addEventListener('transitionend', function () {
+					userInfoEdit.style.display = '';
+				}, { once: true });
+			}
+		}
+	});
 </script>
 
 <script>
-	    document.getElementsById('edit-btn').addEventListener('click', function () {
-        var editBox = document.querySelector('.user-info-edit');
-        var editBoxTop = editBox.offsetTop;
+document.getElementsByClassName('edit-btn')[0].addEventListener('click', function () {
+    var editBox = document.querySelector('.user-info-edit');
 
-        window.scrollTo({
-            top: editBoxTop,
-            behavior: 'smooth'
-        });
-    });
+    if (editBox) {
+        var editBoxTop = editBox.getBoundingClientRect().top + window.scrollY;
+
+        setTimeout(function() {
+            window.scrollTo({
+                top: editBoxTop,
+                behavior: 'smooth'
+            });
+        }, 300);
+    }
+});
 </script>
