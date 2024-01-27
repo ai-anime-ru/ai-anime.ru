@@ -1286,6 +1286,14 @@ footer {
     border-radius: 15px;
 }
 
+.user-info .box:hover {
+    box-shadow: unset;
+}
+
+.user-info .title {
+    display: none;
+}
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
