@@ -1798,6 +1798,10 @@ input[type="text"] {
     text-align: center;
 }
 
+.pm-container .com_content a {
+    color: var(--active-2);
+}
+
 /*------------- LAST COMMENT ------------*/
 
 

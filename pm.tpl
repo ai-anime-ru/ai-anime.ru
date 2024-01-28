@@ -92,7 +92,7 @@
 			</div>
 			<div class="com_content">
 				<h4 class="title">{subj}</h4>
-				<div class="text">Сообщение: {text}</div>
+				<div class="text"><a>Сообщение:</a> {text}</div>
 				[signature]<div class="signature">--------------------<br />{signature}</div>[/signature]
 			</div>
 		</div>
