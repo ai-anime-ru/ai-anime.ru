@@ -14,8 +14,6 @@
 		</div>
 		[not-logged]
 		<ul>
-			<li><a href="{friends-link}">Мои друзья {request-count}</a></li>
-			<li><a href="{feed-link}">Новости друзей</a></li>
 			<li>{dofriends}</li>
 		</ul>
 		[/not-logged]
