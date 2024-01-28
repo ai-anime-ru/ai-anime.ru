@@ -10,7 +10,9 @@
 	<div class="comm-right">
 		<div class="comm-one clearfix">
 			<span class="comm-author">{author}</span>
-	
+			<div class="user-group">
+				<p>{group}</p>
+			</div>
 		</div>
 		<div class="comm-two clearfix full-text">
 			{comment}
