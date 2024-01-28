@@ -1519,6 +1519,10 @@ footer {
     padding: 15px;
 }
 
+.meta ul{
+    display: flex;
+}
+
 .pm-container .box:hover{
     box-shadow: none;
 
@@ -1622,6 +1626,9 @@ footer {
 .pm_status {
     display: none;
 }
+
+
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
