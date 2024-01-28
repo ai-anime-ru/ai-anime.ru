@@ -189,6 +189,7 @@
                 </div>
             </div>
             <div class="watch-pannel">
+                [edit]<i title="Редактировать">Редактировать</i>[/edit]
                 <a class="watch-online">Смотреть онлайн</a>
                 <div class="dropdown-watch-online">
                     <button onclick="toggleDropdown()" class="dropbtn-watch-online">+ Добавить в список</button>
