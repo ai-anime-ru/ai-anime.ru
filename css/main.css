@@ -1619,13 +1619,17 @@ input[type="text"] {
     display: none;
 }
 
-.pm_list a {
+.pm_list a,
+.pm_list b {
     color: var(--active);
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s;    
+    font-weight: normal;
 }
 
-.pm_list a:hover {
+.pm_list a:hover,
+.pm_list a:hover,
+.pm_list b:hover {
     color: var(--main-h1);
 }
 
