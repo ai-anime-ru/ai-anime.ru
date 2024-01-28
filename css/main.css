@@ -1723,7 +1723,7 @@ input[type="text"] {
 }
 
 .pm-container .com_info .com_user {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-between;
     color: var(--main-text) !important;
@@ -1791,10 +1791,10 @@ input[type="text"] {
 }
 
 .wrote-a-message {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: normal;
     color: var(--main-h1);
-    padding: 20px;
+    margin-top: 40px;
     text-align: center;
 }
 

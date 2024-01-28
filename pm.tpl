@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
-				<p class="Wrote-a-message">Написал сообщение</p>
+				<!--<p class="wrote-a-message">Написал сообщение:</p>-->
 				<div class="com_user">
 					<span>Тема: <p>{subj}</p></span>
 					<span class="grey">
@@ -92,7 +92,7 @@
 			</div>
 			<div class="com_content">
 				<h4 class="title">{subj}</h4>
-				<div class="text">{text}</div>
+				<div class="text">Сообщение: {text}</div>
 				[signature]<div class="signature">--------------------<br />{signature}</div>[/signature]
 			</div>
 		</div>
