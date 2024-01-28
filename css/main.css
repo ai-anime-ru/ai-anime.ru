@@ -1646,11 +1646,24 @@ footer {
     border-radius: 0.5rem;
     font-weight: 500;
     white-space: nowrap;
-    width: 97px;
+    width: auto;
     margin-top: 15px;
     padding: 5px;
     font-size: 0.90em;
     transition: 0.3s;
+    margin-right: 5px;
+}
+
+.meta ul li a {
+    display: flex;
+}
+
+.pm-container .icon-pm {
+    color: var(--btn-active-font-clr);
+}
+
+.meta ul li span {
+    color: var(--btn-active-font-clr);
 }
 
 .pm-container .com_content .text {
