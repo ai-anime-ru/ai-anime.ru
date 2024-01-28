@@ -353,7 +353,7 @@
     margin-bottom: 3px;
     width: 200px;
     color: white;
-    background-color: var(--clr);
+    background-color: var(--clr) !important;
     border-color: #ff5c57;
     position: static;
     display: inline-block;
@@ -387,7 +387,6 @@
     color: white;
     background-color: var(--clr);
     border-color: #ff5c57;
-    position: absolute;
     left: -290px;
     top: -155px;
     display: inline-block;
