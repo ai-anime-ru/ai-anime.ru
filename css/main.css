@@ -26,6 +26,7 @@
     --line: #8d8d8d;
     --active-2: #68a5ff;
     --btn-active-font-clr: #000;
+    --red: #ff4848;
     /*
     --left-light: #265157;
     --right-light: #28414b;
@@ -1391,9 +1392,16 @@ footer {
     border: none;
     padding: 10px;
     margin: 15px;
+    right: 0;
     cursor: pointer;
     z-index: 5;
     color: var(--btn-play-poster);
+    transition: 0.3s;
+} 
+
+.user-info .btn-ignore:hover{
+    color: var();
+    box-shadow: 0 0px 10px #000000be;
 } 
 
 .heading {
