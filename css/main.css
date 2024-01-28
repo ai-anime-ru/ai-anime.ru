@@ -1652,11 +1652,20 @@ footer {
     padding: 7px;
     font-size: 0.90em;
     transition: 0.3s;
+    text-decoration: none;
+}
+
+.pm-container .icon-pm {
+    font-size: 0.9em;
 }
 
 .meta ul li {
     display: flex;
     margin-left: 10px;
+}
+
+.meta a span {
+    margin-left: 3.5px;
 }
 
 .pm-container .com_content .text {
