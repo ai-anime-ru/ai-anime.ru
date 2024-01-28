@@ -1775,6 +1775,14 @@ input[type="text"] {
     margin-left: 11px;
 }
 
+.pm-container .subj-box div {
+    text-align: center;
+    margin-top: 15px;
+    background-color: var(--clr);
+    padding: 15px;
+    border-radius: 15px;
+}
+
 /*------------- LAST COMMENT ------------*/
 
 
