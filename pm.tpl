@@ -82,6 +82,7 @@
 					</div>
 				</div>
 				<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
+				<p class="Wrote-a-message">Написал сообщение</p>
 				<div class="com_user">
 					<span>Тема: <p>{subj}</p></span>
 					<span class="grey">

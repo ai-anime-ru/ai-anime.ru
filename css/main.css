@@ -28,6 +28,7 @@
     --btn-active-font-clr: #000;
     --red: #ff4848;
     --red-1: #ff6161;
+    --font-color-dark: #000;
     /*
     --left-light: #265157;
     --right-light: #28414b;
@@ -1781,11 +1782,20 @@ input[type="text"] {
     align-items: center;
 }
 .pm-container .com_user span p{
-    color: var(--btn-active-font-clr);
+    font-size: 0.9em;
+    color: var(--font-color-dark);
     margin-left: 5px;
-    background-color: var(--badge-bright);
+    background-color: var(--second-text-2);
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
+}
+
+.wrote-a-message {
+    font-size: 1em;
+    font-weight: normal;
+    color: var(--main-h1);
+    padding: 20px;
+    text-align: center;
 }
 
 /*------------- LAST COMMENT ------------*/
