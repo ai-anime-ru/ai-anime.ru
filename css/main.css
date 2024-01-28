@@ -1637,9 +1637,8 @@ footer {
 }
 
 .meta ul li {
-    background-color: #d1e1f9;
+    background-color: var(--active);
     display: flex;
-    align-items: center;
     justify-content: center;
     height: auto;
     cursor: pointer;
@@ -1648,10 +1647,15 @@ footer {
     white-space: nowrap;
     width: auto;
     margin-top: 15px;
-    padding: 5px;
+    padding: 7px;
     font-size: 0.90em;
     transition: 0.3s;
     margin-right: 5px;
+    align-items: center;
+}
+
+.meta ul li:last-child {
+    display: flex;
 }
 
 .meta ul .del{
@@ -1665,7 +1669,7 @@ footer {
 }
 .pm-container .icon-pm {
     color: var(--btn-active-font-clr);
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .meta ul li a {
