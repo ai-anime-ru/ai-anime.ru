@@ -1785,7 +1785,7 @@ input[type="text"] {
     font-size: 0.9em;
     color: var(--font-color-dark);
     margin-left: 5px;
-    background-color: var(--second-text-2);
+    background-color: var(--second-text);
     padding: 0.25rem 0.5rem;
     border-radius: 0.5rem;
 }
