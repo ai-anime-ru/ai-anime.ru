@@ -1654,10 +1654,6 @@ footer {
     align-items: center;
 }
 
-.meta ul li:last-child {
-    display: flex;
-}
-
 .meta ul .del{
     background-color: #ee3737;
     color: var(--main-h1);

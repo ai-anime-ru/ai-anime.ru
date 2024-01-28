@@ -69,12 +69,12 @@
 					<div class="avatar-pm-box">
 						<img class="avatar-pm" src="{foto}">
 						<div class="avata-pm-text">
-						<b class="name">{author}</b>
-						<div class="up-status">
-							[online]<p class="online">В сети</p>[/online]
-							[offline]<p class="offline">Не в сети</p>[/offline]
+							<b class="name">{author}</b>
+							<div class="up-status">
+								[online]<p class="online">В сети</p>[/online]
+								[offline]<p class="offline">Не в сети</p>[/offline]
+							</div>
 						</div>
-					</div>
 					</div>
 					<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
 				</div>
@@ -96,16 +96,20 @@
 			<ul class="left">
 				<li class="reply grey" title="Ответить">[reply]
 					<div class="icon-pm"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-					<span><a>Ответить</a></span>[/reply]</li>
+					<span><a>Ответить</a></span>[/reply]
+				</li>
 				<li class="reply grey" title="Игнорировать">[ignore]
 					<div class="icon-pm"><ion-icon name="remove-circle-outline"></ion-icon></div>
-				<span><a>Игнорировать</a></span>[/ignore]</li>
+					<span><a>Игнорировать</a></span>[/ignore]
+				</li>
 				<li class="complaint" title="Жалоба">[complaint]
 					<div class="icon-pm"><ion-icon name="warning-outline"></ion-icon></div>
-					<span class="title_hide"><a>Жалоба</a></span>[/complaint]</li>
-				<li class="del" title="Удалить">[del]
-					<div class="icon-pm"><ion-icon name="trash-outline"></ion-icon></div>
-					<span class="title_hide"><a>Удалить</a></span>[/del]</li>
+					<span class="title_hide"><a>Жалоба</a></span>[/complaint]
+				</li>
+				[del]<li class="del" title="Удалить">
+					
+					<span class="title_hide">Удалить</span>
+				</li>[/del]
 			</ul>
 		</div>
 		[/readpm]
