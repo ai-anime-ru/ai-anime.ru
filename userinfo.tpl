@@ -1,9 +1,9 @@
 <div class="user-info">
 	<article class="box story">
 		<div class="box_in dark_top userinfo_top">
-			[ignore]<button class="btn-ignore">Игнорировать</button>[/ignore]
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
+				[ignore]<button class="btn-ignore">Игнорировать</button>[/ignore]
 				<div class="avatar-photo-box">
 					<img class="avatar-photo" src="{foto}">
 				</div>
@@ -11,6 +11,7 @@
 				[not-group=5]
 				{pm}
 				[/not-group]
+				{group}
 			</div>
 		</div>
 		[not-logged]
@@ -47,7 +48,7 @@
 								</tr>
 								<tr>
 									<th class="ui-c1 grey">Группа</th>
-									<th class="ui-c2">{status}[ignore]Игнорировать[/ignore]</th>
+									<th class="ui-c2">{status}</th>
 								</tr>
 							</tbody>
 						</table>

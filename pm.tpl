@@ -11,8 +11,9 @@
 					</ul>
 				</nav>
 				<div class="pm_status">
-					<!--{pm-progress-bar}-->
+					<!--{pm-progress-bar}
 					{proc-pm-limit} % / ({pm-limit} сообщений)
+					-->
 				</div>
 			</div>
 			[pmlist]
@@ -73,6 +74,9 @@
 							<div class="up-status">
 								[online]<p class="online">В сети</p>[/online]
 								[offline]<p class="offline">Не в сети</p>[/offline]
+							</div>
+							<div class="user-group">
+								<p>Группа: </p>{group}
 							</div>
 						</div>
 					</div>

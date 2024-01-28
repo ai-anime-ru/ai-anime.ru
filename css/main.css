@@ -1398,7 +1398,7 @@ footer {
     z-index: 5;
     color: var(--btn-play-poster);
     transition: 0.2s;
-} 
+}
 
 .user-info .btn-ignore:hover{
     background-color: var(--red);
@@ -1718,7 +1718,7 @@ footer {
     justify-content: center;
 }
 
-.pm-container .avata-pm-text b {
+.pm-container .avata-pm-text .name {
     margin-left: 10px;
     color: var(--main-h1) !important;
     font-weight: normal;
@@ -1748,6 +1748,13 @@ footer {
 
 .pm-container .combo_field input {
     margin-right: 10px;
+}
+
+.pm-container .user-group {
+    display: flex;
+    justify-content: center;
+    margin-left: 11px;
+    font-size: 0.9em;
 }
 
 /*------------- LAST COMMENT ------------*/
