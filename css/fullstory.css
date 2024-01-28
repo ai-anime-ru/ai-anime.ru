@@ -357,10 +357,11 @@
     border-radius: 0.5rem;
     transition: 0.3s;
     width: 170px;
-    left: 974px;
+    left: 500px;
     top: 0px;
-    opacity: 0.9;
+    opacity: 1;
 }
+#dropmenudiv
 .edit-news {
     cursor: pointer;
     margin-bottom: 3px;
@@ -368,7 +369,9 @@
     color: white;
     background-color: var(--clr);
     border-color: #ff5c57;
-
+    position: absolute;
+    left: -290px;
+    top: -155px;
     display: inline-block;
     text-align: center;
     user-select: none;
