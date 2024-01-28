@@ -79,18 +79,15 @@
 				</div>
 				<div class="meta">
 					<ul class="left">
-						<li class="reply grey" title="Ответить">[reply]<svg class="icon icon-reply">
-								<use xlink:href="#icon-reply"></use>
-							</svg><span>Ответить</span>[/reply]</li>
+						<li class="reply grey" title="Ответить">[reply]
+							<ion-icon xlink:href="#icon-reply" name="chatbubbles-outline"></ion-icon><span>Ответить</span>[/reply]</li>
 						<li class="reply grey" title="Игнорировать">[ignore]<svg class="icon icon-reply">
 								<use xlink:href="#icon-dislike"></use>
 							</svg><span>Игнорировать</span>[/ignore]</li>
-						<li class="complaint" title="Жалоба">[complaint]<svg class="icon icon-bad">
-								<use xlink:href="#icon-bad"></use>
-							</svg><span class="title_hide">Жалоба</span>[/complaint]</li>
-						<li class="del" title="Удалить">[del]<svg class="icon icon-cross">
-								<use xlink:href="#icon-cross"></use>
-							</svg><span class="title_hide">Удалить</span>[/del]</li>
+						<li class="complaint" title="Жалоба">[complaint]
+							<ion-icon xlink:href="#icon-bad" name="warning-outline"></ion-icon><span class="title_hide">Жалоба</span>[/complaint]</li>
+						<li class="del" title="Удалить">[del]
+							<ion-icon xlink:href="#icon-cross" name="trash-outline"></ion-icon><span class="title_hide">Удалить</span>[/del]</li>
 					</ul>
 				</div>
 			</div>
