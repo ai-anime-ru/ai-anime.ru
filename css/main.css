@@ -1474,7 +1474,7 @@ footer {
     padding: 0 0 0 30px;
 }
 
-.edit-profile button{
+.edit-profile button {
     background-color: var(--clr);
     display: flex;
     color: white;
@@ -1491,7 +1491,7 @@ footer {
     align-items: center;
 }
 
-.edit-profile button:hover {
+.edit-profile buttonx:hover {
     background-color: var(--active);
     color: var(--btn-active-font-clr)
 }
@@ -1589,6 +1589,33 @@ footer {
     max-width: 50px;
 }
 
+.pm select{
+    background-color: var(--main);
+    color: var(--main-text);
+    border-color: var(--clr);
+}
+
+.bbcodes {
+    background-color: var(--main);
+    display: flex;
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+    margin-right: 5px;
+    max-height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+    align-items: center;
+}
+
+.bbcodes:hover {
+    background-color: var(--active) !important;
+    color: var(--btn-active-font-clr) !important;
+}
 
 /* ---------- OPTIMIZATION ----------*/
 
