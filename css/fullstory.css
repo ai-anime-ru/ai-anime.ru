@@ -367,7 +367,10 @@
     transition: 0.3s;
     opacity: 1;
 }
-
+#dropmenudiv a:hover {
+  background-color: #d1e1f9;
+  color: black;
+}
 #dropmenudiv {
     width: 140px !important;
     left: 820px !important;
@@ -490,6 +493,9 @@
     z-index: 9999;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.xfieldsrow input {
+    background-color: #000;
 }
 
 /* Стили для кнопок внутри выпадающего меню */
