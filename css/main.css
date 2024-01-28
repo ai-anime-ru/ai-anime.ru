@@ -1632,13 +1632,15 @@ footer {
     display: none;
 }
 
-.meta ul{
+.meta ul {
     display: flex;
 }
 
-.meta ul li {
+.meta ul a{
     background-color: var(--active);
     display: flex;
+    color: var(--btn-active-font-clr);
+    align-items: center;
     justify-content: center;
     height: auto;
     cursor: pointer;
@@ -1650,29 +1652,11 @@ footer {
     padding: 7px;
     font-size: 0.90em;
     transition: 0.3s;
-    margin-right: 5px;
-    align-items: center;
 }
 
-.meta ul .del{
-    background-color: #ee3737;
-    color: var(--main-h1);
-}
-
-.meta ul .del a span,
-.meta ul .del .icon-pm{
-    color: var(--main-h1);
-}
-.pm-container .icon-pm {
-    color: var(--btn-active-font-clr);
-    font-size: 0.9em;
-}
-
-.meta ul li span {
-    color: var(--btn-active-font-clr);
-    text-decoration: none;
-    font-size: 1em;
-    margin-left: 3px;
+.meta ul li {
+    display: flex;
+    margin-left: 10px;
 }
 
 .pm-container .com_content .text {
