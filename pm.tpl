@@ -68,27 +68,14 @@
 				<div class="avatar">
 					<div class="avatar-pm-box">
 						<img class="avatar-pm" src="{foto}">
+						<b class="name">{author}</b>
 					</div>
 					[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online]
 				</div>
 				<div class="com_user">
-					<b class="name">{author}</b>
 					<span class="grey">
-						написал: {date}
+						{date}
 					</span>
-				</div>
-				<div class="meta">
-					<ul class="left">
-						<li class="reply grey" title="Ответить">[reply]
-							<ion-icon xlink:href="#icon-reply" name="chatbubbles-outline"></ion-icon><span>Ответить</span>[/reply]</li>
-						<li class="reply grey" title="Игнорировать">[ignore]<svg class="icon icon-reply">
-								<use xlink:href="#icon-dislike"></use>
-							</svg><span>Игнорировать</span>[/ignore]</li>
-						<li class="complaint" title="Жалоба">[complaint]
-							<ion-icon xlink:href="#icon-bad" name="warning-outline"></ion-icon><span class="title_hide">Жалоба</span>[/complaint]</li>
-						<li class="del" title="Удалить">[del]
-							<ion-icon xlink:href="#icon-cross" name="trash-outline"></ion-icon><span class="title_hide">Удалить</span>[/del]</li>
-					</ul>
 				</div>
 			</div>
 			<div class="com_content">
@@ -96,6 +83,17 @@
 				<div class="text">{text}</div>
 				[signature]<div class="signature">--------------------<br />{signature}</div>[/signature]
 			</div>
+		</div>
+		<div class="meta">
+			<ul class="left">
+				<li class="reply grey" title="Ответить">[reply]
+					<ion-icon name="chatbubbles-outline"></ion-icon><span>Ответить</span>[/reply]</li>
+				<li class="reply grey" title="Игнорировать">[ignore]<ion-icon name="remove-circle-outline"></ion-icon><span>Игнорировать</span>[/ignore]</li>
+				<li class="complaint" title="Жалоба">[complaint]
+					<ion-icon name="warning-outline"></ion-icon><span class="title_hide">Жалоба</span>[/complaint]</li>
+				<li class="del" title="Удалить">[del]
+					<ion-icon name="trash-outline"></ion-icon><span class="title_hide">Удалить</span>[/del]</li>
+			</ul>
 		</div>
 		[/readpm]
 	</article>

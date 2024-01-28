@@ -1519,10 +1519,6 @@ footer {
     padding: 15px;
 }
 
-.meta ul{
-    display: flex;
-}
-
 .pm-container .box:hover{
     box-shadow: none;
 
@@ -1627,7 +1623,27 @@ footer {
     display: none;
 }
 
+.meta ul{
+    display: flex;
+}
 
+.pm-container .com_content .text {
+    background-color: var(--clr);
+    border-radius: 15px;
+    color: var(--main-text);
+    padding: 15px;
+    margin: 15px 0 15px 0;
+}
+
+.pm-container .com_info .com_user {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pm-container .avatar-pm {
+    display: flex;
+    align-items: center;
+}
 
 /* ---------- OPTIMIZATION ----------*/
 
