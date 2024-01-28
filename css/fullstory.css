@@ -494,8 +494,8 @@
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-.xfieldsrow input {
-    background-color: #000;
+.xfieldscolright input {
+    background-color: #000 !important;
 }
 
 /* Стили для кнопок внутри выпадающего меню */
