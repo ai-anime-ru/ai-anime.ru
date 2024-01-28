@@ -3,6 +3,7 @@
 		<div class="box_in dark_top userinfo_top">
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
+				[ignore]Игнорировать[/ignore]
 				<div class="avatar-photo-box">
 					<img class="avatar-photo" src="{foto}">
 				</div>
