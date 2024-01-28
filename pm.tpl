@@ -36,7 +36,7 @@
 						</div>
 					</li>
 					<li id="comment-editor">{editor}</li>
-					<li><input type="checkbox" id="outboxcopy" name="outboxcopy" value="1" /> <label
+					<li><input type="checkbox" id="outboxcopy" name="outboxcopy" value="1" checked /> <label
 							for="outboxcopy">Сохранить сообщение в папке "Отправленные"</label></li>
 					[recaptcha]
 					<li>{recaptcha}</li>

@@ -1630,7 +1630,7 @@ input[type="text"] {
 .pm_list a:hover,
 .pm_list a:hover,
 .pm_list b:hover {
-    color: var(--main-h1);
+    color: var(--active-2);
 }
 
 .pm-container img {
