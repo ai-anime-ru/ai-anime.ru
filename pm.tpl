@@ -68,11 +68,19 @@
 				<div class="avatar">
 					<div class="avatar-pm-box">
 						<img class="avatar-pm" src="{foto}">
+						<div class="avata-pm-text">
 						<b class="name">{author}</b>
+						<div class="up-status">
+							[online]<p class="online">В сети</p>[/online]
+							[offline]<p class="offline">Не в сети</p>[/offline]
+						</div>
 					</div>
-					[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online]
+					</div>
+					<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
 				</div>
+				<div class="line"></div>
 				<div class="com_user">
+					<span>Написал:</span>
 					<span class="grey">
 						{date}
 					</span>
