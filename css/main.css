@@ -1751,10 +1751,8 @@ footer {
 }
 
 .pm-container .user-group {
-    display: flex;
-    justify-content: center;
+    font-size: 0.8em;
     margin-left: 11px;
-    font-size: 0.9em;
 }
 
 /*------------- LAST COMMENT ------------*/
