@@ -27,6 +27,7 @@
     --active-2: #68a5ff;
     --btn-active-font-clr: #000;
     --red: #ff4848;
+    --red-1: #ff6161;
     /*
     --left-light: #265157;
     --right-light: #28414b;
@@ -1396,12 +1397,11 @@ footer {
     cursor: pointer;
     z-index: 5;
     color: var(--btn-play-poster);
-    transition: 0.3s;
+    transition: 0.2s;
 } 
 
 .user-info .btn-ignore:hover{
-    color: var();
-    box-shadow: 0 0px 10px #000000be;
+    background-color: var(--red);
 } 
 
 .heading {

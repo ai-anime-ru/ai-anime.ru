@@ -651,13 +651,13 @@ span.sim-dot {
 
 .remove-book:first-child {
     display: flex;
-    transition: opacity 0.5s;
+    transition: opacity 0.3s;
     position: absolute;
 }
 
 .remove-book:last-child {
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .bookmark-outline-remove:hover .remove-book:first-child {
@@ -667,7 +667,7 @@ span.sim-dot {
 .bookmark-outline-remove:hover .remove-book:last-child {
     display: flex;
     opacity: 1;
-    color: #ff6161;
+    color: var(--red-1);
 }
 
 /*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
