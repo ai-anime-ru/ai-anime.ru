@@ -315,8 +315,6 @@
 
         {include file="relatednews.tpl"}
 
-        {include file="/engine/modules/pm_list.php?limit=2"}
-
         <div class="description-full-box">
             <div>
                 <h1>Об аниме:</h1>
