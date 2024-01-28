@@ -1654,16 +1654,25 @@ footer {
     margin-right: 5px;
 }
 
-.meta ul li a {
-    display: flex;
+.meta ul .del{
+    background-color: #ee3737;
+    color: var(--main-h1);
 }
 
+.meta ul .del a,
+.meta ul .del .icon-pm{
+    color: var(--main-h1);
+}
 .pm-container .icon-pm {
     color: var(--btn-active-font-clr);
+    font-size: 1em;
 }
 
-.meta ul li span {
+.meta ul li a {
     color: var(--btn-active-font-clr);
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 3px;
 }
 
 .pm-container .com_content .text {
