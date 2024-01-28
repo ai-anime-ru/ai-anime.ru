@@ -1659,7 +1659,7 @@ footer {
     color: var(--main-h1);
 }
 
-.meta ul .del a,
+.meta ul .del a span,
 .meta ul .del .icon-pm{
     color: var(--main-h1);
 }
@@ -1668,7 +1668,7 @@ footer {
     font-size: 0.9em;
 }
 
-.meta ul li a {
+.meta ul li span {
     color: var(--btn-active-font-clr);
     text-decoration: none;
     font-size: 1em;

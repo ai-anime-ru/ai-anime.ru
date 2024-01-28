@@ -96,20 +96,20 @@
 			<ul class="left">
 				<li class="reply grey" title="Ответить">[reply]
 					<div class="icon-pm"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-					<span><a>Ответить</a></span>[/reply]
+					<span>Ответить</span>[/reply]
 				</li>
 				<li class="reply grey" title="Игнорировать">[ignore]
 					<div class="icon-pm"><ion-icon name="remove-circle-outline"></ion-icon></div>
-					<span><a>Игнорировать</a></span>[/ignore]
+					<span>Игнорировать</span>[/ignore]
 				</li>
 				<li class="complaint" title="Жалоба">[complaint]
 					<div class="icon-pm"><ion-icon name="warning-outline"></ion-icon></div>
-					<span class="title_hide"><a>Жалоба</a></span>[/complaint]
+					<span class="title_hide">Жалоба</span>[/complaint]
 				</li>
-				[del]<li class="del" title="Удалить">
-					
-					<span class="title_hide">Удалить</span>
-				</li>[/del]
+				<li class="del" title="Удалить">[del]
+					<div class="icon-pm"><ion-icon name="trash-outline"></ion-icon></div>
+					<span class="title_hide">Удалить</span>[/del]
+				</li>
 			</ul>
 		</div>
 		[/readpm]
