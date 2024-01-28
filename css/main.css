@@ -1649,8 +1649,8 @@ footer {
     white-space: nowrap;
     width: auto;
     margin-top: 15px;
-    padding: 7px;
-    font-size: 0.90em;
+    padding: 8px;
+    font-size: 0.9em;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -1661,11 +1661,16 @@ footer {
 
 .meta ul li {
     display: flex;
-    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.meta ul li:last-child a{
+    background-color: #ff4848;
+    color: white;
 }
 
 .meta a span {
-    margin-left: 3.5px;
+    margin-left: 3px;
 }
 
 .pm-container .com_content .text {
@@ -1710,7 +1715,11 @@ footer {
 }
 
 .pm-container .line {
-    margin-bottom: 10px;
+    padding-top: 25px;
+}
+
+.pm-container .combo_field input {
+    margin-right: 10px;
 }
 
 /* ---------- OPTIMIZATION ----------*/
