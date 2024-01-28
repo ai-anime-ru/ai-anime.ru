@@ -1532,6 +1532,19 @@ footer {
 
 /* ---------- PM ----------*/
 
+input[type="text"] {
+    background-color: var(--clr) !important;
+    border: none !important;
+    border-radius: 0.75rem !important;
+    padding: 10px !important;
+
+}
+
+.ui-dialog label {
+    color: var(--second-text) !important;
+    margin-top: 5px;
+}
+
 .pm-container {
     position: relative;
     overflow: hidden;
@@ -1684,7 +1697,7 @@ footer {
 
 .meta ul li {
     display: flex;
-    margin-right: 10px;
+    margin-right: 7px;
 }
 
 .meta ul li:last-child a{
@@ -1705,7 +1718,7 @@ footer {
 }
 
 .pm-container .com_info .com_user {
-    margin-top: 40px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     color: var(--main-text) !important;
@@ -1715,14 +1728,17 @@ footer {
 .pm-container .avatar-pm-box {
     display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: var(--clr);
+    padding: 15px;
+    border-radius: 15px;
+    width: auto;
 }
 
 .pm-container .avata-pm-text .name {
     margin-left: 10px;
     color: var(--main-h1) !important;
     font-weight: normal;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .pm-container .form_submit button {

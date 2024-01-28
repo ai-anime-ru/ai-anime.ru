@@ -82,8 +82,6 @@
 					</div>
 
 					<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
-				</div>
-				<div class="line"></div>
 				<div class="com_user">
 					<span>Написал:</span>
 					<span class="grey">

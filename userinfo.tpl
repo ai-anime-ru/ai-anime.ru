@@ -11,7 +11,6 @@
 				[not-group=5]
 				{pm}
 				[/not-group]
-				{group}
 			</div>
 		</div>
 		[not-logged]
