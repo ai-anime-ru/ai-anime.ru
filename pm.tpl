@@ -81,14 +81,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="subj-box">
-					<div>
-					<p>Тема: {subj}</p>
-					</div>
-				</div>
 				<!--[online]<span class="com_online" title="{login} - онлайн">Онлайн</span>[/online] -->
 				<div class="com_user">
-					<span>Написал:</span>
+					<span>Тема: <p>{subj}</p></span>
 					<span class="grey">
 						{date}
 					</span>

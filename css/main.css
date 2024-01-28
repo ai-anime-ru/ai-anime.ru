@@ -1727,6 +1727,7 @@ input[type="text"] {
     justify-content: space-between;
     color: var(--main-text) !important;
     padding: 0 5px 0 5px;
+    align-items: center;
 }
 
 .pm-container .avatar-pm-box {
@@ -1775,12 +1776,16 @@ input[type="text"] {
     margin-left: 11px;
 }
 
-.pm-container .subj-box div {
-    text-align: center;
-    margin-top: 15px;
-    background-color: var(--clr);
-    padding: 15px;
-    border-radius: 15px;
+.pm-container .com_user span{
+    display: flex;
+    align-items: center;
+}
+.pm-container .com_user span p{
+    color: var(--btn-active-font-clr);
+    margin-left: 5px;
+    background-color: var(--badge-bright);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.5rem;
 }
 
 /*------------- LAST COMMENT ------------*/
