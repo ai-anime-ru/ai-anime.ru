@@ -1695,11 +1695,16 @@ footer {
     justify-content: center;
 }
 
-.pm-container b {
+.pm-container .avata-pm-text b {
     margin-left: 10px;
     color: var(--main-h1) !important;
     font-weight: normal;
     font-size: 1.3em;
+}
+
+.pm-container .form_submit button {
+    display: flex;
+    align-items: center;
 }
 
 .pm-container .avata-pm-text {
@@ -1721,6 +1726,10 @@ footer {
 .pm-container .combo_field input {
     margin-right: 10px;
 }
+
+/*------------- LAST COMMENT ------------*/
+
+
 
 /* ---------- OPTIMIZATION ----------*/
 
