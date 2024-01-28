@@ -367,10 +367,12 @@
     transition: 0.3s;
     opacity: 1;
 }
+
 #dropmenudiv a:hover {
-  background-color: #d1e1f9;
-  color: black;
+    background-color: #d1e1f9;
+    color: black;
 }
+
 #dropmenudiv {
     width: 140px !important;
     left: 820px !important;
@@ -494,10 +496,15 @@
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
+
 .xfieldscolright input {
     background-color: #000 !important;
 }
+
 .quick-edit-text {
+    background-color: #000 !important;
+}
+#dle-promt-text {
     background-color: #000 !important;
 }
 /* Стили для кнопок внутри выпадающего меню */
