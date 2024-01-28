@@ -1,9 +1,9 @@
 <div class="user-info">
 	<article class="box story">
 		<div class="box_in dark_top userinfo_top">
+			<button class="btn-ignore">[ignore]Игнорировать[/ignore]Игнорировать</button>
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
-				[ignore]Игнорировать[/ignore]
 				<div class="avatar-photo-box">
 					<img class="avatar-photo" src="{foto}">
 				</div>

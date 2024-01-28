@@ -1381,6 +1381,21 @@ footer {
     display: flex;
 }
 
+.user-info .btn-ignore{
+    position: absolute;
+    background-color: var(--header-back-clr);
+    border-radius: 0.5rem;
+    display: inline-block;
+    font-size: 0.9em;
+    line-height: 1rem;
+    border: none;
+    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
+    z-index: 5;
+    color: var(--btn-play-poster);
+} 
+
 .heading {
     font-weight: normal;
     font-size: 1.7em;
