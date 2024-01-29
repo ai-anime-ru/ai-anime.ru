@@ -598,7 +598,7 @@
 
         // Находим iframe с классом "kodik-player"
         var kodikPlayerIframe = document.querySelector('.kodik-player');
-
+		console.log(kodikPlayerIframe);
         // Проверяем, что iframe найден
         if (kodikPlayerIframe) {
             // Получаем доступ к содержимому iframe
@@ -611,19 +611,10 @@
             console.log(advPlayer);
             console.log(advTitle);
             advPlayer.parentNode.removeChild(advPlayer);
-            console.log("AdvPlayer removed");
             advTitle.parentNode.removeChild(advTitle);
-            console.log("AdvTitle removed");
+            console.log("Ad removed");
         }
     }
-
-    // Добавляем обработчик событий для кнопки внутри iframe
-    document.querySelector('.kodik-player').addEventListener('load', function() {
-        var skipButtonInsideIframe = document.querySelector('.kodik-player').contentDocument.querySelector('#skip-ad');
-        if (skipButtonInsideIframe) {
-            skipButtonInsideIframe.addEventListener('click', removeAdvPlayer);
-        }
-    });
 </script>
 	<div class="adv-player">
 		<div class="adv-title">
