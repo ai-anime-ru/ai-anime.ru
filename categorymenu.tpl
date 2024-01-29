@@ -42,33 +42,45 @@
 </div>
 <!--Скрипт выдвижного блока-->
 <script>
-    let timeout;
-    let currentMenu;
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuItems = document.querySelectorAll('.filter-downcategory');
 
-    function showMenu(element) {
-        clearTimeout(timeout);
+        menuItems.forEach(item => {
+            item.addEventListener('mouseover', function (event) {
+                showMenu(event.target);
+            });
 
-        if (currentMenu && !element.contains(currentMenu)) {
-            currentMenu.classList.remove('menu-open');
+            item.addEventListener('mouseout', function () {
+                hideMenu(event.target);
+            });
+        });
+
+        function showMenu(element) {
+            const menu = getElementByClass(element, 'filter-downcategory');
+            if (menu) {
+                hideAllMenus();
+                menu.classList.add('menu-open');
+            }
         }
 
-        const menu = element.querySelector('.filter-downcategory');
-        if (menu) {
-            menu.classList.add('menu-open');
-            currentMenu = menu;
-        }
-    }
-
-    function hideMenu(element) {
-        timeout = setTimeout(() => {
-            const menu = element.tagName === 'UL' ? element : element.querySelector('.filter-downcategory');
+        function hideMenu(element) {
+            const menu = getElementByClass(element, 'filter-downcategory');
             if (menu) {
                 menu.classList.remove('menu-open');
             }
-        }, 0);
-    }
+        }
 
-    function cancelHide() {
-        clearTimeout(timeout);
-    }
+        function hideAllMenus() {
+            menuItems.forEach(item => {
+                item.classList.remove('menu-open');
+            });
+        }
+
+        function getElementByClass(element, className) {
+            while (element && !element.classList.contains(className)) {
+                element = element.parentNode;
+            }
+            return element;
+        }
+    });
 </script>
