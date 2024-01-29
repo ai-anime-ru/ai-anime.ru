@@ -481,36 +481,23 @@ function fetchDataFromProxy() {
     // Собираем полный URL для проксированного запроса
     var fullUrl = proxyUrl + encodeURIComponent(externalUrl);
 
+
     // Выполняем запрос к вашему прокси-скрипту
     fetch(fullUrl)
-        .then(response => response.json())
+        .then(response => response.text())  // Вместо .json(), используйте .text() для обработки HTML
         .then(data => {
             // Обрабатываем полученные данные
             console.log(data);
 
-            // Вставляем данные в DOM
-            if (data.error) {
-                console.error('Error:', data.error);
-            } else {
-                // Получаем элемент с классом 'proxy-content'
-                var proxyContentElement = document.querySelector('.proxy-content');
-
-                // Вставляем данные после выполнения скрипта
-                if (proxyContentElement) {
-                    // Очищаем содержимое элемента
-                    proxyContentElement.innerHTML = '';
-
-                    // Создаем новый элемент для вставки данных
-                    var newDataElement = document.createElement('div');
-                    newDataElement.innerHTML = data; // Предполагается, что данные в виде HTML
-
-                    // Вставляем новый элемент в .proxy-content
-                    proxyContentElement.appendChild(newDataElement);
-                }
+            // Далее можете использовать data как HTML и вставлять его в DOM
+            // Например:
+            var targetElement = document.getElementById('your-target-element-id');
+            if (targetElement) {
+                targetElement.innerHTML = data;
             }
         })
         .catch(error => {
-            console.error('Error:', error);
+            console.error('Fetch error:', error);
         });
 }
 
