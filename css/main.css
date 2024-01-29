@@ -714,15 +714,14 @@ ul li {
     left: 0;
     top: 100%;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     background-color: var(--main);
     border: 0px solid #ccc;
     z-index: 9999;
 }
 
-.top-menu-block .menu-open {
-    display: block !important;
+.top-menu-block .filter-downcategory li {
+    columns: 4;
+    padding: 5px !important;
 }
 
 
