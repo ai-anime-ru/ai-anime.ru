@@ -594,20 +594,36 @@
 </script>
 <script>
     function removeAdvPlayer() {
-		console.log("Adv-Skip");
-        var advPlayer = document.querySelector('.adv-player');
-        var advTitle = document.querySelector('.display-advert-title');
-		console.log(advPlayer);
-		console.log(advTitle);
-        if (advPlayer) {
+        console.log("Adv-Skip");
+
+        // Находим iframe с классом "kodik-player"
+        var kodikPlayerIframe = document.querySelector('.kodik-player');
+
+        // Проверяем, что iframe найден
+        if (kodikPlayerIframe) {
+            // Получаем доступ к содержимому iframe
+            var kodikPlayerDocument = kodikPlayerIframe.contentDocument || kodikPlayerIframe.contentWindow.document;
+
+            // Находим элементы внутри iframe
+            var advPlayer = kodikPlayerDocument.querySelector('.adv-player');
+            var advTitle = kodikPlayerDocument.querySelector('.display-advert-title');
+
+            console.log(advPlayer);
+            console.log(advTitle);
             advPlayer.parentNode.removeChild(advPlayer);
             console.log("AdvPlayer removed");
-        }
-        if (advTitle) {
             advTitle.parentNode.removeChild(advTitle);
             console.log("AdvTitle removed");
         }
     }
+
+    // Добавляем обработчик событий для кнопки внутри iframe
+    document.querySelector('.kodik-player').addEventListener('load', function() {
+        var skipButtonInsideIframe = document.querySelector('.kodik-player').contentDocument.querySelector('#skip-ad');
+        if (skipButtonInsideIframe) {
+            skipButtonInsideIframe.addEventListener('click', removeAdvPlayer);
+        }
+    });
 </script>
 	<div class="adv-player">
 		<div class="adv-title">
