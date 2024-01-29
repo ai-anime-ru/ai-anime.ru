@@ -1,7 +1,7 @@
 [aviable=lastcomments]<div class="last-comm-link">{news_title}</div>[/aviable]
 <div class="comm-item clearfix">
 	<div class="comm-left">
-		<img src="{foto}" alt="{login}"/>
+		<img src="{foto}" alt="{login}" />
 		<div class="up-status">
 			[online]<p class="online">В сети</p>[/online]
 			[offline]<p class="offline">Не в сети</p>[/offline]
@@ -20,12 +20,14 @@
 		[signature]<div class="signature clearfix">{signature}</div>[/signature]
 		<ul class="comm-three icon-l clearfix">
 			<li>[reply]Ответить[/reply]</li>
-		[group=1]
-			<li><b>Только админу</b> {ip}</li>
-			<li>[com-edit]Редактировать[/com-edit]</li>
-			<li>[com-del]Удалить[/com-del]</li>
-			<li>{mass-action}</li>
-		[/group]
 		</ul>
 	</div>
+	[group=1]
+	<ul>
+		<li><b>Только админу</b> {ip}</li>
+		<li>[com-edit]Редактировать[/com-edit]</li>
+		<li>[com-del]Удалить[/com-del]</li>
+		<li>{mass-action}</li>
+	</ul>
+	[/group]
 </div>
