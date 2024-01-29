@@ -595,25 +595,14 @@
 <script>
     function removeAdvPlayer() {
         console.log("Adv-Skip");
-
-        // Находим iframe с классом "kodik-player"
-        var kodikPlayerIframe = document.querySelector('.kodik-player');
-		console.log(kodikPlayerIframe);
-        // Проверяем, что iframe найден
-        if (kodikPlayerIframe) {
-            // Получаем доступ к содержимому iframe
-            var kodikPlayerDocument = kodikPlayerIframe.contentDocument || kodikPlayerIframe.contentWindow.document;
-
-            // Находим элементы внутри iframe
-            var advPlayer = kodikPlayerDocument.querySelector('.adv-player');
-            var advTitle = kodikPlayerDocument.querySelector('.display-advert-title');
-
-            console.log(advPlayer);
-            console.log(advTitle);
-            advPlayer.parentNode.removeChild(advPlayer);
-            advTitle.parentNode.removeChild(advTitle);
-            console.log("Ad removed");
-        }
+        // Находим элементы внутри iframe
+        var advPlayer = kodikPlayerDocument.querySelector('.adv-player');
+        var advTitle = kodikPlayerDocument.querySelector('.display-advert-title');
+        console.log(advPlayer);
+        console.log(advTitle);
+        advPlayer.parentNode.removeChild(advPlayer);
+        advTitle.parentNode.removeChild(advTitle);
+        console.log("Ad removed");
     }
 </script>
 </body>

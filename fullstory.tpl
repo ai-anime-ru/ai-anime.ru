@@ -399,9 +399,7 @@
 
                     <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                         <h1></h1>
-                        [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
-                            allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                        <div class="proxy-content"></div> <!-- Добавленный элемент для вставки данных от прокси -->
                     </div>
                     <div class="player-info">
                         <ul class="in-voice-acting">
@@ -475,10 +473,10 @@
 <script>
 function fetchDataFromProxy() {
     // URL вашего прокси-скрипта
-    var proxyUrl = 'https://your-server.com/proxy.php?url=';
+    var proxyUrl = 'https://ai-anime.ru/proxy.php?url=';
 
     // URL, который вы хотите запросить
-    var externalUrl = 'https://external-site.com/data';
+    var externalUrl = 'https:[xfvalue_kodik_iframe]';
 
     // Собираем полный URL для проксированного запроса
     var fullUrl = proxyUrl + encodeURIComponent(externalUrl);
