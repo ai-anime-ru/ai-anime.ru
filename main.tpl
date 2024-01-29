@@ -592,18 +592,5 @@
 		document.querySelector('.loader-container').classList.remove('show-loader');
 	}
 </script>
-<script>
-    function removeAdvPlayer() {
-        console.log("Adv-Skip");
-        // Находим элементы внутри iframe
-        var advPlayer = kodikPlayerDocument.querySelector('.adv-player');
-        var advTitle = kodikPlayerDocument.querySelector('.display-advert-title');
-        console.log(advPlayer);
-        console.log(advTitle);
-        advPlayer.parentNode.removeChild(advPlayer);
-        advTitle.parentNode.removeChild(advTitle);
-        console.log("Ad removed");
-    }
-</script>
 </body>
 </html>

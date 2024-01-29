@@ -686,6 +686,46 @@ ul li {
     display: block;
 }
 
+.top-menu-block ul {
+    display: none;
+}
+
+.top-menu-block .filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-menu {
+    position: relative;
+}
+
+.filter-downcategory {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+}
+
+.filter-downcategory li {
+    list-style: none;
+}
+
+.filter-downcategory li a {
+    text-decoration: none;
+    color: #333; 
+    display: block;
+    padding: 5px;
+}
+
+.filter-downcategory li a:hover {
+    background-color: #f0f0f0; 
+}
+
+
+
 
 /* ----------------- FOOTER -----------------*/
 

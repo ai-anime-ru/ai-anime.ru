@@ -1,17 +1,21 @@
-<div class="filter" onclick="toggleDropdownFilter()">
-	[item]
-	<a href="{url}">{name}</a>
-	[sub-prefix]
-	<ul class="filter-downcategory">
-		<li>
-			[/sub-prefix]
-			{sub-item}
-			[sub-suffix]
-		</li>
-	</ul>
-	[/sub-suffix]
-	[/item]
+<div class="filter" >
+    [item]
+    <div class="filter-menu">
+        <a href="{url}" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">{name}</a>
+        [sub-prefix]
+        <ul class="filter-downcategory">
+            <li>
+                [/sub-prefix]
+                {sub-item}
+                [sub-suffix]
+            </li>
+        </ul>
+        [/sub-suffix]
+    </div>
+    [/item]
 </div>
+
+
 
 <ul>
 	<!--Кнопка выдвижного блока-->
@@ -38,13 +42,34 @@
 </div>
 <!--Скрипт выдвижного блока-->
 <script>
-  $(document).ready(function() {
-    $('.icon-menu').on('click', function() {
-      $('.top-menu-block').toggleClass('expanded');
-	  $('.top-menu-content').toggleClass('visible-content');
-	  $('.down').toggleClass('hide-ico');
-	  $('.up').toggleClass('visible-ico');
-    });
-  });
+	$(document).ready(function () {
+		$('.icon-menu').on('click', function () {
+			$('.top-menu-block').toggleClass('expanded');
+			$('.top-menu-content').toggleClass('visible-content');
+			$('.down').toggleClass('hide-ico');
+			$('.up').toggleClass('visible-ico');
+		});
+	});
 </script>
 <!--Скрипт выдвижного блока-->
+
+<script>
+	function toggleDropdownFilter(show) {
+		var menu = document.querySelector('.filter-menu');
+		if (show) {
+			menu.style.display = 'block';
+		} else {
+			menu.style.display = 'none';
+		}
+	}
+
+	function showSubMenu(link) {
+		var subMenu = link.nextElementSibling;
+		subMenu.style.display = 'block';
+	}
+
+	function hideSubMenu(link) {
+		var subMenu = link.nextElementSibling;
+		subMenu.style.display = 'none';
+	}
+</script>
