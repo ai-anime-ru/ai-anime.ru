@@ -1099,16 +1099,31 @@ footer {
     align-items: flex-end;
     position: absolute;
     right: 15px;
+    top: 15px;
+
+    background-color: var(--main);
+    padding: 5px;
+    border-radius: 0.45rem;
 }
 
 .delete-adm a {
     color: var(--active);
     font-weight: normal;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.delete-adm a:hover {
+    color: var(--active-2);
 }
 
 .delete-adm b {
     color: var(--red);
+}
+
+.checkbox-choice {
+    font-weight: normal;
+    color: var(--second-text) !important;
 }
 
 .comm-right {
