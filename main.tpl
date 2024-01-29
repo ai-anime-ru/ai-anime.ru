@@ -98,7 +98,6 @@
 				<!-- () Выводим ошибки () -->
 				{info}
 				{include file="/modules/footer.tpl"}
-
 			</div>
 		</div>
 	</div>
