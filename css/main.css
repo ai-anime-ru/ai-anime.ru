@@ -35,6 +35,16 @@
     */
 }
 
+::selection {
+    background: #d1e1f9;
+    color: black;
+    }
+    ::-moz-selection {
+    background: #d1e1f9;
+    color: #fff;
+    }
+    
+
 /*
 :root {
     color-scheme: dark;
