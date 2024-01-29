@@ -1094,6 +1094,7 @@ footer {
 
 .comm-right {
     margin-left: 15px;
+    position: relative;
 }
 
 .comm-left img {
@@ -1129,7 +1130,13 @@ footer {
 
 .comm-three {
     margin-top: 3px;
-    display: flex;
+    position: absolute;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.comm-three a:hover{
+    color: var(--active-2);
 }
 
 .comm-three a {
