@@ -31,9 +31,11 @@
 
 .items_news {
     position: relative;
-    display: block;
-    columns: 3;
+    display: flex;
+    /* columns: 3; */
     padding: 20px 20px 0px 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .box {
