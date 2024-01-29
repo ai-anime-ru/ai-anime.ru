@@ -471,36 +471,39 @@
     });
 </script>
 <script>
-function fetchDataFromProxy() {
-    // URL вашего прокси-скрипта
-    var proxyUrl = 'https://ai-anime.ru/proxy.php?url=';
+    function fetchDataFromProxy() {
+        // URL вашего прокси-скрипта
+        var proxyUrl = 'https://ai-anime.ru/proxy.php?url=';
+    
+        // URL, который вы хотите запросить
+        var externalUrl = 'https:[xfvalue_kodik_iframe]';
+    
+        // Собираем полный URL для проксированного запроса
+        var fullUrl = proxyUrl + encodeURIComponent(externalUrl);
+    
+        // Выполняем запрос к вашему прокси-скрипту
+        fetch(fullUrl)
+            .then(response => response.text()) // Используем .text(), так как ожидается HTML
+            .then(data => {
+                // Обрабатываем полученные данные
+                console.log(data);
 
-    // URL, который вы хотите запросить
-    var externalUrl = 'https:[xfvalue_kodik_iframe]';
-
-    // Собираем полный URL для проксированного запроса
-    var fullUrl = proxyUrl + encodeURIComponent(externalUrl);
-
-
-    // Выполняем запрос к вашему прокси-скрипту
-    fetch(fullUrl)
-        .then(response => response.text())  // Вместо .json(), используйте .text() для обработки HTML
-        .then(data => {
-            // Обрабатываем полученные данные
-            console.log(data);
-
-            // Далее можете использовать data как HTML и вставлять его в DOM
-            // Например:
-            var targetElement = document.getElementById('your-target-element-id');
-            if (targetElement) {
-                targetElement.innerHTML = data;
-            }
-        })
-        .catch(error => {
-            console.error('Fetch error:', error);
-        });
-}
-
-// Вызываем функцию для получения данных
-fetchDataFromProxy();
+                // Вставляем данные в DOM
+                if (data.error) {
+                    console.error('Error:', data.error);
+                } else if (data.html) {
+                    var proxyContentElement = document.querySelector('.proxy-content');
+                    if (proxyContentElement) {
+                        proxyContentElement.innerHTML = data.html;
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    }
+    
+    // Вызываем функцию для получения данных
+    fetchDataFromProxy();
 </script>
+    
