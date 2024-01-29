@@ -66,9 +66,6 @@ ul li {
     list-style: none;
 }
 
-.wrap {
-    margin-top: 90px;
-}
 
 /*------------- BACK LIGHT ----------- 
 
@@ -2267,18 +2264,3 @@ input[type="text"] {
     display: none;
 }
 
-.block {
-    position: relative;
-    display: block;
-    columns: 3;
-    padding: 20px 20px 0px 20px;
-    background-color: var(--main);
-    width: 920px;
-    max-width: 1200px;
-    margin-top: 20px;
-    border-radius: 15px;
-}
-
-.wrap {
-    display: flex;
-}

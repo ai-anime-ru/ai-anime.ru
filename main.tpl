@@ -75,29 +75,31 @@
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-	<div class="wrap">
-		<div class="block center fx-col">
-			{include file="/modules/header.tpl"}
-			<div class="welcome-message" id="welcome-message">
-				<div class="welcome-message-content">
-					<div class="welcome-message-text">
-						<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
-							конфиденцальности</a>
-						<p>и</p><a href="/?do=rules">правила</a>
-						<p>(✿◡‿◡)</p>
+	<div class="block-wrap">
+		<div class="wrap">
+			<div class="block center fx-col">
+				{include file="/modules/header.tpl"}
+				<div class="welcome-message" id="welcome-message">
+					<div class="welcome-message-content">
+						<div class="welcome-message-text">
+							<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
+								конфиденцальности</a>
+							<p>и</p><a href="/?do=rules">правила</a>
+							<p>(✿◡‿◡)</p>
+						</div>
+						<span onclick="closeWelcomeMessage()">Готово</span>
 					</div>
-					<span onclick="closeWelcomeMessage()">Готово</span>
 				</div>
-			</div>
-			{include file="/modules/sidebar.tpl"}
-			<section class="main__content">
-				{include file="modules/main.tpl"}
-			</section>
-			[not-aviable=main]{content}[/not-aviable]
-			<!-- () Выводим ошибки () -->
-			{info}
-			{include file="/modules/footer.tpl"}
+				{include file="/modules/sidebar.tpl"}
+				<section class="main__content">
+					{include file="modules/main.tpl"}
+				</section>
+				[not-aviable=main]{content}[/not-aviable]
+				<!-- () Выводим ошибки () -->
+				{info}
+				{include file="/modules/footer.tpl"}
 
+			</div>
 		</div>
 	</div>
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
