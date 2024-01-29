@@ -703,11 +703,6 @@ ul li {
     position: relative;
 }
 
-.top-menu-block .filter-menu {
-    position: relative;
-    display: inline-block;
-}
-
 .top-menu-block .filter-downcategory {
     display: none;
     position: absolute;
@@ -715,7 +710,7 @@ ul li {
     top: 100%;
     list-style-type: none;
     background-color: var(--main);
-    border: 0px solid #ccc;
+    border: 1px solid #505050;
     z-index: 9999;
 }
 
@@ -725,7 +720,7 @@ ul li {
 
 
 .top-menu-block .filter-downcategory li a{
-    padding: 15px !important;
+    padding: 10px !important;
 }
 
 
