@@ -1,7 +1,7 @@
-<div class="filter" >
+<div class="filter">
     [item]
     <div class="filter-menu">
-        <a href="{url}" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this)">{name}</a>
+        <a href="{url}" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this, event)">{name}</a>
         [sub-prefix]
         <ul class="filter-downcategory">
             <li>
@@ -54,22 +54,42 @@
 <!--Скрипт выдвижного блока-->
 
 <script>
-	function toggleDropdownFilter(show) {
-		var menu = document.querySelector('.filter-menu');
-		if (show) {
-			menu.style.display = 'block';
-		} else {
-			menu.style.display = 'none';
-		}
-	}
+var filterContainer = document.querySelector('.filter');
+var filterMenu = document.querySelector('.filter-menu');
 
-	function showSubMenu(link) {
-		var subMenu = link.nextElementSibling;
-		subMenu.style.display = 'block';
-	}
+function toggleDropdownFilter(show) {
+    if (show) {
+        filterMenu.style.display = 'block';
+    } else {
+        // Проверяем, если мышь не находится над .filter или его подменю
+        if (!isDescendant(filterContainer, event.relatedTarget) && !isDescendant(filterMenu, event.relatedTarget)) {
+            filterMenu.style.display = 'none';
+        }
+    }
+}
 
-	function hideSubMenu(link) {
-		var subMenu = link.nextElementSibling;
-		subMenu.style.display = 'none';
-	}
+function showSubMenu(link) {
+    var subMenu = link.nextElementSibling;
+    subMenu.style.display = 'block';
+}
+
+function hideSubMenu(link, event) {
+    var subMenu = link.nextElementSibling;
+    // Проверяем, если мышь ушла с основного блока или с подменю
+    if (!isDescendant(filterContainer, event.relatedTarget) && !isDescendant(subMenu, event.relatedTarget)) {
+        subMenu.style.display = 'none';
+    }
+}
+
+// Проверка, является ли элемент потомком указанного родителя
+function isDescendant(parent, child) {
+    var node = child.parentNode;
+    while (node != null) {
+        if (node == parent) {
+            return true;
+        }
+        node = node.parentNode;
+    }
+    return false;
+}
 </script>
