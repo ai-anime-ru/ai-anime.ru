@@ -1,7 +1,7 @@
 <div class="filter">
     [item]
     <div class="filter-menu">
-        <a>{name}</a>
+        <a href="{link}">{name}</a>
         [sub-prefix]
         <ul class="filter-downcategory">
             <li>
