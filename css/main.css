@@ -597,7 +597,7 @@ ul li {
 }
 
 .top-menu-block {
-    height: 60px;
+    height: auto;
     width: 100%;
     position: relative;
     background-color: var(--main);
