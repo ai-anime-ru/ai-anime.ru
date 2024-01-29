@@ -593,59 +593,24 @@
 	}
 </script>
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		runAdblockScript();
-	});
-	
-	function runAdblockScript() {
-		console.log('Executing adblock script...');
-	
-		// Загружаем фильтры адблока
-		fetch('./adblock.txt')
-			.then(response => response.text())
-			.then(adBlockFilters => {
-				console.log('Filters loaded successfully.');
-	
-				const filtersArray = adBlockFilters.split('\n').filter(filter => filter.trim() !== '');
-	
-				// Создаем TreeWalker для поиска и удаления элементов
-				const walker = document.createTreeWalker(
-					document.body,
-					NodeFilter.SHOW_ELEMENT,
-					{ acceptNode: function(node) { return NodeFilter.FILTER_ACCEPT; } },
-					false
-				);
-	
-				while (walker.nextNode()) {
-					const currentNode = walker.currentNode;
-					const isBlocked = filtersArray.some(filter => currentNode.matches && currentNode.matches('.' + filter));
-					
-					if (isBlocked) {
-						console.log('Removing element with class:', currentNode.className);
-						currentNode.remove();
-					}
-				}
-	
-				// Создаем экземпляр MutationObserver с функцией обратного вызова
-				const observer = new MutationObserver(function(mutationsList) {
-					for (const mutation of mutationsList) {
-						for (const addedNode of mutation.addedNodes) {
-							const isBlocked = filtersArray.some(filter => addedNode.matches && addedNode.matches('.' + filter));
-							if (isBlocked) {
-								console.log('Removing dynamically added element with class:', addedNode.className);
-								addedNode.remove();
-							}
-						}
-					}
-				});
-	
-				// Начинаем отслеживание изменений в DOM
-				observer.observe(document.body, { childList: true, subtree: true });
-	
-				console.log('Adblock script execution complete.');
-			})
-			.catch(error => console.error('Failed to load ad block filters:', error));
-	}
-	</script>
+    // Функция для удаления элемента с классом adv-player
+    function removeAdvPlayer() {
+        var advPlayer = document.querySelector('.adv-player');
+        if (advPlayer) {
+            advPlayer.parentNode.removeChild(advPlayer);
+            alert('Рекламный плеер удален!');
+        } else {
+            alert('Рекламный плеер не найден.');
+        }
+    }
+
+    // Обработчик события для нажатия на элемент с id="ad-skip"
+    var adSkipButton = document.getElementById('ad-skip');
+    if (adSkipButton) {
+        adSkipButton.addEventListener('click', removeAdvPlayer);
+    } else {
+        console.error('Элемент с id="ad-skip" не найден.');
+    }
+</script>
 </body>
 </html>

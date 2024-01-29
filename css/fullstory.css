@@ -354,7 +354,7 @@
     width: 200px;
     color: white;
     background-color: var(--clr) ;
-    border-color: #ff5c57 !important;
+    border-color: var(--red) !important;
     position: static;
     display: inline-block;
     text-align: center;
@@ -369,8 +369,8 @@
 }
 
 #dropmenudiv a:hover {
-    background-color: #d1e1f9;
-    color: black;
+    background-color: var(--active);
+    color: var(--clr);
 }
 
 #dropmenudiv {
