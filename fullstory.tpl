@@ -472,3 +472,50 @@
         }
     });
 </script>
+<script>
+function fetchDataFromProxy() {
+    // URL вашего прокси-скрипта
+    var proxyUrl = 'https://your-server.com/proxy.php?url=';
+
+    // URL, который вы хотите запросить
+    var externalUrl = 'https://external-site.com/data';
+
+    // Собираем полный URL для проксированного запроса
+    var fullUrl = proxyUrl + encodeURIComponent(externalUrl);
+
+    // Выполняем запрос к вашему прокси-скрипту
+    fetch(fullUrl)
+        .then(response => response.json())
+        .then(data => {
+            // Обрабатываем полученные данные
+            console.log(data);
+
+            // Вставляем данные в DOM
+            if (data.error) {
+                console.error('Error:', data.error);
+            } else {
+                // Получаем элемент с классом 'proxy-content'
+                var proxyContentElement = document.querySelector('.proxy-content');
+
+                // Вставляем данные после выполнения скрипта
+                if (proxyContentElement) {
+                    // Очищаем содержимое элемента
+                    proxyContentElement.innerHTML = '';
+
+                    // Создаем новый элемент для вставки данных
+                    var newDataElement = document.createElement('div');
+                    newDataElement.innerHTML = data; // Предполагается, что данные в виде HTML
+
+                    // Вставляем новый элемент в .proxy-content
+                    proxyContentElement.appendChild(newDataElement);
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+}
+
+// Вызываем функцию для получения данных
+fetchDataFromProxy();
+</script>

@@ -616,9 +616,5 @@
         }
     }
 </script>
-	<div class="adv-player">
-		<div class="adv-title">
-		</div>
-	</div>
 </body>
 </html>
