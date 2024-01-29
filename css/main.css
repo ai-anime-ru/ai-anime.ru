@@ -38,12 +38,13 @@
 ::selection {
     background: #d1e1f9;
     color: #000;
-    }
-    ::-moz-selection {
+}
+
+::-moz-selection {
     background: #d1e1f9;
     color: #000;
-    }
-    
+}
+
 
 /*
 :root {
@@ -739,7 +740,7 @@ ul li {
 }
 
 
-.top-menu-block .filter-downcategory li a{
+.top-menu-block .filter-downcategory li a {
     padding: 10px !important;
 }
 
