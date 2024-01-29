@@ -9,7 +9,7 @@
 	</div>
 	<div class="comm-right">
 		<div class="comm-one clearfix">
-			<span class="comm-author">{author}</span>
+			<span class="comm-author" title="Просмотреть профиль">{author}</span>
 			<!--<div class="user-group">
 				<p>{group}</p>
 			</div>-->

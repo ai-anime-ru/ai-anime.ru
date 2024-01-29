@@ -1107,6 +1107,11 @@ footer {
     font-weight: normal;
     color: var(--active);
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.comm-author a:hover {
+    color: var(--active-2);
 }
 
 
@@ -1135,16 +1140,16 @@ footer {
     transition: 0.3s;
 }
 
-.comm-three a:hover{
-    color: var(--active-2);
-}
-
-.comm-three a {
+.comm-three li a {
     color: var(--active);
     font-size: 1em;
     font-weight: normal;
     text-decoration: none;
     transition: 0.3s;
+}
+
+.comm-three li a:hover{
+    color: var(--active-2);
 }
 
 .comm-three li {
