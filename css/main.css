@@ -721,9 +721,12 @@ ul li {
 
 .top-menu-block .filter-downcategory li {
     columns: 4;
-    padding: 5px !important;
 }
 
+
+.top-menu-block .filter-downcategory li a{
+    padding: 15px !important;
+}
 
 
 /* ----------------- FOOTER -----------------*/
