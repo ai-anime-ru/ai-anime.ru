@@ -4,6 +4,7 @@
 <head>
 	<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.gif">
 	{headers}
+	<meta name="theme-color" content="#131318">
 	<meta name="HandheldFriendly" content="true">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">

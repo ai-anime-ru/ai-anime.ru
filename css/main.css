@@ -37,11 +37,11 @@
 
 ::selection {
     background: #d1e1f9;
-    color: black;
+    color: #000;
     }
     ::-moz-selection {
     background: #d1e1f9;
-    color: #fff;
+    color: #000;
     }
     
 
