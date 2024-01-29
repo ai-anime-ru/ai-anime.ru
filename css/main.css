@@ -1101,6 +1101,12 @@ footer {
     right: 15px;
 }
 
+.delete-adm a {
+    color: var(--active);
+    font-weight: normal;
+    text-decoration: none;
+}
+
 .comm-right {
     margin-left: 15px;
     position: relative;
@@ -1157,7 +1163,7 @@ footer {
     transition: 0.3s;
 }
 
-.comm-three li a:hover{
+.comm-three li a:hover {
     color: var(--active-2);
 }
 
@@ -2147,7 +2153,20 @@ input[type="text"] {
     .scrollToTopBtn {
         display: none !important;
     }
+
+    .delete-adm {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: flex-start;
+        right: 0;
+        background-color: var(--main);
+        padding: 5px;
+        border-radius: 0.45rem;
+    }
 }
+
+;
 
 /* DLE Friends v1.6 */
 #no-friends {
