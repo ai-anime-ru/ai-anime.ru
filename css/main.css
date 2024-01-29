@@ -1100,10 +1100,10 @@ footer {
     position: absolute;
     right: 15px;
     top: 15px;
+}
 
-    background-color: var(--main);
-    padding: 5px;
-    border-radius: 0.45rem;
+.comm-item .delete-adm input[type="checkbox"] {
+    margin: -2px 0px 0 0;
 }
 
 .delete-adm a {
@@ -1198,6 +1198,8 @@ footer {
     margin-top: 15px;
     color: white;
     font-weight: normal;
+    display: flex;
+    align-items: center;
 }
 
 .mass_comments_action select {
@@ -1211,7 +1213,7 @@ footer {
     background-color: var(--active);
     color: black;
     border: none;
-    padding: 1px;
+    padding: 5px;
     border-radius: 0.15rem;
     cursor: pointer;
 }
@@ -2179,9 +2181,14 @@ input[type="text"] {
         position: relative;
         align-items: flex-start;
         right: 0;
+        top: 0;
         background-color: var(--main);
         padding: 5px;
         border-radius: 0.45rem;
+    }
+
+    .mass_comments_action {
+        flex-direction: column;
     }
 }
 
