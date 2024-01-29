@@ -6,7 +6,7 @@
         <ul class="filter-downcategory">
             <li>
                 [/sub-prefix]
-                {sub-item}
+                     {sub-item}
                 [sub-suffix]
             </li>
         </ul>
