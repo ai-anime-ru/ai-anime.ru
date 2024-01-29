@@ -27,7 +27,7 @@
 		<li><b>ТОЛЬКО АДМИНУ:</b> {ip}</li>
 		<li>[com-edit]Редактировать[/com-edit]</li>
 		<li>[com-del]Удалить[/com-del]</li>
-		<li><label class="checkbox-choice" for="name=selected_comments[]">Выборать:</label> {mass-action}</li>
+		<li><label class="checkbox-choice">Выбрать: {mass-action}</label></li>
 	</ul>
 	[/group]
 </div>
