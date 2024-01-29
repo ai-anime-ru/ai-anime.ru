@@ -717,7 +717,7 @@ ul li {
     margin: 0;
     padding: 0;
     background-color: var(--main);
-    border: 1px solid #ccc;
+    border: 0px solid #ccc;
     z-index: 9999;
 }
 

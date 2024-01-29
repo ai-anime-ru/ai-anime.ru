@@ -1,4 +1,4 @@
-<div class="filter">
+<div class="filter" onmouseover="showMenu(event)" onmouseout="hideMenu(event)">
     [item]
     <div class="filter-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
         <a href="{url}">{name}</a>
@@ -53,14 +53,18 @@
         }
 
         const menu = element.querySelector('.filter-downcategory');
-        menu.classList.add('menu-open');
-        currentMenu = menu;
+        if (menu) {
+            menu.classList.add('menu-open');
+            currentMenu = menu;
+        }
     }
 
     function hideMenu(element) {
         timeout = setTimeout(() => {
             const menu = element.tagName === 'UL' ? element : element.querySelector('.filter-downcategory');
-            menu.classList.remove('menu-open');
+            if (menu) {
+                menu.classList.remove('menu-open');
+            }
         }, 0);
     }
 
