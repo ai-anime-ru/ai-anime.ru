@@ -4,11 +4,11 @@
         <a>{name}</a>
         [sub-prefix]
         <ul class="filter-downcategory">
+            [/sub-prefix]
             <li>
-                [/sub-prefix]
-                     {sub-item}
-                [sub-suffix]
+                {sub-item}
             </li>
+            [sub-suffix]
         </ul>
         [/sub-suffix]
     </div>
