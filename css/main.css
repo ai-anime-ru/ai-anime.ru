@@ -713,9 +713,11 @@ ul li {
     left: 0;
     top: 100%;
     list-style-type: none;
+    border-radius: 0.45rem;
     background-color: var(--main);
-    border: 1px solid #505050;
+    border: 1px solid rgb(61, 61, 61);
     z-index: 9999;
+    box-shadow: 0 0px 25px #000000c2;
 }
 
 .top-menu-block .filter-downcategory li {
