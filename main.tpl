@@ -593,14 +593,25 @@
 	}
 </script>
 <script>
-    // Функция для удаления элемента с классом adv-player
     function removeAdvPlayer() {
+		console.log("Adv-Skip");
         var advPlayer = document.querySelector('.adv-player');
-		var advTitle = document.querySelector('.display-advert-title');
-        parentNode.removeChild(advPlayer);
-        advTitle.parentNode.removeChild(advTitle);
+        var advTitle = document.querySelector('.display-advert-title');
+		console.log(advPlayer);
+		console.log(advTitle);
+        if (advPlayer) {
+            advPlayer.parentNode.removeChild(advPlayer);
+            console.log("AdvPlayer removed");
+        }
+        if (advTitle) {
+            advTitle.parentNode.removeChild(advTitle);
+            console.log("AdvTitle removed");
+        }
     }
-	document.getElementById('ad-skip').addEventListener('click', removeAdvPlayer);
 </script>
+	<div class="adv-player">
+		<div class="adv-title">
+		</div>
+	</div>
 </body>
 </html>
