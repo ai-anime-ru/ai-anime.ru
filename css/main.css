@@ -534,6 +534,7 @@ ul li {
     display: block;
     margin: auto;
     width: 1300px;
+    top: 100px;
 }
 
 
@@ -2264,3 +2265,6 @@ input[type="text"] {
     display: none;
 }
 
+.full-story-body {
+    top: 100px;
+}
