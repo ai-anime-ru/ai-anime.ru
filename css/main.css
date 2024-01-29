@@ -67,6 +67,11 @@ ul li {
 }
 
 
+.wrap {
+    margin-top: 100px;
+}
+
+
 /*------------- BACK LIGHT ----------- 
 
 .left-light {
@@ -2288,11 +2293,4 @@ input[type="text"] {
     border-color: #ACCCDA;
     background-color: #F4F8FA;
     cursor: pointer;
-}
-
-.full-story-container {
-    margin-top: 100px;
-}
-.side-block-related-news {
-    margin-top: 100px !important;
 }
