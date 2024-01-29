@@ -1,4 +1,4 @@
-[root]<ul>[/root]
+<ul>
 	<li>
 		<div class="icon-menu">
 			<ion-icon class="down" name="grid-outline"></ion-icon>
@@ -17,8 +17,7 @@
 	<li>
 		<a href="/index.php?do=rooms">Совместный просмотр</a>
 	</li>
-	[root]
-</ul>[/root]
+</ul>
 
 <div class="top-menu-content">
 	
