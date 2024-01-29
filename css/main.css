@@ -1107,6 +1107,10 @@ footer {
     text-decoration: none;
 }
 
+.delete-adm b {
+    color: var(--red);
+}
+
 .comm-right {
     margin-left: 15px;
     position: relative;
