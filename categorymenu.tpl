@@ -1,26 +1,18 @@
-[item]
-<div class="profile" onclick="toggleDropdownHeader()">
-	[active]
-	<b>
-	[/active]
-		<!--Вывод самих категорий-->
-		<a href="{url}">{name}</a>
-		<!--Вывод самих категорий-->
-	[active]
-	</b>
-	[/active]
-
-	<!--Вывод подкатегорий-->
+<div class="filter" onclick="toggleDropdownFilter()">
+	[item]
+	<a href="{url}">{name}</a>
 	[sub-prefix]
-	<ul>
-		[/sub-prefix]
-		{sub-item}
-		[sub-suffix]
+	<ul class="filter-downcategory">
+		<li>
+			[/sub-prefix]
+			{sub-item}
+			[sub-suffix]
+		</li>
 	</ul>
 	[/sub-suffix]
-	<!--Вывод подкатегорий-->
+	[/item]
 </div>
-[/item]
+
 <ul>
 	<!--Кнопка выдвижного блока-->
 	<li>
