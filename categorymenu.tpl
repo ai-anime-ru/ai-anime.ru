@@ -1,9 +1,9 @@
-<div class="filter" onmouseover="showMenu(event)" onmouseout="hideMenu(event)">
+<div class="filter">
     [item]
-    <div class="filter-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+    <div class="filter-menu">
         <a href="{url}">{name}</a>
         [sub-prefix]
-        <ul class="filter-downcategory" onmouseover="cancelHide()" onmouseout="hideMenu(this)">
+        <ul class="filter-downcategory">
             <li>
                 [/sub-prefix]
                 {sub-item}
@@ -41,46 +41,3 @@
 	<!--Содержание выдвижного блока-->
 </div>
 <!--Скрипт выдвижного блока-->
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuItems = document.querySelectorAll('.filter-downcategory');
-
-        menuItems.forEach(item => {
-            item.addEventListener('mouseover', function (event) {
-                showMenu(event.target);
-            });
-
-            item.addEventListener('mouseout', function () {
-                hideMenu(event.target);
-            });
-        });
-
-        function showMenu(element) {
-            const menu = getElementByClass(element, 'filter-downcategory');
-            if (menu) {
-                hideAllMenus();
-                menu.classList.add('menu-open');
-            }
-        }
-
-        function hideMenu(element) {
-            const menu = getElementByClass(element, 'filter-downcategory');
-            if (menu) {
-                menu.classList.remove('menu-open');
-            }
-        }
-
-        function hideAllMenus() {
-            menuItems.forEach(item => {
-                item.classList.remove('menu-open');
-            });
-        }
-
-        function getElementByClass(element, className) {
-            while (element && !element.classList.contains(className)) {
-                element = element.parentNode;
-            }
-            return element;
-        }
-    });
-</script>
