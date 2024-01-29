@@ -79,7 +79,7 @@ ul li {
 
 
 .wrap {
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 
@@ -1137,7 +1137,7 @@ footer {
 }
 
 .comm-author a {
-    font-size: 1.15em;
+    font-size: 1.1em;
     font-weight: normal;
     color: var(--active);
     text-decoration: none;
@@ -1152,7 +1152,7 @@ footer {
 .comm-two {
     font-size: 1em;
     color: white;
-    font-size: 1.03em;
+    font-size: 1em;
     font-weight: normal;
     margin-top: 3px;
 }
@@ -1928,12 +1928,11 @@ input[type="text"] {
 @media (max-width: 1280px) {
     .full-story-body {
         width: 920px;
-        margin: 70px auto !important;
+        margin: 0px auto !important;
     }
 }
 
 @media (max-width: 830px) {
-
     .rules-page,
     .privacy-policy {
         width: auto;
@@ -1976,6 +1975,10 @@ input[type="text"] {
 
 
 @media (max-width: 480px) {
+    .wrap {
+        margin-top: 70px;
+    }
+
     .main__content {
         max-width: 412px !important;
     }
