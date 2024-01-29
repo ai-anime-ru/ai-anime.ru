@@ -2106,3 +2106,14 @@ input[type="text"] {
 .block .news-block-hidden {
   display: none;
 }
+.block {
+  margin: auto;
+  width: 1300px;
+  position: relative;
+  display: block;
+  columns: 3;
+  padding: 20px 20px 0px 20px;
+}
+.wrap {
+  display: flex; 
+}
