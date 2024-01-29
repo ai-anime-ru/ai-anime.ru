@@ -353,8 +353,8 @@
     margin-bottom: 3px;
     width: 200px;
     color: white;
-    background-color: var(--clr) !important;
-    border-color: #ff5c57;
+    background-color: var(--clr) ;
+    border-color: #ff5c57 !important;
     position: static;
     display: inline-block;
     text-align: center;
@@ -375,8 +375,8 @@
 
 #dropmenudiv {
     width: 140px !important;
-    left: 820px !important;
-    top: 230px !important;
+    left: 1082px !important;
+    top: 200px !important;
     opacity: 1 !important;
 }
 
