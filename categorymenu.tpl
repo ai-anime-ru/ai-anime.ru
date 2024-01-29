@@ -1,3 +1,26 @@
+[item]
+<div class="profile" onclick="toggleDropdownHeader()">
+	[active]
+	<b>
+	[/active]
+		<!--Вывод самих категорий-->
+		<a href="{url}">{name}</a>
+		<!--Вывод самих категорий-->
+	[active]
+	</b>
+	[/active]
+
+	<!--Вывод подкатегорий-->
+	[sub-prefix]
+	<ul>
+		[/sub-prefix]
+		{sub-item}
+		[sub-suffix]
+	</ul>
+	[/sub-suffix]
+	<!--Вывод подкатегорий-->
+</div>
+[/item]
 <ul>
 	<!--Кнопка выдвижного блока-->
 	<li>
@@ -7,31 +30,7 @@
 		</div>
 	</li>
 	<!--Кнопка выдвижного блока-->
-	<!--КАТЕГОРИИ-->
-	[item]
-	<li>
-		[active]
-		<b>
-		[/active]
-			<!--Вывод самих категорий-->
-			<a href="{url}">{name}</a>
-			<!--Вывод самих категорий-->
-		[active]
-		</b>
-		[/active]
 
-		<!--Вывод подкатегорий-->
-		[sub-prefix]
-		<ul>
-			[/sub-prefix]
-			{sub-item}
-			[sub-suffix]
-		</ul>
-		[/sub-suffix]
-		<!--Вывод подкатегорий-->
-	</li>
-	[/item]
-	<!--КАТЕГОРИИ-->
 	<!--Доп кнопки-->
 	<li>
 		<a href="/index.php?do=schedule">Расписание</a>
