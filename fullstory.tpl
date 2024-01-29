@@ -369,7 +369,12 @@
                 <div class="box-player-title-name">
                     <span id="watch-online" class="is-active">Смотреть онлайн</span>
                     <span id="player-2" class="">ПЛЕЕР 2</span>
-                    <span id="ad-skip" class="">Нажмите для пропуска рекламы!</span>
+                    <span id="skip-ad" onclick="removeAdvPlayer()">
+                        <a class="skip_adv" target="_blank">
+                            <div>Пропустить рекламу</div>
+                            <div class="icon-resume"></div>
+                        </a>
+                    </span>
                 </div>
                 <script>
                     // Получаем ссылки на элементы по их ID

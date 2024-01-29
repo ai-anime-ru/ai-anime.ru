@@ -596,21 +596,11 @@
     // Функция для удаления элемента с классом adv-player
     function removeAdvPlayer() {
         var advPlayer = document.querySelector('.adv-player');
-        if (advPlayer) {
-            advPlayer.parentNode.removeChild(advPlayer);
-            alert('Рекламный плеер удален!');
-        } else {
-            alert('Рекламный плеер не найден.');
-        }
+		var advTitle = document.querySelector('.display-advert-title');
+        parentNode.removeChild(advPlayer);
+        advTitle.parentNode.removeChild(advTitle);
     }
-
-    // Обработчик события для нажатия на элемент с id="ad-skip"
-    var adSkipButton = document.getElementById('ad-skip');
-    if (adSkipButton) {
-        adSkipButton.addEventListener('click', removeAdvPlayer);
-    } else {
-        console.error('Элемент с id="ad-skip" не найден.');
-    }
+	document.getElementById('ad-skip').addEventListener('click', removeAdvPlayer);
 </script>
 </body>
 </html>
