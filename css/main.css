@@ -1085,11 +1085,20 @@ footer {
 }
 
 .comm-item {
+    position: relative;
     background-color: var(--clr);
     padding: 15px;
     border-radius: 0.75rem;
     margin-top: 10px;
     display: flex;
+}
+
+.delete-adm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    right: 15px;
 }
 
 .comm-right {

@@ -23,11 +23,11 @@
 		</ul>
 	</div>
 	[group=1]
-	<ul>
+	<ul class="delete-adm">
+		<li>{mass-action}</li>
 		<li><b>Только админу</b> {ip}</li>
 		<li>[com-edit]Редактировать[/com-edit]</li>
 		<li>[com-del]Удалить[/com-del]</li>
-		<li>{mass-action}</li>
 	</ul>
 	[/group]
 </div>
