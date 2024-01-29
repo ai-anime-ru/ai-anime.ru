@@ -614,7 +614,6 @@ ul li {
     margin-bottom: 20px;
     border-radius: 15px;
     top: 20px;
-    overflow: hidden;
 }
 
 .top-menu-block ul {
@@ -690,17 +689,41 @@ ul li {
     display: none;
 }
 
+.top-menu-content {
+    display: none;
+}
+
 .top-menu-block .filter {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.filter-menu {
+.top-menu-block .filter-menu {
     position: relative;
 }
 
+.top-menu-block .filter-menu {
+    position: relative;
+    display: inline-block;
+}
 
+.top-menu-block .filter-downcategory {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--main);
+    border: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.top-menu-block .menu-open {
+    display: block !important;
+}
 
 
 

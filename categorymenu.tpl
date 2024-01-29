@@ -1,9 +1,9 @@
 <div class="filter">
     [item]
-    <div class="filter-menu">
-        <a href="{url}" onmouseover="showSubMenu(this)" onmouseout="hideSubMenu(this, event)">{name}</a>
+    <div class="filter-menu" onmouseover="showMenu(this)" onmouseout="hideMenu(this)">
+        <a href="{url}">{name}</a>
         [sub-prefix]
-        <ul class="filter-downcategory">
+        <ul class="filter-downcategory" onmouseover="cancelHide()" onmouseout="hideMenu(this)">
             <li>
                 [/sub-prefix]
                 {sub-item}
@@ -42,5 +42,29 @@
 </div>
 <!--Скрипт выдвижного блока-->
 <script>
+    let timeout;
+    let currentMenu;
 
+    function showMenu(element) {
+        clearTimeout(timeout);
+
+        if (currentMenu && !element.contains(currentMenu)) {
+            currentMenu.classList.remove('menu-open');
+        }
+
+        const menu = element.querySelector('.filter-downcategory');
+        menu.classList.add('menu-open');
+        currentMenu = menu;
+    }
+
+    function hideMenu(element) {
+        timeout = setTimeout(() => {
+            const menu = element.tagName === 'UL' ? element : element.querySelector('.filter-downcategory');
+            menu.classList.remove('menu-open');
+        }, 0);
+    }
+
+    function cancelHide() {
+        clearTimeout(timeout);
+    }
 </script>
