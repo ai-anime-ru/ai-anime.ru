@@ -2095,3 +2095,14 @@ input[type="text"] {
 
 .feed_loader { padding: 10px; text-align: center; border-top: 1px solid #E2EDF2; color: #284B5A; margin-bottom: 20px; }
 .f_active:hover { border-color: #ACCCDA; background-color: #F4F8FA; cursor: pointer; }
+
+
+.block .box {
+  margin-bottom: 20px;
+  break-inside: avoid;
+  height: 423px;
+  width: 285px;
+}
+.block .news-block-hidden {
+  display: none;
+}
