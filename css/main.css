@@ -718,15 +718,14 @@ ul li {
     z-index: 9999;
     box-shadow: 0 0px 25px #000000c2;
     padding: 15px;
-    border-radius: 10px;
 }
 
 .top-menu-block .filter-downcategory a {
-    border-radius: 10px;
+    border-radius: 0.45rem;
 }
 
 .top-menu-block .filter-downcategory a:hover {
-    border-radius: 10px;
+    border-radius: 0.45rem;
 }
 
 .top-menu-block .filter-downcategory li {
