@@ -2,13 +2,14 @@
     [item]
     <div class="filter-menu">
         <a>{name}</a>
+        <a class="link-in-menu" href="{url}">{name}</a>
         [sub-prefix]
         <ul class="filter-downcategory">
-            [/sub-prefix]
             <li>
+                [/sub-prefix]
                 {sub-item}
-            </li>
-            [sub-suffix]
+                [sub-suffix]
+            <li>
         </ul>
         [/sub-suffix]
     </div>
