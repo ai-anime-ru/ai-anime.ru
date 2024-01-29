@@ -41,3 +41,23 @@
 	<!--Содержание выдвижного блока-->
 </div>
 <!--Скрипт выдвижного блока-->
+
+<script>
+	$(document).ready(function() {
+    $('.filter-menu a').hover(
+        function() { // при наведении на <a>
+            $(this).siblings('.filter-downcategory').show(); // показать <ul>
+        },
+        function() { // при уходе с <a>
+            var ul = $(this).siblings('.filter-downcategory');
+            if (!ul.is(':hover')) { // если мышка не на <ul>
+                ul.hide(); // скрыть <ul>
+            }
+        }
+    );
+
+    $('.filter-downcategory').mouseleave(function() { // при уходе с <ul>
+        $(this).hide(); // скрыть <ul>
+    });
+});
+</script>
