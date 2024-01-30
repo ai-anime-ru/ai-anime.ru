@@ -939,7 +939,7 @@ footer {
     --tw-bg-opacity: 1;
     --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
     --tw-shadow-colored: 0 1px 2px 0;
-    background-color: #1e1e26;
+    background-color: var(--clr);
     border-radius: 0.5rem;
     font-size: 1em;
     color: #ffffff;
@@ -1933,8 +1933,8 @@ input[type="text"] {
 }
 
 .sort-main span {
-    margin-right: 7px;
-    margin-left: 10px;
+    color: var(--main-text);
+    margin-left: 15px;
 }
 
 .sort-main a {
@@ -1945,13 +1945,14 @@ input[type="text"] {
     transition: 0.3s;
     cursor: pointer;
     text-decoration: none;
-    color: var(--main-h1);
+    color: var(--active);
     border-radius: 0.75rem;
     transition: 0.3s;
 }
 
 .sort-main a:hover {
     background-color: var(--active);
+    color: var(--btn-active-font-clr);
 }
 
 .sort-main form ul{
