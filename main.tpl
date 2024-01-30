@@ -76,7 +76,7 @@
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-	[sort]{sort}[/sort]
+	
 	<div class="block-wrap">
 		<div class="wrap">
 			<div class="block center fx-col">
