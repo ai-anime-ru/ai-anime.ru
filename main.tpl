@@ -33,6 +33,7 @@
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 	<script src="https://ai-anime.ru/templates/ai-anime/js/friends.js"></script> 
+	<script src="https://ai-anime.ru/templates/ai-anime/js/classie.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -142,6 +143,23 @@
 		// Вызываем функцию проверки при загрузке страницы
 		window.onload = checkWelcomeMessage;
 	</script>
+	<!-- () Обрезаем длину описания () 
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var maxLength = 105;
+			var textElements = document.querySelectorAll(".description");
+
+			textElements.forEach(function (textElement) {
+				var originalText = textElement.textContent;
+
+				if (originalText.length > maxLength) {
+					var shortenedText = originalText.substring(0, maxLength) + "...";
+					textElement.textContent = shortenedText;
+				}
+			});
+		});
+	</script>
+-->
 
 	<!-- () Обрезаем длину описания в фулл стори -->
 	<script>
@@ -159,6 +177,20 @@
 			});
 		});
 	</script>
+
+	<script>
+		function changePlayer() {
+			var selectedPlayer = document.getElementById("playerSelector").value;
+
+			// Скрываем все плееры
+			document.getElementById("player-kodik1").style.display = "none";
+			document.getElementById("player-kodik2").style.display = "none";
+
+			// Отображаем выбранный плеер
+			document.getElementById(selectedPlayer).style.display = "block";
+		}
+	</script>
+
 	<script>
 		$('#show-more-today').on('click', function () {
 			$('.list_today').show();
@@ -166,6 +198,7 @@
 			return false;
 		});
 	</script>
+
 	<script>//Скрипт для работы кнопки вверх
 		// Показать/скрыть кнопку при прокрутке
 		window.onscroll = function () {
@@ -392,6 +425,7 @@
 		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
+
 <!--Скрипт лоадера страницы-->
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
