@@ -24,3 +24,17 @@
         <!--Доп кнопки-->
     </ul>
 </div>
+
+<!--Запрещаем переход по ссылке при нажатии на кнопку открытия категории-->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var filterLinks = document.querySelectorAll(".button-filter");
+
+        filterLinks.forEach(function (link) {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+            });
+        });
+    });
+</script>

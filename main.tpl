@@ -33,7 +33,6 @@
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 	<script src="https://ai-anime.ru/templates/ai-anime/js/friends.js"></script> 
-	<script src="https://ai-anime.ru/templates/ai-anime/js/classie.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -143,23 +142,6 @@
 		// Вызываем функцию проверки при загрузке страницы
 		window.onload = checkWelcomeMessage;
 	</script>
-	<!-- () Обрезаем длину описания () 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 105;
-			var textElements = document.querySelectorAll(".description");
-
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
-
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-		});
-	</script>
--->
 
 	<!-- () Обрезаем длину описания в фулл стори -->
 	<script>
@@ -177,20 +159,6 @@
 			});
 		});
 	</script>
-
-	<script>
-		function changePlayer() {
-			var selectedPlayer = document.getElementById("playerSelector").value;
-
-			// Скрываем все плееры
-			document.getElementById("player-kodik1").style.display = "none";
-			document.getElementById("player-kodik2").style.display = "none";
-
-			// Отображаем выбранный плеер
-			document.getElementById(selectedPlayer).style.display = "block";
-		}
-	</script>
-
 	<script>
 		$('#show-more-today').on('click', function () {
 			$('.list_today').show();
@@ -198,7 +166,6 @@
 			return false;
 		});
 	</script>
-
 	<script>//Скрипт для работы кнопки вверх
 		// Показать/скрыть кнопку при прокрутке
 		window.onscroll = function () {
@@ -425,153 +392,6 @@
 		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
-
-	<!--Блок рекламы-->
-	<script>
-		// Создаем экземпляр MutationObserver с функцией обратного вызова
-		var observer = new MutationObserver(function (mutations) {
-			// Проверяем каждое изменение в структуре документа
-			mutations.forEach(function (mutation) {
-				// Проверяем, добавлен ли новый элемент с классом "adv-player"
-				if (mutation.addedNodes.length > 0) {
-					// Вызываем функцию для удаления блока рекламы
-					removeAdvPlayer();
-				}
-			});
-		});
-
-		// Настраиваем наблюдение за изменениями в документе
-		var observerConfig = { childList: true, subtree: true };
-		observer.observe(document.body, observerConfig);
-
-		// Вызываем функцию удаления сразу при загрузке страницы
-		removeAdvPlayer();
-		// Создаем оригинальный объект XMLHttpRequest
-		var originalXMLHttpRequest = window.XMLHttpRequest;
-		function removeAdvPlayer() {
-			var advPlayer = document.querySelector('.adv-player');
-			if (advPlayer) {
-				advPlayer.parentNode.removeChild(advPlayer);
-			}
-		}
-		// Переопределяем конструктор XMLHttpRequest
-		window.XMLHttpRequest = function () {
-			var xhr = new originalXMLHttpRequest();
-
-			// Переопределяем метод send для перехвата параметров запроса
-			var originalSend = xhr.send;
-			xhr.send = function (data) {
-				// Разбираем JSON-строку, если она передана
-				var requestData;
-				try {
-					requestData = JSON.parse(data);
-				} catch (error) {
-					requestData = {};
-				}
-
-				// Проверяем, является ли name целевым именем для блокировки
-				if (requestData && requestData.name === "initAd") {
-					console.log('Запрос с заблокированным именем:', requestData);
-					// Останавливаем отправку запроса
-					return;
-				}
-
-				// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
-				originalSend.apply(this, arguments);
-			};
-
-			// Возвращаем наш модифицированный объект XMLHttpRequest
-			return xhr;
-		};
-		// Переопределяем конструктор XMLHttpRequest
-		window.XMLHttpRequest = function () {
-			var xhr = new originalXMLHttpRequest();
-
-			// Переопределяем метод send для перехвата параметров запроса
-			var originalSend = xhr.send;
-			xhr.send = function (data) {
-				// Разбираем JSON-строку, если она передана
-				var requestData;
-				try {
-					requestData = JSON.parse(data);
-				} catch (error) {
-					requestData = {};
-				}
-
-				// Проверяем, является ли name целевым именем для блокировки
-				if (requestData && requestData.name === "noad") {
-					console.log('Запрос с заблокированным именем:', requestData);
-					// Останавливаем отправку запроса
-					return;
-				}
-
-				// Если name не соответствует блокировке, продолжаем выполнение оригинального метода send
-				originalSend.apply(this, arguments);
-			};
-
-			// Возвращаем наш модифицированный объект XMLHttpRequest
-			return xhr;
-		};
-		// Создаем экземпляр MutationObserver
-		var observer = new MutationObserver(function (mutations) {
-			mutations.forEach(function (mutation) {
-				// Проверяем добавление узла
-				if (mutation.addedNodes.length > 0) {
-					// Проверяем, является ли узел script
-					var addedNode = mutation.addedNodes[0];
-					if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
-						// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
-						if (addedNode.src && addedNode.src.includes('https://ad.adriver.ru/cgi-bin/')) {
-							// Удаляем узел script, чтобы блокировать запрос
-							addedNode.parentNode.removeChild(addedNode);
-							console.log('Блокирован запрос к ad.adriver.ru/cgi-bin/');
-						}
-					}
-				}
-			});
-		});
-		// Создаем экземпляр MutationObserver
-		var observer = new MutationObserver(function (mutations) {
-			mutations.forEach(function (mutation) {
-				// Проверяем добавление узла
-				if (mutation.addedNodes.length > 0) {
-					// Проверяем, является ли узел script
-					var addedNode = mutation.addedNodes[0];
-					if (addedNode.tagName && addedNode.tagName.toLowerCase() === 'script') {
-						// Проверяем, содержит ли узел URL ad.adriver.ru/cgi-bin/
-						if (addedNode.src && addedNode.src.includes('https://snsv.ru/')) {
-							// Удаляем узел script, чтобы блокировать запрос
-							addedNode.parentNode.removeChild(addedNode);
-							console.log('Блокирован запрос к snsv.ru/');
-						}
-					}
-				}
-			});
-		});
-		// Настраиваем наблюдение за изменениями в документе
-		var observerConfig = { childList: true, subtree: true };
-		observer.observe(document.body, observerConfig);
-		// Поиск и удаление элементов, содержащих слова рекламы в тексте
-		var adTextKeywords = ['ad', 'ads', 'advert', 'advertisement'];
-		adTextKeywords.forEach(function (keyword) {
-			var elementsWithAdText = document.querySelectorAll(':contains(' + keyword + ')');
-			elementsWithAdText.forEach(function (element) {
-				element.parentNode.removeChild(element);
-			});
-		});
-		// Функция для удаления элементов с атрибутами, содержащими ключевые слова рекламы
-		function removeAdElements() {
-			var adKeywords = ['ad', 'ads', 'advert', 'advertisement'];
-
-			adKeywords.forEach(function (keyword) {
-				var elements = document.querySelectorAll('[*|' + keyword + '], [' + keyword + '*], [' + keyword + ']');
-				elements.forEach(function (element) {
-					element.parentNode.removeChild(element);
-				});
-			});
-		}
-	</script>
-
 <!--Скрипт лоадера страницы-->
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
