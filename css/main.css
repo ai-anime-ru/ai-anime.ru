@@ -1921,28 +1921,7 @@ input[type="text"] {
 
 /*------------- MAIN SORT ------------*/
 
-.main-container ul .sort {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    width: 200px;
-  }
-  
-  .main-container ul .sort li {
-    position: relative;
-  }
-  
-  .main-container ul .sort li ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-  }
-  
-  .main-container ul .sort li:hover ul {
-    display: block;
-  }
+
 
 /* ---------- OPTIMIZATION ----------*/
 
