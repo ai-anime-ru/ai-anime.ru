@@ -45,12 +45,11 @@
 
             link.addEventListener("click", function (event) {
                 event.preventDefault();
-                // Ваш код обработки клика
+                $(this).siblings('.filter-downcategory').toggle();
             });
         });
-
         $('.filter-downcategory').mouseleave(function () {
             $(this).hide();
-        });
+        });ё
     });
 </script>

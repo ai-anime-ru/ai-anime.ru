@@ -269,7 +269,7 @@
                 var countdownElement = document.getElementById("timer_out");
 
                 // Переменная с датой и временем выхода новой серии
-                var releaseDateTime = "27.01.2024 17:30:00";
+                var releaseDateTime = "[xfvalue_next_episode_date]";
                 // Устанавливаем значение timer_out
                 var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
                 document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
