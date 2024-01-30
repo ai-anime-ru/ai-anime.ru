@@ -4,7 +4,7 @@
     <div class="top-menu-block">
         {catmenu}
     </div>
-    [avaiable=main]
+    [available=main]
     <div class="contaner-flex">
         <section class="main-container">
             <h1>
@@ -19,6 +19,6 @@
         </section>
         {include file="/modules/side-block-main.tpl"}
     </div>
-    [/aviable]
+    [/available]
     <div class="bg_overlay"></div>
 </main>
