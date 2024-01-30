@@ -4,7 +4,7 @@
     <div class="top-menu-block">
         {catmenu}
     </div>
-    [available=main]
+    [avaiable=main]
     <div class="contaner-flex">
         <section class="main-container">
             <h1>
