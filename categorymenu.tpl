@@ -6,7 +6,7 @@
         <ul class="filter-downcategory">
             <li>
                 [/sub-prefix]
-                <div class="">{sub-item}</div>
+                {sub-item}
                 [sub-suffix]
             <li>
         </ul>
@@ -50,6 +50,10 @@
         });
         $('.filter-downcategory').mouseleave(function () {
             $(this).hide();
-        });ё
+        });
+        $('.filter-downcategory').on('click', function (event) {
+            // Разрешаем переход для кнопок в подменю
+            event.stopPropagation();
+        });
     });
 </script>
