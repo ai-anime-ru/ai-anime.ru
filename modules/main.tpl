@@ -8,7 +8,7 @@
     <div class="contaner-flex">
         <section class="main-container">
             <div class="sort-main">
-                <span>[sort][/sort]</span>
+                <span class="">Сортировать: </span>
                 [sort]{sort}[/sort]
             </div>
             <h1>

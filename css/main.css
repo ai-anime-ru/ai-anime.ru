@@ -1921,7 +1921,16 @@ input[type="text"] {
 
 /*------------- MAIN SORT ------------*/
 
+.sort-main {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
 
+.sort-main form ul{
+    display: flex;
+}
 
 /* ---------- OPTIMIZATION ----------*/
 
