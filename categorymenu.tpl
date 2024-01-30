@@ -32,25 +32,25 @@
         var filterLinks = document.querySelectorAll(".button-filter");
 
         filterLinks.forEach(function (link) {
+            link.addEventListener("mouseenter", function () {
+                $(this).siblings('.filter-downcategory').show();
+            });
+
+            link.addEventListener("mouseleave", function () {
+                var ul = $(this).siblings('.filter-downcategory');
+                if (!ul.is(':hover')) {
+                    ul.hide();
+                }
+            });
+
             link.addEventListener("click", function (event) {
                 event.preventDefault();
+                // Ваш код обработки клика
             });
         });
-    });
-    $(document).ready(function () {
-        $('.filter-menu a').hover(
-            function () { // при наведении на <a>
-                $(this).siblings('.filter-downcategory').show(); // показать <ul>
-            },
-            function () { // при уходе с <a>
-                var ul = $(this).siblings('.filter-downcategory');
-                if (!ul.is(':hover')) { // если мышка не на <ul>
-                    ul.hide(); // скрыть <ul>
-                }
-            }
-        );
-        $('.filter-downcategory').mouseleave(function () { // при уходе с <ul>
-            $(this).hide(); // скрыть <ul>
+
+        $('.filter-downcategory').mouseleave(function () {
+            $(this).hide();
         });
     });
 </script>
