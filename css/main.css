@@ -1926,6 +1926,23 @@ input[type="text"] {
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
+    align-items: center;
+    background-color: var(--clr);
+    border-radius: 0.75rem;
+}
+
+.sort-main span {
+    margin-right: 7px;
+}
+
+.sort-main a {
+    display: flex;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .sort-main form ul{
