@@ -1930,16 +1930,18 @@ input[type="text"] {
     background-color: var(--clr);
     border-radius: 0.75rem;
     justify-content: space-between;
+    text-transform: capitalize;
 }
 
 .sort-main span {
     color: var(--main-text);
     margin-left: 15px;
+    font-size: 0.85em;
 }
 
 .sort-main a {
     display: flex;
-    font-size: 14px;
+    font-size: 0.85em;
     padding: 10px;
     margin: 0px;
     transition: 0.3s;
@@ -1965,7 +1967,7 @@ input[type="text"] {
 @media (max-width: 1280px) {
     .full-story-body {
         width: 920px;
-        margin: 0px auto !important;
+        margin: 40px auto !important;
     }
 }
 
@@ -2014,6 +2016,10 @@ input[type="text"] {
 @media (max-width: 480px) {
     .wrap {
         margin-top: 70px;
+    }
+
+    .full-story-body {
+        margin: 20px auto !important;
     }
 
     .main__content {
