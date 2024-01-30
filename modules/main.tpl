@@ -7,6 +7,7 @@
     [available=main]
     <div class="contaner-flex">
         <section class="main-container">
+            [sort]{sort}[/sort]
             <h1>
                 <ion-icon name="sparkles-outline" class="main-container-title-svg">
                     </ion-icon>Недавно добавленное аниме<ion-icon name="sparkles-outline" class="main-container-title-svg">
