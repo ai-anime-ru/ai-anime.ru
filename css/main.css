@@ -1929,10 +1929,12 @@ input[type="text"] {
     align-items: center;
     background-color: var(--clr);
     border-radius: 0.75rem;
+    justify-content: space-between;
 }
 
 .sort-main span {
     margin-right: 7px;
+    margin-left: 10px;
 }
 
 .sort-main a {
@@ -1943,10 +1945,18 @@ input[type="text"] {
     transition: 0.3s;
     cursor: pointer;
     text-decoration: none;
+    color: var(--main-h1);
+    border-radius: 0.75rem;
+    transition: 0.3s;
+}
+
+.sort-main a:hover {
+    background-color: var(--active);
 }
 
 .sort-main form ul{
     display: flex;
+    flex-direction: row;
 }
 
 /* ---------- OPTIMIZATION ----------*/
