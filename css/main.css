@@ -2160,7 +2160,7 @@ footer {
 
 
 @media (max-width: 480px) {
-    .footer {
+    footer {
         width: 412px;
     }
 
@@ -2186,7 +2186,7 @@ footer {
     }
 
     .main__content {
-        max-width: 412px !important;
+        max-width: auto !important;
     }
 
     .main-container {
@@ -2208,7 +2208,7 @@ footer {
     .header,
     .contaner-flex,
     .main {
-        width: 412px;
+        width: auto;
     }
 
     .top-block-main {
