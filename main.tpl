@@ -161,35 +161,23 @@
 	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
-
-			const logoutButtonOne = document.querySelector("#logoutButtonOne");
+			const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
 			const hideornoElements = document.querySelectorAll(".hideorno");
-
-			const isLoggedIn = document.querySelectorAll(".text-name").textContent !== "";
-
-			logoutButtonOne.textContent = isLoggedIn ? "Выход" : "Вход";
-
+			
+			const isLoggedIn = document.querySelector(".text-name").textContent !== "";
+	
+			const displayValue = isLoggedIn ? "block" : "none";
+			const buttonText = isLoggedIn ? "Выход" : "Вход";
+	
+			logoutButtons.forEach((button) => {
+				button.textContent = buttonText;
+				button.addEventListener("click", function () {
+					// Здесь вы можете добавить логику выхода, если это необходимо
+				});
+			});
+	
 			hideornoElements.forEach((element) => {
-				element.style.display = isLoggedIn ? "block" : "none";
-			});
-
-			logoutButtonOne.addEventListener("click", function () {
-				// Здесь вы можете добавить логику выхода, если это необходимо
-			});
-		});
-	</script>
-
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-
-			const logoutButtonTwo = document.querySelector("#logoutButtonTwo");
-
-			const isLoggedIn = document.querySelectorAll(".text-name").textContent !== "";
-
-			logoutButtonTwo.textContent = isLoggedIn ? "Выход" : "Вход";
-
-			logoutButtonTwo.addEventListener("click", function () {
-				// Здесь вы можете добавить логику выхода, если это необходимо
+				element.style.display = displayValue;
 			});
 		});
 	</script>
