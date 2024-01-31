@@ -16,8 +16,9 @@
                 <ion-icon name="sparkles-outline" class="main-container-title-svg">
                     </ion-icon>Недавно добавленное аниме<ion-icon name="sparkles-outline" class="main-container-title-svg">
                 </ion-icon>
-            -->
+            
             </h1>
+            -->
             <div class="items_news" id="items_news">
                 {custom template="shortstory" navigation='yes' from='0' sortbyuser='yes'}
             </div>

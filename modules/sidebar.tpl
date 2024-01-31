@@ -35,7 +35,7 @@
                     <div class="text">Расписание</div>
                 </a>
             </li>
-            <li style="--bg:#4d658c;" id="schedule">
+            <li style="--bg:#4d658c;">
                 <a href="index.php?do=rooms">
                     <div class="icon"><ion-icon name="people-outline"></ion-icon></div>
                     <div class="text">Совместный просмотр</div>

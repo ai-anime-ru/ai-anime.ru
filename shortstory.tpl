@@ -38,7 +38,9 @@
             </div>
             <div class="news-block-hidden">
                 <div class="news-block">
-                    <a class="title-text">{title}</a>
+                    <a class="title-text">
+                        {title}
+                    </a>
                     <div class="description-short-box">
                         <div class="description-short"><a>Краткое описание:</a></div>
                         <h3>[xfvalue_kodik_plot]

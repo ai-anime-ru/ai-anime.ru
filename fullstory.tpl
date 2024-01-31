@@ -16,7 +16,9 @@
             </div>
             <div class="about-anime">
                 <div class="title-text-container">
-                    <a class="title-text">{title}</a>
+                    <a class="title-text">
+                        {title}
+                    </a>
                 </div>
                 <div class="original-title"><a>[xfvalue_shikimori_english]</a></div>
                 <div class="description-short-box">

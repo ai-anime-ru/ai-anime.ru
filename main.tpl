@@ -83,7 +83,7 @@
 	{AJAX}
 	
 	<div class="block-wrap">
-		<div class="wrap">
+		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
 				<div class="welcome-message" id="welcome-message">
@@ -97,8 +97,9 @@
 						<span onclick="closeWelcomeMessage()">Готово</span>
 					</div>
 				</div>
-				{include file="/modules/sidebar.tpl"}
 				<section class="main__content">
+					{include file="modules/mobile-menu.tpl"}
+					<button class="openbtn" onclick="toggleNav()">☰</button>  
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
