@@ -116,22 +116,32 @@
 			name="chevron-up-outline"></ion-icon></button>
 
 	<script>
+		// JavaScript для управления видимостью меню
+		document.querySelector('#news_set_sort').addEventListener('click', function () {
+			var menu = this.querySelector('ul');
+			menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+		});
+	</script>
+
+
+	<!--Скрипт мобильного меню-->
+	<script>
 		function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
 			if (mySidebar.style.width === "0px") {
-      mySidebar.style.width = "330px";
-      overlay.style.opacity = '1';
-      overlay.style.visibility = 'visible';
-      document.body.style.overflow = 'hidden';
-    } else {
-      mySidebar.style.width = "0";
-      overlay.style.opacity = '0';
-      overlay.style.visibility = 'hidden';
-      document.body.style.overflow = 'auto';
-    }
-  }
+				mySidebar.style.width = "330px";
+				overlay.style.opacity = '1';
+				overlay.style.visibility = 'visible';
+				document.body.style.overflow = 'hidden';
+			} else {
+				mySidebar.style.width = "0";
+				overlay.style.opacity = '0';
+				overlay.style.visibility = 'hidden';
+				document.body.style.overflow = 'auto';
+			}
+		}
 
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>

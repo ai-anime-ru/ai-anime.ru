@@ -95,7 +95,7 @@ ul li {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1001;
     transition: opacity 0.5s ease, visibility 0.5s;
 }
@@ -161,36 +161,36 @@ ul li {
     transition: margin-left .5s;
 }
 
-.sidebar-mobile-menu .main-menu-list ul{
+.sidebar-mobile-menu .main-menu-list ul {
     list-style: none;
-}   
+}
 
-.sidebar-mobile-menu .main-menu-list .text{
+.sidebar-mobile-menu .main-menu-list .text {
     font-size: 0.60em;
     color: var(--main-h1);
     font-weight: normal;
 }
 
-.sidebar-mobile-menu .main-menu-list .icon{
+.sidebar-mobile-menu .main-menu-list .icon {
     font-size: 1em;
     margin-right: 20px;
     color: var(--active);
     display: flex;
     align-items: center;
-}  
+}
 
-.sidebar-mobile-menu .main-menu-list li a{
+.sidebar-mobile-menu .main-menu-list li a {
     display: flex;
     align-items: center;
     padding: 16px 0px 16px 20px;
-}  
+}
 
 .sidebar-mobile-menu .mobile-menu {
     margin-top: 50px;
     width: 330px;
 }
 
-.sidebar-mobile-menu .background-top  {     
+.sidebar-mobile-menu .background-top {
     position: absolute;
     background-color: #393949;
     width: 520px;
@@ -2368,30 +2368,30 @@ input[type="text"] {
     }
 
     /* Стили для выпадающего меню */
-.sort {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .sort ul {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .sort ul li {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .sort ul li:hover {
-    background-color: #f1f1f1;
-  }
+    #news_set_sort {
+        position: relative;
+        display: inline-block;
+    }
+
+    #news_set_sort ul {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    #news_set_sort ul li {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    #news_set_sort ul li:hover {
+        background-color: #f1f1f1;
+    }
 }
 
 ;
