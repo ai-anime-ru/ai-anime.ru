@@ -111,7 +111,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="text-name" style="display: none;">{profile-login}</div>
+	<div class="user-text-name" style="display: none;">{profile-login}</div>
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
@@ -163,8 +163,8 @@
 		document.addEventListener("DOMContentLoaded", function () {
 			const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
 			const hideornoElements = document.querySelectorAll(".hideorno");
-			
-			const isLoggedIn = document.querySelector(".text-name").textContent !== "";
+
+			const isLoggedIn = document.querySelector(".user-text-name").textContent !== "";
 	
 			const displayValue = isLoggedIn ? "block" : "none";
 			const buttonText = isLoggedIn ? "Выход" : "Вход";

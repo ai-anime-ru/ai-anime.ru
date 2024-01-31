@@ -2160,6 +2160,10 @@ footer {
 
 
 @media (max-width: 480px) {
+    .footer {
+        width: 412px;
+    }
+
     .wrap {
         margin-top: 70px;
     }
