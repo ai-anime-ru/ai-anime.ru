@@ -34,14 +34,15 @@
         <ul>
           <li class="hideorno">
             <a href="index.php?subaction=userinfo&user={profile-login}">
-              <Div class="icon">
-                <div class="imgBx">
+              <Div class="profile-photo-mobile-icon">
+                <div class="imgBx-mobile-menu">
                   <img src="{foto}">
                 </div>
               </div>
               <div class="text">{profile-login}</div>
             </a>
           </li>
+          [admin-link]
           <li style=>
 						<a href="{admin-link}">
 							<div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
@@ -49,6 +50,7 @@
 							<div class="text color-in-header-menu">Админ пан.</div>
 						</a>
 					</li>
+          [/admin-link]
           <li class="hideorno">
             <a href="/index.php?do=pm">
               <div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>

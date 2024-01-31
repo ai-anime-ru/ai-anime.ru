@@ -1,7 +1,7 @@
 <header class="header">
 	<div class="in-header-content">
 		<div class="header-title">
-			<button class="openbtn" onclick="toggleNav()">☰</button>
+			<button class="openbtn" onclick="toggleNav()"><ion-icon name="menu-outline"></ion-icon></button>
 			<a class="header-link" href="/">AI ANIME</a>
 		</div>
 		<div class="profile" onclick="toggleDropdownHeader()">
