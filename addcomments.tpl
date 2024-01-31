@@ -27,14 +27,14 @@
 			[/question]
 			-->
 			</ul>
+			<div class="c-captcha">
+				{sec_code}
+				<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+			</div>
+		[/sec_code]
 			<div class="form_submit">
 				<button class="btn btn-big" type="submit" name="submit" title="Отправить комментарий"><b>Отправить комментарий</b></button>
 				[sec_code]
-				<div class="c-captcha">
-					{sec_code}
-					<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
-				</div>
-			[/sec_code]
 			</div>
 		</div>
 	</div>

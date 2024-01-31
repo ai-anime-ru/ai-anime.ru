@@ -81,6 +81,7 @@
         </div>
     </ul>
 </div>
+<div class="text-name" style="display: none;">{profile-login}</div>
 <!-- () Анимашки для боковой панели () -->
 <script type="text/javascript">
     let mainmenulist = document.querySelectorAll('.main-menu-list li')
