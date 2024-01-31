@@ -99,55 +99,55 @@
 </script>
 <!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
 <script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function () {
 
-  const logoutButton = document.querySelector("#logoutButton");
-  const hideornoElements = document.querySelectorAll(".hideorno");
+        const logoutButton = document.querySelector("#logoutButton");
+        const hideornoElements = document.querySelectorAll(".hideorno");
 
-  const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== "";
+        const isLoggedIn = document.querySelector(".text-name").textContent !== "";
 
-  logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
+        logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
 
-  hideornoElements.forEach((element) => {
-    element.style.display = isLoggedIn ? "block" : "none";
-  });
+        hideornoElements.forEach((element) => {
+            element.style.display = isLoggedIn ? "block" : "none";
+        });
 
-  logoutButton.addEventListener("click", function () {
-    // Здесь вы можете добавить логику выхода, если это необходимо
-  });
-});
+        logoutButton.addEventListener("click", function () {
+            // Здесь вы можете добавить логику выхода, если это необходимо
+        });
+    });
 </script>
 
 <!--Скрипт активной кнопки/вкладки-->
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Получаем все элементы меню
-    var menuItems = document.querySelectorAll('.main-menu-list li');
+    document.addEventListener("DOMContentLoaded", function () {
+        // Получаем все элементы меню
+        var menuItems = document.querySelectorAll('.main-menu-list li');
 
-    // Обрабатываем каждый пункт меню
-    menuItems.forEach(function (menuItem) {
-      // Добавляем слушатель события для каждой ссылки в меню
-      menuItem.addEventListener('click', function () {
-        // Убираем класс 'active' у всех пунктов меню
-        menuItems.forEach(function (item) {
-          item.classList.remove('active');
+        // Обрабатываем каждый пункт меню
+        menuItems.forEach(function (menuItem) {
+            // Добавляем слушатель события для каждой ссылки в меню
+            menuItem.addEventListener('click', function () {
+                // Убираем класс 'active' у всех пунктов меню
+                menuItems.forEach(function (item) {
+                    item.classList.remove('active');
+                });
+
+                // Добавляем класс 'active' к текущему пункту меню
+                menuItem.classList.add('active');
+            });
         });
 
-        // Добавляем класс 'active' к текущему пункту меню
-        menuItem.classList.add('active');
-      });
+        // Проверяем текущий URL и добавляем класс 'active' соответствующему пункту меню
+        var currentPath = window.location.pathname + window.location.search;
+
+        menuItems.forEach(function (menuItem) {
+            var link = menuItem.querySelector('a');
+            var href = link.getAttribute('href');
+
+            if (currentPath === href) {
+                menuItem.classList.add('active');
+            }
+        });
     });
-
-    // Проверяем текущий URL и добавляем класс 'active' соответствующему пункту меню
-    var currentPath = window.location.pathname + window.location.search;
-
-    menuItems.forEach(function (menuItem) {
-      var link = menuItem.querySelector('a');
-      var href = link.getAttribute('href');
-
-      if (currentPath === href) {
-        menuItem.classList.add('active');
-      }
-    });
-  });
 </script>

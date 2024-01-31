@@ -110,6 +110,7 @@
 			</div>
 		</div>
 	</div>
+	<div class="text-name" style="display: none;">{profile-login}</div>
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
@@ -132,13 +133,14 @@
 
 
 	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
-	<script>
+	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
+	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
 
 			const logoutButton = document.querySelector("#logoutButton");
 			const hideornoElements = document.querySelectorAll(".hideorno");
 
-			const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== false;
+			const isLoggedIn = document.querySelector(".text-name").textContent !== "";
 
 			logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
 
