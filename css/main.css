@@ -1480,6 +1480,7 @@ footer {
 }
 
 .form-group input {
+    width: 100% !important;
     background-color: var(--clr) !important;
     border-radius: 0.5rem !important;
     border: none !important;
