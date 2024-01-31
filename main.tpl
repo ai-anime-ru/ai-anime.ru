@@ -100,7 +100,6 @@
 				</div>
 				<section class="main__content">
 					{include file="modules/mobile-menu.tpl"}
-					<button class="openbtn" onclick="toggleNav()">☰</button>
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]

@@ -127,14 +127,14 @@ ul li {
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #111;
+    background-color: transparent;
     color: white;
     padding: 10px 15px;
     border: none;
 }
 
 .openbtn:hover {
-    background-color: #444;
+    background-color: transparent;
 }
 
 .wrap {
@@ -2078,6 +2078,10 @@ input[type="text"] {
         display: block;
     }
 
+    .profile {
+        display: none;
+    }
+
     .full-story-body {
         margin: 20px auto !important;
     }
@@ -2160,7 +2164,12 @@ input[type="text"] {
     }
 
     .header-link {
-        left: 0;
+        left: 40px;
+    }
+
+    .in-header-content {
+        display: flex;
+        justify-content: space-between;
     }
 
     .header form {
