@@ -148,7 +148,8 @@
 		}, 5000);
 
 		// Вызываем функцию проверки при загрузке страницы
-		window.onload = checkWelcomeMessage;
+		var checkWelcomeMessage;
+		window.onload = checkWelcomeMessage; 
 	</script>
 	<!-- () Обрезаем длину описания () 
 	<script>
