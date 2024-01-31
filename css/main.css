@@ -142,6 +142,27 @@ ul li {
     transition: margin-left .5s;
 }
 
+.sidebar-mobile-menu .main-menu-list ul{
+    list-style: none;
+}   
+
+.sidebar-mobile-menu .main-menu-list .text{
+    font-size: 0.8em;
+}   
+
+.sidebar-mobile-menu .main-menu-list .icon{
+    font-size: 1em;
+    margin-left: 10px;
+}  
+
+.sidebar-mobile-menu .main-menu-list a{
+    display: flex;
+}  
+
+.side-block-main .sidebar-mobile-menu  {
+    padding: 8px 8px 8px 10px;
+}
+
 
 /*------------- BACK LIGHT ----------- 
 
