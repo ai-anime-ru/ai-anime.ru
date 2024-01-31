@@ -115,6 +115,25 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
+	<script>
+		function toggleNav() {
+			var mySidebar = document.getElementById("mySidebar");
+			var overlay = document.querySelector('.overlay');
+
+			if (mySidebar.style.width === "0px") {
+				mySidebar.style.width = "330px";
+				overlay.style.opacity = '1';
+				document.body.style.overflow = 'hidden';
+			} else {
+				mySidebar.style.width = "0";
+				overlay.style.opacity = '0';
+				document.body.style.overflow = 'auto';
+			}
+		}
+
+		document.querySelector('.overlay').addEventListener('click', toggleNav);
+	</script>
+
 	<!-- () Обрезаем длину названия () -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {

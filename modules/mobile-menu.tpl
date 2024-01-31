@@ -79,22 +79,3 @@
   </div>
 
 </div>
-
-<script>
-function toggleNav() {
-  var mySidebar = document.getElementById("mySidebar");
-  var overlay = document.querySelector('.overlay');
-
-  if (mySidebar.style.width === "0px") {
-    mySidebar.style.width = "330px";
-    overlay.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-  } else {
-    mySidebar.style.width = "0";
-    overlay.style.display = 'none';
-    document.body.style.overflow = 'auto';
-  }
-}
-
-document.querySelector('.overlay').addEventListener('click', toggleNav);
-</script>
