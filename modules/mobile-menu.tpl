@@ -35,7 +35,9 @@
             <div class="text">Совместный просмотр</div>
           </a>
         </li>
-        <div class="bottom-menu">
+      </ul>
+      <div class="bottom-menu">
+        <ul>
           <li class="hideorno">
             <a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
               href="/user/{profile-login}">
@@ -71,10 +73,10 @@
               <div class="text" id="logoutButton">Вход</div>
             </a>
           </li>
-      </ul>
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 
 </div>
 

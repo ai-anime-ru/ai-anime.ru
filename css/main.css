@@ -91,13 +91,15 @@ ul li {
 }
 
 .sidebar-mobile-menu {
+    position: absolute;
+    width: 330px;
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: var(--clr);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -147,7 +149,7 @@ ul li {
 }   
 
 .sidebar-mobile-menu .main-menu-list .text{
-    font-size: 0.70em;
+    font-size: 0.60em;
     color: var(--main-h1);
     font-weight: normal;
 }
@@ -166,8 +168,15 @@ ul li {
     padding: 8px 8px 8px 20px;
 }  
 
+.sidebar-mobile-menu .main-menu-list li{
+    display: flex;
+    align-items: center;
+    padding: 7px 0 7px 0;
+}  
+
 .sidebar-mobile-menu .mobile-menu {
     margin-top: 50px;
+    width: 330px;
 }
 
 .sidebar-mobile-menu .background-top  {     
@@ -2205,7 +2214,7 @@ input[type="text"] {
     }
 
     .header-link {
-        left: 40px;
+        left: 50px;
     }
 
     .in-header-content {
