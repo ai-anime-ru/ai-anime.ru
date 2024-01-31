@@ -5,6 +5,9 @@
         <div class="full-story">
             <div class="full-box">
                 <article class="full-box-story">
+                    <a class="title-text">
+                        {title}
+                    </a>
                     <div class="full-poster-box">
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
                             src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
@@ -16,7 +19,7 @@
             </div>
             <div class="about-anime">
                 <div class="title-text-container">
-                    <a class="title-text">
+                    <a class="title-text mobile-hide">
                         {title}
                     </a>
                 </div>
