@@ -129,14 +129,16 @@
 			});
 		});
 	</script>
+
+
 	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
-	<script type="text/javascript">
+	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 
 			const logoutButton = document.querySelector("#logoutButton");
 			const hideornoElements = document.querySelectorAll(".hideorno");
 
-			const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== "";
+			const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== false;
 
 			logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
 
