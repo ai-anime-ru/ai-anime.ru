@@ -26,14 +26,10 @@
 	<link href="https://ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
-	<!-- <https://ionic.io/ionicons> -->
 	<script type="module" src="https://ai-anime.ru/ionicons/dist/ionicons/ionicons.esm.js"></script>
-	<!-- <Google tag (gtag.js)> -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-	<script src="https://ai-anime.ru/templates/ai-anime/js/friends.js"></script> 
-	<script src="https://ai-anime.ru/templates/ai-anime/js/classie.js"></script>
+	<script src="https://ai-anime.ru/templates/ai-anime/js/moment.min.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }

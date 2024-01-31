@@ -15,9 +15,4 @@
             </div>
         </div>
     </div>
-    <div class="discord-widget">
-        <iframe src="https://discord.com/widget?id=1186951554444558368&theme=dark" width="340" height="500"
-            allowtransparency="true" frameborder="0" padding-top="10px"
-            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-    </div>
 </div>
