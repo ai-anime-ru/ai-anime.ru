@@ -139,18 +139,26 @@ ul li {
 .sidebar-mobile-menu .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
+    right: 0px;
+    font-size: 45px;
     margin-left: 50px;
+    color: var(--main-h1);
 }
 
 .openbtn {
-    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 70px;
     cursor: pointer;
     background-color: transparent;
-    color: white;
-    padding: 10px 15px;
+    color: var(--active);
     border: none;
+    font-size: 3em;
 }
 
 .openbtn:hover {
@@ -2151,7 +2159,6 @@ input[type="text"] {
         margin-top: 70px;
     }
 
-    .openbtn,
     .sidebar-mobile-menu {
         display: block;
     }
@@ -2243,7 +2250,7 @@ input[type="text"] {
     }
 
     .header-link {
-        left: 50px;
+        left: 55px;
     }
 
     .in-header-content {
