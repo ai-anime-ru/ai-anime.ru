@@ -1162,7 +1162,6 @@ footer {
 }
 
 .bb-editor textarea {
-    width: 42rem !important;
     border-radius: 0.75rem !important;
     background-color: var(--clr) !important;
     border: none !important;
