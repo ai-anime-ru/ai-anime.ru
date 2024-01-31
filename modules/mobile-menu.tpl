@@ -1,9 +1,7 @@
 <div id="mySidebar" class="sidebar-mobile-menu" style="width: 0px;">
     <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="#">Скоро мобильная версия будет готова</a>
+
   </div>
 
   <script>
