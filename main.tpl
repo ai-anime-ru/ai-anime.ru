@@ -115,13 +115,6 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
-	<script>
-		// JavaScript для управления видимостью меню
-		document.querySelector('#news_set_sort').addEventListener('click', function () {
-			var menu = this.querySelector('ul');
-			menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-		});
-	</script>
 
 
 	<!--Скрипт мобильного меню-->

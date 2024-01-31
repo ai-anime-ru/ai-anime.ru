@@ -17,12 +17,6 @@
             <div class="text">Новости</div>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <div class="icon"><ion-icon name="filter-outline"></ion-icon></div>
-            <div class="text">Фильтры</div>
-          </a>
-        </li>
         <li id="schedule">
           <a href="/index.php?do=schedule">
             <div class="icon"><ion-icon name="calendar-outline"></ion-icon></div>
@@ -39,8 +33,7 @@
       <div class="bottom-menu">
         <ul>
           <li class="hideorno">
-            <a onclick="ShowProfile('{profile-login}', 'https://ai-anime.ru/user/{profile-login}', '1'); return false;"
-              href="/user/{profile-login}">
+            <a href="index.php?subaction=userinfo&user={profile-login}">
               <Div class="icon">
                 <div class="imgBx">
                   <img src="{foto}">
@@ -49,8 +42,15 @@
               <div class="text">{profile-login}</div>
             </a>
           </li>
+          <li style=>
+						<a href="{admin-link}">
+							<div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
+							</div>
+							<div class="text color-in-header-menu">Админ пан.</div>
+						</a>
+					</li>
           <li class="hideorno">
-            <a href="#">
+            <a href="/index.php?do=pm">
               <div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
               <div class="text">Сообщения</div>
             </a>
@@ -61,16 +61,10 @@
               <div class="text">Закладки</div>
             </a>
           </li>
-          <li class="hideorno">
-            <a href="#">
-              <div class="icon"><ion-icon name="stats-chart-outline"></ion-icon></div>
-              <div class="text">Статистика</div>
-            </a>
-          </li>
           <li>
             <a href="index.php?action=logout">
               <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text" id="logoutButton">Вход</div>
+              <div class="text" class="logoutButton">Вход</div>
             </a>
           </li>
         </ul>
