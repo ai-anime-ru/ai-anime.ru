@@ -1,4 +1,5 @@
 <div id="mySidebar" class="sidebar-mobile-menu" style="width: 0px;">
+  <div class="background-top"></div>
   <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">×</a>
 
   <div class="mobile-menu">
