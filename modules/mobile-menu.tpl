@@ -81,7 +81,7 @@
 <script>
   function toggleNav() {
     if (document.getElementById("mySidebar").style.width === "0px") {
-      document.getElementById("mySidebar").style.width = "320px";
+      document.getElementById("mySidebar").style.width = "330px";
     } else {
       document.getElementById("mySidebar").style.width = "0";
     }
