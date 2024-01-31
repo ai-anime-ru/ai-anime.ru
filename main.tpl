@@ -27,7 +27,7 @@
 	<link href="https://ai-anime.ru/templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
 	<link href="https://ai-anime.ru/templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
 	<!-- <https://ionic.io/ionicons> -->
-	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script type="module" src="https://ai-anime.ru/ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<!-- <Google tag (gtag.js)> -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
