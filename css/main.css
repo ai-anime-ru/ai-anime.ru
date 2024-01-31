@@ -141,8 +141,13 @@ ul li {
     top: 0;
     right: 0px;
     font-size: 45px;
-    margin-left: 50px;
-    color: var(--main-h1);
+    padding: 5px;
+    color: var(--line);
+    transition: 0.3s;
+}
+
+.sidebar-mobile-menu .closebtn:hover {
+    color: var(--active);
 }
 
 .openbtn {
