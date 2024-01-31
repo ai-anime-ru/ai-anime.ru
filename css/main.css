@@ -101,6 +101,7 @@ ul li {
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    z-index: 9980;
 }
 
 .sidebar-mobile-menu a {
