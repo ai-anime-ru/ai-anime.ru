@@ -1172,7 +1172,7 @@ footer {
 
 .form_submit {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     margin-top: 5px;
 }
 
@@ -1183,7 +1183,6 @@ footer {
     text-align: center;
     border-radius: 0.75rem;
     border: none;
-    margin-right: 5px;
     max-height: 40px;
     cursor: pointer;
     font-size: 1em;
