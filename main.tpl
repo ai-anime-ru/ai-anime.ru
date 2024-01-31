@@ -162,7 +162,7 @@
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
 
-			const logoutButton = document.querySelector(".logout-button-menu");
+			const logoutButton = document.querySelector(".logoutButton");
 			const hideornoElements = document.querySelectorAll(".hideorno");
 
 			const isLoggedIn = document.querySelector(".text-name").textContent !== "";
