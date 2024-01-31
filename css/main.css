@@ -2161,7 +2161,7 @@ footer {
 
 @media (max-width: 480px) {
     footer {
-        width: 412px;
+        width: 100%;
     }
 
     .wrap {
@@ -2193,6 +2193,10 @@ footer {
         max-width: 412px !important;
     }
 
+    .main-container {
+        margin: auto;
+    }
+
     .items_news {
         display: flex !important;
         flex-direction: column;
@@ -2208,12 +2212,13 @@ footer {
     .header,
     .contaner-flex,
     .main {
-        width: auto;
+        width: 100%;
     }
 
     .top-block-main {
         width: 412px;
         height: 79px;
+        margin: auto;
     }
 
     .logo-footer {
