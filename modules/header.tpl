@@ -53,7 +53,7 @@
 					<li>
 						<a href="index.php?action=logout">
 							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
-							<div class="text color-in-header-menu logout-button-menu"  id="logoutButton">Вход</div>
+							<div class="text color-in-header-menu"  id="logoutButton">Вход</div>
 						</a>
 					</li>
 				</ul>

@@ -162,18 +162,33 @@
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function () {
 
-			const logoutButton = document.querySelector(".logoutButton");
+			const logoutButtonOne = document.querySelector("#logoutButtonOne");
 			const hideornoElements = document.querySelectorAll(".hideorno");
 
-			const isLoggedIn = document.querySelector(".text-name").textContent !== "";
+			const isLoggedIn = document.querySelectorAll(".text-name").textContent !== "";
 
-			logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
+			logoutButtonOne.textContent = isLoggedIn ? "Выход" : "Вход";
 
 			hideornoElements.forEach((element) => {
 				element.style.display = isLoggedIn ? "block" : "none";
 			});
 
-			logoutButton.addEventListener("click", function () {
+			logoutButtonOne.addEventListener("click", function () {
+				// Здесь вы можете добавить логику выхода, если это необходимо
+			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+
+			const logoutButtonTwo = document.querySelector("#logoutButtonTwo");
+
+			const isLoggedIn = document.querySelectorAll(".text-name").textContent !== "";
+
+			logoutButtonTwo.textContent = isLoggedIn ? "Выход" : "Вход";
+
+			logoutButtonTwo.addEventListener("click", function () {
 				// Здесь вы можете добавить логику выхода, если это необходимо
 			});
 		});

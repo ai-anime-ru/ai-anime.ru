@@ -66,7 +66,7 @@
           <li>
             <a href="index.php?action=logout">
               <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text" id="logoutButton2" class="logoutButton">Вход</div>
+              <div class="text logout-button-menu" id="logoutButtonTwo">Вход</div>
             </a>
           </li>
         </ul>
