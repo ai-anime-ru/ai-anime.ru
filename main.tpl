@@ -77,6 +77,9 @@
 			<div class="miku-dance"></div>
 		</div>
 	</div>
+
+	{include file="modules/mobile-menu.tpl"}
+	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
 	<div class="right-light"></div>
@@ -99,7 +102,6 @@
 					</div>
 				</div>
 				<section class="main__content">
-					{include file="modules/mobile-menu.tpl"}
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
