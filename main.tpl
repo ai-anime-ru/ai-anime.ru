@@ -36,7 +36,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-SK44Z46F4Y');
 	</script>
-<!--        
+	<!--        
                ##
               ####
              ###### 
@@ -60,7 +60,7 @@
 
 		ТУТ БЫЛ ELONDIE
 -->
-<!--
+	<!--
 ███╗░░░███╗██████╗░████████╗██████╗░░██████
 ████╗░████║╚════██╗╚══██╔══╝██╔══██╗░░░██║
 ██╔████╔██║░█████╔╝░░░██║░░░██████╔╝░░░██║
@@ -70,6 +70,7 @@
 -->
 
 </head>
+
 <body>
 	<div class="loader-container">
 		<div class="loader">
@@ -81,7 +82,7 @@
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-	
+
 	<div class="block-wrap">
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
@@ -99,7 +100,7 @@
 				</div>
 				<section class="main__content">
 					{include file="modules/mobile-menu.tpl"}
-					<button class="openbtn" onclick="toggleNav()">☰</button>  
+					<button class="openbtn" onclick="toggleNav()">☰</button>
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
@@ -109,8 +110,9 @@
 			</div>
 		</div>
 	</div>
-	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon name="chevron-up-outline"></ion-icon></button>
-	
+	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
+			name="chevron-up-outline"></ion-icon></button>
+
 	<!-- () Обрезаем длину названия () -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
@@ -124,6 +126,26 @@
 					var shortenedText = originalText.substring(0, maxLength) + "...";
 					textElement.textContent = shortenedText;
 				}
+			});
+		});
+	</script>
+	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
+	<script type="text/javascript">
+		document.addEventListener("DOMContentLoaded", function () {
+
+			const logoutButton = document.querySelector("#logoutButton");
+			const hideornoElements = document.querySelectorAll(".hideorno");
+
+			const isLoggedIn = document.querySelector(".bottom-menu .text").textContent !== "";
+
+			logoutButton.textContent = isLoggedIn ? "Выход" : "Вход";
+
+			hideornoElements.forEach((element) => {
+				element.style.display = isLoggedIn ? "block" : "none";
+			});
+
+			logoutButton.addEventListener("click", function () {
+				// Здесь вы можете добавить логику выхода, если это необходимо
 			});
 		});
 	</script>
@@ -434,26 +456,27 @@
 	</noscript>
 	<!-- /Yandex.Metrika counter -->
 
-<!--Скрипт лоадера страницы-->
-<script>
-	document.addEventListener("DOMContentLoaded", function () {
-		setTimeout(function () {
-			document.querySelector('.loader-container').classList.add('hide-loader');
-		}, 500);
-	});
-</script>
+	<!--Скрипт лоадера страницы-->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			setTimeout(function () {
+				document.querySelector('.loader-container').classList.add('hide-loader');
+			}, 500);
+		});
+	</script>
 
-<script>
-	// Показать лоадер
-	function showLoader() {
-		document.querySelector('.loader-container').classList.remove('hide-loader')
-		document.querySelector('.loader-container').classList.add('show-loader');
-	}
+	<script>
+		// Показать лоадер
+		function showLoader() {
+			document.querySelector('.loader-container').classList.remove('hide-loader')
+			document.querySelector('.loader-container').classList.add('show-loader');
+		}
 
-	// Скрыть лоадер
-	function hideLoader() {
-		document.querySelector('.loader-container').classList.remove('show-loader');
-	}
-</script>
+		// Скрыть лоадер
+		function hideLoader() {
+			document.querySelector('.loader-container').classList.remove('show-loader');
+		}
+	</script>
 </body>
+
 </html>
