@@ -235,7 +235,10 @@ ul li {
 /*--- FILTER ---*/
 
 .filter-button {
-    display: flex;
+    display: flex !important;
+    align-items: center;
+    flex-direction: row;
+    padding: 16px 0px 16px 20px !important;
 }
 
 
