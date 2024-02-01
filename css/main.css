@@ -1481,7 +1481,7 @@ footer {
 }
 
 .form-group input {
-    width: 100% !important;
+    width: 100%;
     background-color: var(--clr) !important;
     border-radius: 0.5rem !important;
     border: none !important;
@@ -2443,6 +2443,19 @@ footer {
 
     .user-info .user-1 {
         flex-direction: column;
+    }
+
+    /*---------- PM -----------*/
+
+    .pm-container {
+        width: auto;
+    }
+
+    .meta ul {
+        display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     }
 }
 

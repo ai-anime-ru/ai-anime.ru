@@ -7,7 +7,7 @@
 					<ul>
 						<li>[inbox]<span>Входящие</span>[/inbox]</li>
 						<li>[outbox]<span>Отправленные</span>[/outbox]</li>
-						<li>[new_pm]<span>Написать новое сообщение</span>[/new_pm]</li>
+						<li>[new_pm]<span>Написать</span>[/new_pm]</li>
 					</ul>
 				</nav>
 				<div class="pm_status">
