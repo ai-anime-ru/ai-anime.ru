@@ -2423,6 +2423,19 @@ footer {
         position: relative;
         display: inline-block;
     }
+
+    /* ------- USER INFO ---------*/
+
+    .user-info {
+        width: auto
+    }
+
+    .table-1 {
+        display: flex;
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 ;
