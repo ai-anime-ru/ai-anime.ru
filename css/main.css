@@ -85,6 +85,12 @@ ul li {
 
 /*---------- MOBILE MENU -------------*/
 
+.filter-contet-box {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
 .overlay {
     opacity: 0;
     visibility: hidden;
