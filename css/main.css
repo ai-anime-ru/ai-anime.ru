@@ -238,6 +238,8 @@ ul li {
 }
 
 
+
+
 /*--- FILTER ---*/
 
 .filter-button {
@@ -246,6 +248,42 @@ ul li {
     flex-direction: row;
     padding: 16px 0px 16px 20px !important;
 }
+
+.filter-content-box {
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: height 300ms ease-in-out;
+  }
+  
+  .filter-content-box.active {
+    display: block;
+    height: auto;
+  }
+  
+  .filter-group {
+    margin-bottom: 10px;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filter-group select,
+  .filter-group input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .filter-group button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
 
 
 /*------------- BACK LIGHT ----------- 
