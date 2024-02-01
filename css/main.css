@@ -2436,6 +2436,14 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .table-1 table {
+        max-width: 100%
+    }
+
+    .user-info .user-1 {
+        flex-direction: column;
+    }
 }
 
 ;
