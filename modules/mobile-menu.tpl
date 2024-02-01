@@ -84,24 +84,25 @@
 </div>
 
 <script>
-  // JavaScript
 document.querySelector('.filter-button').addEventListener('click', function() {
     var filterBox = document.querySelector('.filter-contet-box');
     var sidebar = document.querySelector('#mySidebar');
     var filterButton = document.querySelector('.filter-button');
     var topElements = Array.from(sidebar.children).filter(el => !el.classList.contains('filter-contet-box') && !el.classList.contains('sidebar-mobile-menu') && !el.classList.contains('background-top') && !el.classList.contains('closebtn'));
 
-    if (filterBox.style.maxHeight) {
-        // Если фильтры уже открыты, закрываем их
-        filterBox.style.maxHeight = null;
-        filterButton.style.position = 'static';
-        topElements.forEach(el => el.style.display = 'block');
-    } else {
-        // Если фильтры закрыты, открываем их
-        filterBox.style.maxHeight = filterBox.scrollHeight + 'px';
-        filterButton.style.position = 'absolute';
-        filterButton.style.top = '0';
-        topElements.forEach(el => el.style.display = 'none');
+    if (filterBox) { // Добавлено условие проверки на null
+        if (filterBox.style.maxHeight) {
+            // Если фильтры уже открыты, закрываем их
+            filterBox.style.maxHeight = null;
+            filterButton.style.position = 'static';
+            topElements.forEach(el => el.style.display = 'block');
+        } else {
+            // Если фильтры закрыты, открываем их
+            filterBox.style.maxHeight = filterBox.scrollHeight + 'px';
+            filterButton.style.position = 'absolute';
+            filterButton.style.top = '0';
+            topElements.forEach(el => el.style.display = 'none');
+        }
     }
 });
 </script>
