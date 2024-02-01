@@ -30,6 +30,10 @@
           </a>
         </li>
       </ul>
+      <a class="filter-button">
+        <div class="icon"><ion-icon name="filter-outline"></ion-icon></div>
+        <div class="text">Фильтры</div>
+    </a>
       <div class="bottom-menu">
         <ul>
           <li class="hideorno">
