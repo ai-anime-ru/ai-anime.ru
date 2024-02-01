@@ -119,6 +119,7 @@ ul li {
     padding: 10px;
     border-radius: 0.75em;
     color: var(--second-text);
+    font-size: 0.85em;
 }
 
 
