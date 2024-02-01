@@ -232,6 +232,13 @@ ul li {
 }
 
 
+/*--- FILTER ---*/
+
+.filter-button {
+    display: flex;
+}
+
+
 /*------------- BACK LIGHT ----------- 
 
 .left-light {

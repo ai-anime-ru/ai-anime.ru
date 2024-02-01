@@ -1,6 +1,7 @@
 <div id="mySidebar" class="sidebar-mobile-menu" style="width: 0px;">
   <div class="background-top"></div>
-  <span href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><ion-icon name="close-outline"></ion-icon></span>
+  <span href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><ion-icon
+      name="close-outline"></ion-icon></span>
 
   <div class="mobile-menu">
     <div class="main-menu-list">
@@ -30,10 +31,12 @@
           </a>
         </li>
       </ul>
-      <a class="filter-button">
-        <div class="icon"><ion-icon name="filter-outline"></ion-icon></div>
-        <div class="text">Фильтры</div>
-    </a>
+      <div class="filter-box">
+        <a class="filter-button">
+          <div class="icon"><ion-icon name="filter-outline"></ion-icon></div>
+          <div class="text">Фильтры</div>
+        </a>
+      </div>
       <div class="bottom-menu">
         <ul>
           <li class="hideorno">
@@ -48,12 +51,12 @@
           </li>
           [admin-link]
           <li style=>
-						<a href="{admin-link}">
-							<div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
-							</div>
-							<div class="text color-in-header-menu">Админ пан.</div>
-						</a>
-					</li>
+            <a href="{admin-link}">
+              <div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
+              </div>
+              <div class="text color-in-header-menu">Админ пан.</div>
+            </a>
+          </li>
           [/admin-link]
           <li class="hideorno">
             <a href="/index.php?do=pm">
