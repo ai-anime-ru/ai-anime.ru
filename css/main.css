@@ -2216,7 +2216,7 @@ footer {
     }
 
     .top-block-main {
-        width: 412px;
+        width: auto;
         height: 79px;
         margin: auto;
     }
