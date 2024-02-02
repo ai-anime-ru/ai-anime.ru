@@ -126,11 +126,13 @@
 
 			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
+				main.style.width = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
 				document.body.style.overflow = 'hidden';
 			} else {
 				mySidebar.style.width = "0";
+				main.style.width = "0px";
 				overlay.style.opacity = '0';
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
