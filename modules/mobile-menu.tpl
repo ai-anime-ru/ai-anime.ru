@@ -4,7 +4,7 @@
       name="close-outline"></ion-icon></span>
 
       <div class="mobile-work">
-        <p>Мобильная версия в стадии разработки.<br>Доступен не весь функионал.</p>
+        <p>Мобильная версия в стадии разработки.<br>Доступен не весь функционал.</p>
       </div>
 
   <div class="mobile-menu">

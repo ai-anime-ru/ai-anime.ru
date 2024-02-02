@@ -77,6 +77,8 @@
 			<div class="miku-dance"></div>
 		</div>
 	</div>
+
+	{include file="modules/mobile-menu.tpl"}
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
@@ -120,18 +122,14 @@
 		function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
-			var main = document.getElementById('main')
-			var footer = document.querySelector('footerBlack')
-
 
 			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
-				//main.style.marginLeft = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
+				document.body.style.overflow = 'hidden';
 			} else {
 				mySidebar.style.width = "0";
-				//main.style.marginLeft = "0";
 				overlay.style.opacity = '0';
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
