@@ -78,7 +78,6 @@
 		</div>
 	</div>
 
-	{include file="modules/mobile-menu.tpl"}
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
@@ -88,6 +87,7 @@
 
 	<div class="block-wrap">
 		<div class="wrap" id="main" style="margin-left: 0px;">
+			{include file="modules/mobile-menu.tpl"}
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
 				<div class="welcome-message" id="welcome-message">
