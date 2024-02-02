@@ -78,6 +78,8 @@
 		</div>
 	</div>
 
+	{include file="modules/mobile-menu.tpl"}
+
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
@@ -86,7 +88,6 @@
 	{AJAX}
 
 	<div class="block-wrap">
-		{include file="modules/mobile-menu.tpl"}
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
@@ -124,15 +125,16 @@
 			var overlay = document.querySelector('.overlay');
 			var main = document.getElementById('main')
 
+
 			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
-				main.style.marginLeft = "330px";
+				//main.style.marginLeft = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
 				document.body.style.overflow = 'hidden';
 			} else {
 				mySidebar.style.width = "0";
-				main.style.marginLeft = "0";
+				//main.style.marginLeft = "0";
 				overlay.style.opacity = '0';
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
