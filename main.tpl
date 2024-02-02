@@ -86,8 +86,8 @@
 	{AJAX}
 
 	<div class="block-wrap">
+		{include file="modules/mobile-menu.tpl"}
 		<div class="wrap" id="main" style="margin-left: 0px;">
-			{include file="modules/mobile-menu.tpl"}
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
 				<div class="welcome-message" id="welcome-message">
@@ -122,6 +122,7 @@
 		function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
+			var main = document.getElementById('main')
 
 			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
