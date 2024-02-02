@@ -77,9 +77,6 @@
 			<div class="miku-dance"></div>
 		</div>
 	</div>
-
-	{include file="modules/mobile-menu.tpl"}
-
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
@@ -129,12 +126,12 @@
 
 			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
-				main.style.marginLeft = "330px";
+				//main.style.marginLeft = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
 			} else {
 				mySidebar.style.width = "0";
-				main.style.marginLeft = "0";
+				//main.style.marginLeft = "0";
 				overlay.style.opacity = '0';
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
