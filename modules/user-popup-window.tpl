@@ -1,6 +1,6 @@
 <div class="overlay-user-window" id="overlay">
     <div class="user-pop-up-window">
-        {reg}
+        {login}
       <button onclick="closePopUp()">Close</button>
     </div>
   </div>
