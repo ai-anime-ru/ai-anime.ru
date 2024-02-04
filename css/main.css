@@ -692,7 +692,8 @@ transform: scale(1);
 }
 
 .user-pop-up-window.active .lb_title {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 
@@ -708,12 +709,18 @@ transform: scale(1);
     font-size: 1em;
     font-weight: normal;
     transition: 0.3s;
+    margin-bottom: 7px;
+}
+
+.user-pop-up-window.active .lb-check {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
 }
 
 .user-pop-up-window.active .lb-check input {
-    display: flex;
-    padding: 0 !important;
-    vertical-align: middle;
+    padding: 0;
+    width: auto;
 }
 
 
