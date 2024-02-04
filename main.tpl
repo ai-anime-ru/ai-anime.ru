@@ -148,7 +148,7 @@
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
-			if (mySidebar.style.width === "0px") {
+			if (overlay.style.opacity === "0px") {
 				mySidebar.style.width = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
@@ -160,7 +160,7 @@
 				document.body.style.overflow = 'auto';
 			}
 		}
-
+		
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
 
