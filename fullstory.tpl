@@ -214,7 +214,6 @@
                             [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
                     </span>
                 </div>
-
                 [push_subscribe]
                 <div class="dot"></div>
                 [/push_subscribe]

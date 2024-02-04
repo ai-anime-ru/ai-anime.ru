@@ -2,12 +2,10 @@
     {info}
     <div class="top-block-main"></div>
     <div class="top-menu-block">
-        {catmenu}
     </div>
     [available=main]
     <div class="contaner-flex">
         <section class="main-container">
-            {login}
             <div class="sort-main">
                 <span class="">Сортировать: </span>
                 [sort]{sort}[/sort]

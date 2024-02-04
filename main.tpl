@@ -78,21 +78,21 @@
 		</div>
 	</div>
 
-	{include file="modules/mobile-menu.tpl"}
+	{include file="modules/user-popup-window.tpl"}
+
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
 	<div class="right-light"></div>
 	-->
 	{AJAX}
+	
 
 	<div class="block-wrap">
+		<button onclick="openPopUp()">Open Pop-up</button>
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
-				    [group=5]
-	                    <button class="open_clean_form">Регистрация</button>
-                    [/group]
 				<div class="welcome-message" id="welcome-message">
 					<div class="welcome-message-content">
 						<div class="welcome-message-text">
@@ -105,6 +105,7 @@
 					</div>
 				</div>
 				<section class="main__content">
+					<button onclick="openPopUp()">Open Pop-up</button>
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
@@ -118,7 +119,24 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
-
+			<script>
+				function openPopUp() {
+				  document.getElementById('overlay').classList.add('active');
+				  document.querySelector('.user-pop-up-window').classList.add('active');
+				}
+			
+				function closePopUp() {
+				  document.getElementById('overlay').classList.remove('active');
+				  document.querySelector('.user-pop-up-window').classList.remove('active');
+				}
+			
+				// Close the pop-up if clicking on the overlay
+				document.getElementById('overlay').addEventListener('click', function(event) {
+				  if (event.target === this) {
+					closePopUp();
+				  }
+				});
+			  </script>
 
 	<!--Скрипт мобильного меню-->
 	<script>
@@ -512,6 +530,28 @@
 			document.querySelector('.loader-container').classList.remove('show-loader');
 		}
 	</script>
+	<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Получаем элементы <div> с классами user-login и user-notlogin
+		var userLoginDiv = document.querySelector('.user-login');
+		var userNotLoginDiv = document.querySelector('.user-notlogin');
+
+		// Получаем значение переменной {profile-login}
+		var profileLoginValue = '{profile-login}';
+
+		// Проверяем, вошел ли пользователь в аккаунт
+		if (profileLoginValue.trim() !== '') {
+			// Пользователь в аккаунте, отображаем содержимое user-login, скрываем содержимое user-notlogin
+			userLoginDiv.style.display = 'block';
+			userNotLoginDiv.style.display = 'none';
+		} else {
+			// Пользователь не в аккаунте, скрываем содержимое user-login, отображаем содержимое user-notlogin
+			userLoginDiv.style.display = 'none';
+			userNotLoginDiv.style.display = 'block';
+		}
+	});
+	</script>
+
 	[group=5]
 
 	{include file="engine/modules/clean-sign-up.php"}
