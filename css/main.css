@@ -2823,6 +2823,10 @@ footer {
         align-items: center;
     }
 
+    .c-captcha>a>span>img{
+        border-radius: 0.75rem !important;
+    }
+
     /* Стили для выпадающего меню */
     #news_set_sort {
         position: relative;
