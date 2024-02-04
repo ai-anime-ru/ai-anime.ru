@@ -118,18 +118,23 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
+			<!--LOGIN-->
 			<script>
+				var bodyElement = document.body;
+				
 				function openPopUp() {
 				  document.getElementById('overlay').classList.add('active');
 				  document.querySelector('.user-pop-up-window').classList.add('active');
+				  bodyElement.style.overflow = "hidden";
+
 				}
 			
 				function closePopUp() {
 				  document.getElementById('overlay').classList.remove('active');
 				  document.querySelector('.user-pop-up-window').classList.remove('active');
+				  bodyElement.style.overflow = "visible";
 				}
 			
-				// Close the pop-up if clicking on the overlay
 				document.getElementById('overlay').addEventListener('click', function(event) {
 				  if (event.target === this) {
 					closePopUp();
