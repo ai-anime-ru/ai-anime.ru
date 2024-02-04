@@ -787,11 +787,13 @@ transform: scale(1);
 }
 
 .with-social-login {
-    background-color: var(--active);
-    color: var(--btn-active-font-clr);
+    display: flex;
+    background-color: #6f6f6f;
+    color: var(--h1);
     padding: 7px;
     text-align: center;
     border-radius: 0.5rem;
+    text-decoration: none;
     border: none;
     max-height: 40px;
     cursor: pointer;
@@ -801,11 +803,39 @@ transform: scale(1);
     width: 100%;
     height: 40px;
     margin-top: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .with-social-login .icon{
     font-size: 1em;
+    margin-right: 5px;
+    display: flex;
+}
+
+.line-login {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px; /* Добавьте отступ снизу по вашему усмотрению */
+}
+
+.line-login::before,
+.line-login::after {
+  content: "";
+  display: inline-block;
+  width: 50%; /* Регулирует ширину линий */
+  border-top: 1px solid var(--line); /* Цвет и стиль линий */
+  position: absolute;
+  top: 50%;
+}
+
+.line-login::before {
+  right: 1em; /* Регулирует расстояние между линией и текстом справа */
+}
+
+.line-login::after {
+  left: 1em; /* Регулирует расстояние между линией и текстом слева */
 }
 
 /* ----------- REGISTRATION --------*/

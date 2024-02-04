@@ -15,6 +15,7 @@
 		</a>[/google]
 		[vk]
 	</div>[/vk]
+	<div class="line-login">Или</div>
 	<form method="post">
 		<div class="login-info-input">
 			<laber>Логин:</laber>
