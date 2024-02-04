@@ -14,6 +14,10 @@
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
+					<li>
+						<div class="profile-text-header"><b>С возвращением </b><p>{profile-login}</p></div>
+					</li>
+					<div class="line user-login"></div>
 					[admin-link]
 					<li style=>
 						<a href="{admin-link}">
@@ -50,6 +54,7 @@
 							<div class="text color-in-header-menu">Статистика</div>
 						</a>
 					</li>
+					<div class="line user-login"></div>
 					[group=5]
 					<li>
 						<a onclick="openPopUp()">

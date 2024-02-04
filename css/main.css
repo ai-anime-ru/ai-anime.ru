@@ -558,8 +558,9 @@ ul li {
     visibility: hidden;
     margin: 15px;
     right: 0;
+    padding: 5px;
     border-radius: 0.5rem;
-    width: 200px;
+    width: 185px;
     position: absolute;
     background-color: var(--main);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -567,6 +568,18 @@ ul li {
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     box-shadow: 0 0px 17px #00000062;
+}
+
+.profile-link-header ul {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.profile-link-header .line {
+    padding-top: 5px;
+    margin-bottom: 5px;
+    width: 90%;
 }
 
 .profile-link-header ul li a .icon {
@@ -628,6 +641,25 @@ ul li {
 .show {
     visibility: visible;
     opacity: 1;
+}
+
+.profile-text-header {
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.profile-text-header b{
+    font-size: 0.95em;
+    font-weight: normal;
+    color: var(--second-text);
+}
+
+.profile-text-header a{
+    font-size: 0.95em;
+    font-weight: normal;
+    color: var(--main-h1);
 }
 
 
