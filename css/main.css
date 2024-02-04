@@ -1552,6 +1552,7 @@ footer {
 
 .c-captcha input {
     background-color: var(--clr) !important;
+    border: none;
     border-color: #000000 !important;
     color: white !important;
     padding: 0.75rem !important;
