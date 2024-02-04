@@ -274,11 +274,11 @@
 										<div class="form_submit">
 											<button class="btn btn-big" name="submit"
 												type="submit"><b>Сохранить</b></button>
-											[delete]<b>Удалить аккаунт</b>[/delete]
 											<button class="close-btn" id="close-btn" type="button">Закрыть
 												редактор</button>
 											<input name="submit" type="hidden" id="submit" value="submit">
 										</div>
+										[delete]<b>Удалить аккаунт</b>[/delete]
 									</div>
 								</div>
 								<!-- / Настройки пользователя -->
