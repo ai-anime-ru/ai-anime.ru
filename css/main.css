@@ -45,12 +45,6 @@
     color: #000;
 }
 
-input:focus-visible,
-input:focus
- {
-    background-color: var(--main) !important;
-    border-color: green !important;
-}
 
 .info-debug {
     background-color: var(--main);
@@ -445,7 +439,6 @@ ul li {
 
 .d3 input,
 .d3 button {
-    border: none;
     outline: none;
     background: transparent;
     color: #dfdfdf;
@@ -475,6 +468,7 @@ ul li {
 
 .search-icon {
     color: #daf5f9;
+    border: none;
 }
 
 .header-link {
@@ -713,8 +707,6 @@ transform: scale(1);
     width: 100%;
     background-color: var(--clr);
     border-radius: 0.5rem;
-    border: 1px solid;
-    border-color: var(--main);
     display: block;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -909,7 +901,6 @@ transform: scale(1);
     padding: 0.75rem;
     text-align: center;
     border-radius: 0.75rem;
-    border: none;
     max-height: 40px;
     cursor: pointer;
     font-size: 1em;
@@ -937,7 +928,6 @@ transform: scale(1);
     width: 100%;
     background-color: var(--clr);
     border-radius: 0.5rem;
-    border: none;
     display: block;
     font-size: .875rem;
     line-height: 1.25rem;
@@ -1011,7 +1001,6 @@ transform: scale(1);
 .info-debug input {
     background-color: var(--clr);
     border-radius: 0.5rem;
-    border: none;
     font-size: .875rem;
     padding: 0.75rem 1rem;
     margin-bottom: 7px;
@@ -1558,7 +1547,6 @@ footer {
 .combo_field input {
     background-color: var(--clr);
     border-radius: 0.5rem !important;
-    border: 1px solid;
     display: block !important;
     font-size: .875rem !important;
     line-height: 1.25rem !important;
@@ -1574,7 +1562,6 @@ footer {
 .bb-editor textarea {
     border-radius: 0.75rem !important;
     background-color: var(--clr) !important;
-    border: none !important;
     color: #ddd !important;
     padding: 15px !important;
     margin-top: 5px !important;
@@ -1623,8 +1610,6 @@ footer {
 
 .c-captcha input {
     background-color: var(--clr) !important;
-    border: none;
-    border-color: #000000 !important;
     color: white !important;
     padding: 0.75rem !important;
     border-radius: 0.75rem !important;
@@ -1768,7 +1753,6 @@ footer {
 .mass_comments_action input {
     background-color: var(--active);
     color: black;
-    border: none;
     padding: 5px;
     border-radius: 0.15rem;
     cursor: pointer;
@@ -1887,26 +1871,10 @@ footer {
     margin-bottom: 5px;
 }
 
-.form-group input {
-    width: 100%;
-    background-color: var(--clr);
-    border-radius: 0.5rem !important;
-    border: 1px solid;
-    border-color: var(--main);
-    display: block !important;
-    font-size: .875rem !important;
-    line-height: 1.25rem !important;
-    padding: 0.75rem 1rem !important;
-    margin-bottom: 0px !important;
-    color: #ddd !important;
-    transition: 0.3s;
-}
-
 .form-group textarea {
     width: 100% !important;
     border-radius: 0.75rem !important;
     background-color: var(--clr) !important;
-    border: none !important;
     color: #ddd !important;
     padding: 15px !important;
     margin-top: 0px !important;
@@ -2234,7 +2202,6 @@ footer {
 
 .pm-container input[type="text"] {
     background-color: var(--clr) !important;
-    border: none !important;
     border-radius: 0.75rem !important;
     padding: 10px !important;
 
