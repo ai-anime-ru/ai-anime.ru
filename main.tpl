@@ -536,8 +536,8 @@
 	<script>
 		document.addEventListener('DOMContentLoaded', function () {
 			// Получаем элементы <div> с классами user-login и user-notlogin
-			var userLoginDiv = document.querySelector('.user-login');
-			var userNotLoginDiv = document.querySelector('.user-notlogin');
+			var userLoginDiv = document.querySelectorAll('.user-login');
+			var userNotLoginDiv = document.querySelectorAll('.user-notlogin');
 
 			// Получаем значение переменной {profile-login}
 			var profileLoginValue = '{profile-login}';

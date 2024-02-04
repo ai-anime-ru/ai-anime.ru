@@ -54,14 +54,14 @@
 					<li>
 						<a onclick="openPopUp()">
 							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
-							<div class="text color-in-header-menu" id="logoutButtonOne">Вход</div>
+							<div class="text color-in-header-menu">Вход</div>
 						</a>
 					</li>
 					[/group]
 					<li class="user-login">
 						<a href="/?action=logout">
 							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
-							<div class="text color-in-header-menu" id="logoutButtonOne">Выход</div>
+							<div class="text color-in-header-menu">Выход</div>
 						</a>
 					</li>
 				</ul>
