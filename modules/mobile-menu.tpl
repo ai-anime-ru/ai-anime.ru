@@ -68,16 +68,18 @@
               <div class="text">Закладки</div>
             </a>
           </li>
+          [group=5]
           <li>
             <a onclick="openPopUp()">
               <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text logout-button-menu" id="logoutButtonTwo">Выход</div>
+              <div class="text logout-button-menu">Вход</div>
             </a>
           </li>
-          <li>
-            <a class="user-login" href="index.php?action=logout">
+          [/group]
+          <li class="user-login">
+            <a href="index.php?action=logout">
               <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text logout-button-menu" id="logoutButtonTwo">Выход</div>
+              <div class="text logout-button-menu">Выход</div>
             </a>
           </li>
         </ul>
