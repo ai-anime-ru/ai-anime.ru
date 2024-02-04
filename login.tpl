@@ -28,13 +28,13 @@
 			</div>
 			<input type="password" name="login_password" id="login_password" />
 		</div>
-		<div class="fx-row fx-between fx-center">
-			<button onclick="submit();" type="submit" title="Вход">Войти на сайт</button>
+		<div class="lb-check form-checks">
+			<input type="checkbox" name="login_not_save" id="login_not_save" value="1" class="switch" />
+			<label for="login_not_save" class='switch_label'><span>Не запоминать меня</span></label>
+		</div>
+		<div class="fx-row fx-between fx-center login-btn-flex">
+			<button onclick="submit();" type="submit" title="Вход">Войти</button>
 			<input name="login" type="hidden" id="login" value="submit" />
-			<div class="lb-check form-checks">
-				<input type="checkbox" name="login_not_save" id="login_not_save" value="1" class="switch" />
-				<label for="login_not_save" class='switch_label'><span>Не запоминать меня</span></label>
-			</div>
 		</div>
 	</form>
 </div>

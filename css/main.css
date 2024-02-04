@@ -651,15 +651,15 @@ background: rgba(0, 0, 0, 0.5);
 display: flex;
 align-items: center;
 justify-content: center;
-border-radius: 15px;
 opacity: 0;
 pointer-events: none;
 transition: opacity 0.3s ease-in-out;
+z-index: 8999;
 }
 
 .user-pop-up-window {
 background: var(--main);
-padding: 20px;
+padding: 50px;
 border-radius: 8px;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 opacity: 0;
@@ -718,13 +718,13 @@ transform: scale(1);
 .user-pop-up-window.active .lb-check {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
 }
 
 .user-pop-up-window.active .lb-check input {
     padding: 0;
     width: auto;
-    margin-bottom: 15px;
+    margin-top: 7px;
 }
 
 .user-pop-up-window.active .user-popup-close {
@@ -777,6 +777,9 @@ transform: scale(1);
 
 .pass-info a:hover {
     color: var(--active-2);
+}
+
+.login-btn-flex {
 }
 
 /* ----------- REGISTRATION --------*/
