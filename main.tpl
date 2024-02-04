@@ -105,7 +105,6 @@
 					</div>
 				</div>
 				<section class="main__content">
-					<button onclick="openPopUp()">Open Pop-up</button>
 					{include file="modules/main.tpl"}
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
@@ -551,12 +550,6 @@
 		}
 	});
 	</script>
-
-	[group=5]
-
-	{include file="engine/modules/clean-sign-up.php"}
-
-	[/group]
 </body>
 
 </html>

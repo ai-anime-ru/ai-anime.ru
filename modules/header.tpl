@@ -50,12 +50,14 @@
 							<div class="text color-in-header-menu">Статистика</div>
 						</a>
 					</li>
+					[group=5]
 					<li>
-						<a href="index.php?action=logout">
+						<a onclick="openPopUp()">
 							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
 							<div class="text color-in-header-menu" id="logoutButtonOne">Вход</div>
 						</a>
 					</li>
+					[/group]
 				</ul>
 			</div>
 		</div>
