@@ -144,7 +144,7 @@
 
 	<!--Скрипт мобильного меню-->
 	<script>
-		function toggleNav() {
+		document.addEventListener("DOMContentLoaded", function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
@@ -159,7 +159,7 @@
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
 			}
-		}
+		});
 
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
