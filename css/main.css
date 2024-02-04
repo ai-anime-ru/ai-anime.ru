@@ -723,6 +723,21 @@ transform: scale(1);
     width: auto;
 }
 
+.user-pop-up-window.active .user-popup-close {
+    position: absolute;
+    font-size: 2em;
+    right: 5px;
+    top: 5px;
+    background-color: inherit !important;
+}
+
+.user-pop-up-window.active .lost-and-reg {
+    display: flex;
+    margin-bottom: 7px;
+    font-weight: normal;
+    color: var(--active);
+}
+
 
 /* ----------- WELCOME MSG ----------*/
 
