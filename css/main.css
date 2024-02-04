@@ -2093,9 +2093,16 @@ footer {
     border: none;
     max-height: 40px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-info-edit .self_delete_link b {
     font-size: 1em;
     font-weight: normal;
-    transition: 0.3s;
+}
+
+.user-info-edit .self_delete_link:hover {
+    background-color: #ff2727;;
 }
 
 /* ---------- PM ----------*/

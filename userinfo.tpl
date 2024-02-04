@@ -278,6 +278,7 @@
 												редактор</button>
 											<input name="submit" type="hidden" id="submit" value="submit">
 										</div>
+										<div class="line"></div>
 										[delete]<b>Удалить аккаунт</b>[/delete]
 									</div>
 								</div>
