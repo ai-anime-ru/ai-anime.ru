@@ -673,6 +673,7 @@ z-index: 9000;
 opacity: 1;
 pointer-events: all;
 backdrop-filter: blur(5px);
+box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350);
 }
 
 .user-pop-up-window.active {
