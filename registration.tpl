@@ -1,12 +1,6 @@
-<div class="form-wrap blc blc_n">
+<div class="form-registration">
 	<h1>[registration]Регистрация[/registration][validation]Обновление профиля[/validation]</h1>
 	<div class="full-text">		
-			[registration]
-				<b>Здравствуйте, уважаемый посетитель нашего сайта!</b><br />
-				Регистрация на нашем сайте позволит Вам быть его полноценным участником.
-				Вы сможете добавлять новости на сайт, оставлять свои комментарии, просматривать скрытый текст и многое другое.
-				<br />В случае возникновения проблем с регистрацией, обратитесь к <a href="/index.php?do=feedback">администратору</a> сайта.
-			[/registration]
 			[validation]
 				<b>Уважаемый посетитель,</b><br />
 				Ваш аккаунт был зарегистрирован на нашем сайте,
@@ -18,7 +12,7 @@
 	<div class="form-item clearfix imp">
 		<label for="name">Логин:</label>
 		<input type="text" name="name" id="name" required />
-		<input title="Проверить доступность логина для регистрации" onclick="CheckLogin(); return false;" type="button" value="Проверить имя" />
+		<button class="button-check-name" title="Проверить доступность логина для регистрации" onclick="CheckLogin(); return false;" type="button" value="Проверить имя">Проверить имя</button>
 	</div>
 	<div id='result-registration'></div>
 	<div class="form-item clearfix imp">
@@ -33,14 +27,6 @@
 		<label for="email">Ваш E-Mail:</label>
 		<input type="text" name="email" id="email" required />
 	</div>
-	[question]
-	<div class="form-item clearfix imp">
-		<label>Вопрос:</label>
-		<div class="form-secur"><div style="margin-bottom:10px;">{question}</div>
-        <input type="text" name="question_answer" placeholder="Впишите ответ на вопрос" required />
-		</div>
-	</div>
-	[/question]
 	[sec_code]
 	<div class="form-item clearfix imp">
 		<label>Введите код с картинки:</label>
@@ -80,7 +66,7 @@
 [/validation]
 
 	<div class="form-submit">
-		<button name="submit" type="submit">Отправить</button>
+		<button name="submit" type="submit">Регистрация</button>
 	</div>		
 			
 </div>

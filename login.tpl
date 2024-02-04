@@ -1,4 +1,4 @@
-[group=5]
+
 	<div class="login-box" id="login_box" title="Авторизация">
 		<div class="lb_title">Авторизация</div>
 	[vk]<div class="lb-soc">
@@ -21,10 +21,9 @@
 					<label for="login_not_save" class='switch_label'><span>Не запоминать меня</span></label>
 				</div>
 			</div>
-			<div class="lb-lnk fx-row fx-between fx-center">
+			<div class="lb-lnk fx-row fx-between fx-center lost-and-reg">
 				<a href="{lostpassword-link}">Забыли пароль?</a>
 				<a href="/?do=register" class="log-register">Регистрация</a>
 			</div>
 		</form>
 	</div>
-[/group]

@@ -721,6 +721,7 @@ transform: scale(1);
 .user-pop-up-window.active .lb-check input {
     padding: 0;
     width: auto;
+    margin-bottom: 15px;
 }
 
 .user-pop-up-window.active .user-popup-close {
@@ -731,13 +732,91 @@ transform: scale(1);
     background-color: inherit !important;
 }
 
-.user-pop-up-window.active .lost-and-reg {
+.user-pop-up-window.active .lost-and-reg a{
     display: flex;
     margin-bottom: 7px;
     font-weight: normal;
     color: var(--active);
+    text-decoration: none;
+
 }
 
+/* ----------- REGISTRATION --------*/
+
+.rules-page form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.rules-page input {
+    background-color: var(--clr);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+    max-height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.form-registration {
+    background-color: var(--main);
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 920px;
+    border-radius: 15px;
+}
+
+.form-registration h1 {
+    font-size: 1.8em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-registration .form-item input{
+    width: 100%;
+    background-color: var(--clr);
+    border-radius: 0.5rem;
+    border: none;
+    display: block;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    color: #ddd;
+}
+
+.form-registration button {
+    background-color: var(--clr);
+    color: white;
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 0.75rem;
+    border: none;
+    max-height: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.button-check-name {
+    margin-bottom: 15px;
+}
+
+.form-registration .form-secur {
+    display: flex;
+}
+
+.form-registration #sec_code {
+    width: 170px !important;
+}
 
 /* ----------- WELCOME MSG ----------*/
 
