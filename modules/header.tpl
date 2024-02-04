@@ -101,16 +101,7 @@
 				}
 			}
 		}
-	}
-
-	// Закрывать меню при убирании мыши с него
-	var dropdown = document.getElementById("myDropdownMenu");
-	dropdown.setAttribute("SameSite", "Lax");
-	dropdown.addEventListener("mouseleave", function () {
-		if (dropdown.classList.contains('show')) {
-			dropdown.classList.remove('show');
-		}
-	});
+	};
 
 	window.onclick = function (event) { }
 </script>
