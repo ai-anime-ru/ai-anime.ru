@@ -1,12 +1,16 @@
 <div class="form-registration">
 	<h1>[registration]Регистрация[/registration][validation]Регистрация завершена[/validation]</h1>
-	
 
-[registration]
+	[validation]
+	<b>Приятного просмотра （*＾-＾*）</b>
+[/validation]
+
+	[registration]
 	<div class="form-item clearfix imp">
 		<label for="name">Логин:</label>
 		<input type="text" name="name" id="name" required />
-		<button class="button-check-name" title="Проверить доступность логина для регистрации" onclick="CheckLogin(); return false;" type="button" value="Проверить имя">Проверить имя</button>
+		<button class="button-check-name" title="Проверить доступность логина для регистрации"
+			onclick="CheckLogin(); return false;" type="button" value="Проверить имя">Проверить имя</button>
 	</div>
 	<div id='result-registration'></div>
 	<div class="form-item clearfix imp">
@@ -24,18 +28,21 @@
 	[sec_code]
 	<div class="c-captcha">
 		{reg_code}
-		<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
+		<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code"
+			id="sec_code" required>
 	</div>
 	[/sec_code]
 
 	<div class="form-submit">
 		<button name="submit" type="submit">Регистрация</button>
-	</div>	
-[/registration]
+	</div>
+	[/registration]
 
-[validation]
-<button type="button"><a href="/">На главную</a></button>
-<button type="button"><a href="index.php?subaction=userinfo&user={profile-login}">Профиль</a></button>
-[/validation]	
-			
+	[validation]
+	<div class="registration-box">
+		<button type="button"><a href="/">На главную</a></button>
+		<button type="button"><a href="index.php?subaction=userinfo&user={profile-login}">Профиль</a></button>
+	</div>
+	[/validation]
+
 </div>
