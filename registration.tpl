@@ -1,10 +1,6 @@
 <div class="form-registration">
-	<h1>[registration]Регистрация[/registration][validation]Обновление профиля[/validation]</h1>
-	<div class="full-text">		
-			[validation]
-<b>Регестрания завершена.</b>
-			[/validation]
-	</div>		
+	<h1>[registration]Регистрация[/registration][validation]Регистрация завершена[/validation]</h1>
+	
 
 [registration]
 	<div class="form-item clearfix imp">
@@ -31,14 +27,15 @@
 		<input placeholder="Повторите код" title="Введите код указанный на картинке" type="text" name="sec_code" id="sec_code" required>
 	</div>
 	[/sec_code]
-[/registration]
-
-[validation]
-<button href="/" type="button">На главную</button>
-[/validation]
 
 	<div class="form-submit">
 		<button name="submit" type="submit">Регистрация</button>
-	</div>		
+	</div>	
+[/registration]
+
+[validation]
+<button type="button"><a href="/">На главную</a></button>
+<button type="button"><a href="index.php?subaction=userinfo&user={profile-login}">Профиль</a></button>
+[/validation]	
 			
 </div>
