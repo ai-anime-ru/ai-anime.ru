@@ -220,38 +220,12 @@
 												<fieldset>
 													<legend>Привязка аккаунта с социальным сетям:</legend>
 													<div class="soc_links">
-														[vk]<a href="{vk_url}" target="_blank" class="soc_vk">
-															<svg class="icon icon-vk">
-																<use xlink:href="#icon-vk" />
-															</svg>
-														</a>[/vk]
-														[yandex]<a href="{yandex_url}" target="_blank" class="soc_ya">
-															<svg class="icon icon-ya">
-																<use xlink:href="#icon-ya" />
-															</svg>
-														</a>[/yandex]
-														[facebook]<a href="{facebook_url}" target="_blank"
-															class="soc_fb">
-															<svg class="icon icon-fb">
-																<use xlink:href="#icon-fb" />
-															</svg>
-														</a>[/facebook]
-														[google]<a href="{google_url}" target="_blank" class="soc_gp">
-															<svg class="icon icon-gp">
-																<use xlink:href="#icon-gp" />
-															</svg>
+														[google]<a class="with-social-login" href="https://accounts.google.com/o/oauth2/auth?client_id=792270457830-1jrbmfesjboe3bqervmgksm9pqjfrtro.apps.googleusercontent.com&amp;redirect_uri=https%3A%2F%2Fai-anime.ru%2Findex.php%3Fdo%3Dauth-social%26provider%3Dgoogle&amp;scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&amp;state=8fe264e386864ca4efdbb8aac79e0a4b&amp;response_type=code" target="_blank">
+															<div class="icon">
+																<ion-icon name="logo-google" role="img" class="md hydrated"></ion-icon>
+															</div>
+															<b>Привязать Google</b>
 														</a>[/google]
-														[odnoklassniki]<a href="{odnoklassniki_url}" target="_blank"
-															class="soc_od">
-															<svg class="icon icon-od">
-																<use xlink:href="#icon-od" />
-															</svg>
-														</a>[/odnoklassniki]
-														[mailru]<a href="{mailru_url}" target="_blank" class="soc_mail">
-															<svg class="icon icon-mail">
-																<use xlink:href="#icon-mail" />
-															</svg>
-														</a>[/mailru]
 													</div>
 												</fieldset>
 											</div>

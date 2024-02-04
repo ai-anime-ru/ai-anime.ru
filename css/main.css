@@ -50,6 +50,21 @@ textarea {
     border: none !important;
 }
 
+input {
+    background-color: var(--clr);
+    border-radius: 0.5rem !important;
+    display: block !important;
+    font-size: .875rem !important;
+    line-height: 1.25rem !important;
+    padding: 0.75rem 1rem !important;
+    margin-top: 0;
+    color: #ddd !important;
+}
+
+select {
+    padding-left: 10px;
+}
+
 
 .info-debug {
     background-color: var(--main);
@@ -838,6 +853,7 @@ transform: scale(1);
     margin-top: 10px;
     justify-content: center;
     align-items: center;
+    transition: 0.3s;
 }
 
 .with-social-login::before {
@@ -864,6 +880,11 @@ transform: scale(1);
     margin-right: 5px;
     display: flex;
     z-index: 2;
+}
+
+.with-social-login .icon:hover,
+.with-social-login:hover {
+    text-shadow: 2px 2px 4px #00000079;
 }
 
 .line-login {
@@ -954,6 +975,11 @@ transform: scale(1);
     font-size: 1em;
     font-weight: normal;
     transition: 0.3s;
+}
+
+.form-registration button:hover {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr);
 }
 
 .button-check-name {
@@ -1547,6 +1573,18 @@ footer {
 .form-group {
     display: flex;
     width: 100%;
+}
+
+.form-group fieldset .with-social-login{ 
+    width: 50%;
+    margin: 15px;
+    min-width: 210px;
+}
+
+
+.form-group fieldset{ 
+    display: flex;
+    justify-content: center;
 }
 
 .combo_field input {
@@ -3065,55 +3103,4 @@ footer {
     border-color: #ACCCDA;
     background-color: #F4F8FA;
     cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.checkbox input, .comments_subscribe input {
-    appearance: none;
-    -webkit-appearance: none;
-    display: inline-block;
-    transition: all .2s linear;
-    height: 20px;
-    width: 40px;
-    border-radius: 10px;
-    background-color: #fafafa;
-    cursor: pointer;
-    box-shadow: inset 0 2px 5px rgb(0 0 0 / 7%);
-    position: absolute;
-    left: 0;
-    top: 50%;
-    margin-top: -10px;
-}
-
-.checkbox input::before, .comments_subscribe input::before {
-    content: '';
-    width: 18px;
-    height: 18px;
-    border-radius: 10px;
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    background-color: #d93baa;
-    transition: all .2s linear;
 }
