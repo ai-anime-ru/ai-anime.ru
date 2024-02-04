@@ -1,6 +1,6 @@
 <div id="mySidebar" class="sidebar-mobile-menu" style="width: 0px;">
   <div class="background-top"></div>
-  <span href="javascript:void(0)" class="closebtn" onclick="toggleNavMenu()"><ion-icon
+  <span href="javascript:void(0)" class="closebtn" onclick="toggleNavMobileMenu()"><ion-icon
       name="close-outline"></ion-icon></span>
 
       <div class="mobile-work">
