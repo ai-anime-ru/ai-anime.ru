@@ -45,6 +45,10 @@
     color: #000;
 }
 
+input:focus {
+    background-color: var(--active) ;
+}
+
 .info-debug {
     background-color: var(--main);
     padding: 15px;
@@ -1509,6 +1513,7 @@ footer {
     border-radius: 0.75rem;
     align-items: center;
     color: white;
+    margin-bottom: 5px;
 }
 
 .ui-form {
@@ -1533,7 +1538,7 @@ footer {
 }
 
 .combo_field_left {
-    margin-left: 5px;
+    margin-left: 9px;
 }
 
 .bb-editor textarea {
@@ -1543,6 +1548,7 @@ footer {
     color: #ddd !important;
     padding: 15px !important;
     margin-top: 5px !important;
+    margin-bottom: 4px;
 }
 
 .form_submit {
@@ -1853,7 +1859,7 @@ footer {
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .form-group input {
@@ -2823,7 +2829,7 @@ footer {
         align-items: center;
     }
 
-    .c-captcha>a>span>img{
+    .c-captcha span {
         border-radius: 0.75rem !important;
     }
 
