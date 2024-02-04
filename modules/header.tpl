@@ -14,8 +14,8 @@
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
-					<li>
-						<div class="profile-text-header"><b>С возвращением </b><p>{profile-login}</p></div>
+					<li class="user-login">
+						<div class="profile-text-header "><b>С возвращением </b><p>{profile-login}</p></div>
 					</li>
 					<div class="line user-login"></div>
 					[admin-link]

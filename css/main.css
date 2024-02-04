@@ -562,7 +562,8 @@ ul li {
     border-radius: 0.5rem;
     width: 185px;
     position: absolute;
-    background-color: var(--main);
+    background-color: var(--header-back-clr);
+    filter: blur(50px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 9999;
     opacity: 0;
@@ -589,7 +590,7 @@ ul li {
     align-items: center;
     padding-left: 10px;
     height: 30px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #d1e1f9;
     transition: 0.3s;
 }
@@ -597,11 +598,10 @@ ul li {
 .profile-link-header ul li a .text {
     position: relative;
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.85em;
     color: #d1e1f9;
     padding-left: 15px;
     padding-right: 15px;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.3s;
     text-decoration: none;
@@ -619,7 +619,7 @@ ul li {
     position: relative;
     display: flex;
     min-width: 140px;
-    height: 50px;
+    height: 40px;
     justify-content: left;
     align-items: center;
     width: 100%;
@@ -653,13 +653,15 @@ ul li {
 .profile-text-header b{
     font-size: 0.95em;
     font-weight: normal;
-    color: var(--second-text);
+    color: var(--second-text-2);
+    cursor: default;
 }
 
 .profile-text-header a{
     font-size: 0.95em;
     font-weight: normal;
     color: var(--main-h1);
+    cursor: default;
 }
 
 
