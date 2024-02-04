@@ -1,5 +1,10 @@
 <div class="form-registration">
-	<h1>[registration]Регистрация[/registration]</h1>	
+	<h1>[registration]Регистрация[/registration][validation]Обновление профиля[/validation]</h1>
+	<div class="full-text">		
+			[validation]
+<b>Регестрания завершена.</b>
+			[/validation]
+	</div>		
 
 [registration]
 	<div class="form-item clearfix imp">
@@ -27,6 +32,10 @@
 	</div>
 	[/sec_code]
 [/registration]
+
+[validation]
+<button href="/" type="button">На главную</button>
+[/validation]
 
 	<div class="form-submit">
 		<button name="submit" type="submit">Регистрация</button>
