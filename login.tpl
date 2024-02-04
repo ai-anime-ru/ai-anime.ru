@@ -11,7 +11,7 @@
 			<div class="icon">
 				<ion-icon name="logo-google"></ion-icon>
 			</div>
-			Войти через Google
+			<b>Войти через Google</b>
 		</a>[/google]
 		[vk]
 	</div>[/vk]

@@ -749,6 +749,10 @@ transform: scale(1);
     margin-top: 10px;
 }
 
+.login-box button:hover {
+    background-color: var(--btn-play-poster);
+}
+
 .user-popup-content .lb-check {
     display: flex;
     flex-direction: row;
@@ -842,7 +846,6 @@ transform: scale(1);
 .with-social-login::before {
     content: "";
     position: absolute;
-    color: var(--h1);
     top: 0;
     left: 0;
     width: 100%;
@@ -857,13 +860,13 @@ transform: scale(1);
     opacity: 1;
   }
 
-
-
-
-.with-social-login .icon{
+.with-social-login .icon,
+.with-social-login b{
     font-size: 1em;
+    font-weight: normal;
     margin-right: 5px;
     display: flex;
+    z-index: 2;
 }
 
 .line-login {
