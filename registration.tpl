@@ -1,12 +1,5 @@
 <div class="form-registration">
-	<h1>[registration]Регистрация[/registration][validation]Обновление профиля[/validation]</h1>
-	<div class="full-text">		
-			[validation]
-				<b>Уважаемый посетитель,</b><br />
-				Ваш аккаунт был зарегистрирован на нашем сайте,
-				однако информация о Вас является неполной, поэтому заполните дополнительные поля в Вашем профиле.
-			[/validation]
-	</div>		
+	<h1>[registration]Регистрация[/registration]</h1>	
 
 [registration]
 	<div class="form-item clearfix imp">
@@ -34,26 +27,6 @@
 	</div>
 	[/sec_code]
 [/registration]
-
-[validation]
-	<div class="form-item clearfix">
-		<label for="fullname">Ваше Имя:</label>
-		<input type="text" id="fullname" name="fullname" />
-	</div>
-	<div class="form-item clearfix">
-		<label for="land">Место жительства:</label>
-		<input type="text" id="land" name="land" />
-	</div>
-	<div class="form-item clearfix">
-		<label for="image">Фото:</label>
-		<input type="file" id="image" name="image" />
-	</div>
-	<div class="form-textarea">
-		<label>О себе:</label>
-		<textarea id="info" name="info" rows="8" /></textarea>
-	</div>
-	<div class="form-xfield">{xfields}</div>
-[/validation]
 
 	<div class="form-submit">
 		<button name="submit" type="submit">Регистрация</button>
