@@ -89,7 +89,6 @@
 	{AJAX}
 
 	<div class="block-wrap">
-		<button onclick="openPopUp()">Open Pop-up</button>
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}

@@ -965,6 +965,9 @@ transform: scale(1);
 
 .form-registration button {
     background-color: var(--clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
     padding: 0.75rem;
     text-align: center;
@@ -972,7 +975,7 @@ transform: scale(1);
     border: none;
     max-height: 40px;
     cursor: pointer;
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: normal;
     transition: 0.3s;
 }
@@ -2510,6 +2513,12 @@ footer {
 
 .pm-container .com_content a {
     color: var(--active-2);
+}
+
+/*------------- season -------------*/
+
+.season {
+    display: none;
 }
 
 /*------------- MAIN SORT ------------*/
