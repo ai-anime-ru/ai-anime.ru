@@ -816,6 +816,26 @@ transform: scale(1);
 
 .form-registration #sec_code {
     width: 170px !important;
+    height: 40px;
+    margin-left: 15px;
+}
+
+.form-registration .form-submit {
+    margin-top: 7px;
+}
+
+.form-registration span{
+    --tw-bg-opacity: 1;
+    --tw-text-opacity: 1;
+    background-color: var(--badge-bright);
+    border-radius: 0.5rem;
+    color: rgb(0 0 0/var(--tw-text-opacity));
+    display: inline-block;
+    font-size: 0.85em;
+    line-height: 1rem;
+    padding: 0.25rem 0.5rem;
+    margin: 1px;
+    margin-bottom: 15px;
 }
 
 /* ----------- WELCOME MSG ----------*/
