@@ -3,9 +3,9 @@
   <span href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><ion-icon
       name="close-outline"></ion-icon></span>
 
-      <div class="mobile-work">
-        <p>Мобильная версия в стадии разработки.<br>Доступен не весь функционал.</p>
-      </div>
+  <div class="mobile-work">
+    <p>Мобильная версия в стадии разработки.<br>Доступен не весь функционал.</p>
+  </div>
 
   <div class="mobile-menu">
     <div class="main-menu-list">
@@ -69,9 +69,15 @@
             </a>
           </li>
           <li>
-            <a href="index.php?action=logout">
+            <a onclick="openPopUp()">
               <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text logout-button-menu" id="logoutButtonTwo">Вход</div>
+              <div class="text logout-button-menu" id="logoutButtonTwo">Выход</div>
+            </a>
+          </li>
+          <li>
+            <a class="user-login" href="index.php?action=logout">
+              <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
+              <div class="text logout-button-menu" id="logoutButtonTwo">Выход</div>
             </a>
           </li>
         </ul>

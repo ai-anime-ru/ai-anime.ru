@@ -153,6 +153,7 @@ ul li {
     color: #818181;
     display: block;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sidebar-mobile-menu a:hover {
@@ -167,6 +168,7 @@ ul li {
     padding: 5px;
     color: var(--line);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sidebar-mobile-menu .closebtn:hover {
