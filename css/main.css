@@ -638,7 +638,8 @@ ul li {
     margin-bottom: 0px !important;
 }
 
-/* --------- USER POP UP WINDOW ---------*/
+/* --------- USER POP UP WINDOW LOGIN---------*/
+
 
 .overlay-user-window {
 position: fixed;
@@ -650,6 +651,7 @@ background: rgba(0, 0, 0, 0.5);
 display: flex;
 align-items: center;
 justify-content: center;
+border-radius: 15px;
 opacity: 0;
 pointer-events: none;
 transition: opacity 0.3s ease-in-out;
@@ -664,13 +666,12 @@ opacity: 0;
 transform: scale(0.9);
 transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 z-index: 2;
+z-index: 9000;
 }
 
 .overlay-user-window.active {
 opacity: 1;
 pointer-events: all;
-z-index: 9000;
-padding: 15px;
 }
 
 .user-pop-up-window.active {
@@ -689,11 +690,13 @@ transform: scale(1);
     padding: 0.75rem 1rem;
     margin-bottom: 7px;
     color: #ddd;
+    margin-top: 5px;
 }
 
 .user-pop-up-window.active .lb_title {
     margin-bottom: 15px;
     text-align: center;
+    font-size: 1.5em;
 }
 
 
@@ -739,6 +742,41 @@ transform: scale(1);
     color: var(--active);
     text-decoration: none;
 
+}
+
+.title-text-login {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.log-register-title {
+    color: var(--h1);
+}
+
+.log-register {
+    margin-left: 5px;
+    color: var(--active);
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.log-register:hover {
+    color: var(--active-2);
+}
+
+.pass-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pass-info a {
+    color: var(--active);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.pass-info a:hover {
+    color: var(--active-2);
 }
 
 /* ----------- REGISTRATION --------*/
