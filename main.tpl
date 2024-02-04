@@ -90,6 +90,9 @@
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
+				    [group=5]
+	                    <button class="open_clean_form">Регистрация</button>
+                    [/group]
 				<div class="welcome-message" id="welcome-message">
 					<div class="welcome-message-content">
 						<div class="welcome-message-text">
@@ -509,6 +512,11 @@
 			document.querySelector('.loader-container').classList.remove('show-loader');
 		}
 	</script>
+	[group=5]
+
+	{include file="engine/modules/clean-sign-up.php"}
+
+	[/group]
 </body>
 
 </html>
