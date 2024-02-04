@@ -13,7 +13,7 @@
 				</div>
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
-				{login}
+				{registration}
 			</div>
 		</div>
 		<div class="search-container" id="search-container">
