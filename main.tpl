@@ -80,13 +80,13 @@
 
 	{include file="modules/user-popup-window.tpl"}
 
+	{include file="modules/mobile-menu.tpl"}
 	<div class="overlay"></div>
 	<!---
 	<div class="left-light"></div>
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-
 
 	<div class="block-wrap">
 		<button onclick="openPopUp()">Open Pop-up</button>
@@ -148,7 +148,7 @@
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
-			if (overlay.style.opacity === "0px") {
+			if (mySidebar.style.width === "0px") {
 				mySidebar.style.width = "330px";
 				overlay.style.opacity = '1';
 				overlay.style.visibility = 'visible';
@@ -160,7 +160,6 @@
 				document.body.style.overflow = 'auto';
 			}
 		}
-		
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
 
