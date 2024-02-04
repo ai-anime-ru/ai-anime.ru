@@ -1,6 +1,10 @@
 
 	<div class="login-box" id="login_box" title="Авторизация">
+		<div class="title-text-login">
 		<div class="lb_title">Авторизация</div>
+		<a class="">Нет аккаунта?<a href="/?do=register" class="log-register">Зарегистрироваться</a></a>
+	</div>
+
 	[vk]<div class="lb-soc">
 		<div>Войти через:</div>[/vk]
 		[vk]<a href="{vk_url}" target="_blank"><img src="{THEME}/images/social/vk.png" /></a>[/vk]
@@ -23,7 +27,6 @@
 			</div>
 			<div class="lb-lnk fx-row fx-between fx-center lost-and-reg">
 				<a href="{lostpassword-link}">Забыли пароль?</a>
-				<a href="/?do=register" class="log-register">Регистрация</a>
 			</div>
 		</form>
 	</div>

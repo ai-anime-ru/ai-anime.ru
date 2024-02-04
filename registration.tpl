@@ -40,8 +40,7 @@
 
 	[validation]
 	<div class="registration-box">
-		<button type="button"><a href="/">На главную</a></button>
-		<button type="button"><a href="index.php?subaction=userinfo&user={profile-login}">Профиль</a></button>
+		<button class="after-reg-btn" type="button"><a href="/">На главную</a></button>
 	</div>
 	[/validation]
 

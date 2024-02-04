@@ -144,25 +144,9 @@
 												class="wide">{editsignature}</textarea>
 										</div>
 									</div>
-									<tr>
-										<td class="label">Друзья:</td>
-										<td>
-											<div class="checkbox">{friends_status_f} <label
-													for="friends_status_f">Разрешить добавлять меня в друзья</label>
-											</div>
-											<div class="checkbox">{friends_info_mail} <label
-													for="friends_info_mail">Получать уведомления о предложениях дружбы
-													на E-mail</label></div>
-											<div class="checkbox">{friends_info_pm} <label
-													for="friends_info_pm">Получать уведомления о предложениях дружбы в
-													ЛС</label></div>
-											<div class="checkbox">{friends_pm} <label for="friends_pm">Получать
-													<strong>личные сообщения</strong> только от друзей</label></div>
-										</td>
-									</tr>
 									<div class="user-1">
 										<div class="form-group">
-											<label for="land">Эу! Дай знать где ты находишься</label>
+											<label for="land">Место жительства</label>
 											<input type="text" name="land" id="land" value="{land}" class="wide">
 										</div>
 										<div class="form-group">

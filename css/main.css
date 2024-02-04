@@ -838,6 +838,17 @@ transform: scale(1);
     margin-bottom: 15px;
 }
 
+.after-reg-btn {
+    margin-top: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.after-reg-btn a{
+    text-decoration: none;
+    color: var(--h1);
+}
+
 /* ----------- WELCOME MSG ----------*/
 
 .welcome-message {
