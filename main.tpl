@@ -86,7 +86,7 @@
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-	
+
 
 	<div class="block-wrap">
 		<button onclick="openPopUp()">Open Pop-up</button>
@@ -118,33 +118,33 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
-			<!--LOGIN-->
-			<script>
-				var bodyElement = document.body;
-				
-				function openPopUp() {
-				  document.getElementById('overlay').classList.add('active');
-				  document.querySelector('.user-pop-up-window').classList.add('active');
-				  bodyElement.style.overflow = "hidden";
+	<!--LOGIN-->
+	<script>
+		var bodyElement = document.body;
 
-				}
-			
-				function closePopUp() {
-				  document.getElementById('overlay').classList.remove('active');
-				  document.querySelector('.user-pop-up-window').classList.remove('active');
-				  bodyElement.style.overflow = "visible";
-				}
-			
-				document.getElementById('overlay').addEventListener('click', function(event) {
-				  if (event.target === this) {
-					closePopUp();
-				  }
-				});
-			  </script>
+		function openPopUp() {
+			document.getElementById('overlay').classList.add('active');
+			document.querySelector('.user-pop-up-window').classList.add('active');
+			bodyElement.style.overflow = "hidden";
+
+		}
+
+		function closePopUp() {
+			document.getElementById('overlay').classList.remove('active');
+			document.querySelector('.user-pop-up-window').classList.remove('active');
+			bodyElement.style.overflow = "visible";
+		}
+
+		document.getElementById('overlay').addEventListener('click', function (event) {
+			if (event.target === this) {
+				closePopUp();
+			}
+		});
+	</script>
 
 	<!--Скрипт мобильного меню-->
 	<script>
-		document.addEventListener("DOMContentLoaded", function toggleNav() {
+		function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
@@ -159,7 +159,7 @@
 				overlay.style.visibility = 'hidden';
 				document.body.style.overflow = 'auto';
 			}
-		});
+		}
 
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
@@ -190,17 +190,17 @@
 			const hideornoElements = document.querySelectorAll(".hideorno");
 
 			const isLoggedIn = document.querySelector(".user-text-name").textContent !== "";
-	
+
 			const displayValue = isLoggedIn ? "block" : "none";
 			const buttonText = isLoggedIn ? "Выход" : "Вход";
-	
+
 			logoutButtons.forEach((button) => {
 				button.textContent = buttonText;
 				button.addEventListener("click", function () {
 					// Здесь вы можете добавить логику выхода, если это необходимо
 				});
 			});
-	
+
 			hideornoElements.forEach((element) => {
 				element.style.display = displayValue;
 			});
@@ -535,25 +535,25 @@
 		}
 	</script>
 	<script>
-	document.addEventListener('DOMContentLoaded', function() {
-		// Получаем элементы <div> с классами user-login и user-notlogin
-		var userLoginDiv = document.querySelector('.user-login');
-		var userNotLoginDiv = document.querySelector('.user-notlogin');
+		document.addEventListener('DOMContentLoaded', function () {
+			// Получаем элементы <div> с классами user-login и user-notlogin
+			var userLoginDiv = document.querySelector('.user-login');
+			var userNotLoginDiv = document.querySelector('.user-notlogin');
 
-		// Получаем значение переменной {profile-login}
-		var profileLoginValue = '{profile-login}';
+			// Получаем значение переменной {profile-login}
+			var profileLoginValue = '{profile-login}';
 
-		// Проверяем, вошел ли пользователь в аккаунт
-		if (profileLoginValue.trim() !== '') {
-			// Пользователь в аккаунте, отображаем содержимое user-login, скрываем содержимое user-notlogin
-			userLoginDiv.style.display = 'block';
-			userNotLoginDiv.style.display = 'none';
-		} else {
-			// Пользователь не в аккаунте, скрываем содержимое user-login, отображаем содержимое user-notlogin
-			userLoginDiv.style.display = 'none';
-			userNotLoginDiv.style.display = 'block';
-		}
-	});
+			// Проверяем, вошел ли пользователь в аккаунт
+			if (profileLoginValue.trim() !== '') {
+				// Пользователь в аккаунте, отображаем содержимое user-login, скрываем содержимое user-notlogin
+				userLoginDiv.style.display = 'block';
+				userNotLoginDiv.style.display = 'none';
+			} else {
+				// Пользователь не в аккаунте, скрываем содержимое user-login, отображаем содержимое user-notlogin
+				userLoginDiv.style.display = 'none';
+				userNotLoginDiv.style.display = 'block';
+			}
+		});
 	</script>
 </body>
 
