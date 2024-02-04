@@ -58,6 +58,12 @@
 						</a>
 					</li>
 					[/group]
+					<li class="user-login">
+						<a href="/?action=logout">
+							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
+							<div class="text color-in-header-menu" id="logoutButtonOne">Выход</div>
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>
