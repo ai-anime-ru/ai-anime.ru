@@ -815,27 +815,30 @@ transform: scale(1);
 }
 
 .line-login {
+    margin-top: 20px;
   position: relative;
   text-align: center;
-  margin-bottom: 20px; /* Добавьте отступ снизу по вашему усмотрению */
+  color: var(--line);
+  margin-bottom: 20px; 
 }
 
 .line-login::before,
 .line-login::after {
   content: "";
   display: inline-block;
-  width: 50%; /* Регулирует ширину линий */
-  border-top: 1px solid var(--line); /* Цвет и стиль линий */
+  width: 40%;
+  border-top: 1px solid var(--line);
   position: absolute;
   top: 50%;
+  flex: 1 1 0%;
 }
 
 .line-login::before {
-  right: 1em; /* Регулирует расстояние между линией и текстом справа */
+  right: 0em;
 }
 
 .line-login::after {
-  left: 1em; /* Регулирует расстояние между линией и текстом слева */
+  left: 0em; 
 }
 
 /* ----------- REGISTRATION --------*/

@@ -144,7 +144,7 @@
 
 	<!--Скрипт мобильного меню-->
 	<script>
-		function toggleNav() {
+		function toggleNavMenu() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
 
@@ -161,7 +161,7 @@
 			}
 		}
 
-		document.querySelector('.overlay').addEventListener('click', toggleNav);
+		document.querySelector('.overlay').addEventListener('click', toggleNavMenu);
 	</script>
 
 	<!-- () Обрезаем длину названия () -->
