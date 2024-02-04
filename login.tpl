@@ -19,14 +19,14 @@
 	<form method="post">
 		<div class="login-info-input">
 			<laber>Логин:</laber>
-			<input type="text" name="login_name" id="login_name" />
+			<input placeholder="Введите логин" type="text" name="login_name" id="login_name" />
 		</div>
 		<div class="login-info-input">
 			<div class="pass-info">
 				<label>Пароль:</label>
 				<a href="{lostpassword-link}">Забыли пароль?</a>
 			</div>
-			<input type="password" name="login_password" id="login_password" />
+			<input placeholder="Введите пароль" type="password" name="login_password" id="login_password" />
 		</div>
 		<div class="lb-check form-checks">
 			<input type="checkbox" name="login_not_save" id="login_not_save" value="1" class="switch" />
