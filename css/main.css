@@ -45,6 +45,11 @@
     color: #000;
 }
 
+input,
+textarea {
+    border: none !important;
+}
+
 
 .info-debug {
     background-color: var(--main);
@@ -3060,4 +3065,55 @@ footer {
     border-color: #ACCCDA;
     background-color: #F4F8FA;
     cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.checkbox input, .comments_subscribe input {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    transition: all .2s linear;
+    height: 20px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    cursor: pointer;
+    box-shadow: inset 0 2px 5px rgb(0 0 0 / 7%);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.checkbox input::before, .comments_subscribe input::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    background-color: #d93baa;
+    transition: all .2s linear;
 }
