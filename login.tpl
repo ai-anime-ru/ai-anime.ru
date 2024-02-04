@@ -1,34 +1,3 @@
-[not-group=5]
-	<div class="login-box" id="login_box" title="{login}">
-		<div class="lb-user">
-			<div class="lb-ava img-box" id="lb-ava"><img src="{foto}" title="{login}" alt="{login}" /></div>
-			<div class="lb-name">
-				<div>{login}</div>
-				[group=1]<a href="{admin-link}" target="_blank">Админпанель</a>[/group]
-			</div>
-		</div>
-		<ul class="lb-menu">
-			<li><a href="{addnews-link}">Добавить пост</a></li>
-			<li><a href="{profile-link}">Мой профиль</a></li>
-			<li><a href="{pm-link}">Сообщения: <span class="badge">{new-pm}</span></a></li>
-			<li><a href="{stats-link}">Статистика</a></li>
-			<li><a href="{newposts-link}">Непрочитанное</a></li>
-			<li><a href="/?do=lastcomments">Последние комментарии</a></li>
-			<li><a href="{logout-link}">Выйти</a></li>
-		</ul>
-		
-		<div class="lb-title">Мои списки Аниме:</div>
-		<ul class="lb-menu">
-			<li><a href="/mylists/ne-smotrju">Не смотрю <span class="badge"><span class="mylists-count" data-id="1"></span></span></a></li>
-			<li><a href="/mylists/smotrju">Смотрю <span class="badge"><span class="mylists-count" data-id="2"></span></span></a></li>
-			<li><a href="/mylists/v-planah">В планах <span class="badge"><span class="mylists-count" data-id="3"></span></span></a></li>
-			<li><a href="/mylists/perestal">Перестал <span class="badge"><span class="mylists-count" data-id="4"></span></span></a></li>
-			<li><a href="/mylists/peresmatrivaju">Пересматриваю <span class="badge"><span class="mylists-count" data-id="5"></span></span></a></li>
-			<li><a href="/mylists/prosmotreno">Просмотрено <span class="badge"><span class="mylists-count" data-id="6"></span></span></a></li>
-		</ul>
-	</div>
-[/not-group]
-
 [group=5]
 	<div class="login-box" id="login_box" title="Авторизация">
 		<div class="lb_title">Авторизация</div>
