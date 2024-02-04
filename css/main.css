@@ -679,7 +679,7 @@ opacity: 1;
 transform: scale(1);
 }
 
-.user-pop-up-window.active input{
+.user-popup-content input {
     width: 100%;
     background-color: var(--clr);
     border-radius: 0.5rem;
@@ -693,16 +693,16 @@ transform: scale(1);
     margin-top: 5px;
 }
 
-.user-pop-up-window.active .lb_title {
+.user-popup-content .lb_title {
     margin-bottom: 15px;
     text-align: center;
     font-size: 1.5em;
 }
 
 
-.user-pop-up-window.active button {
-    background-color: var(--clr);
-    color: white;
+.login-box button {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr);
     padding: 7px;
     text-align: center;
     border-radius: 0.5rem;
@@ -712,30 +712,35 @@ transform: scale(1);
     font-size: 1em;
     font-weight: normal;
     transition: 0.3s;
-    margin-bottom: 7px;
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
 }
 
-.user-pop-up-window.active .lb-check {
+.user-popup-content .lb-check {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.user-pop-up-window.active .lb-check input {
+.user-popup-content .lb-check input {
     padding: 0;
     width: auto;
-    margin-top: 7px;
+    margin-top: 1px;
 }
 
-.user-pop-up-window.active .user-popup-close {
+.user-popup-content .user-popup-close{
     position: absolute;
     font-size: 2em;
-    right: 5px;
-    top: 5px;
+    right: 15px;
+    top: 15px;
     background-color: inherit !important;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
-.user-pop-up-window.active .lost-and-reg a{
+.user-popup-content .lost-and-reg a{
     display: flex;
     margin-bottom: 7px;
     font-weight: normal;
