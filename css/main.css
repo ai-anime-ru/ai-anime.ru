@@ -48,7 +48,7 @@
 input:focus {
     background-color: var(--main) !important;
     color: white !important;
-    border: 1px solid;
+    border: 1px solid !important;
     border-color: var(--active) !important;
 }
 
@@ -1556,9 +1556,9 @@ footer {
 }
 
 .combo_field input {
-    background-color: var(--clr) !important;
+    background-color: var(--clr);
     border-radius: 0.5rem !important;
-    border: none !important;
+    border: 1px solid;
     display: block !important;
     font-size: .875rem !important;
     line-height: 1.25rem !important;
@@ -1894,9 +1894,9 @@ footer {
 
 .form-group input {
     width: 100%;
-    background-color: var(--clr) !important;
+    background-color: var(--clr);
     border-radius: 0.5rem !important;
-    border: none !important;
+    border: 1px solid ;
     display: block !important;
     font-size: .875rem !important;
     line-height: 1.25rem !important;
