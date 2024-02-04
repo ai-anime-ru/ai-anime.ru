@@ -3,7 +3,7 @@
 
 	[validation]
 	<b>Приятного просмотра （*＾-＾*）</b>
-[/validation]
+	[/validation]
 
 	[registration]
 	<div class="form-item clearfix imp">

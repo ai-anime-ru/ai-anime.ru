@@ -1,4 +1,9 @@
 <div class="filter">
+    <ul>
+        <li>
+            <a href="/">Главная</a>
+        </li>
+    </ul>
     [item]
     <div class="filter-menu">
         <a class="button-filter" href="{url}">{name}</a>

@@ -1,5 +1,4 @@
 <main class="main fx-col clearfix">
-    {info}
     <div class="top-block-main"></div>
     <div class="top-menu-block">
         {catmenu}
@@ -28,4 +27,6 @@
     </div>
     [/available]
     <div class="bg_overlay"></div>
+
+    {info}
 </main>

@@ -109,7 +109,6 @@
 				</section>
 				[not-aviable=main]{content}[/not-aviable]
 				<!-- () Выводим ошибки () -->
-				{info}
 				{include file="/modules/footer.tpl"}
 			</div>
 		</div>
