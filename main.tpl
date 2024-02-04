@@ -144,28 +144,24 @@
 
 	<!--Скрипт мобильного меню-->
 	<script>
-		function toggleNavMobileMenu() {
+		function toggleNav() {
 			var mySidebar = document.getElementById("mySidebar");
 			var overlay = document.querySelector('.overlay');
-	
-			if (mySidebar) {
-				if (mySidebar.style.width === "0px") {
-					mySidebar.style.width = "330px";
-					overlay.style.opacity = '1';
-					overlay.style.visibility = 'visible';
-					document.body.style.overflow = 'hidden';
-				} else {
-					mySidebar.style.width = "0";
-					overlay.style.opacity = '0';
-					overlay.style.visibility = 'hidden';
-					document.body.style.overflow = 'auto';
-				}
+
+			if (mySidebar.style.width === "0px") {
+				mySidebar.style.width = "330px";
+				overlay.style.opacity = '1';
+				overlay.style.visibility = 'visible';
+				document.body.style.overflow = 'hidden';
+			} else {
+				mySidebar.style.width = "0";
+				overlay.style.opacity = '0';
+				overlay.style.visibility = 'hidden';
+				document.body.style.overflow = 'auto';
 			}
 		}
-	
-		document.addEventListener('DOMContentLoaded', function() {
-			document.querySelector('.overlay').addEventListener('click', toggleNavMobileMenu);
-		});
+
+		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
 
 	<!-- () Обрезаем длину названия () -->
