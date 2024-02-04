@@ -13,50 +13,7 @@
 				</div>
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
-				<ul>
-					[admin-link]
-					<li style=>
-						<a href="{admin-link}">
-							<div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
-							</div>
-							<div class="text color-in-header-menu">Админ пан.</div>
-						</a>
-					</li>
-					[/admin-link]
-					<li class="hideorno">
-						<a href="index.php?subaction=userinfo&user={profile-login}">
-							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon>
-							</div>
-							<div class="text color-in-header-menu">Профиль</div>
-						</a>
-					</li>
-					<li class="hideorno">
-						<a href="/index.php?do=pm">
-							<div class="icon color-in-header-menu"><ion-icon name="chatbubbles-outline"></ion-icon>
-							</div>
-							<div class="text color-in-header-menu">Сообщения</div>
-						</a>
-					</li>
-					<li class="hideorno">
-						<a href="index.php?do=favorites">
-							<div class="icon color-in-header-menu"><ion-icon name="bookmarks-outline"></ion-icon></div>
-							<div class="text color-in-header-menu">Закладки</div>
-						</a>
-					</li>
-					<li class="hideorno">
-						<a href="/index.php?do=stats">
-							<div class="icon color-in-header-menu"><ion-icon name="stats-chart-outline"></ion-icon>
-							</div>
-							<div class="text color-in-header-menu">Статистика</div>
-						</a>
-					</li>
-					<li>
-						<a href="index.php?action=logout">
-							<div class="icon color-in-header-menu"><ion-icon name="log-out-outline"></ion-icon></div>
-							<div class="text color-in-header-menu" id="logoutButtonOne">Вход</div>
-						</a>
-					</li>
-				</ul>
+				{login}
 			</div>
 		</div>
 		<div class="search-container" id="search-container">

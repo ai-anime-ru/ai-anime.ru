@@ -414,6 +414,9 @@
                             </lI>
                         </ul>
                     </div>
+                    <div class="season">
+                        {custom id="[shikimori_related]"template="/modules/season" limit="100"}
+                    </div>
                 </div>
             </div>
         </div>
