@@ -3,7 +3,6 @@
     <div class="top-menu-block">
         {catmenu}
     </div>
-    
     <div class="contaner-flex">
         [available=main]
         <section class="main-container">
@@ -27,7 +26,6 @@
         [/available]
         {include file="/modules/side-block-main.tpl"}
     </div>
-    
     <div class="bg_overlay"></div>
     {info}
 </main>
