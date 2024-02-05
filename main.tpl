@@ -126,11 +126,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     currentSort.addEventListener('click', function(event) {
         event.stopPropagation();
-        sortList.style.maxHeight = sortList.style.maxHeight === '0px' ? '500px' : '0px';
+        sortList.classList.toggle('open');
     });
 
     document.addEventListener('click', function() {
-        sortList.style.maxHeight = '0px';
+        sortList.classList.remove('open');
     });
 });
 	</script>

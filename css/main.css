@@ -5,14 +5,19 @@
 
 /* CSS */
 .sort-main .sort {
-    height: 0px;
+    max-height: 0;
     overflow: hidden;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    transition: height 0.5s ease;
+    transition: max-height 0.5s ease;
+    flex-direction: column;
+}
+
+.sort-main .sort.open {
+    max-height: 500px;
 }
 
 .sort-main .sort li a {
