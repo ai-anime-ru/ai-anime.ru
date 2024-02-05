@@ -89,17 +89,17 @@
 </header>
 
 <script> //Скрипт открытия и закрытия Списков
+document.addEventListener('DOMContentLoaded', function() {
+var profile = document.querySelector('.profile');
+var dropdown = document.getElementById("myDropdownMenu");
 
-	// Функция для отображения/скрытия выпадающего меню
-	function toggleDropdownHeader() {
-		var dropdown = document.getElementById("myDropdownMenu");
-		dropdown.classList.toggle("show");
-	}
-
-	var dropdown = document.getElementById("myDropdownMenu");
-
-    document.addEventListener('click', function(event) {
-		event.stopPropagation();
+profile.addEventListener('click', function(event) {
+        event.stopPropagation();
         dropdown.classList.toggle('show');
     });
+
+    document.addEventListener('click', function() {
+        dropdown.classList.remove('show');
+    });
+});
 </script>
