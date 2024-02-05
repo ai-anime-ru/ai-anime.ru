@@ -3,75 +3,6 @@
     src: url('/templates/ai-anime/fonts/ubuntu-medium.woff2');
 }
 
-/* CSS */
-.sort-main .sort {
-    margin-top: 42px;
-    border-radius: 0.5rem;
-    max-height: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    background-color: var(--clr);
-    min-width: 160px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
-    z-index: 1;
-    transition: max-height 0.5s ease;
-    flex-direction: column;
-    transition: 0.3s;
-    z-index: 999;
-}
-
-.sort-main .sort.open {
-    max-height: 500px;
-}
-
-.sort-main .sort li a {
-    color: var(--active);
-    padding: 12px 16px;
-    text-decoration: none;
-    font-size: 0.85em;
-    display: block;
-}
-
-.sort-main .sort li a:hover {
-    background-color: var(--active);
-    color: var(--btn-active-font-clr);
-}
-
-.current-sort {
-    display: flex;
-    align-items: center;
-    margin-left: 5px;
-
-    font-size: 0.85em;
-}
-
-.current-sort .current-sort-text {
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: var(--main);
-    color: var(--active);
-    padding: 7px;
-    border-radius: 0.5rem;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.current-sort .current-sort-text:hover {
-    background-color: var(--active);
-    color: var(--btn-active-font-clr);
-}
-
-.sort-out {
-    display: flex;
-    border-radius: 0.50rem;
-    padding: 5px;
-}
-
-#news_set_sort {
-    position: relative;
-}
-
 :root {
     color-scheme: dark;
     /* clr менять вместе с header-back-clr 
@@ -2671,6 +2602,75 @@ footer {
 .sort-main form ul {
     display: flex;
     flex-direction: row;
+}
+
+/*--- SORT MENU ---*/
+.sort-main .sort {
+    margin-top: 42px;
+    border-radius: 0.5rem;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    background-color: var(--clr);
+    min-width: 160px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
+    z-index: 1;
+    transition: max-height 0.5s ease;
+    flex-direction: column;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.sort-main .sort.open {
+    max-height: 500px;
+}
+
+.sort-main .sort li a {
+    color: var(--active);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 0.85em;
+    display: block;
+}
+
+.sort-main .sort li a:hover {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr);
+}
+
+.current-sort {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+    font-size: 0.85em;
+}
+
+.current-sort .current-sort-text {
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: var(--main);
+    color: var(--active);
+    padding: 7px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.current-sort .current-sort-text:hover {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr);
+}
+
+.sort-out {
+    display: flex;
+    border-radius: 0.50rem;
+    padding: 5px;
+}
+
+#news_set_sort {
+    position: relative;
 }
 
 /* ---------- OPTIMIZATION ----------*/
