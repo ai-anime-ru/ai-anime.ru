@@ -2564,17 +2564,93 @@ footer {
     display: none;
 }
 
-.season .poster-box {
-    width: auto;
+.season .poster-box,
+.season article,
+.season-box {
+    width: 183px !important;
 }
 
 .season .poster-box img {
     width: 100%;
     height: 260px;
-    width: auto;
+    width: 183px;
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.5s ease, transform 0.5s;
+}
+
+.season .news-block .title-text {
+    margin-top: 10px;
+    margin-left: 0;
+    width: 183px;
+    font-size: 0.95em;
+}
+
+.season-title h1 {
+    font-size: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.full_player .line {
+    padding-top: 0px;
+}
+
+.slick-next {
+    position: absolute;
+    right: 10px;
+    top: 37%;
+}
+
+.slick-prev {
+    position: absolute;
+    left: 10px;
+    top: 37%;
+    z-index: 900;
+}
+
+.slick-next,
+.slick-prev {
+    background-color: #1e1e26bf;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0px 10px #00000083;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+
+.slick-next .icon,
+.slick-prev .icon{
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.season-title {
+    position: relative;
+}
+
+.season-title::before,
+.season-title::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  border-top: 1px solid var(--line);
+  position: absolute;
+  top: 50%;
+  flex: 1 1 0%;
+}
+
+.season-title::before {
+  right: 0em;
+}
+
+.season-title::after {
+  left: 0em; 
 }
 
 /*------------- MAIN SORT ------------*/

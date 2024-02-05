@@ -582,14 +582,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <script type="text/javascript" src="https://ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-      $('.season').slick({
-		slidesToShow: 4,
-		slidesToScroll: 1,
-		autoplay: false,
-		autoplaySpeed: 2000,
-      });
-    });
+$('.season').slick({
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.season').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+  } else {
+    $('.season').slick('slickUnfilter');
+    $(this).text('Filter Slides');
+    filtered = false;
+  }
+});
   </script>
 </body>
 
