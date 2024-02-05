@@ -91,14 +91,15 @@
 <script>
 function toggleDropdownHeader() {
   var menu = document.querySelector('.profile-link-header');
-  menu.classList.toggle('show');
+  menu.classList.toggle('show');}
 
   // Закрытие меню по клику вне него
+
   document.addEventListener('click', function(event) {
     var isClickInsideMenu = event.target.closest('.profile-link-header');
     if (!isClickInsideMenu) {
-		menu.classList.toggle('show');
+		menu.classList.remove('show');
     }
   });
-}
+
 </script>
