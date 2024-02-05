@@ -3,8 +3,9 @@
     <div class="top-menu-block">
         {catmenu}
     </div>
-    [available=main]
+    
     <div class="contaner-flex">
+        [available=main]
         <section class="main-container">
             <div class="sort-main">
                 <span class="">Сортировать: </span>
@@ -23,10 +24,10 @@
             </div>
             {navigation}
         </section>
+        [/available]
         {include file="/modules/side-block-main.tpl"}
     </div>
-    [/available]
+    
     <div class="bg_overlay"></div>
-
     {info}
 </main>

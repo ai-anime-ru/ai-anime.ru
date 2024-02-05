@@ -56,23 +56,3 @@
         });
     });
 </script>
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var buttons = document.querySelectorAll('.filter-menu .button-filter');
-
-        buttons.forEach(function(button) {
-            button.addEventListener('click', function(event) {
-                // Предотвращаем переход по ссылке
-                event.preventDefault();
-
-                // Ваш дополнительный код здесь, если необходимо выполнить другие действия
-
-                // Например, можно добавить обработчик для подменю
-                var subMenu = button.nextElementSibling;
-                if (subMenu && subMenu.classList.contains('filter-downcategory')) {
-                    // Ваш код для работы с подменю
-                }
-            });
-        });
-    });
-</script>
