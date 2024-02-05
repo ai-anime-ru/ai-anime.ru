@@ -96,16 +96,10 @@
 		dropdown.classList.toggle("show");
 	}
 
-	// Закрывать меню, если пользователь кликает вне него
-	window.onclick = function (event) {
-		if (!event.target.matches('.profile')) {
-			var dropdowns = document.getElementsByClassName("profile-link-header");
-			for (var i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	};
+	var dropdown = document.getElementById("myDropdownMenu");
+
+    document.addEventListener('click', function(event) {
+		event.stopPropagation();
+        dropdown.classList.toggle('show');
+    });
 </script>
