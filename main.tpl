@@ -116,7 +116,26 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
-	<!--LOGIN-->
+	
+	<script>
+// JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    var sortMain = document.querySelector('.sort-main');
+    var sortList = sortMain.querySelector('.sort');
+    var currentSort = sortMain.querySelector('.current-sort');
+
+    currentSort.addEventListener('click', function(event) {
+        event.stopPropagation();
+        sortList.style.maxHeight = sortList.style.maxHeight === '0px' ? '500px' : '0px';
+    });
+
+    document.addEventListener('click', function() {
+        sortList.style.maxHeight = '0px';
+    });
+});
+	</script>
+	
+			<!--LOGIN-->
 	<script>
 		var bodyElement = document.body;
 

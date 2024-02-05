@@ -3,6 +3,29 @@
     src: url('/templates/ai-anime/fonts/ubuntu-medium.woff2');
 }
 
+/* CSS */
+.sort-main .sort {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: height 0.5s ease;
+}
+
+.sort-main .sort li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.sort-main .sort li a:hover {
+    background-color: #f1f1f1;
+}
+
 :root {
     color-scheme: dark;
     /* clr менять вместе с header-back-clr 
