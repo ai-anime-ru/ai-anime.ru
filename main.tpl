@@ -581,6 +581,16 @@ document.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script type="text/javascript" src="https://ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('.season').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+      });
+    });
+  </script>
 </body>
 
 </html>
