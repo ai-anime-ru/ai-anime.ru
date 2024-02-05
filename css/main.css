@@ -581,6 +581,7 @@ ul li {
     padding-top: 5px;
     margin-bottom: 5px;
     width: 90%;
+    opacity: 0.5;
 }
 
 .profile-link-header ul li a .icon {
@@ -973,7 +974,8 @@ transform: scale(1);
 .form-registration {
     background-color: var(--main);
     padding: 15px;
-    margin: 40px auto;
+    width: 920px;
+    margin: 20px auto 0 auto;
     max-width: 920px;
     border-radius: 15px;
 }
@@ -2654,6 +2656,12 @@ footer {
 @media (max-width: 480px) {
     footer {
         width: 100%;
+    }
+
+
+    .form-registration {
+        max-width: 412px;
+        margin: 20px auto 0 auto;
     }
 
     .wrap {
