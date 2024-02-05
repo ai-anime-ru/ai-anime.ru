@@ -426,7 +426,6 @@
         {comments}
         {navigation}
     </div>
-    {include file="/modules/side-block-main-related-news.tpl"}
 </div>
 <script> //Скрипт для скролла по элементам
     document.getElementById('description').addEventListener('click', function () {

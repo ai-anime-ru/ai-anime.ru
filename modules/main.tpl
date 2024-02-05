@@ -1,6 +1,5 @@
 <main class="main fx-col clearfix">
     <div class="top-block-main"></div>
-    {include file="/modules/side-block-main.tpl"}
     <div class="top-menu-block">
         {catmenu}
     </div>
@@ -25,6 +24,8 @@
             {navigation}
         </section>
         [/available]
+        [not-aviable=main]{content}[/not-aviable]
+        {include file="/modules/side-block-main.tpl"}
     </div>
     <div class="bg_overlay"></div>
     {info}
