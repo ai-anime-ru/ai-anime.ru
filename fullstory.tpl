@@ -414,11 +414,13 @@
                             </lI>
                         </ul>
                     </div>
+                    [group=1]
                     [xfgiven_shikimori_related]
                     <div class="season">
                         {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
                     </div>
                     [/xfgiven_shikimori_related]
+                    [/group]
                 </div>
             </div>
         </div>
