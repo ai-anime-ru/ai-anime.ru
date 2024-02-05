@@ -416,19 +416,21 @@
                             </lI>
                         </ul>
                     </div>
+                    [group=1]
+                    [xfgiven_shikimori_related]
+                    <div class="franchise-ai">
+                        <div class="season-title">
+                            <h1>Франшиза</h1>
+                        </div>
+                        <div class="season">
+                            {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
+                        </div>
+                    </div>
+                    [/xfgiven_shikimori_related]
+                    [/group]
                 </div>
             </div>
         </div>
-        [xfgiven_shikimori_related]
-        <div class="franchise-ai">
-            <div class="season-title">
-                <h1>Франшиза</h1>
-            </div>
-            <div class="season">
-                {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
-            </div>
-        </div>
-        [/xfgiven_shikimori_related]
         {addcomments}
         {comments}
         {navigation}
