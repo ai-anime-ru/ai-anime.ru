@@ -89,9 +89,16 @@
 </header>
 
 <script>
-    // Скрипт открытия и закрытия Списков
-    function toggleDropdownHeader() {
-        var ProfileHeaderLink = document.getElementsByClassName("profile-link-header");
-        ProfileHeaderLink.classList.toggle("show");
+function toggleDropdownHeader() {
+  var menu = document.querySelector('.profile-link-header');
+  menu.classList.toggle('show');
+
+  // Закрытие меню по клику вне него
+  document.addEventListener('click', function(event) {
+    var isClickInsideMenu = event.target.closest('.profile-link-header');
+    if (!isClickInsideMenu) {
+		menu.classList.toggle('show');
     }
+  });
+}
 </script>
