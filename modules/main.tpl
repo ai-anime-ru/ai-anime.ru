@@ -24,9 +24,9 @@
             {navigation}
         </section>
         [/available]
+        {info}
         [not-aviable=main]{content}[/not-aviable]
         {include file="/modules/side-block-main.tpl"}
     </div>
     <div class="bg_overlay"></div>
-    {info}
 </main>
