@@ -2748,8 +2748,12 @@ footer {
     }
 
     .profile,
-    .sort-main {
+    .sort-main>span {
         display: none;
+    }
+
+    .sort-main {
+        justify-content: center;
     }
 
     .full-story-body {

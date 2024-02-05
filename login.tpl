@@ -7,7 +7,7 @@
 
 	[vk]<div class="lb-soc">
 		<div>Войти через:</div>[/vk]
-		[google]<a class="with-social-login" href="{google_url}" target="_blank">
+		[google]<a class="with-social-login" href="{google_url}">
 			<div class="icon">
 				<ion-icon name="logo-google"></ion-icon>
 			</div>
