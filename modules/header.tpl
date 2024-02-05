@@ -14,7 +14,7 @@
 			</a>
 			<div class="profile-link-header" id="myDropdownMenu">
 				<ul>
-					<li class="user-login">
+					<li class="user-login" style="cursor: default;">
 						<div class="profile-text-header "><b>С возвращением </b><p>{profile-login}</p></div>
 					</li>
 					<div class="line user-login"></div>

@@ -170,6 +170,7 @@
     font-weight: lighter;
     font-size: 1.2em;
     line-height: normal;
+    max-width: 430px;
 }
 
 .box-player {
