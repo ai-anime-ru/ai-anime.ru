@@ -91,21 +91,7 @@
 <script>
     // Скрипт открытия и закрытия Списков
     function toggleDropdownHeader() {
-        var dropdown = document.getElementsByClassName("profile-link-header");
-        dropdown.classList.toggle("show");
+        var ProfileHeaderLink = document.getElementsByClassName("profile-link-header");
+        ProfileHeaderLink.classList.toggle("show");
     }
-
-    // Обработчик событий для закрытия меню при клике вне него
-    document.addEventListener("click", function(event) {
-        var dropdown = document.getElementsByClassName("profile-link-header");
-        var targetElement = event.target;
-
-        // Проверяем, является ли кликнутый элемент частью меню или его родителем
-        var isClickInsideDropdown = dropdown.contains(targetElement);
-
-        // Если клик произошел вне меню, закрываем его
-        if (!isClickInsideDropdown) {
-            dropdown.classList.remove("show");
-        }
-    });
 </script>
