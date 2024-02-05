@@ -275,13 +275,6 @@
 		}
 	</script>
 
-	<script>
-		$('#show-more-today').on('click', function () {
-			$('.list_today').show();
-			$('#show-more-today').remove();
-			return false;
-		});
-	</script>
 
 	<script>//Скрипт для работы кнопки вверх
 		// Показать/скрыть кнопку при прокрутке

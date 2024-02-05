@@ -54,11 +54,6 @@ function changePlayer() {
     document.getElementById(selectedPlayer).style.display = "block";
 }
 
-$('#show-more-today').on('click', function () {
-    $('.list_today').show();
-    $('#show-more-today').remove();
-    return false;
-});
 
 //Скрипт для работы кнопки вверх
 // Показать/скрыть кнопку при прокрутке
