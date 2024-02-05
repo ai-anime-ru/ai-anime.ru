@@ -123,7 +123,7 @@ ul li {
 }
 
 
-/*---------- MOBILE MENU -------------*/
+/*------------ MOBILE MENU -------------*/
 
 .filter-contet-box {
     max-height: 0;
@@ -2017,7 +2017,7 @@ footer {
     position: relative;
     overflow: hidden;
     width: 920px;
-    margin: 70px auto;
+    margin: 20px auto 0 auto;
     background-color: var(--main);
     border-radius: 15px;
 }
@@ -2297,7 +2297,8 @@ footer {
     position: relative;
     overflow: hidden;
     width: 920px;
-    margin: 70px auto;
+    height: 100%;
+    margin: 20px auto 0 auto;
     background-color: var(--main);
     border-radius: 15px;
     padding: 15px;
@@ -2604,7 +2605,6 @@ footer {
 @media (max-width: 1280px) {
     .full-story-body {
         width: 920px;
-        margin: 40px auto !important;
     }
 }
 

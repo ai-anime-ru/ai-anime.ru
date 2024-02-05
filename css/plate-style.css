@@ -1,6 +1,7 @@
 .main-container {
     background-color: var(--main);
     width: 920px;
+    height: 100%;
     max-width: 1200px;
     margin-top: 20px;
     border-radius: 15px;
