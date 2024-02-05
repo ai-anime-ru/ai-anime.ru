@@ -1,4 +1,26 @@
 <div class="side-block-main">
+    [group=1]
+    <div class="aisort-main-block">
+        <div class="slider">
+            <div class="bar"></div>
+            <div class="circle left"></div>
+            <div class="circle right"></div>
+        </div>
+        <select multiple>
+            <option>Выберите жанр</option>
+            <!-- Здесь будут жанры -->
+        </select>
+        <select multiple>
+            <option>Выберите тип</option>
+            <!-- Здесь будут типы -->
+        </select>
+        <select multiple>
+            <option>Выберите статус</option>
+            <!-- Здесь будут статусы -->
+        </select>
+        <button>Искать</button>
+    </div>
+    [/group]
     <div class="random-anime">
         <div class="random-anime-title">
             <h3>Случайное аниме</h3>
