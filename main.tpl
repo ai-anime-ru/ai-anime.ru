@@ -584,7 +584,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script type="text/javascript">
     $(document).ready(function(){
       $('.season').slick({
-		slidesToShow: 5,
+		slidesToShow: 7,
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 2000,
