@@ -13,7 +13,7 @@
     right: 0;
     background-color: var(--clr);
     min-width: 160px;
-    box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.829);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.63);
     z-index: 1;
     transition: max-height 0.5s ease;
     flex-direction: column;
@@ -51,9 +51,15 @@
     margin-right: 5px;
     background-color: var(--main);
     color: var(--active);
-    padding: 5px;
+    padding: 7px;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.current-sort .current-sort-text:hover {
+    background-color: var(--active);
+    color: var(--btn-active-font-clr);
 }
 
 .sort-out {
