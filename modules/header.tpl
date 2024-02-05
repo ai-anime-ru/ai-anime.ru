@@ -88,25 +88,23 @@
 	</div>
 </header>
 
-<script> //Скрипт открытия и закрытия Списков
+<script>
+	// Скрипт для управления отображением выпадающего меню
+  
 	// Функция для отображения/скрытия выпадающего меню
 	function toggleDropdownHeader() {
-		var dropdown = document.getElementById("myDropdownMenu");
-		dropdown.classList.toggle("show");
+	  var dropdown = document.getElementById("myDropdownMenu");
+	  dropdown.classList.toggle("show");
 	}
-
+  
 	// Закрывать меню, если пользователь кликает вне него
-	window.onclick = function (event) {
-		if (!event.target.matches('.profile')) {
-			var dropdowns = document.getElementsByClassName("profile-link-header");
-			for (var i = 0; i < dropdowns.length; i++) {
-				var openDropdown = dropdowns[i];
-				if (openDropdown.classList.contains('show')) {
-					openDropdown.classList.remove('show');
-				}
-			}
-		}
-	};
-
-	window.onclick = function (event) { }
-</script>
+	document.addEventListener('click', function (event) {
+	  var dropdown = document.getElementById("myDropdownMenu");
+	  var profileLinkHeader = document.querySelector('.profile-link-header');
+  
+	  if (!profileLinkHeader.contains(event.target)) {
+		// Если кликнуто вне элементов с классом 'profile-link-header', то скрываем меню
+		dropdown.classList.remove("show");
+	  }
+	});
+  </script>
