@@ -2559,8 +2559,21 @@ footer {
 
 /*------------- season -------------*/
 
-.season {
-    
+.season .description-short-box{
+    display: none;
+}
+
+.season .poster-box {
+    width: auto;
+}
+
+.season .poster-box img {
+    width: 100%;
+    height: 260px;
+    width: 170px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.5s ease, transform 0.5s;
 }
 
 /*------------- MAIN SORT ------------*/
