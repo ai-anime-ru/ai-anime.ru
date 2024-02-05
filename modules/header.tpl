@@ -88,18 +88,24 @@
 	</div>
 </header>
 
-<script>
-function toggleDropdownHeader() {
-  var menu = document.querySelector('.profile-link-header');
-  menu.classList.toggle('show');}
+<script> //Скрипт открытия и закрытия Списков
 
-  // Закрытие меню по клику вне него
+	// Функция для отображения/скрытия выпадающего меню
+	function toggleDropdownHeader() {
+		var dropdown = document.getElementById("myDropdownMenu");
+		dropdown.classList.toggle("show");
+	}
 
-  document.addEventListener('click', function(event) {
-    var isClickInsideMenu = event.target.closest('.profile-link-header');
-    if (!isClickInsideMenu) {
-		menu.classList.remove('show');
-    }
-  });
-
+	// Закрывать меню, если пользователь кликает вне него
+	window.onclick = function (event) {
+		if (!event.target.matches('.profile')) {
+			var dropdowns = document.getElementsByClassName("profile-link-header");
+			for (var i = 0; i < dropdowns.length; i++) {
+				var openDropdown = dropdowns[i];
+				if (openDropdown.classList.contains('show')) {
+					openDropdown.classList.remove('show');
+				}
+			}
+		}
+	};
 </script>
