@@ -78,6 +78,18 @@
 		</div>
 	</div>
 
+	<div class="welcome-message" id="welcome-message">
+		<div class="welcome-message-content">
+			<div class="welcome-message-text">
+				<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
+					конфиденцальности</a>
+				<p>и</p><a href="/?do=rules">правила</a>
+				<p>(✿◡‿◡)</p>
+			</div>
+			<span onclick="closeWelcomeMessage()">Готово</span>
+		</div>
+	</div>
+
 	{include file="modules/user-popup-window.tpl"}
 
 	{include file="modules/mobile-menu.tpl"}
@@ -92,17 +104,6 @@
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
-				<div class="welcome-message" id="welcome-message">
-					<div class="welcome-message-content">
-						<div class="welcome-message-text">
-							<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
-								конфиденцальности</a>
-							<p>и</p><a href="/?do=rules">правила</a>
-							<p>(✿◡‿◡)</p>
-						</div>
-						<span onclick="closeWelcomeMessage()">Готово</span>
-					</div>
-				</div>
 				<section class="main__content">
 					{include file="modules/main.tpl"}
 				</section>
