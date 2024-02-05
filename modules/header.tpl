@@ -89,14 +89,10 @@
 </header>
 
 <script> //Скрипт открытия и закрытия Списков
-	// Функция для отображения/скрытия выпадающего меню
+
+// Функция для отображения/скрытия выпадающего меню
 	function toggleDropdownHeader() {
 		var dropdown = document.getElementById("myDropdownMenu");
 		dropdown.classList.toggle("show");
 	}
-
-	// Закрывать меню, если пользователь кликает вне него
-    document.addEventListener('click', function() {
-        dropdown.classList.remove('show');
-    });
 </script>
