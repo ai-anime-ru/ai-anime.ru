@@ -61,9 +61,7 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <button>Подробнее</button>
-            <div class="dot"></div>
+            <div class="">
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]
@@ -232,19 +230,19 @@
         <div class="description-full-box">
             <div>
                 <div class="description-full-text">
-                        <h1>Сюжет:</h1>
-                    </div>
-                    <p>
-                        [xfvalue_kodik_plot]
-                        [xfnotgiven_kodik_plot]
-                        [xfvalue_shikimori_plot]
-                        [xfnotgiven_shikimori_plot]
-                        Нам не удалось найти описание для этого аниме!
-                        [/xfnotgiven_shikimori_plot]
-                        [/xfnotgiven_kodik_plot]
-                    </p>
+                    <h1>Сюжет: {title}</h1>
                 </div>
+                <p>
+                    [xfvalue_kodik_plot]
+                    [xfnotgiven_kodik_plot]
+                    [xfvalue_shikimori_plot]
+                    [xfnotgiven_shikimori_plot]
+                    Нам не удалось найти описание для этого аниме!
+                    [/xfnotgiven_shikimori_plot]
+                    [/xfnotgiven_kodik_plot]
+                </p>
             </div>
+        </div>
 
 
         <div class="season-title">
