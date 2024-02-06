@@ -272,15 +272,16 @@
 
 .background-fullstory img {
     height: 500px;
-    width: 1200px;
+    width: 920px;
     opacity: 0.5;
     filter: blur(20px);
 }
 
 .background-fullstory {
-    width: 1200px;
+    width: 920px;
     height: 443px;
     position: absolute;
+    border-radius: 15px;
     top: -15px;
     left: -20px;
     overflow: hidden;
