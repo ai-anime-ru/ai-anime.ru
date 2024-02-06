@@ -60,6 +60,35 @@
     transition: 0.3s;
 }
 
+.title-full-story-container-text{
+    font-size: 1.2em;
+    color: white;
+}
+
+.title-full-story-container-poster-text {
+    display: flex;
+}
+
+.title-full-story-container-poster-text img {
+    margin-right: 10px;
+    width: 61px;
+    height: 81px;
+}
+
+.title-full-story-container .title-dop {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.title-full-story-container .title-dop .badge{
+    margin-left: 0;
+}
+
+.title-full-story-container .title-dop .badge a{
+    font-size: 0.8em;
+}
+
 .full-story-info-title .genre-shiki{
     color: #d4d4d4;
     font-size: 0.7em;
