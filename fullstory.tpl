@@ -63,6 +63,16 @@
             </div>
             <div>
                 <button>Подробнее</button>
+            <div class="dot"></div>
+                <div class="bookmarks-icon" onclick="toggleBookmark()">
+                    [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
+                            name="bookmark-outline"></ion-icon></div>[/add-favorites]
+
+                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon class="remove-book"
+                            title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon><ion-icon
+                            class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
+                    </div>[/del-favorites]
+                </div>
             </div>
         </div>
         <div class="box-player">
