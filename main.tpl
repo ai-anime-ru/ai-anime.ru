@@ -16,15 +16,13 @@
 	<link rel="apple-touch-icon" sizes="76x76" href="./templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="120x120" href="./templates/ai-anime/images/logo.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="./templates/ai-anime/images/logo.png">
-	<link href="./templates/ai-anime/css/header.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/full-story.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css"/>
 	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
