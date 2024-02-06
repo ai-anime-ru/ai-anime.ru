@@ -28,11 +28,46 @@
 
 
 .title-full-story-container {
-    position: absolute;
-    background-color: var(--clr);
-    text-align: center;
-    min-height: 100px;
+    position: relative;
+    display: flex;
+    background-color: #1e1e25;
+    font-size: 1.5em;
+    min-height: auto;
+    padding: 15px;
     width: 100%;
+    left: -20px;
+    width: 920px;
+    line-height: normal;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-full-story-container button {
+    background-color: #d1e1f9;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+    width: 97px;
+    padding: 5px;
+    font-size: 0.65em;
+    transition: 0.3s;
+}
+
+.full-story-info-title .genre-shiki{
+    color: #d4d4d4;
+    font-size: 0.7em;
+}
+
+.full-story-info-title {
+    display: flex;
+    align-items: center;
 }
 
 .description-short-box {
@@ -42,6 +77,7 @@
 .about-anime {
     height: 423px;
     max-width: 62%;
+    z-index: 2;
 }
 
 .description-short-box {
@@ -245,10 +281,11 @@
     width: 1200px;
     height: 443px;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: -20px;
     overflow: hidden;
     background-color: black;
+    z-index: 1;
 }
 
 #selectedPlayer {
@@ -317,6 +354,7 @@
     top: 0;
     right: 0;
     align-items: center;
+    z-index: 2;
 }
 
 .bookmarks-icon,

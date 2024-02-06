@@ -1,10 +1,44 @@
 <div class="full-story-body">
     <div class="full-story-container">
         <div class="title-full-story-container">
-                    <a class="title-text">
-                        {title}
+            <div>
+                <a class="title-text">
+                    {title}
+                </a>
+                <div class="full-story-info-title">
+                    <a class="genre-shiki">[xfvalue_kodik_genres][xfnotgiven_kodik_genres]
+                        [xfgiven_shikimori_genres][xfvalue_shikimori_genres][/xfgiven_shikimori_genres]
+                        [/xfnotgiven_kodik_genres]
+                    </a>
+                    <div class="dot"></div>
+                    <a class="genre-shiki">
+                        [xfvalue_shikimori_aired_on]
+                        [xfnotgiven_shikimori_aired_on]
+                        [xfvalue_kodik_premiere_ru]
+                        [xfnotgiven_kodik_premiere_ru]
+                        [xfvalue_kodik_premiere_world]
+                        [xfnotgiven_kodik_premiere_world]
+                        Информация отсутствует
+                        [/xfnotgiven_kodik_premiere_world]
+                        [/xfnotgiven_kodik_premiere_ru]
+                        [/xfnotgiven_shikimori_aired_on]
+                    </a>
+                    <div class="dot"></div>
+                    <a class="genre-shiki">
+                        [xfvalue_shikimori_duration_3]
+                        [xfnotgiven_shikimori_duration_3]
+                        [xfvalue_kodik_duration_3]
+                        [xfnotgiven_kodik_duration_3]
+                        Информация отсутствует
+                        [/xfnotgiven_kodik_duration_3]
+                        [/xfnotgiven_shikimori_duration_3]
                     </a>
                 </div>
+            </div>
+            <div>
+                <button>Подробнее</button>
+            </div>
+        </div>
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">
@@ -291,6 +325,8 @@
                     </div>[/del-favorites]
                 </div>
             </div>
+            <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
+                src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
         </div>
 
         [xfgiven_next_episode_date]
