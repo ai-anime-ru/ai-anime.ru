@@ -7,7 +7,6 @@
         [available=main]
         <section class="main-container">
             <div class="sort-main">
-                <span class="">Сортировать: </span>
                 [sort]{sort}[/sort]
             </div>
             <!--
