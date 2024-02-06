@@ -214,9 +214,7 @@
                             [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
                     </span>
                 </div>
-                [push_subscribe]
-                <div class="dot"></div>
-                [/push_subscribe]
+                <div class="dot user-login"></div>
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
                     [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
                             name="bookmark-outline"></ion-icon></div>[/add-favorites]

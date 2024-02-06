@@ -77,7 +77,7 @@ select {
 }
 
 .title-filter {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .noUi-tooltip {
@@ -89,6 +89,18 @@ select {
     border: 1px solid #ccc;
     border-radius: 5px;
     pointer-events: none;
+}
+
+.noUi-target {
+    margin-top: 50px;
+}
+
+.noUi-value-horizontal {
+    margin-top: 7px;
+}
+
+.noUi-base {
+    height: 3px !important;
 }
 /*--------------*/
 

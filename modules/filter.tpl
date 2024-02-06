@@ -44,7 +44,7 @@
 const yearRange = document.getElementById('year-range');
 
 noUiSlider.create(yearRange, {
-    start: [1976, 2005],
+    start: [1999, 2024],
     connect: true,
     step: 1,
     range: {
@@ -71,11 +71,11 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
     tooltip.classList.add('noUi-tooltip');
     handle.appendChild(tooltip);
 
-    handle.setAttribute('aria-valuetext', `Год ${yearRange.noUiSlider.get()[index]}`);
+    handle.setAttribute('aria-valuetext', `${yearRange.noUiSlider.get()[index]}`);
 
     yearRange.noUiSlider.on('update', (values, handleNumber) => {
         if (index === handleNumber) {
-            tooltip.innerText = `Год ${values[handleNumber]}`;
+            tooltip.innerText = `${Math.round(values[handleNumber])}`;
         }
     });
 });
