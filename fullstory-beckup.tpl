@@ -1,37 +1,7 @@
 <div class="full-story-body">
     <div class="full-story-container">
-        <div id="cinema" class="full_player tabs_box">
-
-            <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
-                <h1></h1>
-                [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
-                    allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
-            </div>
-            <div class="player-info">
-                <ul class="in-voice-acting">
-                    <li>
-                        [xfgiven_kodik_translation]<span>В переводе: </span>
-                        <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
-                        [xfnotgiven_kodik_translation]<span>Перевод: </span>
-                        <a>отсутствует</a>[/xfnotgiven_kodik_translation]
-                    </lI>
-                </ul>
-            </div>
-            [group=1]
-            [xfgiven_shikimori_related]
-            <div class="franchise-ai">
-                <div class="season-title">
-                    <h1>Франшиза</h1>
-                </div>
-                <div class="season">
-                    {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
-                </div>
-            </div>
-            [/xfgiven_shikimori_related]
-            [/group]
-        </div>
-    
+        <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
+                src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
         <div class="full-story">
             <div class="full-box">
                 <article class="full-box-story">
@@ -426,6 +396,37 @@
                 <option value="player-kodik2">Плеер 2</option>
             </select>
             -->
+                <div id="cinema" class="full_player tabs_box">
+
+                    <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
+                        <h1></h1>
+                        [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
+                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
+                            allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                    </div>
+                    <div class="player-info">
+                        <ul class="in-voice-acting">
+                            <li>
+                                [xfgiven_kodik_translation]<span>В переводе: </span>
+                                <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
+                                [xfnotgiven_kodik_translation]<span>Перевод: </span>
+                                <a>отсутствует</a>[/xfnotgiven_kodik_translation]
+                            </lI>
+                        </ul>
+                    </div>
+                    [group=1]
+                    [xfgiven_shikimori_related]
+                    <div class="franchise-ai">
+                        <div class="season-title">
+                            <h1>Франшиза</h1>
+                        </div>
+                        <div class="season">
+                            {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
+                        </div>
+                    </div>
+                    [/xfgiven_shikimori_related]
+                    [/group]
+                </div>
             </div>
         </div>
         {addcomments}
