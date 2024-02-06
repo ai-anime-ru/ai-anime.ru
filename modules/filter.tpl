@@ -1,11 +1,7 @@
 <div class="aisort-main-block">
-
-
     <div class="year-slider">
         <label class="title-filter" for="year-range">Выберите год:</label>
         <div id="year-range"></div>
-        <div class="noUi-tooltip" id="year-tooltip-left">1990</div>
-        <div class="noUi-tooltip" id="year-tooltip-right">2024</div>
     </div>
 
 
@@ -44,48 +40,51 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
-
 <script>
-    const yearRange = document.getElementById('year-range');
-    const yearTooltipLeft = document.getElementById('year-tooltip-left');
-    const yearTooltipRight = document.getElementById('year-tooltip-right');
+const yearRange = document.getElementById('year-range');
 
-    noUiSlider.create(yearRange, {
-        start: [1990, 2024],
-        connect: true,
-        step: 1,
-        range: {
-            'min': 1990,
-            'max': 2024
-        },
-        pips: {
-            mode: 'values',
-            values: [1990, 1995, 2000, 2005, 2010, 2015, 2020, 2024],
-            density: 5,
-            format: {
-                to: function (value) {
-                    return value;
-                },
-                from: function (value) {
-                    return value;
-                }
+noUiSlider.create(yearRange, {
+    start: [1976, 2005],
+    connect: true,
+    step: 1,
+    range: {
+        'min': 1999,
+        'max': 2024
+    },
+    pips: {
+        mode: 'values',
+        values: [1999, 2005, 2011, 2018, 2024],
+        density: 5,
+        format: {
+            to: function (value) {
+                return value;
+            },
+            from: function (value) {
+                return value;
             }
         }
-    });
+    }
+});
 
-    yearRange.noUiSlider.on('update', function (values, handle) {
-        if (handle === 0) {
-            yearTooltipLeft.innerText = 'Год ' + values[handle];
-        } else {
-            yearTooltipRight.innerText = 'Год ' + values[handle];
+yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
+    const tooltip = document.createElement('div');
+    tooltip.classList.add('noUi-tooltip');
+    handle.appendChild(tooltip);
+
+    handle.setAttribute('aria-valuetext', `Год ${yearRange.noUiSlider.get()[index]}`);
+
+    yearRange.noUiSlider.on('update', (values, handleNumber) => {
+        if (index === handleNumber) {
+            tooltip.innerText = `Год ${values[handleNumber]}`;
         }
     });
+});
 
-    const searchButton = document.querySelector('.search-button');
-    searchButton.addEventListener('click', function () {
-        const rangeValues = yearRange.noUiSlider.get();
-        alert('Выбранный диапазон годов: ' + rangeValues.join(' - '));
-    });
+const searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', function () {
+    const rangeValues = yearRange.noUiSlider.get();
+    alert('Выбранный диапазон годов: ' + rangeValues.join(' - '));
+});
 </script>
 
 <script>

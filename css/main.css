@@ -72,46 +72,12 @@ select {
 
 .year-slider {
     width: 80%;
-    margin-bottom: 20px;
+    margin-bottom: 80px;
     position: relative;
 }
 
 .title-filter {
     margin-bottom: 10px;
-}
-
-.search-button {
-    background-color: #2ecc71;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.noUi-pips {
-    position: relative;
-    padding: 5px;
-    height: 30px;
-    top: 40px;
-}
-
-.noUi-pips .noUi-value {
-    display: block;
-    position: absolute;
-    text-align: center;
-    transform: translateX(-50%);
-}
-
-.noUi-pips .noUi-value::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 1px;
-    height: 5px;
-    background-color: #000;
 }
 
 .noUi-tooltip {
