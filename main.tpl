@@ -10,27 +10,27 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="https://ai-anime.ru/templates/ai-anime/images/logo.png">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/header.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/full-story.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
-	<link href="https://ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css"/>
-	<script type="module" src="https://ai-anime.ru/ionicons/dist/ionicons/ionicons.esm.js"></script>
+	<link href="./templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="./templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" href="./templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./templates/ai-anime/images/logo.png">
+	<link href="./templates/ai-anime/css/header.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/full-story.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/pm.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
+	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css"/>
+	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script src="https://ai-anime.ru/templates/ai-anime/js/moment.min.js"></script>
+	<script src="./templates/ai-anime/js/moment.min.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 </script>
 
-<script type="text/javascript" src="https://ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.js"></script>
+<script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
 <script type="text/javascript">
 $('.season').slick({
   slidesToShow: 4,
