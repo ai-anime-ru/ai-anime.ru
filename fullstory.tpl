@@ -218,14 +218,13 @@
         </div>
         [/xfgiven_next_episode_date]
 
-        <div class="season-title">
-            <h1>Об аниме</h1>
-        </div>
 
         <div class="description-full-box">
             <div>
                 <div class="description-full-text">
+                        <h1>Сюжет</h1>
                     <p>
+                        </div>
                         [xfvalue_kodik_plot]
                         [xfnotgiven_kodik_plot]
                         [xfvalue_shikimori_plot]
