@@ -105,7 +105,6 @@
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
-				{include file="/modules/slider-main.tpl"}
 				<section class="main__content">
 					{include file="modules/main.tpl"}
 				</section>

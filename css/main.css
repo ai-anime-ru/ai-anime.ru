@@ -3327,3 +3327,17 @@ footer {
     background-color: #F4F8FA;
     cursor: pointer;
 }
+
+
+/* MAIN SLIDER */
+.slider-main {
+    height: 250px;
+    width: 1300px;
+    position: relative;
+    background-color: var(--main);
+    margin-top: 15px;
+    border-radius: 15px;
+    top: 0px;
+    background-image: url(/templates/ai-anime/images/head-img.jpg);
+    background-repeat: no-repeat;
+}

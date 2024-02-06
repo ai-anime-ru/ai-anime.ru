@@ -1,5 +1,6 @@
 <main class="main fx-col clearfix">
     <div class="top-block-main"></div>
+    <!--{include file="/modules/slider-main.tpl"}-->
     <div class="top-menu-block">
         {catmenu}
     </div>
