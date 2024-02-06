@@ -66,6 +66,146 @@ select {
 }
 
 
+/*--------- TEST SORT ----------*/
+
+/* ------ year range -----*/
+
+.year-slider {
+    width: 80%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.title-filter {
+    margin-bottom: 10px;
+}
+
+.search-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.noUi-pips {
+    position: relative;
+    padding: 5px;
+    height: 30px;
+    top: 40px;
+}
+
+.noUi-pips .noUi-value {
+    display: block;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.noUi-pips .noUi-value::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 1px;
+    height: 5px;
+    background-color: #000;
+}
+
+.noUi-tooltip {
+    position: absolute;
+    top: -40px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    pointer-events: none;
+}
+/*--------------*/
+
+
+.aisort-main-block {
+    background-color: var(--clr);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-filter {
+    margin-bottom: 10px;
+}
+
+.search-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.filter-group label {
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.filter-group label:first {
+    background-color: var(--main);
+    padding: 15px;
+}
+
+.filter-group label:hover {
+    color: blue;
+}
+
+.search-button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.filter-group .checkboxes {
+    display: none;
+
+    background-color: var(--main);
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 0.75rem;
+}
+
+.filter-group .checkboxes label{
+    display: flex;
+
+}
+
+.title-filter-select {
+    background-color: var(--main);
+    padding: 15px;
+    border-radius: 0.75rem;
+}
+
+/*----------- ----------*/
+
+
 .info-debug {
     background-color: var(--main);
     padding: 15px;

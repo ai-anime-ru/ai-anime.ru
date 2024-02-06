@@ -24,6 +24,7 @@
 	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
 	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css"/>
 	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
