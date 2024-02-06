@@ -1,5 +1,10 @@
 <div class="full-story-body">
     <div class="full-story-container">
+        <div class="title-full-story-container">
+                    <a class="title-text">
+                        {title}
+                    </a>
+                </div>
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">

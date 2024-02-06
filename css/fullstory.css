@@ -27,6 +27,14 @@
 }
 
 
+.title-full-story-container {
+    position: absolute;
+    background-color: var(--clr);
+    text-align: center;
+    min-height: 100px;
+    width: 100%;
+}
+
 .description-short-box {
     padding-top: 1px;
 }
@@ -124,6 +132,7 @@
     text-align: justify;
     line-height: 17px;
     display: flex;
+    margin-top: 15px;
     /* Добавлено */
 }
 
