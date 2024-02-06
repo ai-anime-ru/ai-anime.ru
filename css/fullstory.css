@@ -449,13 +449,17 @@
 .description-full-box {
     margin-top: 15px;
     margin-bottom: 15px;
+
+    background-color: var(--clr);
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .description-full-box h1 {
     font-size: 16px;
     font-weight: 400;
     grid-column: 1/-1;
-    padding: 10px 0px 10px;
+    padding: 0 0px 10px;
     color: white;
     text-align: center;
 
@@ -465,12 +469,13 @@
     color: white;
     border-radius: 2px;
     grid-column: 1/-1;
-    background-color: var(--clr);
     padding: 15px;
     font-family: Arial, sans-serif;
     font-size: 1em;
-    border-radius: 15px;
+    text-align: center;
 }
+
+
 
 /* Стили для кнопки и контейнера выпадающего меню */
 .dropdown-watch-online {
@@ -534,7 +539,7 @@
 .sim-slider {
     max-width: 1000px;
     min-width: 320px;
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: center;
 }
 

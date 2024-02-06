@@ -321,7 +321,7 @@
 
         <div class="description-full-box">
             <div>
-                <h1>Об аниме:</h1>
+                <h1>Сюжет аниме «{title}»</h1>
                 <div class="description-full-text">
                     <p>
                         [xfvalue_kodik_plot]
@@ -337,7 +337,7 @@
             [xfgiven_kadr_1]
             <div class="sim-slider">
                 <div class="slider-title">
-                    <a>Скриншоты из «{title}»</a>
+                    <a>Скриншоты</a>
                 </div>
                 <ul class="sim-slider-list">
                     <li class="sim-slider-element"><img src="[xfvalue_kadr_1]" alt="0"></li>

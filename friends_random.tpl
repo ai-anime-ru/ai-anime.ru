@@ -5,17 +5,17 @@
          <td>
             <p>[group_color]{author}[/group_color] 
 			[status]
-			[online]<img src="{THEME}/images/online.png" style="vertical-align: middle;" title="Пользователь Онлайн" alt="Пользователь Онлайн" />[/online][offline]<img src="{THEME}/images/offline.png" style="vertical-align: middle;" title="Пользователь offline" alt="Пользователь offline" />[/offline]
+			[online]<img src="{THEME}/images/online.png" style="vertical-align: middle;" title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ" alt="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ" />[/online][offline]<img src="{THEME}/images/offline.png" style="vertical-align: middle;" title="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ offline" alt="пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ offline" />[/offline]
 			[/status]
 			</p>
             <p>{group_name}</p>
-            <p> Был: {lastdate}</p>
+            <p> пїЅпїЅпїЅ: {lastdate}</p>
          </td>
       </tr>
    </table>
    <p>
-     <a href="#" onclick="doFriends('{id}', 'add', ''); return false;"><button class="bbcodes"><span>Добавить в друзья</span></button></a>
-     <a href="/friends/{author}"><button class="bbcodes"><span>Друзей {total}</span></button></a>
+     <a href="#" onclick="doFriends('{id}', 'add', ''); return false;"><button class="bbcodes"><span>пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ</span></button></a>
+     <a href="/friends/{author}"><button class="bbcodes"><span>пїЅпїЅпїЅпїЅпїЅпїЅ {total}</span></button></a>
    </p>
    <div style="border-bottom:1px solid #ccc"></div>
 </div>
