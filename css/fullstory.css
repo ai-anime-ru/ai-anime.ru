@@ -532,7 +532,7 @@
 }
 
 .description-full-box h1 {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 400;
     grid-column: 1/-1;
     padding: 0px 0px 10px;
@@ -546,6 +546,10 @@
     grid-column: 1/-1;
     font-family: Arial, sans-serif;
     font-size: 1em;
+    text-align: center;
+}
+
+.description-full-box p {
     text-align: center;
 }
 

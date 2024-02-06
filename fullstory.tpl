@@ -222,9 +222,9 @@
         <div class="description-full-box">
             <div>
                 <div class="description-full-text">
-                        <h1>Сюжет</h1>
+                        <h1>Сюжет:</h1>
+                    </div>
                     <p>
-                        </div>
                         [xfvalue_kodik_plot]
                         [xfnotgiven_kodik_plot]
                         [xfvalue_shikimori_plot]
