@@ -27,78 +27,6 @@
 }
 
 
-.title-full-story-container {
-    position: relative;
-    display: flex;
-    background-color: #1e1e25;
-    font-size: 1.5em;
-    min-height: auto;
-    padding: 15px;
-    width: 100%;
-    left: -20px;
-    width: 920px;
-    line-height: normal;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-}
-
-.title-full-story-container button {
-    background-color: #d1e1f9;
-    display: flex;
-    color: black;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    cursor: pointer;
-    border-radius: 0.5rem;
-    font-weight: 500;
-    white-space: nowrap;
-    width: 97px;
-    padding: 5px;
-    font-size: 0.65em;
-    transition: 0.3s;
-}
-
-.title-full-story-container-text{
-    font-size: 1.2em;
-    color: white;
-}
-
-.title-full-story-container-poster-text {
-    display: flex;
-}
-
-.title-full-story-container-poster-text img {
-    margin-right: 10px;
-    width: 61px;
-    height: 81px;
-}
-
-.title-full-story-container .title-dop {
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-}
-
-.title-full-story-container .title-dop .badge{
-    margin-left: 0;
-}
-
-.title-full-story-container .title-dop .badge a{
-    font-size: 0.8em;
-}
-
-.full-story-info-title .genre-shiki{
-    color: #d4d4d4;
-    font-size: 0.7em;
-}
-
-.full-story-info-title {
-    display: flex;
-    align-items: center;
-}
-
 .description-short-box {
     padding-top: 1px;
 }
@@ -106,7 +34,6 @@
 .about-anime {
     height: 423px;
     max-width: 62%;
-    z-index: 2;
 }
 
 .description-short-box {
@@ -183,7 +110,7 @@
     overflow: hidden;
     background-color: var(--main);
     border-radius: 15px;
-    padding: 0 20px 20px;
+    padding: 20px;
 }
 
 .bo {
@@ -197,7 +124,6 @@
     text-align: justify;
     line-height: 17px;
     display: flex;
-    margin-top: 15px;
     /* Добавлено */
 }
 
@@ -301,21 +227,19 @@
 
 .background-fullstory img {
     height: 500px;
-    width: 920px;
+    width: 1200px;
     opacity: 0.5;
     filter: blur(20px);
 }
 
 .background-fullstory {
-    width: 920px;
+    width: 1200px;
     height: 443px;
     position: absolute;
-    border-radius: 15px;
-    top: -15px;
-    left: -20px;
+    top: 0;
+    left: 0;
     overflow: hidden;
     background-color: black;
-    z-index: 1;
 }
 
 #selectedPlayer {
@@ -384,7 +308,6 @@
     top: 0;
     right: 0;
     align-items: center;
-    z-index: 2;
 }
 
 .bookmarks-icon,
