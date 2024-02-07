@@ -34,9 +34,15 @@
                             <td><a class="first-info">Жанр:</a></td>
                             <td>
                                 <span class="badge">
-                                    <a class="genre-shiki">[xfvalue_kodik_genres][xfnotgiven_kodik_genres]
-                                        [xfgiven_shikimori_genres][xfvalue_shikimori_genres][/xfgiven_shikimori_genres]
-                                        [/xfnotgiven_kodik_genres]</a>
+                                    <a class="genre-shiki">
+                                        [xfvalue_kodik_genres]
+                                        [xfnotgiven_kodik_genres]
+                                        [xfvalue_shikimori_genres]
+                                        [xfnotgiven_shikimori_genres]
+                                        Информация отсутствует
+                                        [/xfnotgiven_shikimori_genres]
+                                        [/xfnotgiven_kodik_genres]
+                                        </a>
                                 </span>
                             </td>
                         </tr>
@@ -183,7 +189,13 @@
                             <td><a class="first-info">Теги:</a></td>
                             <td>
                                 <span class="badge">
-                                    {tags}
+                                    {% if tags %}
+                                        <span class="badge">
+                                            {tags}
+                                        </span>
+                                    {% else %}
+                                        <p>ИНФОРМАЦИЯ ОТСУТСТВУЕТ</p>
+                                    {% endif %}
                                 </span>
                             </td>
                         </tr>
