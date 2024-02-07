@@ -456,7 +456,7 @@
 }
 
 .description-full-box h1 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     grid-column: 1/-1;
     padding: 0 0px 10px;
@@ -466,10 +466,10 @@
 }
 
 .description-full-text {
-    color: white;
+    color: var(--second-text);
     border-radius: 2px;
     grid-column: 1/-1;
-    padding: 15px;
+    padding-bottom: 15px;
     font-family: Arial, sans-serif;
     font-size: 1em;
     text-align: center;
@@ -548,9 +548,29 @@
 }
 
 .slider-title a {
+    position: relative;
     color: white;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
+}
+
+.slider-title a::before,
+.slider-title a::after {
+  content: "";
+  display: inline-block;
+  width: 40%;
+  border-top: 1px solid var(--line);
+  position: absolute;
+  top: 50%;
+  flex: 1 1 0%;
+}
+
+.slider-title a::before {
+  right: 0em;
+}
+
+.slider-title a::after {
+  left: 0em; 
 }
 
 /* General styles */

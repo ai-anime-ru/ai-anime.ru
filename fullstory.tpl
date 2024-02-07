@@ -337,7 +337,7 @@
             [xfgiven_kadr_1]
             <div class="sim-slider">
                 <div class="slider-title">
-                    <a>Скриншоты</a>
+                    <a>Скриншоты:</a>
                 </div>
                 <ul class="sim-slider-list">
                     <li class="sim-slider-element"><img src="[xfvalue_kadr_1]" alt="0"></li>
