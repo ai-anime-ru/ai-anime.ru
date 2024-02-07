@@ -188,14 +188,13 @@
                         <tr>
                             <td><a class="first-info">Теги:</a></td>
                             <td>
-                                <span class="badge">
-                                    {% if tags %}
-                                        <span class="badge">
-                                            {tags}
-                                        </span>
-                                    {% else %}
-                                        <p>ИНФОРМАЦИЯ ОТСУТСТВУЕТ</p>
-                                    {% endif %}
+                                <span id="tags-badge" class="badge">
+                                    <div class="tags-badge">
+                                        {tags}
+                                    </div>
+                                    <a class="tags-badge-none">
+                                        Информация отсутствует
+                                    </a>
                                 </span>
                             </td>
                         </tr>
@@ -496,3 +495,14 @@
         }
     });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var tagsBadge = document.querySelector(".tags-badge");
+        var tagsBadgeNone = document.querySelector(".tags-badge-none");
+        if (!tagsBadge.children.length) {
+            tagsBadgeNone.style.display = "inline";
+        } else {
+            tagsBadgeNone.style.display = "none";
+        }
+    });
+</script> 
