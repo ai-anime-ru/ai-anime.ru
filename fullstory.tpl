@@ -1,13 +1,13 @@
 <div class="full-story-body">
     <div class="full-story-container">
         <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]</div>
+                src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]</div>
         <div class="full-story">
             <div class="full-box">
                 <article class="full-box-story">
                     <div class="full-poster-box">
                         [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                            src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
+                            src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]
                     </div>
                     [push_subscribe]
                     {push_subscribe}
