@@ -4,7 +4,6 @@
         <div id="year-range"></div>
     </div>
 
-
     <div class="filter-group genre-select">
         <label class="title-filter-select" for="genre-select">Выберите жанр:</label>
         <div class="checkboxes">
@@ -35,7 +34,6 @@
     </div>
 
     <button class="search-button">Искать</button>
-
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
@@ -100,10 +98,10 @@ searchButton.addEventListener('click', function () {
             
             // Закрываем предыдущее меню, если оно было открыто
             //filterGroups.forEach(otherGroup => {
-             //   const otherCheckboxes = otherGroup.querySelector('.checkboxes');
-               // if (otherCheckboxes !== checkboxes) {
-                 //   otherCheckboxes.style.display = 'none';
-                //}
+            //   const otherCheckboxes = otherGroup.querySelector('.checkboxes');
+            //      if (otherCheckboxes !== checkboxes) {
+            //       otherCheckboxes.style.display = 'none';
+            //}
             //});
         });
     });
