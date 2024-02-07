@@ -2676,7 +2676,7 @@ footer {
 .season .poster-box,
 .season article,
 .season-box {
-    width: 183px !important;
+    width: 183px;
 }
 
 .season .poster-box img {
@@ -2929,6 +2929,16 @@ footer {
 @media (max-width: 480px) {
     footer {
         width: 100%;
+    }
+
+    .season .poster-box img {
+        height: 132px;
+        width: 88px;
+    }
+
+    .season .poster-box, .season article, .season-box,
+    .season .news-block .title-text {
+        width: 88px !important;
     }
 
     .franchise-ai {
