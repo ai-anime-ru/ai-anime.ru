@@ -1,4 +1,4 @@
-<div>
+<div class="news-main">
     <a href="{full-link}">
         <div class="box">
             <article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
