@@ -6,17 +6,16 @@
 
 
     <div class="filter-group genre-select">
-        <label class="title-filter-select" for="genre-select">Выберите жанры:</label>
+        <label class="title-filter-select" for="genre-select">Выберите жанр:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="Безумие"> Безумие</label>
             <label><input type="checkbox" value="Боевые искусства"> Боевые искусства</label>
             <label><input type="checkbox" value="Вампиры"> Вампиры</label>
-            <!-- Добавьте остальные жанры в аналогичном формате -->
         </div>
     </div>
 
     <div class="filter-group type-select">
-        <label class="title-filter-select" for="type-select">Выберите типы:</label>
+        <label class="title-filter-select" for="type-select">Выберите тип:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="Сериал"> Сериал</label>
             <label><input type="checkbox" value="Фильм"> Фильм</label>
@@ -27,7 +26,7 @@
     </div>
 
     <div class="filter-group status-select">
-        <label class="title-filter-select" for="status-select">Выберите статусы:</label>
+        <label class="title-filter-select" for="status-select">Выберите статус:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="Завершён"> Завершён</label>
             <label><input type="checkbox" value="Онгоинг"> Онгоинг</label>
