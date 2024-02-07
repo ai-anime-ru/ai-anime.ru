@@ -2369,11 +2369,6 @@ footer {
     display: block;
 }
 
-
-.delete-acc {
-
-}
-
 .user-info-edit .self_delete_link {
     display: flex;
     justify-content: center;
