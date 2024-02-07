@@ -2054,8 +2054,8 @@ footer {
     position: relative;
     display: block;
     margin: auto;
-    width: 900px;
-    margin-top: 70px;
+    width: 920px;
+    margin: 20px auto 0 auto;
     border-radius: 15px;
     background-color: var(--main);
     padding: 20px;

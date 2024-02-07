@@ -1,9 +1,10 @@
 /* --- DLE Расписание выхода аниме --- */
 .main-title {
-    margin: 20px 0 20px;
+    margin: 0 0 20px;
     font-size: 40px;
     color: white;
     text-align: center;
+    line-height: normal;
 }
 .top-description {
     line-height: 22px;
@@ -19,7 +20,6 @@
 .calendar-date__list {
     display: flex;
     overflow-y: auto;
-    justify-content: center;
 }
 .calendar-date__item {
     display: flex;
@@ -67,7 +67,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex: 0 0 123px;
+    flex: 0 0 118px;
     height: 70px;
     padding: 10px;
     border-radius: 5px;
@@ -347,8 +347,8 @@
     font-size: 14px;
     line-height: 18px;
     overflow: hidden;
-    background-color: #393949;
+    background-color: var(--main);
     border-radius: 15px;
     padding: 20px;
-    margin: 90px auto;
+    margin: 20px auto 0 auto;
 }

@@ -6,19 +6,16 @@
                 <h3>Разделы сайта</h3>
                 <ul class="column-item">
                     <li class="column-list-item">
-                        <a href="/" target="_blank" class="column-item">Главная</a>
+                        <a href="/" class="column-item">Главная</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="?do=static&page=news" target="_blank">Новости</a>
+                        <a href="?do=static&page=news">Новости</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="#" target="_blank">Фильтры</a>
+                        <a href="?do=schedule">Расписание</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="?do=schedule" target="_blank">Расписание</a>
-                    </li>
-                    <li class="column-list-item">
-                        <a href="?do=rooms" target="_blank">Совместный просмотр</a>
+                        <a href="?do=rooms">Совместный просмотр</a>
                     </li>
                 </ul>
             </div>
@@ -27,10 +24,10 @@
                 <h3>Полезное</h3>
                 <ul class="column-item">
                     <li class="column-list-item">
-                        <a href="?do=feedback" target="_blank">Обратная связь</a>
+                        <a href="?do=feedback">Обратная связь</a>
                     </li>
                     <li class="column-list-item">
-                        <a href="?do=rules" target="_blank">Правила</a>
+                        <a href="?do=rules">Правила</a>
                     </li>
                     <li class="column-list-item">
                         <a href="/index.php?do=static&page=privacy-policy">Политика конфиденцальности</a>
