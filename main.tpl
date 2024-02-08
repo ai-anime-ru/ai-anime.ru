@@ -104,9 +104,9 @@
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
 				{include file="/modules/header.tpl"}
-				<section class="main__content">
+				<div class="main__content">
 					{include file="modules/main.tpl"}
-				</section>
+				</div>
 
 				<!-- () Выводим ошибки () -->
 				{include file="/modules/footer.tpl"}
