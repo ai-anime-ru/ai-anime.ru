@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.gif">
+	<link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.webm">
 	{headers}
 	<meta name="theme-color" content="#131318">
 	<meta name="HandheldFriendly" content="true">
