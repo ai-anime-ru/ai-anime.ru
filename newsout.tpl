@@ -1,3 +1,3 @@
 <div class="news-main">
-	{include file="news.tpl"}
+	{custom category="10" navigation='yes' from='0' sortbyuser='yes'}
 </div>
