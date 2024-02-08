@@ -8,7 +8,7 @@
 			<a>
 				<div class="icon">
 					<div class="imgBx-header">
-						<img src="{foto}">
+						<img src="{foto}" alt="Аватар пользователя">
 					</div>
 				</div>
 			</a>

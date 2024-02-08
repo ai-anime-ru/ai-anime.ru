@@ -48,7 +48,7 @@
             </div>
             <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
                 <a href="/">
-                    <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png">
+                    <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png" alt="Логотип сайта">
                 </a>
             </li>
         </nav>
