@@ -351,15 +351,12 @@
                     <a>Скриншоты:</a>
                 </div>
                 <ul class="sim-slider-list">
-                    <li class="sim-slider-element"><img src="[xfvalue_kadr_1]" alt="0"></li>
-                    <li class="sim-slider-element"><img src="[xfvalue_kadr_2]" alt="1"></li>
-                    <li class="sim-slider-element"><img src="[xfvalue_kadr_3]" alt="2"></li>
-                    <li class="sim-slider-element"><img src="[xfvalue_kadr_4]" alt="3"></li>
-                    <li class="sim-slider-element"><img src="[xfvalue_kadr_5]" alt="4"></li>
+                    <img src="[xfvalue_kadr_1]" alt="0">
+                    <img src="[xfvalue_kadr_2]" alt="1">
+                    <img src="[xfvalue_kadr_3]" alt="2">
+                    <img src="[xfvalue_kadr_4]" alt="3">
+                    <img src="[xfvalue_kadr_5]" alt="4">
                 </ul>
-                <div class="sim-slider-arrow-left"></div>
-                <div class="sim-slider-arrow-right"></div>
-                <div class="sim-slider-dots"></div>
             </div>
             [/xfgiven_kadr_1]
         </div>
@@ -428,7 +425,6 @@
                 </div>
             </div>
         </div>
-        [group=1]
         [xfgiven_shikimori_related]
         <div class="franchise-ai">
             <div class="season-title">
@@ -439,7 +435,7 @@
             </div>
         </div>
         [/xfgiven_shikimori_related]
-        [/group]
+
         {addcomments}
         {comments}
         {navigation}
