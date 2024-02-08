@@ -5,6 +5,7 @@
         {catmenu}
     </div>
     <div class="contaner-flex">
+        [available=main]
         <section class="main-container">
             <div class="sort-main">
                 [sort]{sort}[/sort]
@@ -23,6 +24,7 @@
             </div>
             {navigation}
         </section>
+        [/available]
         {info}
         [not-aviable=main]{content}[/not-aviable]
         {include file="/modules/side-block-main.tpl"}
