@@ -3001,6 +3001,13 @@ footer {
         width: 100%;
     }
 
+    .season-title::before,
+    .season-title::after,
+    .slider-title::before,
+    .slider-title::after {
+        width: 30% !important;
+    }
+
     .franchise-ai {
         max-width: 412px;
     }
