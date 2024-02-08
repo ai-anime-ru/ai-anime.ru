@@ -33,7 +33,6 @@
 										[xfnotgiven_kodik_premiere_world]<p>Нет информации</p>
 										[/xfnotgiven_kodik_premiere_world]
 									</div>
-
 								</div>
 							</div>
 						</div>
