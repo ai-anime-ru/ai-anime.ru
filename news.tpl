@@ -1,5 +1,4 @@
-<div class="news-one">
-	<div>
+<div class="news-container-chapter">
 		<a href="{full-link}">
 			<div class="box">
 				<article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
@@ -71,5 +70,4 @@
 				</article>
 			</div>
 		</a>
-	</div>
-</div>			
+	</div>			
