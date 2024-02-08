@@ -582,7 +582,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
 <script type="text/javascript">
 $('.season').slick({
-  dots: false,
+  dots: true,
   infinite: false,
   speed: 300,
   slidesToShow: 4,
@@ -591,8 +591,8 @@ $('.season').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         infinite: true,
         dots: true
       }
@@ -606,9 +606,9 @@ $('.season').slick({
     },
     {
       breakpoint: 480,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 1
+      unslick: {
+        slidesToShow: 4,
+        slidesToScroll: 4
       }
     }
     // You can unslick at a given breakpoint now by adding:

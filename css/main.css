@@ -2668,9 +2668,21 @@ footer {
 
 /*------------- season -------------*/
 
+.franchise-ai {
+    position: relative;
+    background-color: var(--clr);
+    left: -20px;
+    width: 920px;
+}
+
 .season .description-short-box,
 .season .title-overlay {
     display: none;
+}
+
+.season-box {
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .season .poster-box,
@@ -2708,20 +2720,20 @@ footer {
 
 .slick-next {
     position: absolute;
-    right: 10px;
+    right: 35px;
     top: 37%;
 }
 
 .slick-prev {
     position: absolute;
-    left: 10px;
+    left: 35px;
     top: 37%;
     z-index: 900;
 }
 
 .slick-next,
 .slick-prev {
-    background-color: #1e1e26bf;
+    background-color: #3e3e50bf;
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -2762,6 +2774,62 @@ footer {
   left: 0em; 
 }
 
+.slick-dots {
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: var(--line);
+}
+
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: var(--line);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 /*------------- MAIN SORT ------------*/
 
 .sort-main {
@@ -2931,18 +2999,28 @@ footer {
         width: 100%;
     }
 
-    .season .poster-box img {
-        height: 132px;
-        width: 88px;
-    }
-
-    .season .poster-box, .season article, .season-box,
-    .season .news-block .title-text {
-        width: 88px !important;
-    }
-
     .franchise-ai {
-        padding: 0 50px 0 50px;
+        width: 480px;
+    }
+
+    .season .poster-box img {
+        width: 100%;
+        height: 174px;
+        width: 96px;
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.5s ease, transform 0.5s;
+    }
+
+    .season .poster-box, .season article, .season-box {
+        width: 94px;
+    }
+
+    .season .news-block .title-text {
+        margin-top: 10px;
+        margin-left: 0;
+        width: 101px;
+        font-size: 0.95em;
     }
 
     .form-registration {
