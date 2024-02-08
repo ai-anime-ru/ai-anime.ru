@@ -42,7 +42,7 @@
                                         Информация отсутствует
                                         [/xfnotgiven_shikimori_genres]
                                         [/xfnotgiven_kodik_genres]
-                                        </a>
+                                    </a>
                                 </span>
                             </td>
                         </tr>
@@ -357,10 +357,10 @@
                     <img src="[xfvalue_kadr_4]" alt="3">
                     <img src="[xfvalue_kadr_5]" alt="4">
                 </ul>
+                [/xfgiven_kadr_1]
             </div>
-            [/xfgiven_kadr_1]
+            [xfgiven_kodik_iframe]
         </div>
-        [xfgiven_kodik_iframe]
         <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
             data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
             <div class="room-invite__image" id="room-poster">
@@ -492,7 +492,7 @@
     });
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener("DOMContentLoaded", function () {
         var tagsBadge = document.querySelector(".tags-badge");
         var tagsBadgeNone = document.querySelector(".tags-badge-none");
         if (!tagsBadge.children.length) {
@@ -501,4 +501,4 @@
             tagsBadgeNone.style.display = "none";
         }
     });
-</script> 
+</script>

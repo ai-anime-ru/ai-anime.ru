@@ -25,7 +25,7 @@
 	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
-	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css"/>
+	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
 	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -117,26 +117,26 @@
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
 
-	
+
 	<script>
-// JavaScript
-document.addEventListener('DOMContentLoaded', function() {
-    var sortMain = document.querySelector('.sort-main');
-    var sortList = sortMain.querySelector('.sort');
-    var currentSort = sortMain.querySelector('.current-sort-text');
+		// JavaScript
+		document.addEventListener('DOMContentLoaded', function () {
+			var sortMain = document.querySelector('.sort-main');
+			var sortList = sortMain.querySelector('.sort');
+			var currentSort = sortMain.querySelector('.current-sort-text');
 
-    currentSort.addEventListener('click', function(event) {
-        event.stopPropagation();
-        sortList.classList.toggle('open');
-    });
+			currentSort.addEventListener('click', function (event) {
+				event.stopPropagation();
+				sortList.classList.toggle('open');
+			});
 
-    document.addEventListener('click', function() {
-        sortList.classList.remove('open');
-    });
-});
+			document.addEventListener('click', function () {
+				sortList.classList.remove('open');
+			});
+		});
 	</script>
-	
-			<!--LOGIN-->
+
+	<!--LOGIN-->
 	<script>
 		var bodyElement = document.body;
 
@@ -364,83 +364,114 @@ document.addEventListener('DOMContentLoaded', function() {
 			document.querySelector('.loader-container').classList.remove('show-loader');
 		}
 	</script>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Получаем все элементы с классом 'user-login' и 'user-notlogin'
-        var userLoginElements = document.querySelectorAll('.user-login');
-        var userNotLoginElements = document.querySelectorAll('.user-notlogin');
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			// Получаем все элементы с классом 'user-login' и 'user-notlogin'
+			var userLoginElements = document.querySelectorAll('.user-login');
+			var userNotLoginElements = document.querySelectorAll('.user-notlogin');
 
-        // Получаем значение переменной {profile-login}
-        var profileLoginValue = '{profile-login}';
+			// Получаем значение переменной {profile-login}
+			var profileLoginValue = '{profile-login}';
 
-        // Обходим все элементы с классом 'user-login' и обновляем их отображение в зависимости от статуса пользователя
-        userLoginElements.forEach(function (userLoginDiv) {
-            // Проверяем, вошел ли пользователь в аккаунт
-            if (profileLoginValue.trim() !== '') {
-                // Пользователь в аккаунте, отображаем содержимое user-login
-                userLoginDiv.style.display = 'block';
-            } else {
-                // Пользователь не в аккаунте, скрываем содержимое user-login
-                userLoginDiv.style.display = 'none';
-            }
-        });
+			// Обходим все элементы с классом 'user-login' и обновляем их отображение в зависимости от статуса пользователя
+			userLoginElements.forEach(function (userLoginDiv) {
+				// Проверяем, вошел ли пользователь в аккаунт
+				if (profileLoginValue.trim() !== '') {
+					// Пользователь в аккаунте, отображаем содержимое user-login
+					userLoginDiv.style.display = 'block';
+				} else {
+					// Пользователь не в аккаунте, скрываем содержимое user-login
+					userLoginDiv.style.display = 'none';
+				}
+			});
 
-        // Обходим все элементы с классом 'user-notlogin' и обновляем их отображение в зависимости от статуса пользователя
-        userNotLoginElements.forEach(function (userNotLoginDiv) {
-            // Проверяем, вошел ли пользователь в аккаунт
-            if (profileLoginValue.trim() !== '') {
-                // Пользователь в аккаунте, скрываем содержимое user-notlogin
-                userNotLoginDiv.style.display = 'none';
-            } else {
-                // Пользователь не в аккаунте, отображаем содержимое user-notlogin
-                userNotLoginDiv.style.display = 'block';
-            }
-        });
-    });
-</script>
+			// Обходим все элементы с классом 'user-notlogin' и обновляем их отображение в зависимости от статуса пользователя
+			userNotLoginElements.forEach(function (userNotLoginDiv) {
+				// Проверяем, вошел ли пользователь в аккаунт
+				if (profileLoginValue.trim() !== '') {
+					// Пользователь в аккаунте, скрываем содержимое user-notlogin
+					userNotLoginDiv.style.display = 'none';
+				} else {
+					// Пользователь не в аккаунте, отображаем содержимое user-notlogin
+					userNotLoginDiv.style.display = 'block';
+				}
+			});
+		});
+	</script>
 
-<script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
-<script type="text/javascript">
-$('.season').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2
-      }
-    },
-    {
-      breakpoint: 480,
-      unslick: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-  </script>
-  <script>
-$('.sim-slider-list').slick({
-	dots: true
-});
+	<script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
+	<script type="text/javascript">
+		$('.season').slick({
+			dots: true,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					unslick: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+	</script>
+
+	<script>
+		$('.sim-slider-list').slick({
+			infinite: true,
+			//autoplay: true,
+			//autoplaySpeed: 5000,
+			slidesToShow: 3,
+			slidesToScroll: 3,
+			responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		})
 	</script>
 </body>
 

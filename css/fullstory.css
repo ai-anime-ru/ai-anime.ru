@@ -348,7 +348,7 @@
     margin-bottom: 3px;
     width: 200px;
     color: white;
-    background-color: var(--clr) ;
+    background-color: var(--clr);
     border-color: var(--red) !important;
     position: static;
     display: inline-block;
@@ -465,7 +465,7 @@
 
 }
 
-.description-full-box p{
+.description-full-box p {
     border: 1px solid #575757;
     border-radius: 15px;
     padding: 15px;
@@ -509,9 +509,11 @@
 .quick-edit-text {
     background-color: #000 !important;
 }
+
 #dle-promt-text {
     background-color: #000 !important;
 }
+
 /* Стили для кнопок внутри выпадающего меню */
 .dropdown-content-watch-online button {
     display: block;
@@ -562,21 +564,21 @@
 
 .slider-title::before,
 .slider-title::after {
-  content: "";
-  display: inline-block;
-  width: 40%;
-  border-top: 1px solid var(--line);
-  position: absolute;
-  top: 50%;
-  flex: 1 1 0%;
+    content: "";
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid var(--line);
+    position: absolute;
+    top: 50%;
+    flex: 1 1 0%;
 }
 
 .slider-title::before {
-  right: 0em;
+    right: 0em;
 }
 
 .slider-title::after {
-  left: 0em; 
+    left: 0em;
 }
 
 /* General styles */
@@ -590,7 +592,7 @@
     padding: 0;
     list-style-type: none;
     position: relative;
-    height: auto;
+    height: 160px;
     overflow: hidden;
     border-radius: 15px;
 }

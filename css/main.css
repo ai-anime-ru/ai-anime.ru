@@ -98,6 +98,7 @@ select {
 .noUi-value-horizontal {
     margin-top: 7px;
 }
+
 /*--------------*/
 
 
@@ -166,7 +167,7 @@ select {
     border-radius: 0.75rem;
 }
 
-.filter-group .checkboxes label{
+.filter-group .checkboxes label {
     display: flex;
 
 }
@@ -270,7 +271,7 @@ ul li {
     width: 330px;
     margin-top: 50px;
     padding: 15px;
-} 
+}
 
 .mobile-work p {
     background-color: var(--main);
@@ -381,7 +382,7 @@ ul li {
 }
 
 .sidebar-mobile-menu .mobile-menu {
-   /* margin-top: 50px; */
+    /* margin-top: 50px; */
     width: 330px;
 }
 
@@ -769,14 +770,14 @@ ul li {
     line-height: 1.2;
 }
 
-.profile-text-header b{
+.profile-text-header b {
     font-size: 0.90em;
     font-weight: normal;
     color: var(--second-text-2);
     cursor: default;
 }
 
-.profile-text-header a{
+.profile-text-header a {
     font-size: 0.90em;
     font-weight: normal;
     color: var(--main-h1);
@@ -838,43 +839,43 @@ ul li {
 
 
 .overlay-user-window {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: rgba(0, 0, 0, 0.5);
-display: flex;
-align-items: center;
-justify-content: center;
-opacity: 0;
-pointer-events: none;
-transition: opacity 0.3s ease-in-out;
-z-index: 8999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 8999;
 }
 
 .user-pop-up-window {
-background: var(--main);
-padding: 50px;
-border-radius: 8px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-opacity: 0;
-transform: scale(0.9);
-transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-z-index: 2;
-z-index: 9000;
+    background: var(--main);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    z-index: 2;
+    z-index: 9000;
 }
 
 .overlay-user-window.active {
-opacity: 1;
-pointer-events: all;
-backdrop-filter: blur(5px);
-box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350);
+    opacity: 1;
+    pointer-events: all;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350), inset 0 0 500px rgba(0, 0, 0, 0.350);
 }
 
 .user-pop-up-window.active {
-opacity: 1;
-transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .user-popup-content input {
@@ -931,7 +932,7 @@ transform: scale(1);
     margin-top: 1px;
 }
 
-.user-popup-content .user-popup-close{
+.user-popup-content .user-popup-close {
     position: absolute;
     font-size: 2em;
     right: 15px;
@@ -942,7 +943,7 @@ transform: scale(1);
     cursor: pointer;
 }
 
-.user-popup-content .lost-and-reg a{
+.user-popup-content .lost-and-reg a {
     display: flex;
     margin-bottom: 7px;
     font-weight: normal;
@@ -1021,14 +1022,14 @@ transform: scale(1);
     transition: opacity 0.3s ease;
     opacity: 0;
     z-index: 1;
-  }
+}
 
-  .with-social-login:hover::before {
+.with-social-login:hover::before {
     opacity: 1;
-  }
+}
 
 .with-social-login .icon,
-.with-social-login b{
+.with-social-login b {
     font-size: 1em;
     font-weight: normal;
     margin-right: 5px;
@@ -1043,34 +1044,34 @@ transform: scale(1);
 
 .line-login {
     margin-top: 20px;
-  position: relative;
-  text-align: center;
-  color: var(--line);
-  margin-bottom: 20px; 
+    position: relative;
+    text-align: center;
+    color: var(--line);
+    margin-bottom: 20px;
 }
 
 .line-login::before,
 .line-login::after {
-  content: "";
-  display: inline-block;
-  width: 40%;
-  border-top: 1px solid var(--line);
-  position: absolute;
-  top: 50%;
-  flex: 1 1 0%;
+    content: "";
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid var(--line);
+    position: absolute;
+    top: 50%;
+    flex: 1 1 0%;
 }
 
 .line-login::before {
-  right: 0em;
+    right: 0em;
 }
 
 .line-login::after {
-  left: 0em; 
+    left: 0em;
 }
 
 /* ----------- REGISTRATION --------*/
 
-.rules-page form{
+.rules-page form {
     display: flex;
     justify-content: space-between;
 }
@@ -1105,7 +1106,7 @@ transform: scale(1);
     margin-bottom: 20px;
 }
 
-.form-registration .form-item input{
+.form-registration .form-item input {
     width: 100%;
     background-color: var(--clr);
     border-radius: 0.5rem;
@@ -1158,7 +1159,7 @@ transform: scale(1);
     margin-top: 7px;
 }
 
-.form-registration span{
+.form-registration span {
     --tw-bg-opacity: 1;
     --tw-text-opacity: 1;
     background-color: var(--badge-bright);
@@ -1178,7 +1179,7 @@ transform: scale(1);
     align-items: center !important;
 }
 
-.after-reg-btn a{
+.after-reg-btn a {
     text-decoration: none;
     color: var(--h1);
 }
@@ -1733,14 +1734,14 @@ footer {
     width: 100%;
 }
 
-.form-group fieldset .with-social-login{ 
+.form-group fieldset .with-social-login {
     width: 50%;
     margin: 15px;
     min-width: 210px;
 }
 
 
-.form-group fieldset{ 
+.form-group fieldset {
     display: flex;
     justify-content: center;
 }
@@ -2391,7 +2392,8 @@ footer {
 }
 
 .user-info-edit .self_delete_link:hover {
-    background-color: #ff2727;;
+    background-color: #ff2727;
+    ;
 }
 
 /* ---------- PM ----------*/
@@ -2744,7 +2746,7 @@ footer {
 }
 
 .slick-next .icon,
-.slick-prev .icon{
+.slick-prev .icon {
     font-size: 1.5em;
     display: flex;
     align-items: center;
@@ -2757,21 +2759,21 @@ footer {
 
 .season-title::before,
 .season-title::after {
-  content: "";
-  display: inline-block;
-  width: 40%;
-  border-top: 1px solid var(--line);
-  position: absolute;
-  top: 50%;
-  flex: 1 1 0%;
+    content: "";
+    display: inline-block;
+    width: 40%;
+    border-top: 1px solid var(--line);
+    position: absolute;
+    top: 50%;
+    flex: 1 1 0%;
 }
 
 .season-title::before {
-  right: 0em;
+    right: 0em;
 }
 
 .season-title::after {
-  left: 0em; 
+    left: 0em;
 }
 
 .slick-dots {
@@ -2829,6 +2831,7 @@ footer {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 /*------------- MAIN SORT ------------*/
 
 .sort-main {
@@ -3011,7 +3014,9 @@ footer {
         transition: opacity 0.5s ease, transform 0.5s;
     }
 
-    .season .poster-box, .season article, .season-box {
+    .season .poster-box,
+    .season article,
+    .season-box {
         width: 90px;
     }
 
@@ -3034,7 +3039,7 @@ footer {
     .wrap {
         margin-top: 70px;
     }
-    
+
     .openbtn {
         display: flex;
     }
@@ -3217,10 +3222,6 @@ footer {
     .pretimer .value,
     .pretimer .points {
         font-size: 2em !important;
-    }
-
-    .sim-slider-list {
-        height: 209px !important;
     }
 
     .sim-slider-arrow-right {
