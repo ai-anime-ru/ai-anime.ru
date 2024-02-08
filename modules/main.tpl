@@ -20,7 +20,7 @@
             -->
             <div class="items_news" id="items_news">
                [smartphone] {custom template="shortstory" navigation='yes' from='0' sortbyuser='yes'} [/smartphone]
-               [desktop] {custom template="shortstory" limit="9" navigation='yes' from='0' sortbyuser='yes'} [/desktop]
+               [desktop] {custom template="shortstory" limit="5" navigation='yes' from='0' sortbyuser='yes'} [/desktop]
             </div>
             {navigation}
         </section>
