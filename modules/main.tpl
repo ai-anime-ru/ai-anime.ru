@@ -6,6 +6,7 @@
     </div>
     <div class="contaner-flex">
         <section class="main-container">
+            [not-aviable=main]{content}[/not-aviable]
             <!--
             <h1>
                 <ion-icon name="sparkles-outline" class="main-container-title-svg">
@@ -14,7 +15,6 @@
             
             </h1>
             -->
-            [not-aviable=main]{content}[/not-aviable]
             [available=main]
             <div class="sort-main">
                 [sort]{sort}[/sort]

@@ -1094,7 +1094,6 @@ ul li {
     background-color: var(--main);
     padding: 15px;
     width: 920px;
-    margin: 20px auto 0 auto;
     max-width: 920px;
     border-radius: 15px;
 }
@@ -2056,7 +2055,6 @@ footer {
     display: block;
     margin: auto;
     width: 920px;
-    margin: 20px auto 0 auto;
     border-radius: 15px;
     background-color: var(--main);
     padding: 20px;
@@ -2138,9 +2136,13 @@ footer {
     position: relative;
     overflow: hidden;
     width: 920px;
-    margin: 20px auto 0 auto;
     background-color: var(--main);
     border-radius: 15px;
+}
+
+.user-info .box{
+    height: auto !important;
+    width: auto !important;
 }
 
 .user-info .title {
@@ -3035,7 +3037,6 @@ footer {
 
     .form-registration {
         max-width: 412px;
-        margin: 20px auto 0 auto;
     }
 
     .slick-dots {
@@ -3061,10 +3062,6 @@ footer {
 
     .sort-main {
         justify-content: center;
-    }
-
-    .full-story-body {
-        margin: 20px auto !important;
     }
 
     .main__content {
