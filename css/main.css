@@ -2689,6 +2689,11 @@ footer {
     justify-content: center !important;
 }
 
+.season-box .box{
+    height: unset !important;
+    width: unset !important;
+}
+
 .season .poster-box,
 .season article,
 .season-box {
