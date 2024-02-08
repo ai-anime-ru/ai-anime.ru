@@ -19,7 +19,8 @@
             </h1>
             -->
             <div class="items_news" id="items_news">
-                {custom template="shortstory" navigation='yes' from='0' sortbyuser='yes'}
+               [smartphone] {custom template="shortstory" navigation='yes' from='0' sortbyuser='yes'} [/smartphone]
+               [desktop] {custom template="shortstory" limit="9" navigation='yes' from='0' sortbyuser='yes'} [/desktop]
             </div>
             {navigation}
         </section>
