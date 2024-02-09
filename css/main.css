@@ -968,8 +968,7 @@ ul li {
     text-decoration: none;
 }
 
-.log-register:hover,
-.news-container-chapter .title-text:hover {
+.log-register:hover {
     color: var(--active-2);
 }
 
@@ -2085,6 +2084,11 @@ footer {
     font-family: Arial, sans-serif;
     font-weight: lighter;
     font-size: 1.3em;
+    transition: 0.3s;
+}
+
+.news-container-chapter .news-block .title-text:hover {
+    color: var(--active-2);
 }
 
 .news-container-chapter .description-short {

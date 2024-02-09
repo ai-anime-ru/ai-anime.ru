@@ -6,6 +6,10 @@
     </div>
     <div class="contaner-flex">
         <section class="main-container">
+            [available=favorites]
+            [sort]{sort}[/sort]
+            [/available]
+
             [not-aviable=main]{content}[/not-aviable]
             <!--
             <h1>
