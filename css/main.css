@@ -2051,7 +2051,7 @@ footer {
 /*---Вкладка Новостей---*/
 
 .news-container-chapter {
-    margin: 20px;
+    margin: 15px;
     background-color: var(--clr);
     border-radius: 15px;
 }
@@ -2066,7 +2066,7 @@ footer {
     padding: 20px;
 }
 
-.news-container-chapter .description-short-box {
+.news-container-chapter .news-block {
     width: 579px;
 }
 
@@ -2940,7 +2940,6 @@ footer {
 
 /*--- SORT MENU ---*/
 .sort-main .sort {
-    margin-top: 42px;
     border-radius: 0.5rem;
     max-height: 0;
     overflow: hidden;
@@ -2976,7 +2975,7 @@ footer {
 .current-sort {
     display: flex;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 15px;
     font-size: 0.85em;
 }
 
@@ -3073,7 +3072,7 @@ footer {
         margin-top: 10px;
     }
 
-    .news-container-chapter .description-short-box {
+    .news-container-chapter .news-block {
         width: unset;
     }
 
