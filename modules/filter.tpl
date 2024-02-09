@@ -3,27 +3,6 @@
         <label class="title-filter" for="year-range">Выберите год:</label>
         <div id="year-range"></div>
     </div>
-
-    <div class="filter-group genre-select">
-        <label class="title-filter-select" for="genre-select">Выберите жанр:</label>
-        <div class="checkboxes">
-            <label><input type="checkbox" value="Безумие"> Безумие</label>
-            <label><input type="checkbox" value="Боевые искусства"> Боевые искусства</label>
-            <label><input type="checkbox" value="Вампиры"> Вампиры</label>
-        </div>
-    </div>
-
-    <div class="filter-group type-select">
-        <label class="title-filter-select" for="type-select">Выберите тип:</label>
-        <div class="checkboxes">
-            <label><input type="checkbox" value="Сериал"> Сериал</label>
-            <label><input type="checkbox" value="Фильм"> Фильм</label>
-            <label><input type="checkbox" value="OVA"> OVA</label>
-            <label><input type="checkbox" value="ONA"> ONA</label>
-            <label><input type="checkbox" value="AMV"> AMV</label>
-        </div>
-    </div>
-
     <div class="filter-group status-select">
         <label class="title-filter-select" for="status-select">Выберите статус:</label>
         <div class="checkboxes">
@@ -32,7 +11,6 @@
             <label><input type="checkbox" value="Анонс"> Анонс</label>
         </div>
     </div>
-
     <button class="search-button">Искать</button>
 </div>
 
@@ -41,16 +19,16 @@
 const yearRange = document.getElementById('year-range');
 
 noUiSlider.create(yearRange, {
-    start: [1999, 2024],
+    start: [1990, 2024],
     connect: true,
     step: 1,
     range: {
-        'min': 1999,
+        'min': 1990,
         'max': 2024
     },
     pips: {
         mode: 'values',
-        values: [1999, 2005, 2011, 2018, 2024],
+        values: [1990, 2000, 2010, 2020, 2024],
         density: 5,
         format: {
             to: function (value) {

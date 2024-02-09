@@ -473,6 +473,31 @@
 			]
 		})
 	</script>
+	<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var filterLinks = document.querySelectorAll(".button-filter");
+
+        filterLinks.forEach(function (link) {
+            link.addEventListener("mouseenter", function () {
+                $(this).siblings('.filter-downcategory').show();
+            });
+
+            link.addEventListener("mouseleave", function () {
+                var ul = $(this).siblings('.filter-downcategory');
+                if (!ul.is(':hover')) {
+                    ul.hide();
+                }
+            });
+
+            link.addEventListener("click", function (event) {
+                $(this).siblings('.filter-downcategory').toggle();
+            });
+        });
+        $('.filter-downcategory').mouseleave(function () {
+            $(this).hide();
+        });
+    });
+	</script>
 </body>
 
 </html>
