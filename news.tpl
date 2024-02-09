@@ -53,11 +53,11 @@
 							</a>
 							<div class="description-short-box">
 								<div class="description-short"><a>Краткое описание:</a></div>
-								<h3>[xfvalue_kodik_plot]
+								<h3>
+									[xfvalue_kodik_plot]
 									[xfnotgiven_kodik_plot]
 									[xfvalue_shikimori_plot]
 									[xfnotgiven_shikimori_plot]
-									Нам не удалось найти описание для этого аниме!
 									[/xfnotgiven_shikimori_plot]
 									[/xfnotgiven_kodik_plot]
 								</h3>

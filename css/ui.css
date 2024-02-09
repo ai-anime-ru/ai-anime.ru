@@ -278,11 +278,10 @@ textarea {
 
 input[type="radio"],
 input[type="checkbox"] {
-    width: 580px !important;
-    background: #fff !important;
-    padding: 35px !important;
-    box-shadow: 1px 1px 1px 1px #eaeaea !important;
-    margin: 5% auto 0% auto !important;
+    vertical-align: top;
+    margin: 0 3px 0 0;
+    width: 17px;
+    height: 17px;
 }
 
 input[type="file"],
