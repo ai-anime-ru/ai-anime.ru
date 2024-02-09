@@ -48,7 +48,7 @@
 					</div>
 					<div class="news-block-hidden">
 						<div class="news-block">
-							<a class="title-text">
+							<a href="{full-link}" class="title-text">
 								{title}
 							</a>
 							<div class="description-short-box">

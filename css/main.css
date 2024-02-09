@@ -968,7 +968,8 @@ ul li {
     text-decoration: none;
 }
 
-.log-register:hover {
+.log-register:hover,
+.news-container-chapter .title-text:hover {
     color: var(--active-2);
 }
 
@@ -2067,7 +2068,7 @@ footer {
 }
 
 .news-container-chapter .description-short-box {
-    width: unset !important;
+    width: 579px;
 }
 
 .news-container-chapter .poster-box img {
@@ -3066,6 +3067,15 @@ footer {
     .news-container-chapter .news-block .title-text {
         text-align: center;
         margin-top: 10px;
+    }
+
+    .news-container-chapter .description-short-box {
+        width: unset;
+    }
+
+    .news-block>.description-short-box,
+    .news-block .title-text {
+        margin-left: 0;
     }
 
     .season-title::before,
