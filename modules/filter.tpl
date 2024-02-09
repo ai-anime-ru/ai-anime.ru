@@ -1,3 +1,4 @@
+{custom category='CATEGORY_ID' template='shortstory' navigation='yes' limit='18'}
 <div class="aisort-main-block">
     <div class="year-slider">
         <label class="title-filter" for="year-range">Выберите год:</label>
@@ -11,7 +12,6 @@
             <label><input type="checkbox" value="58"> Анонс</label>
         </div>
     </div>
-
     <div class="filter-group type-select">
         <label class="title-filter-select" for="type-select">Выберите тип:</label>
         <div class="checkboxes">
@@ -153,3 +153,4 @@ searchButton.addEventListener('click', function () {
         }
     });
 </script>
+
