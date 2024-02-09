@@ -3,7 +3,7 @@
         <label class="title-filter" for="year-range">Выберите год:</label>
         <div id="year-range"></div>
     </div>
-        <div class="filter-group status-select">
+    <div class="filter-group status-select">
         <label class="title-filter-select" for="status-select">Выберите статус:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="Завершён"> Завершён</label>
@@ -11,7 +11,7 @@
             <label><input type="checkbox" value="Анонс"> Анонс</label>
         </div>
     </div>
-    <div class="filter-menu">
+    <div class="filter-group status-select">
         <label class="title-filter-select" for="type-select">Выберите тип:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="Сериал"> Сериал</label>
@@ -21,7 +21,7 @@
             <label><input type="checkbox" value="AMV"> AMV</label>
         </div>
     </div>
-    <div class="filter-menu">
+    <div class="filter-group status-select">
         <label class="title-filter-select" for="year-select">Выберите год:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="2025"> 2025</label>
@@ -62,7 +62,7 @@
             <label><input type="checkbox" value="1990"> 1990</label>
         </div>
     </div>
-    <div class="filter-menu">
+    <div class="filter-group status-select">
         <label class="title-filter-select" for="genre-select">Выберите жанр:</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="безумие"> безумие</label>
@@ -192,29 +192,3 @@ searchButton.addEventListener('click', function () {
         }
     });
 </script>
-
-    </div><div class="filter-menu">
-        <a class="button-filter" href="https://ai-anime.ru/index.php?do=cat&amp;category=status">Статус</a>
-        
-                <ul class="filter-downcategory" style="display: none;">
-            <li><div class="filter-menu">
-        <a class="button-filter" href="https://ai-anime.ru/index.php?do=cat&amp;category=ended">Завершён</a>
-        
-                
-                
-    </div><div class="filter-menu">
-        <a class="button-filter" href="https://ai-anime.ru/index.php?do=cat&amp;category=ongoing">Онгоинг</a>
-        
-                
-                
-    </div><div class="filter-menu">
-        <a class="button-filter" href="https://ai-anime.ru/index.php?do=cat&amp;category=anons">Анонс</a>
-        
-                
-                
-    </div></li></ul>
-                
-
-                
-    </div>
-</div>
