@@ -268,7 +268,7 @@
 	<!-- () Обрезаем длину описания в фулл стори -->
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 205;
+			var maxLength = 160;
 			var textElements = document.querySelectorAll(".description-short-box h3");
 
 			textElements.forEach(function (textElement) {
