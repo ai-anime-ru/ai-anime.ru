@@ -148,11 +148,10 @@ select {
     background-color: var(--active);
     color: var(--btn-active-font-clr);
     padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 0.45rem;
-    cursor: pointer;
-    font-size: 1em;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
     width: 100%;
 }
 
