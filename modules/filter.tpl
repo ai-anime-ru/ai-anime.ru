@@ -5,7 +5,8 @@
         <div id="year-range"></div>
     </div>
     <div class="filter-group status-select">
-        <label class="title-filter-select" for="status-select">Выберите статус:</label>
+        <p>Статус</p>
+        <label class="title-filter-select" for="status-select">Выберите статус</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="60"> Завершён</label>
             <label><input type="checkbox" value="59"> Онгоинг</label>
@@ -13,7 +14,8 @@
         </div>
     </div>
     <div class="filter-group type-select">
-        <label class="title-filter-select" for="type-select">Выберите тип:</label>
+        <p>Тип:</p>
+        <label class="title-filter-select" for="type-select">Выберите тип</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="63"> Сериал</label>
             <label><input type="checkbox" value="64"> Фильм</label>
@@ -23,7 +25,8 @@
         </div>
     </div>
     <div class="filter-group genre-select">
-        <label class="title-filter-select" for="genre-select">Выберите жанр:</label>
+        <p>Жанр:</p>
+        <label class="title-filter-select" for="genre-select">Выберите жанр</label>
         <div class="checkboxes">
             <label><input type="checkbox" value="66"> безумие</label>
             <label><input type="checkbox" value="67"> боевые искусства</label>
@@ -70,7 +73,7 @@
         </div>
     </div>
 
-    <button class="search-button">Искать</button>
+    <button class="search-button">Применить фильтры</button>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
@@ -134,12 +137,12 @@ searchButton.addEventListener('click', function () {
             checkboxes.style.display = checkboxes.style.display === 'flex' ? 'none' : 'flex';
             
             // Закрываем предыдущее меню, если оно было открыто
-            //filterGroups.forEach(otherGroup => {
-            //   const otherCheckboxes = otherGroup.querySelector('.checkboxes');
-            //      if (otherCheckboxes !== checkboxes) {
-            //       otherCheckboxes.style.display = 'none';
-            //}
-            //});
+            filterGroups.forEach(otherGroup => {
+               const otherCheckboxes = otherGroup.querySelector('.checkboxes');
+                  if (otherCheckboxes !== checkboxes) {
+                   otherCheckboxes.style.display = 'none';
+            }
+            });
         });
     });
 
