@@ -13,14 +13,8 @@
             [/available]
 
             [not-aviable=main]{content}[/not-aviable]
-            <!--
-            <h1>
-                <ion-icon name="sparkles-outline" class="main-container-title-svg">
-                    </ion-icon>Недавно добавленное аниме<ion-icon name="sparkles-outline" class="main-container-title-svg">
-                </ion-icon>
-            
-            </h1>
-            -->
+
+            {info}
             
             [available=main]
             <div class="sort-main">
@@ -33,7 +27,6 @@
             {navigation}
             [/available]
         </section>
-        {info}
         {include file="/modules/side-block-main.tpl"}
     </div>
     <div class="bg_overlay"></div>
