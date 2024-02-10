@@ -212,10 +212,6 @@
                     var seconds = Math.floor((diff % (60 * 1000)) / 1000);
 
                     // Обновляем значения на странице
-                    document.querySelector(".countdown-wrp .days .value").textContent = days;
-                    document.querySelector(".countdown-wrp .hours .value").textContent = hours;
-                    document.querySelector(".countdown-wrp .minutes .value").textContent = minutes;
-                    document.querySelector(".countdown-wrp .seconds .value").textContent = seconds;
                     document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
                     document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
                     document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
