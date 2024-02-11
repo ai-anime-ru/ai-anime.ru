@@ -73,7 +73,7 @@
         </div>
     </div>
 
-    <button class="search-button">Применить фильтры</button>
+    <button type="submit" class="search-button">Применить фильтры</button>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
@@ -115,12 +115,6 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
             tooltip.innerText = `${Math.round(values[handleNumber])}`;
         }
     });
-});
-
-const searchButton = document.querySelector('.search-button');
-searchButton.addEventListener('click', function () {
-    const rangeValues = yearRange.noUiSlider.get();
-    alert('Выбранный диапазон годов: ' + rangeValues.join(' - '));
 });
 </script>
 
@@ -195,4 +189,6 @@ searchButton.addEventListener('click', function () {
         }
     });
 </script>
+
+{include file="engine/modules/filters.php"}
 
