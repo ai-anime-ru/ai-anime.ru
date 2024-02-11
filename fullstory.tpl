@@ -489,7 +489,21 @@ document.addEventListener("DOMContentLoaded", function() {
     var player2Button = document.getElementById('player-2');
     var player22 = document.getElementById('player22');
     var playerKodik = document.getElementById('player-kodik1');
-    var kodikIframe = document.getElementById("player-kodik1").contentWindow;
+    var kodikIframe;
+
+    window.addEventListener('load', function() {
+        kodikIframe = document.getElementById("player-kodik1").contentWindow;
+    });
+
+    function showKodikPlayer() {
+        if (kodikIframe) {
+            hideAllPlayers();
+            playerKodik.style.display = "block";
+            kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
+        } else {
+            console.error("kodikIframe is still undefined. The iframe might not be loaded yet.");
+        }
+    }
 
     // Функция для скрытия всех плееров
     function hideAllPlayers() {
