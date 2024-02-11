@@ -430,16 +430,6 @@
             behavior: 'smooth'
         });
     });
-
-    document.querySelector('.watch-online').addEventListener('click', function () {
-        var playerBox = document.querySelector('.box-player');
-        var playerBoxTop = playerBox.offsetTop;
-
-        window.scrollTo({
-            top: playerBoxTop,
-            behavior: 'smooth'
-        });
-    });
 </script>
 
 <script> 
@@ -471,57 +461,4 @@
         }
     });
 </script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    var tagsBadge = document.querySelector(".tags-badge");
-        var tagsBadgeNone = document.querySelector(".tags-badge-none");
-        if (!tagsBadge.children.length) {
-            tagsBadgeNone.style.display = "inline";
-        } else {
-            tagsBadgeNone.style.display = "none";
-        }
-    // Получаем ссылки на элементы по их ID
-    var watchOnlineButton = document.getElementById('watch-online');
-    var player2Button = document.getElementById('player-2');
-    var player22 = document.getElementById('player22');
-    var playerKodik = document.getElementById('player-kodik1');
-    var kodikIframe;
 
-    window.addEventListener('load', function() {
-        kodikIframe = document.getElementById("player-kodik1").contentWindow;
-    });
-
-    // Функция для скрытия всех плееров
-    function hideAllPlayers() {
-        player22.style.display = "none";
-        playerKodik.style.display = "none";
-    }
-
-    // Функция для отображения плеера Kodik
-    function showKodikPlayer() {
-        hideAllPlayers();
-        playerKodik.style.display = "block";
-        kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
-    }
-
-    // Функция для отображения плеера 2
-    function showPlayer2() {
-        hideAllPlayers();
-        player22.style.display = "block";
-        kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
-    }
-
-    // Назначаем обработчики событий при нажатии на кнопки
-    watchOnlineButton.addEventListener('click', function () {
-        watchOnlineButton.classList.add('is-active');
-        player2Button.classList.remove('is-active');
-        showKodikPlayer();
-    });
-
-    player2Button.addEventListener('click', function () {
-        player2Button.classList.add('is-active');
-        watchOnlineButton.classList.remove('is-active');
-        showPlayer2();
-    });
-});
-</script>
