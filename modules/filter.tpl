@@ -160,20 +160,21 @@ searchButton.addEventListener('click', function () {
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const checkboxes = document.querySelectorAll('.checkboxes input[type="checkbox"]');
-        const titleFilterSelect = document.querySelector('.title-filter-select');
-        const originalText = titleFilterSelect.textContent.trim();
-
+        
         checkboxes.forEach(function (checkbox) {
-            checkbox.addEventListener('change', function () {
-                updateTitleFilter();
+            checkbox.addEventListener('input', function () {
+                updateTitleFilter(checkbox);
             });
         });
 
-        function updateTitleFilter() {
-            const checkedCheckboxes = document.querySelectorAll('.checkboxes input[type="checkbox"]:checked');
+        function updateTitleFilter(checkbox) {
+            const checkedCheckboxes = checkbox.closest('.filter-group').querySelectorAll('input[type="checkbox"]:checked');
             const checkedValues = Array.from(checkedCheckboxes).map(function (checkbox) {
                 return checkbox.parentNode.textContent.trim();
             });
+
+            const titleFilterSelect = checkbox.closest('.filter-group').querySelector('.title-filter-select');
+            const originalText = titleFilterSelect.dataset.defaultText;
 
             if (checkedValues.length > 0) {
                 titleFilterSelect.textContent = 'Выбрано: ' + checkedValues.join(', ');
