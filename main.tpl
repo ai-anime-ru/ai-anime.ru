@@ -38,7 +38,7 @@
 		gtag('js', new Date());
 		gtag('config', 'G-SK44Z46F4Y');
 	</script>
-	<!--        
+<!--        
                ##
               ####
              ###### 
@@ -61,8 +61,6 @@
           ############
 
 		ТУТ БЫЛ ELONDIE
--->
-	<!--
 ███╗░░░███╗██████╗░████████╗██████╗░░██████
 ████╗░████║╚════██╗╚══██╔══╝██╔══██╗░░░██║
 ██╔████╔██║░█████╔╝░░░██║░░░██████╔╝░░░██║
@@ -70,16 +68,13 @@
 ██║░╚═╝░██║██████╔╝░░░██║░░░██║░░██║░░░██║
 ╚═╝░░░░░╚═╝╚═════╝░░░░╚═╝░░░╚═╝░░╚═╝░██████
 -->
-
 </head>
-
 <body>
 	<div class="loader-container">
 		<div class="loader">
 			<div class="miku-dance"></div>
 		</div>
 	</div>
-
 	<div class="welcome-message" id="welcome-message">
 		<div class="welcome-message-content">
 			<div class="welcome-message-text">
@@ -91,9 +86,7 @@
 			<span onclick="closeWelcomeMessage()">Готово</span>
 		</div>
 	</div>
-
 	{include file="modules/user-popup-window.tpl"}
-
 	{include file="modules/mobile-menu.tpl"}
 	<div class="overlay"></div>
 	<!---
@@ -101,7 +94,6 @@
 	<div class="right-light"></div>
 	-->
 	{AJAX}
-
 	<div class="block-wrap">
 		<div class="wrap" id="main" style="margin-left: 0px;">
 			<div class="block center fx-col">
@@ -109,7 +101,6 @@
 				<section class="main__content">
 					{include file="modules/main.tpl"}
 				</section>
-
 				<!-- () Выводим ошибки () -->
 				{include file="/modules/footer.tpl"}
 			</div>
@@ -118,50 +109,26 @@
 	<div class="user-text-name" style="display: none;">{profile-login}</div>
 	<button class="scrollToTopBtn" id="scrollToTopBtn" onclick="scrollToTop()"><ion-icon
 			name="chevron-up-outline"></ion-icon></button>
-
-
-	<script>
-		// JavaScript
-		document.addEventListener('DOMContentLoaded', function () {
-			var sortMain = document.querySelector('.sort-main');
-			var sortList = sortMain.querySelector('.sort');
-			var currentSort = sortMain.querySelector('.current-sort-text');
-
-			currentSort.addEventListener('click', function (event) {
-				event.stopPropagation();
-				sortList.classList.toggle('open');
-			});
-
-			document.addEventListener('click', function () {
-				sortList.classList.remove('open');
-			});
-		});
-	</script>
-
 	<!--LOGIN-->
 	<script>
 		var bodyElement = document.body;
-
 		function openPopUp() {
 			document.getElementById('overlay').classList.add('active');
 			document.querySelector('.user-pop-up-window').classList.add('active');
 			bodyElement.style.overflow = "hidden";
 
 		}
-
 		function closePopUp() {
 			document.getElementById('overlay').classList.remove('active');
 			document.querySelector('.user-pop-up-window').classList.remove('active');
 			bodyElement.style.overflow = "visible";
 		}
-
 		document.getElementById('overlay').addEventListener('click', function (event) {
 			if (event.target === this) {
 				closePopUp();
 			}
 		});
 	</script>
-
 	<!--Скрипт мобильного меню-->
 	<script>
 		function toggleNav() {
@@ -182,52 +149,8 @@
 		}
 		document.querySelector('.overlay').addEventListener('click', toggleNav);
 	</script>
-
-	<!-- () Обрезаем длину названия () -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 19;
-			var textElements = document.querySelectorAll(".title");
-
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
-
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-		});
-	</script>
-
-
-	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
-	<!-- () Смена кнопок Вход/Выход и скрытие элементов () -->
-	<script type="text/javascript">
-		document.addEventListener("DOMContentLoaded", function () {
-			const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
-			const hideornoElements = document.querySelectorAll(".hideorno");
-
-			const isLoggedIn = document.querySelector(".user-text-name").textContent !== "";
-
-			const displayValue = isLoggedIn ? "block" : "none";
-			const buttonText = isLoggedIn ? "Выход" : "Вход";
-
-			logoutButtons.forEach((button) => {
-				button.textContent = buttonText;
-				button.addEventListener("click", function () {
-					// Здесь вы можете добавить логику выхода, если это необходимо
-				});
-			});
-
-			hideornoElements.forEach((element) => {
-				element.style.display = displayValue;
-			});
-		});
-	</script>
 	<script>
 		var isLoggedIn = false;
-
 		// Функция для закрытия приветственного сообщения
 		function closeWelcomeMessage() {
 			document.getElementById('welcome-message').classList.remove('show');
@@ -249,41 +172,6 @@
 		var checkWelcomeMessage;
 		window.onload = checkWelcomeMessage; 
 	</script>
-	<!-- () Обрезаем длину описания () 
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 105;
-			var textElements = document.querySelectorAll(".description");
-
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
-
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-		});
-	</script>
--->
-
-	<!-- () Обрезаем длину описания в фулл стори -->
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 160;
-			var textElements = document.querySelectorAll(".description-short-box h3");
-
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
-
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-		});
-	</script>
-
 	<script>
 		function changePlayer() {
 			var selectedPlayer = document.getElementById("playerSelector").value;
@@ -296,8 +184,6 @@
 			document.getElementById(selectedPlayer).style.display = "block";
 		}
 	</script>
-
-
 	<script>//Скрипт для работы кнопки вверх
 		// Показать/скрыть кнопку при прокрутке
 		window.onscroll = function () {
@@ -343,64 +229,6 @@
 	<noscript>
 		<div><img src="https://mc.yandex.ru/watch/96107019" style="position:absolute; left:-9999px;" alt="" /></div>
 	</noscript>
-	<!-- /Yandex.Metrika counter -->
-
-	<!--Скрипт лоадера страницы-->
-	<script>
-		document.addEventListener("DOMContentLoaded", function () {
-			setTimeout(function () {
-				document.querySelector('.loader-container').classList.add('hide-loader');
-			}, 500);
-		});
-	</script>
-
-	<script>
-		// Показать лоадер
-		function showLoader() {
-			document.querySelector('.loader-container').classList.remove('hide-loader')
-			document.querySelector('.loader-container').classList.add('show-loader');
-		}
-
-		// Скрыть лоадер
-		function hideLoader() {
-			document.querySelector('.loader-container').classList.remove('show-loader');
-		}
-	</script>
-	<script>
-		document.addEventListener('DOMContentLoaded', function () {
-			// Получаем все элементы с классом 'user-login' и 'user-notlogin'
-			var userLoginElements = document.querySelectorAll('.user-login');
-			var userNotLoginElements = document.querySelectorAll('.user-notlogin');
-
-			// Получаем значение переменной {profile-login}
-			var profileLoginValue = '{profile-login}';
-
-			// Обходим все элементы с классом 'user-login' и обновляем их отображение в зависимости от статуса пользователя
-			userLoginElements.forEach(function (userLoginDiv) {
-				// Проверяем, вошел ли пользователь в аккаунт
-				if (profileLoginValue.trim() !== '') {
-					// Пользователь в аккаунте, отображаем содержимое user-login
-					userLoginDiv.style.display = 'block';
-				} else {
-					// Пользователь не в аккаунте, скрываем содержимое user-login
-					userLoginDiv.style.display = 'none';
-				}
-			});
-
-			// Обходим все элементы с классом 'user-notlogin' и обновляем их отображение в зависимости от статуса пользователя
-			userNotLoginElements.forEach(function (userNotLoginDiv) {
-				// Проверяем, вошел ли пользователь в аккаунт
-				if (profileLoginValue.trim() !== '') {
-					// Пользователь в аккаунте, скрываем содержимое user-notlogin
-					userNotLoginDiv.style.display = 'none';
-				} else {
-					// Пользователь не в аккаунте, отображаем содержимое user-notlogin
-					userNotLoginDiv.style.display = 'block';
-				}
-			});
-		});
-	</script>
-
 	<script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
 	<script type="text/javascript">
 		$('.season').slick({
@@ -433,13 +261,9 @@
 						slidesToScroll: 1
 					}
 				}
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
 			]
 		});
 	</script>
-
 	<script>
 		$('.sim-slider-list').slick({
 			infinite: true,
@@ -469,36 +293,167 @@
 						slidesToScroll: 1
 					}
 				}
-				// You can unslick at a given breakpoint now by adding:
-				// settings: "unslick"
-				// instead of a settings object
 			]
 		})
 	</script>
 	<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var filterLinks = document.querySelectorAll(".button-filter");
+		document.addEventListener("DOMContentLoaded", function() {
+			const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
+			const hideornoElements = document.querySelectorAll(".hideorno");
 
-        filterLinks.forEach(function (link) {
-            link.addEventListener("mouseenter", function () {
-                $(this).siblings('.filter-downcategory').show();
-            });
+			const isLoggedIn = document.querySelector(".user-text-name").textContent !== "";
 
-            link.addEventListener("mouseleave", function () {
-                var ul = $(this).siblings('.filter-downcategory');
-                if (!ul.is(':hover')) {
-                    ul.hide();
-                }
-            });
+			const displayValue = isLoggedIn ? "block" : "none";
+			const buttonText = isLoggedIn ? "Выход" : "Вход";
 
-            link.addEventListener("click", function (event) {
-                $(this).siblings('.filter-downcategory').toggle();
-            });
-        });
-        $('.filter-downcategory').mouseleave(function () {
-            $(this).hide();
-        });
-    });
+			logoutButtons.forEach((button) => {
+				button.textContent = buttonText;
+				button.addEventListener("click", function () {
+					// Здесь вы можете добавить логику выхода, если это необходимо
+				});
+			});
+
+			hideornoElements.forEach((element) => {
+				element.style.display = displayValue;
+			});
+			var maxLength = 160;
+			var textElements = document.querySelectorAll(".description-short-box h3");
+
+			textElements.forEach(function (textElement) {
+				var originalText = textElement.textContent;
+
+				if (originalText.length > maxLength) {
+					var shortenedText = originalText.substring(0, maxLength) + "...";
+					textElement.textContent = shortenedText;
+				}
+			});
+			var filterLinks = document.querySelectorAll(".button-filter");
+
+			filterLinks.forEach(function (link) {
+				link.addEventListener("mouseenter", function () {
+					$(this).siblings('.filter-downcategory').show();
+				});
+
+				link.addEventListener("mouseleave", function () {
+					var ul = $(this).siblings('.filter-downcategory');
+					if (!ul.is(':hover')) {
+						ul.hide();
+					}
+				});
+
+				link.addEventListener("click", function (event) {
+					$(this).siblings('.filter-downcategory').toggle();
+				});
+			});
+			$('.filter-downcategory').mouseleave(function () {
+				$(this).hide();
+			});
+			var sortMain = document.querySelector('.sort-main');
+			var sortList = sortMain.querySelector('.sort');
+			var currentSort = sortMain.querySelector('.current-sort-text');
+
+			currentSort.addEventListener('click', function (event) {
+				event.stopPropagation();
+				sortList.classList.toggle('open');
+			});
+
+			document.addEventListener('click', function () {
+				sortList.classList.remove('open');
+			});
+			// Получаем ссылки на элементы по их ID
+			var watchOnlineButton = document.getElementById('watch-online');
+			var player2Button = document.getElementById('player-2');
+			var player22 = document.getElementById('player22');
+			var playerKodik = document.getElementById('player-kodik1');
+			var kodikIframe = document.getElementById("player-kodik1").contentWindow;
+		
+			// Функция для скрытия всех плееров
+			function hideAllPlayers() {
+				player22.style.display = "none";
+				playerKodik.style.display = "none";
+			}
+		
+			// Функция для отображения плеера Kodik
+			function showKodikPlayer() {
+				hideAllPlayers();
+				playerKodik.style.display = "block";
+				kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
+		
+			}
+		
+			// Функция для отображения плеера 2
+			function showPlayer2() {
+				hideAllPlayers();
+				player22.style.display = "block";
+				kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
+			}
+		
+			// Назначаем обработчики событий при нажатии на кнопки
+			watchOnlineButton.addEventListener('click', function () {
+				watchOnlineButton.classList.add('is-active');
+				player2Button.classList.remove('is-active');
+				showKodikPlayer();
+			});
+		
+			player2Button.addEventListener('click', function () {
+				player2Button.classList.add('is-active');
+				watchOnlineButton.classList.remove('is-active');
+				showPlayer2();
+			});
+						// Получаем все элементы с классом 'user-login' и 'user-notlogin'
+						var userLoginElements = document.querySelectorAll('.user-login');
+			var userNotLoginElements = document.querySelectorAll('.user-notlogin');
+
+			// Получаем значение переменной {profile-login}
+			var profileLoginValue = '{profile-login}';
+
+			// Обходим все элементы с классом 'user-login' и обновляем их отображение в зависимости от статуса пользователя
+			userLoginElements.forEach(function (userLoginDiv) {
+				// Проверяем, вошел ли пользователь в аккаунт
+				if (profileLoginValue.trim() !== '') {
+					// Пользователь в аккаунте, отображаем содержимое user-login
+					userLoginDiv.style.display = 'block';
+				} else {
+					// Пользователь не в аккаунте, скрываем содержимое user-login
+					userLoginDiv.style.display = 'none';
+				}
+			});
+
+			// Обходим все элементы с классом 'user-notlogin' и обновляем их отображение в зависимости от статуса пользователя
+			userNotLoginElements.forEach(function (userNotLoginDiv) {
+				// Проверяем, вошел ли пользователь в аккаунт
+				if (profileLoginValue.trim() !== '') {
+					// Пользователь в аккаунте, скрываем содержимое user-notlogin
+					userNotLoginDiv.style.display = 'none';
+				} else {
+					// Пользователь не в аккаунте, отображаем содержимое user-notlogin
+					userNotLoginDiv.style.display = 'block';
+				}
+			});
+			var maxLength = 19;
+			var textElements = document.querySelectorAll(".title");
+
+			textElements.forEach(function (textElement) {
+				var originalText = textElement.textContent;
+
+				if (originalText.length > maxLength) {
+					var shortenedText = originalText.substring(0, maxLength) + "...";
+					textElement.textContent = shortenedText;
+				}
+			});
+			setTimeout(function () {
+				document.querySelector('.loader-container').classList.add('hide-loader');
+			}, 500);
+			function showLoader() {
+				document.querySelector('.loader-container').classList.remove('hide-loader')
+				document.querySelector('.loader-container').classList.add('show-loader');
+			}
+
+			// Скрыть лоадер
+			function hideLoader() {
+				document.querySelector('.loader-container').classList.remove('show-loader');
+			}
+		});
 	</script>
 </body>
 
