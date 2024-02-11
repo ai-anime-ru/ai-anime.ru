@@ -190,5 +190,21 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
     });
 </script>
 
+<script>
+    $("form").on("submit", function(event) {
+    event.preventDefault();
+
+    $.ajax({
+        url: "filters.php",
+        type: "post",
+        data: $(this).serialize(),
+        success: function(response) {
+            // Выводим результаты поиска
+            $("#results").html(response);
+        }
+    });
+});
+</script>
+
 {include file="engine/modules/filters.php"}
 
