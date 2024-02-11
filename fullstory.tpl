@@ -483,6 +483,7 @@
 </script>
 
 <script>
+document.addEventListener("DOMContentLoaded", function() {
     // Получаем ссылки на элементы по их ID
     var watchOnlineButton = document.getElementById('watch-online');
     var player2Button = document.getElementById('player-2');
@@ -522,10 +523,5 @@
         watchOnlineButton.classList.remove('is-active');
         showPlayer2();
     });
+});
 </script>
-
-<script type="text/javascript">
-    var kodikIframe = document.getElementById("player-kodik1").contentWindow;
-    kodikIframe.postMessage({ key: "kodik_player_api", value: { {method: "pause" } }, '*');
-    kodikIframe.postMessage({ key: "kodik_player_api", value: { {method: "play" } }, '*');
-  </script>
