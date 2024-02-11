@@ -442,7 +442,8 @@
     });
 </script>
 
-<script> //Скрипт открытия и закрытия Списков
+<script> 
+    //Скрипт открытия и закрытия Списков
     // Функция для отображения/скрытия выпадающего меню
     function toggleDropdown() {
         var dropdown = document.getElementById("myDropdown");
@@ -471,19 +472,14 @@
     });
 </script>
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var tagsBadge = document.querySelector(".tags-badge");
+document.addEventListener("DOMContentLoaded", function() {
+    var tagsBadge = document.querySelector(".tags-badge");
         var tagsBadgeNone = document.querySelector(".tags-badge-none");
         if (!tagsBadge.children.length) {
             tagsBadgeNone.style.display = "inline";
         } else {
             tagsBadgeNone.style.display = "none";
         }
-    });
-</script>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
     // Получаем ссылки на элементы по их ID
     var watchOnlineButton = document.getElementById('watch-online');
     var player2Button = document.getElementById('player-2');
@@ -494,16 +490,6 @@ document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('load', function() {
         kodikIframe = document.getElementById("player-kodik1").contentWindow;
     });
-
-    function showKodikPlayer() {
-        if (kodikIframe) {
-            hideAllPlayers();
-            playerKodik.style.display = "block";
-            kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
-        } else {
-            console.error("kodikIframe is still undefined. The iframe might not be loaded yet.");
-        }
-    }
 
     // Функция для скрытия всех плееров
     function hideAllPlayers() {
