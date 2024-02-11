@@ -382,10 +382,10 @@
                 </div>
         
                 <div id="cinema" class="full_player tabs_box">
-                    <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
+                    <div class="player visible player-kodik1" style="display:block;">
                         <h1></h1>
                         [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
+                        [xfgiven_kodik_iframe]<iframe id="player-kodik1" class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
                             allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                     </div>
                     <div class="player2" id="player22" style="display: none;">

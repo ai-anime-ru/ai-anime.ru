@@ -296,165 +296,162 @@
 			]
 		})
 	</script>
-	<script>
-		document.addEventListener("DOMContentLoaded", function() {
-			const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
-			const hideornoElements = document.querySelectorAll(".hideorno");
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const logoutButtons = document.querySelectorAll("#logoutButtonOne, #logoutButtonTwo");
+        const hideornoElements = document.querySelectorAll(".hideorno");
+        const isLoggedIn = document.querySelector(".user-text-name").textContent.trim() !== "";
+        const displayValue = isLoggedIn ? "block" : "none";
+        const buttonText = isLoggedIn ? "Выход" : "Вход";
 
-			const isLoggedIn = document.querySelector(".user-text-name").textContent !== "";
+        logoutButtons.forEach((button) => {
+            button.textContent = buttonText;
+            button.addEventListener("click", function () {
+                // Добавьте здесь логику для выхода из аккаунта, если это необходимо
+            });
+        });
 
-			const displayValue = isLoggedIn ? "block" : "none";
-			const buttonText = isLoggedIn ? "Выход" : "Вход";
+        hideornoElements.forEach((element) => {
+            element.style.display = displayValue;
+        });
 
-			logoutButtons.forEach((button) => {
-				button.textContent = buttonText;
-				button.addEventListener("click", function () {
-					// Здесь вы можете добавить логику выхода, если это необходимо
-				});
-			});
+        const maxLength = 160;
+        const descriptionElements = document.querySelectorAll(".description-short-box h3");
 
-			hideornoElements.forEach((element) => {
-				element.style.display = displayValue;
-			});
-			var maxLength = 160;
-			var textElements = document.querySelectorAll(".description-short-box h3");
+        descriptionElements.forEach(function (element) {
+            const originalText = element.textContent.trim();
+            if (originalText.length > maxLength) {
+                const shortenedText = originalText.substring(0, maxLength) + "...";
+                element.textContent = shortenedText;
+            }
+        });
 
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
+        const filterLinks = document.querySelectorAll(".button-filter");
 
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-			var filterLinks = document.querySelectorAll(".button-filter");
+        filterLinks.forEach(function (link) {
+            link.addEventListener("mouseenter", function () {
+                this.nextElementSibling.classList.add('show');
+            });
 
-			filterLinks.forEach(function (link) {
-				link.addEventListener("mouseenter", function () {
-					$(this).siblings('.filter-downcategory').show();
-				});
+            link.addEventListener("mouseleave", function () {
+                this.nextElementSibling.classList.remove('show');
+            });
 
-				link.addEventListener("mouseleave", function () {
-					var ul = $(this).siblings('.filter-downcategory');
-					if (!ul.is(':hover')) {
-						ul.hide();
-					}
-				});
+            link.addEventListener("click", function (event) {
+                this.nextElementSibling.classList.toggle('show');
+                event.preventDefault();
+            });
+        });
 
-				link.addEventListener("click", function (event) {
-					$(this).siblings('.filter-downcategory').toggle();
-				});
-			});
-			$('.filter-downcategory').mouseleave(function () {
-				$(this).hide();
-			});
-			var sortMain = document.querySelector('.sort-main');
-			var sortList = sortMain.querySelector('.sort');
-			var currentSort = sortMain.querySelector('.current-sort-text');
+        const userLoginElements = document.querySelectorAll('.user-login');
+        const userNotLoginElements = document.querySelectorAll('.user-notlogin');
+        const profileLoginValue = '{profile-login}';
 
-			currentSort.addEventListener('click', function (event) {
-				event.stopPropagation();
-				sortList.classList.toggle('open');
-			});
+        userLoginElements.forEach(function (userLoginDiv) {
+            userLoginDiv.style.display = profileLoginValue.trim() !== '' ? 'block' : 'none';
+        });
 
-			document.addEventListener('click', function () {
-				sortList.classList.remove('open');
-			});
-			// Получаем ссылки на элементы по их ID
-			var watchOnlineButton = document.getElementById('watch-online');
-			var player2Button = document.getElementById('player-2');
-			var player22 = document.getElementById('player22');
-			var playerKodik = document.getElementById('player-kodik1');
-			var kodikIframe = document.getElementById("player-kodik1").contentWindow;
-		
-			// Функция для скрытия всех плееров
-			function hideAllPlayers() {
-				player22.style.display = "none";
-				playerKodik.style.display = "none";
-			}
-		
-			// Функция для отображения плеера Kodik
-			function showKodikPlayer() {
-				hideAllPlayers();
-				playerKodik.style.display = "block";
-				kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
-		
-			}
-		
-			// Функция для отображения плеера 2
-			function showPlayer2() {
-				hideAllPlayers();
-				player22.style.display = "block";
-				kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
-			}
-		
-			// Назначаем обработчики событий при нажатии на кнопки
-			watchOnlineButton.addEventListener('click', function () {
-				watchOnlineButton.classList.add('is-active');
-				player2Button.classList.remove('is-active');
-				showKodikPlayer();
-			});
-		
-			player2Button.addEventListener('click', function () {
-				player2Button.classList.add('is-active');
-				watchOnlineButton.classList.remove('is-active');
-				showPlayer2();
-			});
-						// Получаем все элементы с классом 'user-login' и 'user-notlogin'
-						var userLoginElements = document.querySelectorAll('.user-login');
-			var userNotLoginElements = document.querySelectorAll('.user-notlogin');
+        userNotLoginElements.forEach(function (userNotLoginDiv) {
+            userNotLoginDiv.style.display = profileLoginValue.trim() === '' ? 'block' : 'none';
+        });
 
-			// Получаем значение переменной {profile-login}
-			var profileLoginValue = '{profile-login}';
+        const titleMaxLength = 19;
+        const titleElements = document.querySelectorAll(".title");
 
-			// Обходим все элементы с классом 'user-login' и обновляем их отображение в зависимости от статуса пользователя
-			userLoginElements.forEach(function (userLoginDiv) {
-				// Проверяем, вошел ли пользователь в аккаунт
-				if (profileLoginValue.trim() !== '') {
-					// Пользователь в аккаунте, отображаем содержимое user-login
-					userLoginDiv.style.display = 'block';
-				} else {
-					// Пользователь не в аккаунте, скрываем содержимое user-login
-					userLoginDiv.style.display = 'none';
-				}
-			});
+        titleElements.forEach(function (titleElement) {
+            const originalText = titleElement.textContent.trim();
 
-			// Обходим все элементы с классом 'user-notlogin' и обновляем их отображение в зависимости от статуса пользователя
-			userNotLoginElements.forEach(function (userNotLoginDiv) {
-				// Проверяем, вошел ли пользователь в аккаунт
-				if (profileLoginValue.trim() !== '') {
-					// Пользователь в аккаунте, скрываем содержимое user-notlogin
-					userNotLoginDiv.style.display = 'none';
-				} else {
-					// Пользователь не в аккаунте, отображаем содержимое user-notlogin
-					userNotLoginDiv.style.display = 'block';
-				}
-			});
-			var maxLength = 19;
-			var textElements = document.querySelectorAll(".title");
+            if (originalText.length > titleMaxLength) {
+                const shortenedText = originalText.substring(0, titleMaxLength) + "...";
+                titleElement.textContent = shortenedText;
+            }
+        });
 
-			textElements.forEach(function (textElement) {
-				var originalText = textElement.textContent;
+        setTimeout(function () {
+            document.querySelector('.loader-container').classList.add('hide-loader');
+        }, 500);
 
-				if (originalText.length > maxLength) {
-					var shortenedText = originalText.substring(0, maxLength) + "...";
-					textElement.textContent = shortenedText;
-				}
-			});
-			setTimeout(function () {
-				document.querySelector('.loader-container').classList.add('hide-loader');
-			}, 500);
-			function showLoader() {
-				document.querySelector('.loader-container').classList.remove('hide-loader')
-				document.querySelector('.loader-container').classList.add('show-loader');
-			}
+        function showLoader() {
+            document.querySelector('.loader-container').classList.add('show-loader');
+        }
 
-			// Скрыть лоадер
-			function hideLoader() {
-				document.querySelector('.loader-container').classList.remove('show-loader');
-			}
-		});
-	</script>
+        function hideLoader() {
+            document.querySelector('.loader-container').classList.remove('show-loader');
+        }
+
+        // Проверяем наличие элемента iframe перед получением его содержимого
+        const playerKodik = document.getElementById('player-kodik1');
+        let kodikIframe;
+        if (playerKodik) {
+            kodikIframe = playerKodik.contentWindow;
+        }
+
+        function hideAllPlayers() {
+            const player22 = document.getElementById('player22');
+            if (player22) {
+                player22.style.display = "none";
+            }
+            if (playerKodik) {
+                playerKodik.style.display = "none";
+            }
+        }
+
+        function showKodikPlayer() {
+            hideAllPlayers();
+            if (playerKodik) {
+                playerKodik.style.display = "block";
+                kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
+            }
+        }
+
+        function showPlayer2() {
+            hideAllPlayers();
+            const player22 = document.getElementById('player22');
+            if (player22) {
+                player22.style.display = "block";
+                if (kodikIframe) {
+                    kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
+                }
+            }
+        }
+
+        const watchOnlineButton = document.getElementById('watch-online');
+        const player2Button = document.getElementById('player-2');
+
+        if (watchOnlineButton && player2Button) {
+            watchOnlineButton.addEventListener('click', function () {
+                watchOnlineButton.classList.add('is-active');
+                player2Button.classList.remove('is-active');
+                showKodikPlayer();
+            });
+
+            player2Button.addEventListener('click', function () {
+                player2Button.classList.add('is-active');
+                watchOnlineButton.classList.remove('is-active');
+                showPlayer2();
+            });
+        }
+
+        const sortMain = document.querySelector('.sort-main');
+        const sortList = sortMain.querySelector('.sort');
+        const currentSort = sortMain.querySelector('.current-sort-text');
+
+        if (currentSort) {
+            currentSort.addEventListener('click', function (event) {
+                event.stopPropagation();
+                sortList.classList.toggle('open');
+            });
+
+            document.addEventListener('click', function () {
+                sortList.classList.remove('open');
+            });
+        }
+
+        $('.filter-downcategory').mouseleave(function () {
+            $(this).hide();
+        });
+    });
+</script>
 </body>
 
 </html>
