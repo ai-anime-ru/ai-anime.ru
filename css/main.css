@@ -65,6 +65,10 @@ select {
     padding-left: 10px;
 }
 
+.hide-block {
+    display: none;
+}
+
 
 /*--------- TEST SORT ----------*/
 

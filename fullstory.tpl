@@ -377,40 +377,19 @@
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">
-                    <span id="watch-online" class="is-active">Смотреть онлайн</span>
-                    <span id="player-2" class="">ПЛЕЕР 2</span>
+                    <span id="watch-online" value="player-kodik" class="is-active">Смотреть онлайн</span>
+                    <span id="player-2" value="player-aianime" class="">ПЛЕЕР 2</span>
                 </div>
-                <script>
-                    // Получаем ссылки на элементы по их ID
-                    var watchonline = document.getElementById('watch-online');
-                    var player2 = document.getElementById('player-2');
-
-                    // Назначаем обработчики событий при нажатии на кнопки
-                    watchonline.addEventListener('click', function () {
-                        player2.classList.remove('is-active');
-                        watchonline.classList.add('is-active');
-                    });
-
-                    player2.addEventListener('click', function () {
-                        player2.classList.add('is-active');
-                        watchonline.classList.remove('is-active');
-                    });
-                </script>
-
-                <!--
-            <label for="playerSelector"></label>
-            <select id="playerSelector" onchange="changePlayer()">
-                <option value="player-kodik1">Плеер 1</option>
-                <option value="player-kodik2">Плеер 2</option>
-            </select>
-            -->
+        
                 <div id="cinema" class="full_player tabs_box">
-
                     <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                         <h1></h1>
                         [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
                         [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
                             allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                    </div>
+                    <div class="player2" id="player22" style="display: none;">
+                        {include file="player/player.tpl"}
                     </div>
                     <div class="player-info">
                         <ul class="in-voice-acting">
@@ -419,7 +398,7 @@
                                 <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
                                 [xfnotgiven_kodik_translation]<span>Перевод: </span>
                                 <a>отсутствует</a>[/xfnotgiven_kodik_translation]
-                            </lI>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -502,3 +481,51 @@
         }
     });
 </script>
+
+<script>
+    // Получаем ссылки на элементы по их ID
+    var watchOnlineButton = document.getElementById('watch-online');
+    var player2Button = document.getElementById('player-2');
+    var player22 = document.getElementById('player22');
+    var playerKodik = document.getElementById('player-kodik1');
+    var kodikIframe = document.getElementById("player-kodik1").contentWindow;
+
+    // Функция для скрытия всех плееров
+    function hideAllPlayers() {
+        player22.style.display = "none";
+        playerKodik.style.display = "none";
+    }
+
+    // Функция для отображения плеера Kodik
+    function showKodikPlayer() {
+        hideAllPlayers();
+        playerKodik.style.display = "block";
+        kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
+    }
+
+    // Функция для отображения плеера 2
+    function showPlayer2() {
+        hideAllPlayers();
+        player22.style.display = "block";
+        kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
+    }
+
+    // Назначаем обработчики событий при нажатии на кнопки
+    watchOnlineButton.addEventListener('click', function () {
+        watchOnlineButton.classList.add('is-active');
+        player2Button.classList.remove('is-active');
+        showKodikPlayer();
+    });
+
+    player2Button.addEventListener('click', function () {
+        player2Button.classList.add('is-active');
+        watchOnlineButton.classList.remove('is-active');
+        showPlayer2();
+    });
+</script>
+
+<script type="text/javascript">
+    var kodikIframe = document.getElementById("player-kodik1").contentWindow;
+    kodikIframe.postMessage({ key: "kodik_player_api", value: { {method: "pause" } }, '*');
+    kodikIframe.postMessage({ key: "kodik_player_api", value: { {method: "play" } }, '*');
+  </script>
