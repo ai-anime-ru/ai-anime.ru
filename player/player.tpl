@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <video id="player" controls data-plyr-config='{ "quality": { "default": 720, "options": [360, 480, 720] } }'>
+    <video id="player-plyr" controls data-plyr-config='{ "quality": { "default": 720, "options": [360, 480, 720] } }'>
         <source
             src="//cloud.kodik-storage.com/useruploads/dffc3dde-b8fc-4de9-ba3e-172b01dd58fb/c6187962925ccd600668d37420b95899:2024021111/360.mp4"
             type="video/mp4" size="360">
@@ -31,7 +31,7 @@
             type="video/mp4" size="720">
     </video>
     <script>
-        const player = new Plyr('#player');
+        const player = new Plyr('#player-plyr');
     </script>
 </body>
 </html>
