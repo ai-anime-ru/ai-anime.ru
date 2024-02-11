@@ -160,7 +160,14 @@ searchButton.addEventListener('click', function () {
 <script>
     document.addEventListener('DOMContentLoaded', function () {
         const checkboxes = document.querySelectorAll('.checkboxes input[type="checkbox"]');
-        
+        const titleFilterSelects = document.querySelectorAll('.title-filter-select');
+        const originalTexts = [];
+
+        // Записываем оригинальные тексты в массив
+        titleFilterSelects.forEach(function (titleFilterSelect) {
+            originalTexts.push(titleFilterSelect.textContent.trim());
+        });
+
         checkboxes.forEach(function (checkbox) {
             checkbox.addEventListener('input', function () {
                 updateTitleFilter(checkbox);
@@ -174,12 +181,16 @@ searchButton.addEventListener('click', function () {
             });
 
             const titleFilterSelect = checkbox.closest('.filter-group').querySelector('.title-filter-select');
-            const originalText = titleFilterSelect.dataset.defaultText;
 
-            if (checkedValues.length > 0) {
-                titleFilterSelect.textContent = 'Выбрано: ' + checkedValues.join(', ');
+            // Индекс текущего title-filter-select в массиве
+            const index = Array.from(titleFilterSelects).indexOf(titleFilterSelect);
+
+            // Проверяем, есть ли хотя бы один выбранный чекбокс в текущей группе
+            if (checkedCheckboxes.length > 0) {
+                titleFilterSelect.textContent = checkedValues.join(', ');
             } else {
-                titleFilterSelect.textContent = originalText;
+                // Восстанавливаем оригинальный текст из массива
+                titleFilterSelect.textContent = originalTexts[index];
             }
         }
     });
