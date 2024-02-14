@@ -470,7 +470,7 @@ ul li {
 
 .privacy-policy {
     position: relative;
-    padding: 30px;
+    padding: 50px;
     background-color: var(--main);
     color: var(--second-text);
     border-radius: 15px;
