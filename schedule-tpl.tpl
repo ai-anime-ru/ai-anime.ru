@@ -1,4 +1,4 @@
-<div class="news-container-chapter">
+<div>
     <a href="{full-link}">
         <div class="box">
             <article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
@@ -20,10 +20,15 @@
                         <div>
                             <h2 class="title">{title}</h2>
                             <div class="description">
-                                [xfgiven_kodik_last_episode]<span class="badge">Серий:
-                                    [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>[/xfgiven_kodik_last_episode]
-                                [xfnotgiven_kodik_last_episode]<span class="badge">Серий:
-                                    ?</span>[/xfnotgiven_kodik_last_episode]
+                                <span class="badge">Серий:
+                                    [xfvalue_kodik_last_episode]
+                                    [xfnotgiven_kodik_last_episode]
+                                        [xfvalue_shikimori_episodes_aired]
+                                        [xfnotgiven_shikimori_episodes_aired]
+                                            ?
+                                        [/xfnotgiven_shikimori_episodes_aired]
+                                    [/xfnotgiven_kodik_last_episode]
+                                </span>
                                 <div class="dot"></div>
                                 <div class="release-date">
                                     [xfgiven_kodik_premiere_world]<p>
@@ -43,43 +48,24 @@
                             </ion-icon>
                         </div>
                         [/add-favorites]
+
                         [del-favorites]
                         <div class="bookmark-outline-remove">
-                            <ion-icon class="remove-book" title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon>
-                            <ion-icon class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
+                            <ion-icon class="remove-book" title="Удалить из закладок" name="checkmark-circle-outline">
+                            </ion-icon>
+                            <ion-icon class="remove-book" title="Удалить из закладок" name="close-circle-outline">
+                            </ion-icon>
                         </div>
                         [/del-favorites]
                     </div>
                 </div>
                 <div class="news-block-hidden">
                     <div class="news-block">
-                        <a href="{full-link}" class="title-text">
+                        <a class="title-text">
                             {title}
                         </a>
-                        <div class="description-short-box">
-                            <div class="description-short"><a>Краткое описание:</a></div>
-                            <h3>
-                                [xfvalue_kodik_plot]
-                                [xfnotgiven_kodik_plot]
-                                [xfvalue_shikimori_plot]
-                                [xfnotgiven_shikimori_plot]
-                                [/xfnotgiven_shikimori_plot]
-                                [/xfnotgiven_kodik_plot]
-                            </h3>
-                            <a href="{full-link}">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
                     </div>
                 </div>
-                <button class="remove-fav-btn">
-                [del-favorites]
-                    <div class="remove-fav-btn-content">
-                        <a>Удалить из закладок</a>
-                        <div class="icon"><ion-icon name="close-circle-outline"></ion-icon></div>
-                    </div>
-                [/del-favorites]
-                </button>
             </article>
         </div>
     </a>

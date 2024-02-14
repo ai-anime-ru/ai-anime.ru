@@ -1,6 +1,13 @@
 <main class="main fx-col clearfix">
-    <div class="top-block-main"></div>
-    <!--{include file="/modules/slider-main.tpl"}-->
+    <div class="top-block-main">
+        <div class="slider-content">
+            <img src="https://ai-anime.ru/uploads/head-img.webp" alt="Описание изображения">
+        </div>
+        <div class="slider-content">
+            
+        </div>
+    </div>
+
     <div class="top-menu-block">
         {catmenu}
     </div>

@@ -47,13 +47,15 @@
 							<div class="text color-in-header-menu">Закладки</div>
 						</a>
 					</li>
+					[admin-link]
 					<li class="hideorno">
 						<a href="/index.php?do=stats">
 							<div class="icon color-in-header-menu"><ion-icon name="stats-chart-outline"></ion-icon>
 							</div>
-							<div class="text color-in-header-menu">Статистика</div>
+							<div class="text color-in-header-menu">Тестовая страница</div>
 						</a>
 					</li>
+					[/admin-link]
 					<div class="line user-login"></div>
 					[group=5]
 					<li>

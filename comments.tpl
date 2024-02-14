@@ -8,14 +8,16 @@
 		</div>
 	</div>
 	<div class="comm-right">
-		<div class="comm-one clearfix">
-			<span class="comm-author" title="Просмотреть профиль">{author}</span>
-			<!--<div class="user-group">
+		<div>
+			<div class="comm-one clearfix">
+				<span class="comm-author" title="Просмотреть профиль">{author}</span>
+				<!--<div class="user-group">
 				<p>{group}</p>
 			</div>-->
-		</div>
-		<div class="comm-two clearfix full-text">
-			{comment}
+			</div>
+			<div class="comm-two clearfix full-text">
+				{comment}
+			</div>
 		</div>
 		[signature]<div class="signature clearfix">{signature}</div>[/signature]
 		<ul class="comm-three icon-l clearfix">

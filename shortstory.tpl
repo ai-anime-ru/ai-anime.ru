@@ -20,10 +20,15 @@
                         <div>
                             <h2 class="title">{title}</h2>
                             <div class="description">
-                                [xfgiven_kodik_last_episode]<span class="badge">Серий:
-                                    [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]</span>[/xfgiven_kodik_last_episode]
-                                [xfnotgiven_kodik_last_episode]<span class="badge">Серий:
-                                    ?</span>[/xfnotgiven_kodik_last_episode]
+                                <span class="badge">Серий:
+                                    [xfvalue_kodik_last_episode]
+                                    [xfnotgiven_kodik_last_episode]
+                                        [xfvalue_shikimori_episodes_aired]
+                                        [xfnotgiven_shikimori_episodes_aired]
+                                            ?
+                                        [/xfnotgiven_shikimori_episodes_aired]
+                                    [/xfnotgiven_kodik_last_episode]
+                                </span>
                                 <div class="dot"></div>
                                 <div class="release-date">
                                     [xfgiven_kodik_premiere_world]<p>

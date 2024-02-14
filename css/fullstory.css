@@ -226,13 +226,13 @@
 
 .background-fullstory img {
     height: 500px;
-    width: 1200px;
+    width: 110%;
     opacity: 0.5;
-    filter: blur(20px);
+    filter: blur(40px);
 }
 
 .background-fullstory {
-    width: 1200px;
+    width: 100%;
     height: 443px;
     position: absolute;
     top: 0;
@@ -257,6 +257,10 @@
     padding: 0.25rem 0.5rem;
     margin: 1px;
     margin-left: 5px;
+}
+
+.tags-badge a {
+    color: var(--btn-active-font-clr);
 }
 
 .anime-information {
@@ -454,7 +458,7 @@
     padding: 15px;
 }
 
-.description-full-box h1 {
+.description-full-box .description-title{
     font-size: 17px;
     font-weight: 400;
     grid-column: 1/-1;
@@ -474,7 +478,6 @@
     color: #dfdfdf;
     border-radius: 2px;
     grid-column: 1/-1;
-    padding-bottom: 15px;
     font-family: Arial, sans-serif;
     font-size: 1em;
     text-align: center;
@@ -696,44 +699,19 @@ span.sim-dot {
     color: var(--red-1);
 }
 
-/*----------  СОВМЕСТНЫЙ ПРОСМОТР ----------*/
-
-.rooms-invite {
-    background-color: var(--clr) !important;
-    border-radius: 15px !important;
-    border: 1px solid #000 !important;
-    padding: 10px !important;
-    transition: 0.3s;
-}
-
-.room-invite__title {
-    color: white !important;
-    font-weight: normal !important;
-    margin-bottom: 2px;
-    transition: 0.3s;
-}
-
-.room-invite__desc {
-    color: #ddd !important;
-    transition: 0.3s;
-}
-
-.rooms-invite:hover {
-    background-color: #2b2b2b !important;
-    border: 1px solid var(--active) !important;
-}
-
 
 /*------------- ВРЕМЯ ДО ВЫХОДА -------------*/
 
 .pretimer {
+    position: relative;
     display: flex;
     align-items: center;
     text-align: center;
     background: var(--clr) !important;
     border: none !important;
-    margin-bottom: 0px !important;
-    border-radius: 0 0 15px 15px;
+    margin-bottom: 0px;
+    left: -20px;
+    width: 920px;
     padding: 20px !important;
 }
 

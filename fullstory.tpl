@@ -203,7 +203,6 @@
             </div>
             <div class="watch-pannel">
                 [edit]<i title="Редактировать" class="edit-news">Редактировать</i>[/edit]
-                <a class="watch-online">Смотреть онлайн</a>
                 <div class="dropdown-watch-online">
                     <button onclick="toggleDropdown()" class="dropbtn-watch-online">+ Добавить в список</button>
                     <div id="myDropdown" class="dropdown-content-watch-online">
@@ -215,14 +214,28 @@
                         <button>Пересматриваю</button>
                     </div>
                 </div>
+                <a class="watch-online rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
+                data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">Совместный просмотр</a>
             </div>
             <div class="bottom-items">
                 <div class="series">
                     <span class="badge">
                         <a>Серий:
-                            [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]
+                            [xfvalue_kodik_last_episode]
+                            [xfnotgiven_kodik_last_episode]
+                                [xfvalue_shikimori_episodes_aired]
+                                [xfnotgiven_shikimori_episodes_aired]
+                                    ?
+                                [/xfnotgiven_shikimori_episodes_aired]
+                            [/xfnotgiven_kodik_last_episode]
                             из
-                            [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
+                            [xfvalue_kodik_episodes_total]
+                            [xfnotgiven_kodik_episodes_total]
+                                [xfvalue_shikimori_episodes]
+                                [xfnotgiven_shikimori_episodes]
+                                    ?
+                                [/xfnotgiven_shikimori_episodes]
+                            [/xfnotgiven_kodik_episodes_total]</a>
                     </span>
                 </div>
                 <div class="dot user-login"></div>
@@ -323,62 +336,14 @@
                     document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
                 }, 1000);
             </script>
-
         </div>
         [/xfgiven_next_episode_date]
 
-
-        {include file="relatednews.tpl"}
-
-        <div class="description-full-box">
-            <div>
-                <h1>Сюжет аниме «{title}»</h1>
-                <div class="description-full-text">
-                    <p>
-                        [xfvalue_kodik_plot]
-                        [xfnotgiven_kodik_plot]
-                        [xfvalue_shikimori_plot]
-                        [xfnotgiven_shikimori_plot]
-                        Нам не удалось найти описание для этого аниме!
-                        [/xfnotgiven_shikimori_plot]
-                        [/xfnotgiven_kodik_plot]
-                    </p>
-                </div>
-            </div>
-            [xfgiven_kadr_1]
-            <div class="sim-slider">
-                <div class="slider-title">
-                    <a>Скриншоты:</a>
-                </div>
-                <ul class="sim-slider-list">
-                    <img src="[xfvalue_kadr_1]" alt="0">
-                    <img src="[xfvalue_kadr_2]" alt="1">
-                    <img src="[xfvalue_kadr_3]" alt="2">
-                    <img src="[xfvalue_kadr_4]" alt="3">
-                    <img src="[xfvalue_kadr_5]" alt="4">
-                </ul>
-                [/xfgiven_kadr_1]
-            </div>
-            [xfgiven_kodik_iframe]
-        </div>
-        <div class="rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
-            <div class="room-invite__image" id="room-poster">
-                [xfvalue_poster]
-            </div>
-            <div>
-                <div class="room-invite__title">Совместный просмотр</div>
-                <div class="room-invite__desc">Смотри это и любое другое аниме вместе с друзьями<span>, с помощью
-                        функции
-                        совместного просмотра</span></div>
-            </div>
-        </div>
-        [/xfgiven_kodik_iframe]
         <div class="box-player">
             <div class="full-player-box">
                 <div class="box-player-title-name">
                     <span id="watch-online" value="player-kodik" class="is-active">Смотреть онлайн</span>
-                    <span id="player-2" value="player-aianime" class="">ПЛЕЕР 2</span>
+                    <span id="player-2" value="player-aianime" class="">В разработке</span>
                 </div>
         
                 <div id="cinema" class="full_player tabs_box">
@@ -404,7 +369,27 @@
                 </div>
             </div>
         </div>
-        [xfgiven_shikimori_related]
+
+
+        {include file="relatednews.tpl"}
+
+        <div class="description-full-box">
+            <div>
+                <h1 class="description-title">Сюжет аниме «{title}»</h1>
+                <div class="description-full-text">
+                    <p>
+                        [xfvalue_kodik_plot]
+                        [xfnotgiven_kodik_plot]
+                        [xfvalue_shikimori_plot]
+                        [xfnotgiven_shikimori_plot]
+                        Нам не удалось найти описание для этого аниме!
+                        [/xfnotgiven_shikimori_plot]
+                        [/xfnotgiven_kodik_plot]
+                    </p>
+                </div>
+            </div>
+
+            [xfgiven_shikimori_related]
         <div class="franchise-ai">
             <div class="season-title">
                 <h1>Франшиза</h1>
@@ -414,6 +399,35 @@
             </div>
         </div>
         [/xfgiven_shikimori_related]
+            {*
+            [xfgiven_kadr_1]
+            <div class="sim-slider">
+                <div class="slider-title">
+                    <a>Скриншоты:</a>
+                </div>
+                <ul class="sim-slider-list">
+                    <img src="[xfvalue_kadr_1]" alt="0">
+                    <img src="[xfvalue_kadr_2]" alt="1">
+                    <img src="[xfvalue_kadr_3]" alt="2">
+                    <img src="[xfvalue_kadr_4]" alt="3">
+                    <img src="[xfvalue_kadr_5]" alt="4">
+                </ul>
+                [/xfgiven_kadr_1]
+            </div>
+            *}
+        </div>
+        <div class="rooms-invite" style="display: none;" data-news_id="{news-id}" data-news_title="{title}"
+            data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
+            <div class="room-invite__image" id="room-poster">
+                [xfvalue_poster]
+            </div>
+            <div>
+                <div class="room-invite__title">Совместный просмотр</div>
+                <div class="room-invite__desc">Смотри это и любое другое аниме вместе с друзьями<span>, с помощью
+                        функции
+                        совместного просмотра</span></div>
+            </div>
+        </div>
 
         {addcomments}
         {comments}

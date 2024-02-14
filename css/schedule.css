@@ -342,7 +342,7 @@
 
 .schedule {
     position: relative;
-    width: 1200px;
+    width: auto;
     height: auto;
     font-size: 14px;
     line-height: 18px;

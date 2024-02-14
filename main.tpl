@@ -21,13 +21,12 @@
 	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
 	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
 	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="./templates/ai-anime/player/player.css">
-    <script src="./templates/ai-anime/player/player.js"></script>
+	<script src="./templates/ai-anime/player/player.js"></script>
 	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -415,22 +414,20 @@
 					settings: {
 						slidesToShow: 4,
 						slidesToScroll: 4,
-						infinite: true,
-						dots: true
 					}
 				},
 				{
 					breakpoint: 600,
 					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
+						slidesToShow: 4,
+						slidesToScroll: 4
 					}
 				},
 				{
 					breakpoint: 480,
-					unslick: {
-						slidesToShow: 1,
-						slidesToScroll: 1
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
 					}
 				}
 				// You can unslick at a given breakpoint now by adding:
@@ -439,7 +436,19 @@
 			]
 		});
 	</script>
+	<!--
+	<script>
+		$('.top-block-main').slick({
+		dots: false,
+		infinite: true,
+		speed: 500,
+		fade: true,
+		cssEase: 'linear'
+		});
+	</script>
+-->
 
+	<!--
 	<script>
 		$('.sim-slider-list').slick({
 			infinite: true,
@@ -475,30 +484,32 @@
 			]
 		})
 	</script>
+	-->
+
 	<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        var filterLinks = document.querySelectorAll(".button-filter");
+		document.addEventListener("DOMContentLoaded", function () {
+			var filterLinks = document.querySelectorAll(".button-filter");
 
-        filterLinks.forEach(function (link) {
-            link.addEventListener("mouseenter", function () {
-                $(this).siblings('.filter-downcategory').show();
-            });
+			filterLinks.forEach(function (link) {
+				link.addEventListener("mouseenter", function () {
+					$(this).siblings('.filter-downcategory').show();
+				});
 
-            link.addEventListener("mouseleave", function () {
-                var ul = $(this).siblings('.filter-downcategory');
-                if (!ul.is(':hover')) {
-                    ul.hide();
-                }
-            });
+				link.addEventListener("mouseleave", function () {
+					var ul = $(this).siblings('.filter-downcategory');
+					if (!ul.is(':hover')) {
+						ul.hide();
+					}
+				});
 
-            link.addEventListener("click", function (event) {
-                $(this).siblings('.filter-downcategory').toggle();
-            });
-        });
-        $('.filter-downcategory').mouseleave(function () {
-            $(this).hide();
-        });
-    });
+				link.addEventListener("click", function (event) {
+					$(this).siblings('.filter-downcategory').toggle();
+				});
+			});
+			$('.filter-downcategory').mouseleave(function () {
+				$(this).hide();
+			});
+		});
 	</script>
 </body>
 
