@@ -475,6 +475,8 @@ ul li {
     color: var(--second-text);
     border-radius: 15px;
     line-height: 20px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 .privacy-policy-h1 {
@@ -2258,13 +2260,13 @@ footer {
 
 .rules-page {
     position: relative;
-    margin: 90px auto;
-    width: 800px;
+    padding: 50px;
     background-color: var(--main);
-    color: rgb(223, 223, 223);
-    padding: 100px 100px 100px 100px;
+    color: var(--second-text);
     border-radius: 15px;
     line-height: 20px;
+    width: 900px;
+    margin: 0 auto;
 }
 
 /*------------ USER INFO -------------*/
