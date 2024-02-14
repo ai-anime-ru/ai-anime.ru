@@ -1,5 +1,4 @@
 <div class="pm-container">
-	<article class="box story">
 		<div class="box_in">
 			<h1 class="title h1">Личные сообщения</h1>
 			<div class="pm-box">
@@ -117,5 +116,4 @@
 			</ul>
 		</div>
 		[/readpm]
-	</article>
 </div>
