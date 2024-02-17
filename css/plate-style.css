@@ -253,3 +253,60 @@
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+.mobile-title {
+    display: none;
+}
+
+@media (max-width: 480px) {
+
+    /*----------- MAIN PLATE----------*/
+
+    .poster-box {
+        width: 117px;
+        height: 175px;
+    }
+
+    .poster-box img {
+        width: 117px;
+        height: 176px;
+    }
+
+    .poster-badge {
+        margin: 5px;
+    }
+
+    .main-container .box {
+        height: 176px;
+        width: 117px;
+        margin-bottom: 7px;
+    }
+
+    .items_news {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .title-overlay,
+    .title-bookmarks-icon,
+    .play-button {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        width: 117px;
+        font-size: 0.8em;
+        font-weight: normal;
+        margin-bottom: 15px;
+    }
+
+    .main-container,
+    .top-block-main,
+    .top-block-main img,
+    .full-story-container {
+        border-radius: 0;
+    }
+}

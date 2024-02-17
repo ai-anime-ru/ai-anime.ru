@@ -1,3 +1,4 @@
+{css_link}
 <div class="room-container">
    <div class="row">
       <div class="col s12 l9">
@@ -12,9 +13,6 @@
          <div class="room" id="room-data" data-id="{id}" data-leader="{leader}" data-shikimori_id="{shikimori_id}"
             data-mdl_id="{mdl_id}">
             <div class="room-anime room--visible">
-               <div class="room-anime__img">
-                  <img src="https://ai-anime.ru/uploads/none.png" alt="Постер">
-               </div>
                <div class="room-anime__wrapper">
                   <a href="#" class="room-anime__name">{title}</a>
                   <div class="room-anime__info">Создатель комнаты: <a href="/user/{leader}/">{leader}</a></div>

@@ -24,7 +24,7 @@
             <a href="/index.php?do=schedule">Расписание</a>
         </li>
         <li>
-            <a href="/index.php?do=rooms">Совместный просмотр</a>
+            <a href="/rooms/">Совместный просмотр</a>
         </li>
         <!--Доп кнопки-->
     </ul>

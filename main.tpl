@@ -10,27 +10,29 @@
 	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, width=device-width">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="default">
-	<link href="./templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
-	<link rel="shortcut icon" href="./templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" href="./templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="./templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="./templates/ai-anime/images/logo.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="./templates/ai-anime/images/logo.png">
-	<link href="./templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
-	<link href="./templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
+	<link href="//ai-anime.ru/templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
+	<link href="//ai-anime.ru/engine/mrdeath/aaparser/css/rooms.css" rel="stylesheet" type="text/css">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
-	<link href="./templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="./templates/ai-anime/player/player.css">
-	<script src="./templates/ai-anime/player/player.js"></script>
-	<script type="module" src="./ionicons/dist/ionicons/ionicons.esm.js"></script>
+	<link href="//ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="//ai-anime.ru/templates/ai-anime/player/player.css">
+	<script src="//ai-anime.ru/templates/ai-anime/player/player.js"></script>
+	<script src="//ai-anime.ru/engine/mrdeath/aaparser/js/rooms.js"></script>
+	<script type="module" src="//ai-anime.ru/ionicons/dist/ionicons/ionicons.esm.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
 	<script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-	<script src="./templates/ai-anime/js/moment.min.js"></script>
+	<script src="//ai-anime.ru/templates/ai-anime/js/moment.min.js"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
@@ -82,7 +84,7 @@
 	<div class="welcome-message" id="welcome-message">
 		<div class="welcome-message-content">
 			<div class="welcome-message-text">
-				<p>Перед использованием сайта, прочтите </p><a href="/privacy-policy.html"> политику
+				<p>Перед использованием сайта, прочтите </p><a href="/index.php?do=static&page=privacy-policy"> политику
 					конфиденцальности</a>
 				<p>и</p><a href="/?do=rules">правила</a>
 				<p>(✿◡‿◡)</p>
@@ -248,11 +250,11 @@
 		var checkWelcomeMessage;
 		window.onload = checkWelcomeMessage; 
 	</script>
-	<!-- () Обрезаем длину описания () 
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
-			var maxLength = 105;
-			var textElements = document.querySelectorAll(".description");
+			var maxLength = 14;
+			var textElements = document.querySelectorAll(".mobile-title");
 
 			textElements.forEach(function (textElement) {
 				var originalText = textElement.textContent;
@@ -264,7 +266,22 @@
 			});
 		});
 	</script>
--->
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			var maxLength = 39;
+			var textElements = document.querySelectorAll(".season-main .news-block .title-text");
+
+			textElements.forEach(function (textElement) {
+				var originalText = textElement.textContent;
+
+				if (originalText.length > maxLength) {
+					var shortenedText = originalText.substring(0, maxLength) + "...";
+					textElement.textContent = shortenedText;
+				}
+			});
+		});
+	</script>
 
 	<!-- () Обрезаем длину описания в фулл стори -->
 	<script>
@@ -400,9 +417,9 @@
 		});
 	</script>
 
-	<script type="text/javascript" src="./templates/ai-anime/modules/slick/slick/slick.js"></script>
+	<script type="text/javascript" src="//ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.js"></script>
 	<script type="text/javascript">
-		$('.season').slick({
+		$('.fullstory-season .season').slick({
 			dots: true,
 			infinite: false,
 			speed: 300,
@@ -436,18 +453,52 @@
 			]
 		});
 	</script>
+
+	<script type="text/javascript">
+		$('.season-main .season').slick({
+			dots: true,
+			infinite: false,
+			speed: 300,
+			slidesToShow: 5,
+			slidesToScroll: 5,
+			responsive: [
+				{
+					breakpoint: 1323,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 4
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3
+					}
+				}
+				// You can unslick at a given breakpoint now by adding:
+				// settings: "unslick"
+				// instead of a settings object
+			]
+		});
+	</script>
+
 	<!--
 	<script>
 		$('.top-block-main').slick({
-		dots: false,
-		infinite: true,
-		speed: 500,
-		fade: true,
-		cssEase: 'linear'
-		});
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1
+			});
 	</script>
--->
-
+	-->
 	<!--
 	<script>
 		$('.sim-slider-list').slick({

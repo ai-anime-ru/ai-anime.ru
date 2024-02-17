@@ -1,89 +1,102 @@
-<div id="mySidebar" class="sidebar-mobile-menu" style="width: 0px;">
-  <div class="background-top"></div>
-  <span href="javascript:void(0)" class="closebtn" onclick="toggleNav()"><ion-icon
-      name="close-outline"></ion-icon></span>
-
-  <div class="mobile-work">
-    <p>Мобильная версия в стадии разработки.<br>Доступен не весь функционал.</p>
-  </div>
-
-  <div class="mobile-menu">
-    <div class="main-menu-list">
-      <ul>
-        <li>
-          <a href="/">
-            <div class="icon"><ion-icon name="home-outline"></ion-icon></div>
-            <div class="text">Главная</div>
-          </a>
-        </li>
-        <li>
-          <a href="index.php?do=static&page=news">
-            <div class="icon"><ion-icon name="newspaper-outline"></ion-icon></div>
-            <div class="text">Новости</div>
-          </a>
-        </li>
-        <li id="schedule">
-          <a href="/index.php?do=schedule">
-            <div class="icon"><ion-icon name="calendar-outline"></ion-icon></div>
-            <div class="text">Расписание</div>
-          </a>
-        </li>
-        <li>
-          <a href="index.php?do=rooms">
-            <div class="icon"><ion-icon name="people-outline"></ion-icon></div>
-            <div class="text">Совместный просмотр</div>
-          </a>
-        </li>
-      </ul>
-      <div class="bottom-menu">
-        <ul>
-          <li class="hideorno">
-            <a href="index.php?subaction=userinfo&user={profile-login}">
-              <Div class="profile-photo-mobile-icon">
-                <div class="imgBx-mobile-menu">
-                  <img src="{foto}">
-                </div>
-              </div>
-              <div class="text">{profile-login}</div>
-            </a>
-          </li>
-          [admin-link]
-          <li style=>
-            <a href="{admin-link}">
-              <div class="icon color-in-header-menu"><ion-icon name="grid-outline"></ion-icon>
-              </div>
-              <div class="text color-in-header-menu">Админ пан.</div>
-            </a>
-          </li>
-          [/admin-link]
-          <li class="hideorno">
-            <a href="/index.php?do=pm">
-              <div class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></div>
-              <div class="text">Сообщения</div>
-            </a>
-          </li>
-          <li class="hideorno">
-            <a href="index.php?do=favorites">
-              <div class="icon"><ion-icon name="bookmarks-outline"></ion-icon></div>
-              <div class="text">Закладки</div>
-            </a>
-          </li>
-          [group=5]
-          <li>
-            <a onclick="openPopUp()">
-              <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text logout-button-menu">Вход</div>
-            </a>
-          </li>
-          [/group]
-          <li class="user-login">
-            <a href="index.php?action=logout">
-              <div class="icon"><ion-icon name="log-out-outline"></ion-icon></div>
-              <div class="text logout-button-menu">Выход</div>
-            </a>
-          </li>
-        </ul>
+<div class="mobile-menu">
+  <div class="mobile-menu-item">
+    <a href="/">
+      <div class="icon">
+        <ion-icon name="home-outline"></ion-icon>
       </div>
-    </div>
+      <div class="filed-icon">
+        <ion-icon name="home"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="/index.php?do=cat&category=news">
+      <div class="icon">
+        <ion-icon name="newspaper-outline"></ion-icon>
+      </div>
+      <div class="filed-icon">
+        <ion-icon name="newspaper"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item">
+    <a href="/index.php?do=schedule">
+      <div class="icon">
+        <ion-icon name="calendar-number-outline"></ion-icon>
+      </div>
+      <div class="filed-icon">
+        <ion-icon name="calendar-number"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item user-login">
+    <a href="#">
+      <div class="icon">
+        <ion-icon name="reader-outline"></ion-icon>
+      </div>
+      <div class="filed-icon">
+<ion-icon name="reader"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item user-login">
+    <a href="/index.php?do=favorites">
+      <div class="icon">
+        <ion-icon name="bookmarks-outline"></ion-icon>
+      </div>
+      <div class="filed-icon">
+        <ion-icon name="bookmarks"></ion-icon>
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item user-login">
+    <a href="index.php?subaction=userinfo&user={profile-login}">
+      <div class="mobile-menu-user icon">
+        <img src="{foto}" alt="Аватар пользователя">
+      </div>
+      <div class="mobile-menu-user filed-icon user-icon-active">
+        <img src="{foto}" alt="Аватар пользователя">
+      </div>
+    </a>
+  </div>
+  <div class="mobile-menu-item user-notlogin" style="display: none;">
+    <a onclick="openPopUp()">
+      <div class="mobile-menu-user icon">
+        <img src="{foto}" alt="Аватар пользователя">
+      </div>
+    </a>
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var currentUrl = window.location.href;
+
+  function setActiveIcon(url) {
+  var menuItems = document.querySelectorAll('.mobile-menu-item');
+  menuItems.forEach(function(item) {
+    var href = item.querySelector('a').getAttribute('href');
+    var icon = item.querySelector('.icon');
+    var filedIcon = item.querySelector('.filed-icon');
+
+    if ((url == window.location.origin + href && href == '/') || (href != '/' && url.includes(href))) {
+      icon.style.display = 'none';
+      filedIcon.style.display = 'block';
+    } else {
+      icon.style.display = 'block';
+      filedIcon.style.display = 'none';
+    }
+  });
+}
+
+  setActiveIcon(currentUrl); // Вызов функции при загрузке страницы
+
+  var menuLinks = document.querySelectorAll('.mobile-menu-item a');
+  menuLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      var href = this.getAttribute('href');
+      setActiveIcon(window.location.origin + href);
+    });
+  });
+});
+</script>

@@ -303,13 +303,6 @@ textarea::-webkit-input-placeholder {
     opacity: 0.6;
 }
 
-input[type="file"],
-input[type="image"] {
-    padding: 0;
-    border-width: 0;
-    background-color: transparent;
-}
-
 .wide,
 .bb-editor textarea,
 .ui-dialog textarea,

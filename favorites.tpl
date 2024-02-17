@@ -66,20 +66,22 @@
                                 [/xfnotgiven_shikimori_plot]
                                 [/xfnotgiven_kodik_plot]
                             </h3>
+                            <div class="btn-desc">
                             <a href="{full-link}">
                                 <span>Подробнее</span>
                             </a>
+                            <button class="remove-fav-btn">
+                                [del-favorites]
+                                    <div class="remove-fav-btn-content">
+                                        <a>Удалить из закладок</a>
+                                        <div class="icon"><ion-icon name="close-circle-outline"></ion-icon></div>
+                                    </div>
+                                [/del-favorites]
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <button class="remove-fav-btn">
-                [del-favorites]
-                    <div class="remove-fav-btn-content">
-                        <a>Удалить из закладок</a>
-                        <div class="icon"><ion-icon name="close-circle-outline"></ion-icon></div>
-                    </div>
-                [/del-favorites]
-                </button>
             </article>
         </div>
     </a>

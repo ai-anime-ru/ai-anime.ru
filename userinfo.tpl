@@ -3,7 +3,9 @@
 		<div class="box_in dark_top userinfo_top">
 			<div class="avatar" background="{foto}">
 				<div class="background-photo"><img src="{foto}"></div>
-				[ignore]<button class="btn-ignore">Игнорировать</button>[/ignore]
+				[not-logged]
+				<a href="/?action=logout" class="btn-logout">Выйти из профиля</a>
+				[/not-logged]
 				<div class="avatar-photo-box">
 					<img class="avatar-photo" src="{foto}">
 				</div>
