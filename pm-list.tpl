@@ -11,6 +11,5 @@
                 style="width: 20px;height: 20px;border-radius: 50%;object-fit: cover;" class="ml-2"></span></small>
     <small class="text-muted">{date}</small>
 </a>
-[/pm-list]
-[not-pm-list]{error}[/not-pm-list]
+[/pm-list] [not-pm-list]{error}[/not-pm-list]
 <!--НЕ МЕНЯТЬ КЛАССЫ-->

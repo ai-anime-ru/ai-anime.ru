@@ -1,4 +1,4 @@
-<footer class="footerBlack">
+<footer id="footer" class="footerBlack">
     <div class="footer-content-container">
         <!-- <div class="line"></div> -->
         <nav class="footerColumns">
@@ -46,15 +46,38 @@
                     </li>
                 </ul>
             </div>
-            <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
-                <a href="/">
-                    <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png" alt="Логотип сайта">
-                </a>
-            </li>
+            <ul>
+                <li class="logo-footer" style="right: 0; list-style: none; position: absolute;">
+                    <a href="/">
+                        <img style="width: 135px; height: 135px;" src="{THEME}/images/logo.png" alt="Логотип сайта">
+                    </a>
+                </li>
+            </ul>
         </nav>
         <div class="copyright-footer"></div>
-        <p class="copyright-footer-text">Ⓒ 2024 Copyright: <a href="/" class="copyright-link">AI ANIME</a>.
-            Все права защищены
+        <p class="copyright-footer-text">Ⓒ 2024 Copyright: <a href="/" class="copyright-link">AI ANIME</a>. Все права защищены
         </p>
     </div>
 </footer>
+
+<script>
+    window.addEventListener('scroll', function() {
+        var footer = document.getElementById('footer');
+        var footerHeight = footer.offsetHeight;
+        var windowHeight = window.innerHeight;
+        var scrollY = window.scrollY || window.pageYOffset;
+        var documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+
+        if ((scrollY + windowHeight) >= documentHeight - footerHeight) {
+            footer.style.position = 'absolute';
+            footer.style.bottom = 'auto';
+            footer.style.top = '100%';
+        } else {
+            footer.style.position = 'absolute';
+            footer.style.height = 'auto';
+            footer.style.width = '100%';
+            footer.style.background-color = 'var(--main)';
+            footer.style.margin-top = '20px';
+        }
+    });
+</script>

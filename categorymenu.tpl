@@ -1,19 +1,11 @@
 <div class="filter">
-    <ul>
-        <li>
-            <a href="/">Главная</a>
-        </li>
-    </ul>
     [item]
     <div class="filter-menu">
-        <a class="button-filter" href="{url}">{name}</a>
-        [sub-prefix]
+        <a class="button-filter" href="{url}">{name}</a> [sub-prefix]
         <ul class="filter-downcategory">
             <li>
-                [/sub-prefix]
-                {sub-item}
-                [sub-suffix]
-            <li>
+                [/sub-prefix] {sub-item} [sub-suffix]
+                <li>
         </ul>
         [/sub-suffix]
     </div>
@@ -23,36 +15,33 @@
         <li>
             <a href="/index.php?do=schedule">Расписание</a>
         </li>
-        <li>
-            <a href="/rooms/">Совместный просмотр</a>
-        </li>
         <!--Доп кнопки-->
     </ul>
 </div>
 <!--Запрещаем переход по ссылке при нажатии на кнопку открытия категории-->
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded", function() {
         var filterLinks = document.querySelectorAll(".button-filter");
 
-        filterLinks.forEach(function (link) {
-            link.addEventListener("mouseenter", function () {
+        filterLinks.forEach(function(link) {
+            link.addEventListener("mouseenter", function() {
                 $(this).siblings('.filter-downcategory').show();
             });
 
-            link.addEventListener("mouseleave", function () {
+            link.addEventListener("mouseleave", function() {
                 var ul = $(this).siblings('.filter-downcategory');
                 if (!ul.is(':hover')) {
                     ul.hide();
                 }
             });
 
-            link.addEventListener("click", function (event) {
+            link.addEventListener("click", function(event) {
                 $(this).siblings('.filter-downcategory').toggle();
             });
         });
-        $('.filter-downcategory').mouseleave(function () {
+        $('.filter-downcategory').mouseleave(function() {
             $(this).hide();
         });
     });
-</script>    
+</script>

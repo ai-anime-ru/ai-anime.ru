@@ -3,8 +3,7 @@
         <div class="title-full-story-container">
             <div class="title-full-story-container-poster-text">
                 <div>
-                    [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                        src="https://ai-anime.ru/uploads/none.png" alt="">[/xfnotgiven_poster]
+                    <img class="xfieldimage poster" src="https://ai-anime.ru/uploads/404.png" alt="">
                 </div>
                 <div>
                     <a class="title-full-story-container-text">
@@ -53,7 +52,7 @@
                         </div>
                         <div class="dot"> </div>
                         <span class="badge">
-                            <a>Серий:
+                            <a href="#" title="Количесвто серий">Серий:
                                 [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][xfnotgiven_kodik_last_episode]?[/xfnotgiven_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired]
                                 из
                                 [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][xfnotgiven_kodik_episodes_total]?[/xfnotgiven_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</a>
@@ -63,12 +62,14 @@
             </div>
             <div class="">
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
-                    [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
-                            name="bookmark-outline"></ion-icon></div>[/add-favorites]
+                    [add-favorites]
+                    <div class="bookmark-outline-add">
+                        <ion-icon title="Добавить в закладки" name="bookmark-outline"></ion-icon>
+                    </div>[/add-favorites] [del-favorites]
 
-                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon class="remove-book"
-                            title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon><ion-icon
-                            class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
+                    <div class="bookmark-outline-remove">
+                        <ion-icon class="remove-book" title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon>
+                        <ion-icon class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
                     </div>[/del-favorites]
                 </div>
             </div>
@@ -85,12 +86,12 @@
                     var player2 = document.getElementById('player-2');
 
                     // Назначаем обработчики событий при нажатии на кнопки
-                    watchonline.addEventListener('click', function () {
+                    watchonline.addEventListener('click', function() {
                         player2.classList.remove('is-active');
                         watchonline.classList.add('is-active');
                     });
 
-                    player2.addEventListener('click', function () {
+                    player2.addEventListener('click', function() {
                         player2.classList.add('is-active');
                         watchonline.classList.remove('is-active');
                     });
@@ -107,22 +108,21 @@
 
                     <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
                         <h1></h1>
-                        [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                        [xfgiven_kodik_iframe]<iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0"
-                            allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                        [xfnotgiven_kodik_iframe]
+                        <h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe] [xfgiven_kodik_iframe]
+                        <iframe class="kodik-player" src="[xfvalue_kodik_iframe]" frameborder="0" allowfullscreen allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
                     </div>
                     <div class="player-info">
                         <ul class="in-voice-acting">
                             <li>
                                 [xfgiven_kodik_translation]<span>В переводе: </span>
-                                <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
-                                [xfnotgiven_kodik_translation]<span>Перевод: </span>
-                                <a>отсутствует</a>[/xfnotgiven_kodik_translation]
+                                <a href="#" title="Доступные переводы">[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation] [xfnotgiven_kodik_translation]
+                                <span>Перевод: </span>
+                                <a href="#" title="Переводов нет">отсутствует</a>[/xfnotgiven_kodik_translation]
                             </lI>
                         </ul>
                     </div>
-                    [group=1]
-                    [xfgiven_shikimori_related]
+                    [group=1] [xfgiven_shikimori_related]
                     <div class="franchise-ai">
                         <div class="season-title">
                             <h1>Франшиза</h1>
@@ -131,8 +131,7 @@
                             {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
                         </div>
                     </div>
-                    [/xfgiven_shikimori_related]
-                    [/group]
+                    [/xfgiven_shikimori_related] [/group]
                 </div>
             </div>
         </div>
@@ -140,51 +139,51 @@
         [xfgiven_next_episode_date]
         <div class="pretimer">
             <div class="lt">
-                <div class="countdown-title"">
+                <div class="countdown-title" ">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class=" countdown-text">Новая серия аниме выходит на экраны: <span
-                        id="timer_out">{timer_out}</span><br> в
+                <div class=" countdown-text ">Новая серия аниме выходит на экраны: <span
+                        id="timer_out ">{timer_out}</span><br> в
                     соответствии
                     c японским временем.</div>
             </div>
-            <div class="rt">
-                <ul class="countdown-wrp">
-                    <li class="days">
-                        <div class="value">0</div>
-                        <div class="unit">дней</div>
+            <div class="rt ">
+                <ul class="countdown-wrp ">
+                    <li class="days ">
+                        <div class="value ">0</div>
+                        <div class="unit ">дней</div>
                     </li>
                     <li>
-                        <p class="points">:</p>
+                        <p class="points ">:</p>
                     </li>
-                    <li class="hours">
-                        <div class="value">0</div>
-                        <div class="unit">часов</div>
-                    </li>
-                    <li>
-                        <p class="points">:</p>
-                    </li>
-                    <li class="minutes">
-                        <div class="value">0</div>
-                        <div class="unit">минут</div>
+                    <li class="hours ">
+                        <div class="value ">0</div>
+                        <div class="unit ">часов</div>
                     </li>
                     <li>
-                        <p class="points">:</p>
+                        <p class="points ">:</p>
                     </li>
-                    <li class="seconds">
-                        <div class="value">0</div>
-                        <div class="unit">секунды</div>
+                    <li class="minutes ">
+                        <div class="value ">0</div>
+                        <div class="unit ">минут</div>
+                    </li>
+                    <li>
+                        <p class="points ">:</p>
+                    </li>
+                    <li class="seconds ">
+                        <div class="value ">0</div>
+                        <div class="unit ">секунды</div>
                     </li>
                 </ul>
             </div><!--[xfvalue_next_episode_date]-->
-            <script type="text/javascript">
-                var countdownElement = document.getElementById("timer_out");
+            <script type="text/javascript ">
+                var countdownElement = document.getElementById("timer_out ");
 
                 // Переменная с датой и временем выхода новой серии
-                var releaseDateTime = "[xfvalue_next_episode_date]";
+                var releaseDateTime = "[xfvalue_next_episode_date] ";
                 // Устанавливаем значение timer_out
-                var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
-                document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
+                var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss ");
+                document.getElementById("timer_out ").textContent = timerOutDate.format("DD.MM.YYYY ");
                 function getUnitLabel(number, singular, genitiveSingular, genitivePlural) {
                     if (number === 1 || (number > 20 && number % 10 === 1)) {
                         return singular;
@@ -200,7 +199,7 @@
                     var currentDateTime = moment();
 
                     // Получаем дату и время выхода новой серии из переменной
-                    var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
+                    var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss ");
 
                     // Расчитываем разницу во времени
                     var diff = releaseMoment.diff(currentDateTime);
@@ -212,10 +211,10 @@
                     var seconds = Math.floor((diff % (60 * 1000)) / 1000);
 
                     // Обновляем значения на странице
-                    document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
-                    document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
-                    document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
-                    document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
+                    document.querySelector(".countdown-wrp .days .unit ").textContent = getUnitLabel(days, "день ", "дня ", "дней ");
+                    document.querySelector(".countdown-wrp .hours .unit ").textContent = getUnitLabel(hours, "час ", "часа ", "часов ");
+                    document.querySelector(".countdown-wrp .minutes .unit ").textContent = getUnitLabel(minutes, "минута ", "минуты ", "минут ");
+                    document.querySelector(".countdown-wrp .seconds .unit ").textContent = getUnitLabel(seconds, "секунда ", "секунды ", "секунд ");
                 }, 1000);
             </script>
 
@@ -223,9 +222,9 @@
         [/xfgiven_next_episode_date]
 
 
-        <div class="description-full-box">
+        <div class="description-full-box ">
             <div>
-                <div class="description-full-text">
+                <div class="description-full-text ">
                     <h1>Сюжет аниме: {title}</h1>
                 </div>
                 <p>
@@ -241,11 +240,11 @@
         </div>
 
 
-        <div class="season-title">
+        <div class="season-title ">
             <h1>Комментарии</h1>
         </div>
 
-        {include file="relatednews.tpl"}
+        {include file="relatednews.tpl "}
 
         {addcomments}
         {comments}
@@ -277,14 +276,14 @@
 <script> //Скрипт открытия и закрытия Списков
     // Функция для отображения/скрытия выпадающего меню
     function toggleDropdown() {
-        var dropdown = document.getElementById("myDropdown");
-        dropdown.classList.toggle("show");
+        var dropdown = document.getElementById("myDropdown ");
+        dropdown.classList.toggle("show ");
     }
 
     // Закрывать меню, если пользователь кликает вне него
     window.onclick = function (event) {
         if (!event.target.matches('.dropbtn-watch-online')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content-watch-online");
+            var dropdowns = document.getElementsByClassName("dropdown-content-watch-online ");
             for (var i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
@@ -295,8 +294,8 @@
     }
 
     // Закрывать меню при убирании мыши с него
-    var dropdown = document.getElementById("myDropdown");
-    dropdown.addEventListener("mouseleave", function () {
+    var dropdown = document.getElementById("myDropdown ");
+    dropdown.addEventListener("mouseleave ", function () {
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
         }

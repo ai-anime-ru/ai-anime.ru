@@ -1,4 +1,5 @@
 /*СТИЛЬ ДЛЯ ПЛЕЕРОВ*/
+
 .tabs_b .video_box {
     text-align: center;
     margin-top: 20px;
@@ -25,7 +26,6 @@
 .full-player-box {
     width: 920px;
 }
-
 
 .description-short-box {
     padding-top: 1px;
@@ -111,7 +111,6 @@
     color: var(--btn-active-font-clr);
 }
 
-
 .title-dop {
     margin: 5px;
     margin-bottom: 10px;
@@ -150,7 +149,6 @@
     display: none;
 }
 
-
 .full-story {
     z-index: 2;
     position: relative;
@@ -188,8 +186,8 @@
 
 .title-text {
     color: white;
-    font-family: Arial, sans-serif;
-    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
     font-size: 1.39em;
 }
 
@@ -199,8 +197,8 @@
 
 .original-title {
     color: #d4d4d4;
-    font-family: Arial, sans-serif;
-    font-weight: lighter;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     font-size: 1.2em;
     line-height: normal;
     max-width: 430px;
@@ -306,7 +304,6 @@
     border-spacing: 1px;
     border-radius: 15px;
     padding: 15px;
-    box-shadow: 0 0px 25px #000000c2;
 }
 
 .first-info {
@@ -441,7 +438,6 @@
     color: white;
     background-color: var(--clr);
     border-color: #ff5c57;
-
     display: inline-block;
     text-align: center;
     user-select: none;
@@ -472,11 +468,9 @@
     height: auto;
 }
 
-.in-voice-acting span {
-    font-size: 1em;
-    color: #d1e1f9;
-    font-weight: 700;
-    margin-right: 5px;
+.in-voice-acting  div {
+    display: flex;
+    justify-content: center;
 }
 
 .in-voice-acting a {
@@ -484,10 +478,16 @@
     color: white;
 }
 
+.in-voice-acting span {
+    font-size: 1em;
+    color: #d1e1f9;
+    font-weight: 500;
+    
+}
+
 .description-full-box {
     margin-top: 15px;
     margin-bottom: 15px;
-
     background-color: var(--clr);
     border-radius: 15px;
     padding: 15px;
@@ -500,7 +500,6 @@
     padding: 0 0px 10px;
     color: white;
     text-align: center;
-
 }
 
 .description-full-box p {
@@ -519,8 +518,8 @@
 }
 
 
-
 /* Стили для кнопки и контейнера выпадающего меню */
+
 .dropdown-watch-online {
     position: relative;
     display: inline-block;
@@ -551,7 +550,9 @@
     background-color: #000 !important;
 }
 
+
 /* Стили для кнопок внутри выпадающего меню */
+
 .dropdown-content-watch-online button {
     display: block;
     width: 100%;
@@ -569,11 +570,14 @@
     color: black;
 }
 
+
 /* Отображение выпадающего меню */
+
 .show {
     visibility: visible;
     opacity: 1;
 }
+
 
 /* SLIDER */
 
@@ -618,10 +622,11 @@
     left: 0em;
 }
 
+
 /* General styles */
+
 .sim-slider {
     position: relative;
-
 }
 
 .sim-slider-list {
@@ -643,10 +648,11 @@
     left: 0;
     top: 0;
     display: block;
-
 }
 
+
 /* Navigation item styles */
+
 div.sim-slider-arrow-left,
 div.sim-slider-arrow-right {
     width: 22px;
@@ -771,7 +777,6 @@ span.sim-dot {
     display: table-cell;
     padding: 0px 0 !important;
     width: 50%;
-
 }
 
 .pretimer .value {
@@ -787,7 +792,7 @@ span.sim-dot {
 .pretimer .points {
     font-size: 4em;
     color: white;
-    font-weight: 100;
+    font-weight: 500;
     padding: 20px 0px 20px 0px;
 }
 
@@ -816,4 +821,26 @@ span.sim-dot {
 
 .countdown-text span {
     color: var(--active) !important;
+}
+
+@media (max-width: 480px) {
+    .full-story-container {
+        width: 100%;
+    }
+
+    .box-player {
+        left: 0;
+        border-radius: 15px;
+        overflow: hidden;
+        width: 100%;
+        box-shadow: 0 0px 17px #00000054;
+    }
+
+    .player-info {
+        padding: 15px;
+    }
+
+    .pretimer .value {
+        padding: 20px 5px 15px 5px;
+    }
 }

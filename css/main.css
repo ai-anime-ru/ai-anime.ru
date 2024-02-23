@@ -3,6 +3,83 @@
     src: url('/templates/ai-anime/fonts/ubuntu-medium.woff2');
 }
 
+@font-face {
+    font-family: 'Dela Gothic One';
+    font-weight: 400;
+    font-style: normal;
+    src: url('/templates/ai-anime/fonts/DelaGothicOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: url('/templates/ai-anime/fonts/Play-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Gilroy", sans-serif;
+    src: url('/templates/ai-anime/fonts/Gilroy-ExtraBold.ttf');
+}
+
+@font-face {
+
+
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Thin.ttf');
+    }
+
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Light.ttf');
+    }
+
+
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Regular.ttf');
+    }
+
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Medium.ttf');
+    }
+
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Bold.ttf');
+    }
+
+    .roboto-black {
+        font-family: "Roboto", sans-serif;
+        font-weight: 900;
+        font-style: normal;
+        src: url('/templates/ai-anime/fonts/Roboto/Roboto-Black.ttf');
+    }
+}
+
+a,
+p,
+span{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
 :root {
     color-scheme: dark;
     /* clr менять вместе с header-back-clr 
@@ -10,7 +87,6 @@
     */
     --clr: #131318;
     --header-back-clr: #1313189f;
-
     --main: #202029;
     --active: #d1e1f9;
     --main-text: #fff;
@@ -65,7 +141,8 @@ select {
     padding-left: 10px;
 }
 
-.hide-block {
+.hide-block,
+.mobile-badge {
     display: none;
 }
 
@@ -75,6 +152,7 @@ select {
 
 
 /*--------- TEST SORT ----------*/
+
 
 /* ------ year range -----*/
 
@@ -107,8 +185,8 @@ select {
     margin-top: 7px;
 }
 
-/*--------------*/
 
+/*--------------*/
 
 .aisort-main-block {
     background-color: var(--clr);
@@ -132,7 +210,6 @@ select {
     margin-bottom: 7px;
     width: 100%;
     align-content: space-around;
-
 }
 
 .filter-group label {
@@ -184,7 +261,6 @@ select {
 
 .filter-group .checkboxes label {
     display: flex;
-
 }
 
 .filter-group input {
@@ -202,8 +278,8 @@ select {
     padding-bottom: 5px;
 }
 
-/*----------- ----------*/
 
+/*----------- ----------*/
 
 .info-debug {
     padding: 25px;
@@ -254,13 +330,12 @@ ul li {
     list-style: none;
 }
 
-
 .wrap {
     margin-top: 70px;
 }
 
-/*------------ MAIN SORT ------------*/
 
+/*------------ MAIN SORT ------------*/
 
 
 /*------------ MOBILE MENU -------------*/
@@ -327,6 +402,8 @@ ul li {
     transform: translateX(50%) translateY(50%);
 }
 */
+
+
 /*--------------- privacy-policy -------------*/
 
 .privacy-policy {
@@ -434,13 +511,11 @@ ul li {
     display: none;
 }
 
+
 /*------------ HEADER ------------*/
 
 .header {
     position: fixed;
-    /*
-    background-color: #1e1e269f;
-    */
     background-color: var(--header-back-clr);
     backdrop-filter: blur(40px);
     height: 70px;
@@ -448,10 +523,11 @@ ul li {
     width: 100%;
     top: 0;
     color: #fff;
-    padding: 10px;
 }
 
 .in-header-content {
+    display: flex;
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -513,23 +589,25 @@ ul li {
 }
 
 .header-link {
-    position: absolute;
+    position: relative;
     height: 70px;
     display: flex;
     align-items: center;
     font-size: 2em;
-    color: #d1e1f9;
+    color: #69d1ce;
     padding-left: 15px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     transition: 0.5s;
     text-decoration: none;
     top: 0;
+    font-weight: 800;
+    font-family: "Gilroy", sans-serif;
 }
 
 .header-link:hover {
-    color: white;
-    text-shadow: 0 0 5px #d1e1f9;
+    color: #69d1ce;
+    text-shadow: 0px 0px 6px #ffffff9c;
 }
 
 .admin-link {
@@ -719,7 +797,6 @@ ul li {
 
 .random-anime .box:hover {
     box-shadow: none;
-
 }
 
 .random-anime .description-short-box {
@@ -730,8 +807,8 @@ ul li {
     margin-bottom: 0px !important;
 }
 
-/* --------- USER POP UP WINDOW LOGIN---------*/
 
+/* --------- USER POP UP WINDOW LOGIN---------*/
 
 .overlay-user-window {
     position: fixed;
@@ -751,7 +828,7 @@ ul li {
 
 .user-pop-up-window {
     background: var(--main);
-    padding: 50px;
+    padding: 55px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
@@ -793,7 +870,6 @@ ul li {
     font-size: 1.5em;
 }
 
-
 .login-box button {
     background-color: var(--active);
     color: var(--btn-active-font-clr);
@@ -813,6 +889,12 @@ ul li {
 
 .login-box button:hover {
     background-color: var(--btn-play-poster);
+}
+
+.login-box form label {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 .user-popup-content .lb-check {
@@ -844,7 +926,6 @@ ul li {
     font-weight: normal;
     color: var(--active);
     text-decoration: none;
-
 }
 
 .title-text-login {
@@ -870,12 +951,15 @@ ul li {
 .pass-info {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .pass-info a {
     color: var(--active);
     text-decoration: none;
     transition: 0.3s;
+    font-size: 0.9em;
+    font-weight: 300;
 }
 
 .pass-info a:hover {
@@ -964,6 +1048,7 @@ ul li {
     left: 0em;
 }
 
+
 /* ----------- REGISTRATION --------*/
 
 .rules-page form {
@@ -1036,6 +1121,13 @@ ul li {
     color: var(--btn-active-font-clr);
 }
 
+.title-text-login-reg {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    font-size: 0.95em;
+    font-weight: 100;
+}
+
 .button-check-name {
     margin-bottom: 15px;
 }
@@ -1094,6 +1186,7 @@ ul li {
     max-height: 40px;
 }
 
+
 /* ----------- WELCOME MSG ----------*/
 
 .welcome-message {
@@ -1117,8 +1210,6 @@ ul li {
     visibility: visible;
     opacity: 1;
 }
-
-
 
 .welcome-message p {
     color: #f0f0f0;
@@ -1170,6 +1261,7 @@ ul li {
     display: flex;
 }
 
+
 /* ---------- SIDE BLOCK ---------*/
 
 .main {
@@ -1178,7 +1270,6 @@ ul li {
     margin: auto;
     width: 1300px;
 }
-
 
 .contaner-flex {
     display: flex;
@@ -1236,11 +1327,11 @@ ul li {
     margin-left: 0 !important;
 }
 
+
 /* ------------- TOP MENU -------------*/
 
 .top-block-main {
     position: relative;
-
     border-radius: 15px;
     width: 1300px;
     height: 250px;
@@ -1258,13 +1349,8 @@ ul li {
 }
 
 .top-menu-block {
-    height: auto;
-    width: 100%;
+    height: 70px;
     position: relative;
-    background-color: var(--main);
-    margin-bottom: 20px;
-    border-radius: 15px;
-    top: 20px;
 }
 
 .top-menu-block ul {
@@ -1274,21 +1360,22 @@ ul li {
 
 .top-menu-block a {
     display: flex;
-    font-size: 14px;
-    padding: 22px;
+    font-size: 12.5px;
+    padding: 27px 20px 27px 20px;
     margin: 0px;
     transition: 0.3s;
     cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
 }
 
 .top-menu-block a {
-    color: #fff;
+    color: var(--badge-bright);
     text-decoration: none;
 }
 
 .top-menu-block a:hover {
-    background-color: #d1e1f9;
-    color: black;
+    color: var(--active-2);
 }
 
 .icon-menu {
@@ -1357,9 +1444,9 @@ ul li {
     top: 100%;
     list-style-type: none;
     border-radius: 0.45rem;
-    background-color: var(--main);
+    background-color: var(--clr);
     z-index: 9999;
-    box-shadow: 0 0px 25px #000000c2;
+    box-shadow: 0 0px 17px #00000062;
     padding: 15px;
 }
 
@@ -1375,10 +1462,10 @@ ul li {
     columns: 4;
 }
 
-
 .top-menu-block .filter-downcategory li a {
     padding: 10px !important;
 }
+
 
 /* ----------------- FOOTER -----------------*/
 
@@ -1389,7 +1476,6 @@ footer {
     background-color: var(--main);
     margin-top: 20px;
 }
-
 
 .footerColumns {
     position: relative;
@@ -1455,11 +1541,9 @@ footer {
     font-size: 0.8em;
     margin-top: 1em;
     padding-bottom: 10px;
-
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
-
 }
 
 .copyright-link {
@@ -1479,7 +1563,6 @@ footer {
 .development:hover {
     font-family: 'Noto Sans', sans-serif;
     color: rgb(224, 122, 255);
-
     -webkit-transition: all 0.15s;
     -o-transition: all 0.15s;
     transition: all 0.15s;
@@ -1491,6 +1574,7 @@ footer {
     -o-transition: all 0.15s;
     transition: all 0.15s;
 }
+
 
 /* --------- РАСПИСАНИЕ SIDE BLOCK ---------*/
 
@@ -1529,6 +1613,7 @@ footer {
     color: white;
 }
 
+
 /* --------- NAVIGATION ---------*/
 
 .navigation {
@@ -1539,7 +1624,6 @@ footer {
 .pages {
     text-align: left;
 }
-
 
 .pages a,
 .pages span {
@@ -1604,8 +1688,8 @@ footer {
     text-align: center;
 }
 
-/* -------------- COMMENT --------------*/
 
+/* -------------- COMMENT --------------*/
 
 .comment-box {
     width: 100%;
@@ -1643,7 +1727,6 @@ footer {
     margin: 15px;
     min-width: 210px;
 }
-
 
 .form-group fieldset {
     display: flex;
@@ -1799,7 +1882,6 @@ footer {
     color: var(--active-2);
 }
 
-
 .comm-two {
     font-size: 1em;
     color: white;
@@ -1887,6 +1969,7 @@ footer {
 .mass_comments_action input {
     background-color: var(--clr);
 }
+
 
 /* ----------- СТИЛИ ДЛЯ КНОПКИ ВВЕРХ  -----------*/
 
@@ -1976,6 +2059,7 @@ footer {
     display: flex;
 }
 
+
 /*---Вкладка Новостей---*/
 
 .news-container-chapter {
@@ -2031,6 +2115,7 @@ footer {
     font-weight: lighter;
     font-size: 1em;
 }
+
 
 /*---------- ОБРАТНАЯ СВЯЗЬ -----------*/
 
@@ -2101,6 +2186,7 @@ footer {
     bottom: 0px;
 }
 
+
 /* ---------- USER FAV -----------*/
 
 .remove-fav-btn {
@@ -2138,27 +2224,31 @@ footer {
     background-color: var(--red-1);
 }
 
-.remove-fav-btn-content a {
+.remove-fav-btn-content p {
     position: absolute;
     display: flex;
-    padding: 3px;
+    color: var(--main-text);
+    padding: 7px;
     transition: opacity 0.3s;
     opacity: 1;
 }
 
 .remove-fav-btn-content .icon {
     font-size: 1.5em;
+    padding: 5px;
     opacity: 0;
     transition: 0.3s;
+    color: var(--main-text);
 }
 
-.remove-fav-btn:hover .remove-fav-btn-content a {
+.remove-fav-btn:hover .remove-fav-btn-content p {
     opacity: 0;
 }
 
 .remove-fav-btn:hover .remove-fav-btn-content .icon {
     opacity: 1;
 }
+
 
 /* ----------- RULES PAGE ----------*/
 
@@ -2172,6 +2262,7 @@ footer {
     width: 900px;
     margin: 0 auto;
 }
+
 
 /*------------ USER INFO -------------*/
 
@@ -2258,7 +2349,6 @@ footer {
 .user-info .form-group {
     display: flex;
     flex-direction: column;
-
 }
 
 .user-info input {
@@ -2442,13 +2532,13 @@ footer {
     ;
 }
 
+
 /* ---------- PM ----------*/
 
 .pm-container input[type="text"] {
     background-color: var(--clr) !important;
     border-radius: 0.75rem !important;
     padding: 10px !important;
-
 }
 
 .ui-dialog label {
@@ -2478,7 +2568,6 @@ footer {
 
 .pm-container .box:hover {
     box-shadow: none;
-
 }
 
 .pm-menu {
@@ -2714,6 +2803,7 @@ footer {
     color: var(--active-2);
 }
 
+
 /*------------- season -------------*/
 
 .franchise-ai {
@@ -2756,6 +2846,8 @@ footer {
     margin-left: 0;
     width: 183px;
     font-size: 0.95em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     text-decoration: none;
 }
 
@@ -2827,7 +2919,10 @@ footer {
 }
 
 .season-main {
-    background-color: var(--clr);
+    margin-top: 20px;
+    padding: 15px 9px 15px 9px;
+    background-color: var(--main);
+    border-radius: 15px;
 }
 
 .season-main .slick-dots {
@@ -2865,21 +2960,22 @@ footer {
     width: unset;
 }
 
-
 .title-text-main {
-    padding: 0 0 0 20px;
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
     line-height: 28px;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .title-text-main-cont-1 {
-    padding: 15px 0 15px 0;
+    position: relative;
+    padding: 0 0 15px 6px;
 }
 
 .title-text-main-cont-2 {
-    padding: 15px 0 0 0;
+    padding: 15px 0 0 15px;
 }
 
 .title-text-main-cont-1,
@@ -2912,7 +3008,6 @@ footer {
     padding: 0;
     cursor: pointer;
 }
-
 
 .slick-dots li button {
     font-size: 0;
@@ -2949,6 +3044,7 @@ footer {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
 
 /*------------- MAIN SORT ------------*/
 
@@ -3003,7 +3099,9 @@ footer {
     margin: 0 3px 0 3px;
 }
 
+
 /*--- SORT MENU ---*/
+
 .sort-main .sort {
     border-radius: 0.5rem;
     max-height: 0;
@@ -3080,6 +3178,7 @@ footer {
     position: relative;
 }
 
+
 /* ---------- OPTIMIZATION ----------*/
 
 @media (max-width: 1280px) {
@@ -3129,11 +3228,39 @@ footer {
     }
 }
 
-
-
 @media (max-width: 480px) {
     footer {
         width: 100%;
+    }
+
+    .search-container {
+        margin-right: 15px;
+    }
+
+    .title-text-main-cont-1 {
+        padding: 13px 0 15px 15px;
+    }
+
+    .title-text-main-cont-2 {
+        display: flex;
+        padding: 13px 0 0 15px;
+        justify-content: space-between;
+    }
+
+    .title-text-main {
+        font-size: 18px;
+    }
+
+    .mobile-badge {
+        display: block;
+    }
+
+    .pretimer {
+        box-shadow: 0 0px 17px #00000054;
+    }
+
+    .countdown-text {
+        display: none;
     }
 
     .news-container-chapter article {
@@ -3182,7 +3309,7 @@ footer {
 
     .news-container-chapter .description-short a {
         font-size: 0.9em;
-        font-weight: 100;
+        font-weight: 400;
     }
 
     .news-container-chapter .news-block {
@@ -3265,6 +3392,8 @@ footer {
 
     .season-main {
         background-color: var(--clr);
+        margin-top: 0;
+        padding: 0;
         padding-bottom: 15px;
     }
 
@@ -3307,7 +3436,7 @@ footer {
     .season .news-block .title-text {
         margin-top: 10px;
         margin-left: 0;
-        width: 90px;
+        width: 117px;
         font-size: 0.8em !important;
         font-weight: normal;
         text-decoration: none;
@@ -3347,7 +3476,7 @@ footer {
     }
 
     .main-container {
-        max-width: 412px !important;
+        max-width: 100% !important;
         margin-top: 0 !important;
     }
 
@@ -3389,11 +3518,15 @@ footer {
     .about-anime,
     .title-text-container,
     .original-title {
-        max-width: 412px !important;
+        max-width: 100% !important;
     }
 
     .title-text {
-        font-size: 1.2em !important;
+        font-size: 1.1em !important;
+    }
+
+    #searchsuggestions {
+        display: none !important;
     }
 
     .title-text-container,
@@ -3417,13 +3550,11 @@ footer {
     .full-story {
         flex-direction: column;
         align-items: center;
-
     }
 
     .d3 {
         width: 162px;
     }
-
 
     .in-header-content {
         display: flex;
@@ -3487,7 +3618,7 @@ footer {
     .pretimer {
         left: 0 !important;
         width: auto !important;
-        margin-top: 10px !important;
+        margin-top: 0 !important;
         border-radius: 15px !important;
         display: flex !important;
         align-items: center !important;
@@ -3509,11 +3640,13 @@ footer {
     .countdown-title,
     .countdown-text {
         text-align: center !important;
+        font-size: 1.1em !important;
     }
 
     .pretimer .value,
     .pretimer .points {
-        font-size: 2em !important;
+        font-size: 3em !important;
+        font-weight: 700 !important;
     }
 
     .sim-slider-arrow-right {
@@ -3528,10 +3661,6 @@ footer {
 
     .sim-slider-dots {
         bottom: 0 !important;
-    }
-
-    .box-player {
-        width: 412px !important;
     }
 
     .kodik-player {
@@ -3597,7 +3726,6 @@ footer {
     }
 
     /* ------- USER INFO ---------*/
-
     .user-info {
         width: auto
     }
@@ -3618,7 +3746,6 @@ footer {
     }
 
     /*---------- PM -----------*/
-
     .pm-container {
         width: auto;
     }
@@ -3631,7 +3758,6 @@ footer {
     }
 
     /* --------- SCHEDULE -------*/
-
     .schedule {
         width: auto !important;
     }
@@ -3639,12 +3765,12 @@ footer {
     .schedule .main-title {
         line-height: normal;
     }
-
 }
 
 ;
 
 /* DLE Friends v1.6 */
+
 #no-friends {
     padding: 6px;
     border: 1px solid #C0D4DE;

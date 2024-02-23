@@ -1,7 +1,5 @@
 <div class="side-block-main">
-[group=1]
-{include file="/modules/filter.tpl"}
-[/group]
+    [group=1] {include file="/modules/filter.tpl"} [/group]
     <div class="random-anime">
         <div class="random-anime-title">
             <h3>Случайное аниме</h3>

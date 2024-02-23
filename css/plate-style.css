@@ -7,6 +7,7 @@
     border-radius: 15px;
 }
 
+
 /*
 .main-container h1 {
     display: flex;
@@ -54,7 +55,6 @@
     width: 285px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 @media (max-width: 1280px) {
@@ -121,9 +121,10 @@
 
 .title {
     position: absolute;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
     bottom: 10px;
     font-size: 1em;
-    font-family: inherit;
     left: 10px;
     padding: 10px;
     color: var(--main-text);
@@ -147,6 +148,8 @@
 }
 
 .description p {
+    font-family: 'ubuntu';
+    font-size: 1em;
     color: var(--main-text);
     line-height: 1rem;
 }
@@ -228,11 +231,9 @@
     display: flex;
 }
 
-
 .poster-box:hover p {
     opacity: 1;
 }
-
 
 .box:hover {
     box-shadow: 0 0px 17px var(--box-shadow-hover);
@@ -259,50 +260,42 @@
 }
 
 @media (max-width: 480px) {
-
     /*----------- MAIN PLATE----------*/
-
     .poster-box {
         width: 117px;
         height: 175px;
     }
-
     .poster-box img {
         width: 117px;
         height: 176px;
     }
-
     .poster-badge {
         margin: 5px;
     }
-
     .main-container .box {
         height: 176px;
         width: 117px;
         margin-bottom: 7px;
     }
-
     .items_news {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-
     .title-overlay,
     .title-bookmarks-icon,
     .play-button {
         display: none;
     }
-
     .mobile-title {
         display: block;
         width: 117px;
         font-size: 0.8em;
-        font-weight: normal;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
         margin-bottom: 15px;
     }
-
     .main-container,
     .top-block-main,
     .top-block-main img,

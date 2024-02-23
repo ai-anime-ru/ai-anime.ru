@@ -78,44 +78,44 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.js"></script>
 <script>
-const yearRange = document.getElementById('year-range');
+    const yearRange = document.getElementById('year-range');
 
-noUiSlider.create(yearRange, {
-    start: [1990, 2024],
-    connect: true,
-    step: 1,
-    range: {
-        'min': 1990,
-        'max': 2024
-    },
-    pips: {
-        mode: 'values',
-        values: [1990, 2000, 2010, 2020, 2024],
-        density: 5,
-        format: {
-            to: function (value) {
-                return value;
-            },
-            from: function (value) {
-                return value;
+    noUiSlider.create(yearRange, {
+        start: [1990, 2024],
+        connect: true,
+        step: 1,
+        range: {
+            'min': 1990,
+            'max': 2024
+        },
+        pips: {
+            mode: 'values',
+            values: [1990, 2000, 2010, 2020, 2024],
+            density: 5,
+            format: {
+                to: function(value) {
+                    return value;
+                },
+                from: function(value) {
+                    return value;
+                }
             }
         }
-    }
-});
-
-yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
-    const tooltip = document.createElement('div');
-    tooltip.classList.add('noUi-tooltip');
-    handle.appendChild(tooltip);
-
-    handle.setAttribute('aria-valuetext', `${yearRange.noUiSlider.get()[index]}`);
-
-    yearRange.noUiSlider.on('update', (values, handleNumber) => {
-        if (index === handleNumber) {
-            tooltip.innerText = `${Math.round(values[handleNumber])}`;
-        }
     });
-});
+
+    yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
+        const tooltip = document.createElement('div');
+        tooltip.classList.add('noUi-tooltip');
+        handle.appendChild(tooltip);
+
+        handle.setAttribute('aria-valuetext', `${yearRange.noUiSlider.get()[index]}`);
+
+        yearRange.noUiSlider.on('update', (values, handleNumber) => {
+            if (index === handleNumber) {
+                tooltip.innerText = `${Math.round(values[handleNumber])}`;
+            }
+        });
+    });
 </script>
 
 <script>
@@ -126,21 +126,21 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
         const label = group.querySelector('label');
         const checkboxes = group.querySelector('.checkboxes');
 
-        label.addEventListener('click', function () {
+        label.addEventListener('click', function() {
             // При клике на метку показываем или скрываем меню
             checkboxes.style.display = checkboxes.style.display === 'flex' ? 'none' : 'flex';
-            
+
             // Закрываем предыдущее меню, если оно было открыто
             filterGroups.forEach(otherGroup => {
-               const otherCheckboxes = otherGroup.querySelector('.checkboxes');
-                  if (otherCheckboxes !== checkboxes) {
-                   otherCheckboxes.style.display = 'none';
-            }
+                const otherCheckboxes = otherGroup.querySelector('.checkboxes');
+                if (otherCheckboxes !== checkboxes) {
+                    otherCheckboxes.style.display = 'none';
+                }
             });
         });
     });
 
-    document.addEventListener('click', function (event) {
+    document.addEventListener('click', function(event) {
         // При клике вне меню закрываем все меню
         if (!event.target.closest('.filter-group')) {
             filterGroups.forEach(group => {
@@ -152,25 +152,25 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
 </script>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
         const checkboxes = document.querySelectorAll('.checkboxes input[type="checkbox"]');
         const titleFilterSelects = document.querySelectorAll('.title-filter-select');
         const originalTexts = [];
 
         // Записываем оригинальные тексты в массив
-        titleFilterSelects.forEach(function (titleFilterSelect) {
+        titleFilterSelects.forEach(function(titleFilterSelect) {
             originalTexts.push(titleFilterSelect.textContent.trim());
         });
 
-        checkboxes.forEach(function (checkbox) {
-            checkbox.addEventListener('input', function () {
+        checkboxes.forEach(function(checkbox) {
+            checkbox.addEventListener('input', function() {
                 updateTitleFilter(checkbox);
             });
         });
 
         function updateTitleFilter(checkbox) {
             const checkedCheckboxes = checkbox.closest('.filter-group').querySelectorAll('input[type="checkbox"]:checked');
-            const checkedValues = Array.from(checkedCheckboxes).map(function (checkbox) {
+            const checkedValues = Array.from(checkedCheckboxes).map(function(checkbox) {
                 return checkbox.parentNode.textContent.trim();
             });
 
@@ -189,4 +189,3 @@ yearRange.querySelectorAll('.noUi-handle').forEach((handle, index) => {
         }
     });
 </script>
-

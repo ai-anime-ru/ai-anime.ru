@@ -1,28 +1,24 @@
 <div class="full-story-body">
     <div class="full-story-container">
         <div class="background-fullstory background-overlay">
-            <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                    src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]</div>
+            <div class="background-fullstory">[xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster" src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]</div>
         </div>
         <div class="full-story">
             <div class="full-box">
                 <article class="full-box-story">
                     <div class="full-poster-box">
-                        [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster"
-                            src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]
+                        [xfvalue_poster][xfnotgiven_poster]<img class="xfieldimage poster" src="https://ai-anime.ru/uploads/404.png" alt="">[/xfnotgiven_poster]
                     </div>
-                    [push_subscribe]
-                    {push_subscribe}
-                    [/push_subscribe]
+                    [push_subscribe] {push_subscribe} [/push_subscribe]
                 </article>
             </div>
             <div class="about-anime">
                 <div class="title-text-container">
-                    <a class="title-text">
+                    <a href="#" class="title-text">
                         {title}
                     </a>
                 </div>
-                <div class="original-title"><a>[xfvalue_shikimori_english]</a></div>
+                <div class="original-title"><p>[xfvalue_shikimori_english]</p></div>
                 <div class="description-mobile">
                     <div class="mobile-description">
                         <div>
@@ -57,10 +53,8 @@
                                                 fill='#000' />
                                         </g>
                                     </svg>[xfvalue_shikimori_score]</a>
-                            </span>
-                            [/xfgiven_shikimori_score]
-                            [xfgiven_kodik_kinopoisk_rating]
-                            <span class="badge"><a><svg width="9px" height="9px" xmlns="http://www.w3.org/2000/svg"
+                            </span> [/xfgiven_shikimori_score] [xfgiven_kodik_kinopoisk_rating]
+                            <span class="badge"><a href="#" title="Рейтинг шикимори"><svg width="9px" height="9px" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54.47 57.76">
                                         <defs>
                                             <style>
@@ -87,11 +81,9 @@
                                                     d="M0,0H11.56V17.74L23.61,0h14L17.26,20.79,54.47,0V13.2L21.06,25.74l33.41-3.13V35.15L21.06,32,54.47,44.56v13.2L17.26,37,37.64,57.76h-14L11.55,40V57.76H0V0Z" />
                                             </g>
                                         </g>
-                                    </svg> <a>[xfvalue_kodik_kinopoisk_rating]</a>
-                            </span>
-                            [/xfgiven_kodik_kinopoisk_rating]
-                            [xfgiven_kodik_imdb_rating]
-                            <span class="badge"><a><svg width="9px" height="9px" id="home_img" class="ipc-logo"
+                                    </svg> <a href="#" title="Рейтинг кинопоиск">[xfvalue_kodik_kinopoisk_rating]</a>
+                            </span> [/xfgiven_kodik_kinopoisk_rating] [xfgiven_kodik_imdb_rating]
+                            <span class="badge"><a href="#" title="SVG Badge"><svg width="9px" height="9px" id="home_img" class="ipc-logo"
                                         xmlns="http://www.w3.org/2000/svg" width="64" height="32"
                                         viewBox="0 0 64 32" version="1.1">
                                         <g fill="#F5C518">
@@ -111,15 +103,8 @@
                                             </path>
                                         </g>
                                     </svg>[xfvalue_kodik_imdb_rating]</a>
-                            </span>
-                            [/xfgiven_kodik_imdb_rating]
-                            [xfnotgiven_shikimori_score]
-                            [xfnotgiven_kodik_kinopoisk_rating]
-                            [xfnotgiven_kodik_imdb_rating]
-                            <span class="badge">Пусто</span>
-                            [/xfnotgiven_kodik_imdb_rating]
-                            [/xfnotgiven_kodik_kinopoisk_rating]
-                            [/xfnotgiven_shikimori_score]
+                            </span> [/xfgiven_kodik_imdb_rating] [xfnotgiven_shikimori_score] [xfnotgiven_kodik_kinopoisk_rating] [xfnotgiven_kodik_imdb_rating]
+                            <span class="badge">Пусто</span> [/xfnotgiven_kodik_imdb_rating] [/xfnotgiven_kodik_kinopoisk_rating] [/xfnotgiven_shikimori_score]
                         </div>
                         <div class="dot"></div>
                         <div>
@@ -150,10 +135,8 @@
                     </div>
                 </div>
                 <div class="description-short-box">
-                    <div class="description-short"><a>Краткое описание:</a></div>
-                    <h3>
-                        [xfvalue_shikimori_plot]
-                    </h3>
+                    <div class="description-short"><p>Краткое описание:</p></div>
+                        <h3>[xfgiven_kodik_plot][xfvalue_kodik_plot limit="130"]...[/xfgiven_kodik_plot] [xfnotgiven_kodik_plot] [xfgiven_shikimori_plot][xfvalue_shikimori_plot limit="50"]...[/xfgiven_shikimori_plot][xfnotgiven_shikimori_plot] Нам не удалось найти описание для этого аниме! [/xfnotgiven_shikimori_plot] [/xfnotgiven_kodik_plot]</h3>
                     <span id="description">Подробнее</span>
                 </div>
                 <div class="anime-information">
@@ -212,10 +195,8 @@
                                                     fill='#000' />
                                             </g>
                                         </svg>[xfvalue_shikimori_score]</a>
-                                </span>
-                                [/xfgiven_shikimori_score]
-                                [xfgiven_kodik_kinopoisk_rating]
-                                <span class="badge"><a><svg width="9px" height="9px" xmlns="http://www.w3.org/2000/svg"
+                                </span> [/xfgiven_shikimori_score] [xfgiven_kodik_kinopoisk_rating]
+                                <span class="badge"><a href="#" title="svg badge"><svg width="9px" height="9px" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 54.47 57.76">
                                             <defs>
                                                 <style>
@@ -242,11 +223,9 @@
                                                         d="M0,0H11.56V17.74L23.61,0h14L17.26,20.79,54.47,0V13.2L21.06,25.74l33.41-3.13V35.15L21.06,32,54.47,44.56v13.2L17.26,37,37.64,57.76h-14L11.55,40V57.76H0V0Z" />
                                                 </g>
                                             </g>
-                                        </svg> <a>[xfvalue_kodik_kinopoisk_rating]</a>
-                                </span>
-                                [/xfgiven_kodik_kinopoisk_rating]
-                                [xfgiven_kodik_imdb_rating]
-                                <span class="badge"><a><svg width="9px" height="9px" id="home_img" class="ipc-logo"
+                                        </svg> <a href="#" title="Рейтинг кинопоиск">[xfvalue_kodik_kinopoisk_rating]</a>
+                                </span> [/xfgiven_kodik_kinopoisk_rating] [xfgiven_kodik_imdb_rating]
+                                <span class="badge"><a href="#" title="SVG кинопоиск"><svg width="9px" height="9px" id="home_img" class="ipc-logo"
                                             xmlns="http://www.w3.org/2000/svg" width="64" height="32"
                                             viewBox="0 0 64 32" version="1.1">
                                             <g fill="#F5C518">
@@ -266,15 +245,8 @@
                                                 </path>
                                             </g>
                                         </svg>[xfvalue_kodik_imdb_rating]</a>
-                                </span>
-                                [/xfgiven_kodik_imdb_rating]
-                                [xfnotgiven_shikimori_score]
-                                [xfnotgiven_kodik_kinopoisk_rating]
-                                [xfnotgiven_kodik_imdb_rating]
-                                <span class="badge">Информация отсутствует</span>
-                                [/xfnotgiven_kodik_imdb_rating]
-                                [/xfnotgiven_kodik_kinopoisk_rating]
-                                [/xfnotgiven_shikimori_score]
+                                </span> [/xfgiven_kodik_imdb_rating] [xfnotgiven_shikimori_score] [xfnotgiven_kodik_kinopoisk_rating] [xfnotgiven_kodik_imdb_rating]
+                                <span class="badge">Информация отсутствует</span> [/xfnotgiven_kodik_imdb_rating] [/xfnotgiven_kodik_kinopoisk_rating] [/xfnotgiven_shikimori_score]
 
                             </td>
                         </tr>
@@ -342,14 +314,13 @@
                         <button>Пересматриваю</button>
                     </div>
                 </div>
-                <a class="watch-online rooms-invite" data-news_id="{news-id}" data-news_title="{title}"
-                    data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">Совместный
+                <a class="watch-online rooms-invite" data-news_id="{news-id}" data-news_title="{title}" data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">Совместный
                     просмотр</a>
             </div>
             <div class="bottom-items">
                 <div class="series">
                     <span class="badge">
-                        <a>Серий:
+                        <a href="#" title="Количество серий">Серий:
                             [xfvalue_kodik_last_episode]
                             [xfnotgiven_kodik_last_episode]
                             [xfvalue_shikimori_episodes_aired]
@@ -367,34 +338,62 @@
                             [/xfnotgiven_kodik_episodes_total]</a>
                     </span>
                 </div>
-
+                <div class="dot mobile-badge"></div>
+                <div class="mobile-badge">
+                    <span class="badge">
+                        <a class="genre-shiki">
+                            [xfvalue_shikimori_duration_3]
+                            [xfnotgiven_shikimori_duration_3]
+                            [xfvalue_kodik_duration_3]
+                            [xfnotgiven_kodik_duration_3]
+                            Информация отсутствует
+                            [/xfnotgiven_kodik_duration_3]
+                            [/xfnotgiven_shikimori_duration_3]
+                        </a>
+                    </span>
+                </div>
                 <div class="dot user-login"></div>
                 <div class="bookmarks-icon" onclick="toggleBookmark()">
-                    [add-favorites]<div class="bookmark-outline-add"><ion-icon title="Добавить в закладки"
-                            name="bookmark-outline"></ion-icon></div>[/add-favorites]
+                    [add-favorites]
+                    <div class="bookmark-outline-add">
+                        <ion-icon title="Добавить в закладки" name="bookmark-outline"></ion-icon>
+                    </div>[/add-favorites] [del-favorites]
 
-                    [del-favorites]<div class="bookmark-outline-remove"><ion-icon class="remove-book"
-                            title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon><ion-icon
-                            class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
+                    <div class="bookmark-outline-remove">
+                        <ion-icon class="remove-book" title="Удалить из закладок" name="checkmark-circle-outline"></ion-icon>
+                        <ion-icon class="remove-book" title="Удалить из закладок" name="close-circle-outline"></ion-icon>
                     </div>[/del-favorites]
                 </div>
             </div>
         </div>
-
-
-        [xfgiven_next_episode_date]
+        [xfgiven_alert_for_anime]
+        <div class="description-full-box ">
+            <div>
+                <h1 class="description-title ">Новости по аниме «{title}»</h1>
+                <div class="description-full-text ">
+                    <p id="description-full-text ">
+                        [xfvalue_alert_for_anime]
+                    </p>
+                </div>
+            </div>
+        </div>
+        [/xfgiven_alert_for_anime] [xfgiven_next_episode_date]
         <div class="pretimer">
             <div class="lt">
-                <div class="countdown-title"">
+                <div class="countdown-title">
                     <p>До выхода новой серии в Японии осталось:</p>
                 </div>
-                <div class=" countdown-text">Новая серия аниме выходит на экраны: <span
-                        id="timer_out">{timer_out}</span><br> в
-                    соответствии
-                    c японским временем.</div>
+                <div class="countdown-text">Новая серия аниме выходит на экраны: <span id="timer_out">{timer_out}</span><br> в соответствии c японским временем.</div>
             </div>
             <div class="rt">
                 <ul class="countdown-wrp">
+                    <li class="weeks">
+                        <div class="value">0</div>
+                        <div class="unit">недель</div>
+                    </li>
+                    <li>
+                        <p class="points">:</p>
+                    </li>
                     <li class="days">
                         <div class="value">0</div>
                         <div class="unit">дней</div>
@@ -421,7 +420,7 @@
                         <div class="unit">секунды</div>
                     </li>
                 </ul>
-            </div><!--[xfvalue_next_episode_date]-->
+            </div>
             <script type="text/javascript">
                 var countdownElement = document.getElementById("timer_out");
 
@@ -430,6 +429,7 @@
                 // Устанавливаем значение timer_out
                 var timerOutDate = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
                 document.getElementById("timer_out").textContent = timerOutDate.format("DD.MM.YYYY");
+
                 function getUnitLabel(number, singular, genitiveSingular, genitivePlural) {
                     if (number === 1 || (number > 20 && number % 10 === 1)) {
                         return singular;
@@ -440,132 +440,129 @@
                     }
                 }
                 // Обновляем таймер каждую секунду
-                setInterval(function () {
+                setInterval(function() {
                     // Получаем текущую дату и время
                     var currentDateTime = moment();
-
                     // Получаем дату и время выхода новой серии из переменной
                     var releaseMoment = moment(releaseDateTime, "DD.MM.YYYY HH:mm:ss");
-
                     // Расчитываем разницу во времени
                     var diff = releaseMoment.diff(currentDateTime);
-
                     // Расчитываем количество недель, дней, часов, минут и секунд
+                    var weeks = Math.floor(diff / (7 * 24 * 60 * 60 * 1000));
                     var days = Math.floor((diff % (7 * 24 * 60 * 60 * 1000)) / (24 * 60 * 60 * 1000));
                     var hours = Math.floor((diff % (24 * 60 * 60 * 1000)) / (60 * 60 * 1000));
                     var minutes = Math.floor((diff % (60 * 60 * 1000)) / (60 * 1000));
                     var seconds = Math.floor((diff % (60 * 1000)) / 1000);
 
                     // Обновляем значения на странице
+                    document.querySelector(".countdown-wrp .weeks .value").textContent = weeks;
                     document.querySelector(".countdown-wrp .days .value").textContent = days;
                     document.querySelector(".countdown-wrp .hours .value").textContent = hours;
                     document.querySelector(".countdown-wrp .minutes .value").textContent = minutes;
                     document.querySelector(".countdown-wrp .seconds .value").textContent = seconds;
+                    document.querySelector(".countdown-wrp .weeks .unit").textContent = getUnitLabel(weeks, "неделя", "недели", "недель");
                     document.querySelector(".countdown-wrp .days .unit").textContent = getUnitLabel(days, "день", "дня", "дней");
                     document.querySelector(".countdown-wrp .hours .unit").textContent = getUnitLabel(hours, "час", "часа", "часов");
                     document.querySelector(".countdown-wrp .minutes .unit").textContent = getUnitLabel(minutes, "минута", "минуты", "минут");
                     document.querySelector(".countdown-wrp .seconds .unit").textContent = getUnitLabel(seconds, "секунда", "секунды", "секунд");
+                    //Скрываем поле недель и его : если оно равно 0
+                    var weeksElement = document.querySelector(".countdown-wrp .weeks");
+                    var pointsElement = document.querySelector(".countdown-wrp .points");
+                    if (weeks === 0) {
+                        weeksElement.style.display = "none";
+                        pointsElement.style.display = "none";
+                    }
                 }, 1000);
             </script>
         </div>
         [/xfgiven_next_episode_date]
 
-        <div class="box-player">
-            <div class="full-player-box">
-                <div class="box-player-title-name">
-                    <span id="watch-online" value="player-kodik" class="is-active">Смотреть онлайн</span>
-                    <span id="player-2" value="player-aianime" class="">В разработке</span>
+        <div class="box-player ">
+            <div class="full-player-box ">
+                <div class="box-player-title-name ">
+                    <span id="watch-online " value="player-kodik " class="is-active ">Смотреть онлайн</span>
+                    <span id="player-2 " value="player-aianime " class=" ">В разработке</span>
                 </div>
 
-                <div id="cinema" class="full_player tabs_box">
-                    <div class="player visible player-kodik1" id="player-kodik1" style="display:block;">
+                <div id="cinema " class="full_player tabs_box ">
+                    <div class="player visible player-kodik1 " id="player-kodik1 " style="display:block; ">
                         <h1></h1>
-                        [xfnotgiven_kodik_iframe]<h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe]
-                        [xfgiven_kodik_iframe]<iframe id="kodik-player" class="kodik-player"
-                            src="[xfvalue_kodik_iframe]" frameborder="0" allowfullscreen
-                            allow="autoplay *; fullscreen *"></iframe>[/xfgiven_kodik_iframe]
+                        [xfnotgiven_kodik_iframe]
+                        <h1>Не удалось найти видео</h1>[/xfnotgiven_kodik_iframe] [xfgiven_kodik_iframe]
+                        <iframe id="kodik-player " class="kodik-player " src="[xfvalue_kodik_iframe] " frameborder="0 " allowfullscreen allow="autoplay *; fullscreen * "></iframe>[/xfgiven_kodik_iframe]
                     </div>
-                    <div class="player2" id="player22" style="display: none;">
-                        {include file="player/player.tpl"}
+                    <div class="player2 " id="player22 " style="display: none; ">
+                        {include file="player/player.tpl "}
                     </div>
-                    <div class="player-info">
-                        <ul class="in-voice-acting">
+                    <div class="player-info ">
+                        <ul class="in-voice-acting ">
                             <li>
                                 [xfgiven_kodik_translation]<span>В переводе: </span>
-                                <a>[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation]
-                                [xfnotgiven_kodik_translation]<span>Перевод: </span>
-                                <a>отсутствует</a>[/xfnotgiven_kodik_translation]
+                                <a href="#" title="В переводе">[xfvalue_kodik_translation]</a>[/xfgiven_kodik_translation] [xfnotgiven_kodik_translation]
+                                <span>Перевод: </span>
+                                <a href="#" title="Перевод отсутствует">отсутствует</a>[/xfnotgiven_kodik_translation]
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        {include file="relatednews.tpl"}
-        <div class="description-full-box">
+        {include file="relatednews.tpl "}
+        <div class="description-full-box ">
             <div>
-                <h1 class="description-title">Сюжет аниме «{title}»</h1>
-                <div class="description-full-text">
-                    <p>
-                        [xfvalue_kodik_plot]
-                        [xfnotgiven_kodik_plot]
-                        [xfvalue_shikimori_plot]
-                        [xfnotgiven_shikimori_plot]
-                        Нам не удалось найти описание для этого аниме!
-                        [/xfnotgiven_shikimori_plot]
-                        [/xfnotgiven_kodik_plot]
+                <h1 class="description-title ">Сюжет аниме «{title}»</h1>
+                <div class="description-full-text ">
+                    <p id="description-full-text ">
+                        [xfvalue_kodik_plot] [xfnotgiven_kodik_plot] [xfvalue_shikimori_plot] [xfnotgiven_shikimori_plot] Нам не удалось найти описание для этого аниме! [/xfnotgiven_shikimori_plot] [/xfnotgiven_kodik_plot]
                     </p>
                 </div>
             </div>
             [xfgiven_shikimori_related]
-            <div class="franchise-ai">
-                <div class="season-title">
+            <div class="franchise-ai ">
+                <div class="season-title ">
                     <h1>Франшиза</h1>
                 </div>
-                <div class="fullstory-season">
-                    <div class="season">
-                        {custom idshiki="[xfvalue_shikimori_related]"template="/modules/season" limit="100"}
+                <div class="fullstory-season ">
+                    <div class="season ">
+                        {custom idshiki="[xfvalue_shikimori_related] "template="/modules/season " limit="100 "}
                     </div>
                 </div>
             </div>
-            [/xfgiven_shikimori_related]
-            {*
-            [xfgiven_kadr_1]
-            <div class="sim-slider">
-                <div class="slider-title">
-                    <a>Скриншоты:</a>
+            [/xfgiven_shikimori_related] {* [xfgiven_kadr_1]
+            <div class="sim-slider ">
+                <div class="slider-title ">
+                    <a href="#" title="Скриншоты">Скриншоты:</a>
                 </div>
-                <ul class="sim-slider-list">
-                    <img src="[xfvalue_kadr_1]" alt="0">
-                    <img src="[xfvalue_kadr_2]" alt="1">
-                    <img src="[xfvalue_kadr_3]" alt="2">
-                    <img src="[xfvalue_kadr_4]" alt="3">
-                    <img src="[xfvalue_kadr_5]" alt="4">
+                <ul class="sim-slider-list ">
+                    <img src="[xfvalue_kadr_1] " alt="0 ">
+                    <img src="[xfvalue_kadr_2] " alt="1 ">
+                    <img src="[xfvalue_kadr_3] " alt="2 ">
+                    <img src="[xfvalue_kadr_4] " alt="3 ">
+                    <img src="[xfvalue_kadr_5] " alt="4 ">
                 </ul>
                 [/xfgiven_kadr_1]
             </div>
             *}
         </div>
-        <div class="rooms-invite" style="display: none;" data-news_id="{news-id}" data-news_title="{title}"
-            data-news_iframe="[xfvalue_kodik_iframe]" data-shikimori_id="[xfvalue_shikimori_id]">
-            <div class="room-invite__image" id="room-poster">
+        <div class="rooms-invite " style="display: none; " data-news_id="{news-id} " data-news_title="{title} " data-news_iframe="[xfvalue_kodik_iframe] " data-shikimori_id="[xfvalue_shikimori_id] ">
+            <div class="room-invite__image " id="room-poster ">
                 [xfvalue_poster]
             </div>
             <div>
-                <div class="room-invite__title">Совместный просмотр</div>
-                <div class="room-invite__desc">Смотри это и любое другое аниме вместе с друзьями<span>, с помощью
+                <div class="room-invite__title ">Совместный просмотр</div>
+                <div class="room-invite__desc ">Смотри это и любое другое аниме вместе с друзьями<span>, с помощью
                         функции
                         совместного просмотра</span></div>
             </div>
         </div>
 
-        {addcomments}
-        {comments}
-        {navigation}
+        {addcomments} {comments} {navigation}
     </div>
 </div>
-<script> //Скрипт для скролла по элементам
-    document.getElementById('description').addEventListener('click', function () {
+
+<script>
+    //Скрипт для скролла по элементам
+    document.getElementById('description').addEventListener('click', function() {
         var descriptionBox = document.querySelector('.description-full-box');
         var descriptionBoxTop = descriptionBox.offsetTop;
 
@@ -580,14 +577,14 @@
     //Скрипт открытия и закрытия Списков
     // Функция для отображения/скрытия выпадающего меню
     function toggleDropdown() {
-        var dropdown = document.getElementById("myDropdown");
-        dropdown.classList.toggle("show");
+        var dropdown = document.getElementById("myDropdown ");
+        dropdown.classList.toggle("show ");
     }
 
     // Закрывать меню, если пользователь кликает вне него
-    window.onclick = function (event) {
+    window.onclick = function(event) {
         if (!event.target.matches('.dropbtn-watch-online')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content-watch-online");
+            var dropdowns = document.getElementsByClassName("dropdown-content-watch-online ");
             for (var i = 0; i < dropdowns.length; i++) {
                 var openDropdown = dropdowns[i];
                 if (openDropdown.classList.contains('show')) {
@@ -598,8 +595,8 @@
     }
 
     // Закрывать меню при убирании мыши с него
-    var dropdown = document.getElementById("myDropdown");
-    dropdown.addEventListener("mouseleave", function () {
+    var dropdown = document.getElementById("myDropdown ");
+    dropdown.addEventListener("mouseleave ", function() {
         if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
         }
@@ -607,47 +604,56 @@
 </script>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function () {
+    document.addEventListener("DOMContentLoaded ", function() {
         // Получаем ссылки на элементы по их ID
         var watchOnlineButton = document.getElementById('watch-online');
         var player2Button = document.getElementById('player-2');
         var player22 = document.getElementById('player22');
         var playerKodik = document.getElementById('player-kodik1');
-        var kodikIframe = document.getElementById("kodik-player").contentWindow;
+        var kodikIframe = document.getElementById("kodik-player ").contentWindow;
 
         // Функция для скрытия всех плееров
         function hideAllPlayers() {
-            player22.style.display = "none";
-            playerKodik.style.display = "none";
+            player22.style.display = "none ";
+            playerKodik.style.display = "none ";
         }
 
         // Функция для отображения плеера Kodik
         function showKodikPlayer() {
             hideAllPlayers();
-            playerKodik.style.display = "block";
-            kodikIframeWindow.postMessage({ key: "kodik_player_api", value: { method: "play" } }, '*');
+            playerKodik.style.display = "block ";
+            kodikIframeWindow.postMessage({
+                key: "kodik_player_api ",
+                value: {
+                    method: "play "
+                }
+            }, '*');
 
         }
 
         // Функция для отображения плеера 2
         function showPlayer2() {
             hideAllPlayers();
-            player22.style.display = "block";
-            kodikIframe.postMessage({ key: "kodik_player_api", value: { method: "pause" } }, '*');
+            player22.style.display = "block ";
+            kodikIframe.postMessage({
+                key: "kodik_player_api ",
+                value: {
+                    method: "pause "
+                }
+            }, '*');
         }
 
         // Назначаем обработчики событий при нажатии на кнопки
-        watchOnlineButton.addEventListener('click', function () {
+        watchOnlineButton.addEventListener('click', function() {
             watchOnlineButton.classList.add('is-active');
             player2Button.classList.remove('is-active');
             showKodikPlayer();
         });
 
-        player2Button.addEventListener('click', function () {
+        player2Button.addEventListener('click', function() {
             player2Button.classList.add('is-active');
             watchOnlineButton.classList.remove('is-active');
             showPlayer2();
         });
     });
-
 </script>
