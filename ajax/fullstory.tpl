@@ -13,11 +13,11 @@
             </div>
             <div class="about-anime">
                 <div class="title-text-container">
-                    <a href="#" class="title-text">
+                    <p>
                       {title}
-                  </a>
+                    </p>
                 </div>
-                <div class="original-title"><a href="#" title="Оригинальное название">[xfvalue_shikimori_english]</a></div>
+                <div class="original-title"><p>[xfvalue_shikimori_english]</p></div>
                 <div class="description-mobile">
                     <div class="mobile-description">
                         <div>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div class="description-short-box">
-                    <div class="description-short"><a href="#" title="Краткое описание">Краткое описание:</a></div>
+                    <div class="description-short"><p>Краткое описание:</p></div>
                     <h3>
                         [xfvalue_shikimori_plot]
                     </h3>

@@ -4,7 +4,7 @@
             <article class="box-shortstory[fixed] fixed_story[/fixed] shortstory">
                 <div class="poster-box">
                     <div class="poster-badge">
-                        <!-- <span class="badge" data-afs-id="{news-id}">Быстрый просмотр</span> -->
+                        <span class="badge" data-afs-id="{news-id}">Быстрый просмотр</span>
                         [xfgiven_kodik_status_ru]
                         <span class="badge">[xfvalue_shikimori_status_ru][xfnotgiven_shikimori_status_ru][xfvalue_kodik_status_ru][/xfnotgiven_shikimori_status_ru]</span>[/xfgiven_kodik_status_ru]
                         <!--<span class="badge">Серий: [xfvalue_shikimori_episodes_aired][xfnotgiven_shikimori_episodes_aired][xfvalue_kodik_last_episode][/xfnotgiven_shikimori_episodes_aired] из [xfvalue_shikimori_episodes][xfnotgiven_shikimori_episodes][xfvalue_kodik_episodes_total][/xfnotgiven_shikimori_episodes]</span>-->
@@ -59,7 +59,7 @@
                             {title}
                         </a>
                         <div class="description-short-box">
-                            <div class="description-short"><a href="#" title="Краткое описание">Краткое описание:</a></div>
+                            <div class="description-short"><p>Краткое описание:</p></div>
                             <h3>[xfgiven_kodik_plot][xfvalue_kodik_plot limit="50"]...[/xfgiven_kodik_plot] [xfnotgiven_kodik_plot] [xfgiven_shikimori_plot][xfvalue_shikimori_plot limit="50"]...[/xfgiven_shikimori_plot][xfnotgiven_shikimori_plot] Нам не удалось найти описание для этого аниме! [/xfnotgiven_shikimori_plot] [/xfnotgiven_kodik_plot]
                             </h3>
                             <a href="{full-link}">
