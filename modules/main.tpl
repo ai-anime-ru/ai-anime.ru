@@ -1,11 +1,11 @@
 <main class="main fx-col clearfix">
 
+    [available=main]
     <div class="top-block-main">
         <div class="slider-content">
             <img src="https://ai-anime.ru/uploads/head-img.webp" alt="Описание изображения">
         </div>
     </div>
-    [available=main]
     <div class="season-main">
         <div class="title-text-main-cont-1">
             <p class="title-text-main">Рекомендуем посмотреть</p>

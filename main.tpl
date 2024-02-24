@@ -2,38 +2,36 @@
 <html lang="ru">
 
 <head>
-    <link rel="prefetch prerender" href="/templates/ai-anime/images/miku-loader.webm"> {headers}
+    <link rel="prefetch prerender" href="{THEME}/images/miku-loader.webm"> {headers}
     <meta name="theme-color" content="#131318">
     <meta name="HandheldFriendly" content="true">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-widht, initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <link href="//ai-anime.ru/templates/ai-anime/css/loader.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
-    <link rel="apple-touch-icon" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="//ai-anime.ru/templates/ai-anime/images/logo.png">
-    <link href="//ai-anime.ru/templates/ai-anime/css/main.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/schedule.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/fullstory.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/plate-style.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/sidebar.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/ui.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/templates/ai-anime/css/logreg.css" rel="stylesheet" type="text/css">
-    <link href="//ai-anime.ru/engine/mrdeath/aaparser/css/rooms.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/loader.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="{THEME}/images/logo.png">
+    <link rel="apple-touch-icon" href="{THEME}/images/logo.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{THEME}/images/logo.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{THEME}/images/logo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{THEME}/images/logo.png">
+    <link href="{THEME}/css/main.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/schedule.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/fullstory.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/plate-style.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/sidebar.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/ui.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/logreg.css" rel="stylesheet" type="text/css">
+    <link href="{THEME}/css/rooms.css" rel="stylesheet" type="text/css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.7.0/nouislider.min.css" rel="stylesheet">
-    <link href="//ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="//ai-anime.ru/templates/ai-anime/player/player.css">
-    <script src="//ai-anime.ru/templates/ai-anime/player/player.js"></script>
+    <link href="{THEME}/modules/slick/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{THEME}/player/player.css">
+    <script src="{THEME}/player/player.js"></script>
     <script src="//ai-anime.ru/engine/mrdeath/aaparser/js/rooms.js"></script>
     <script type="module" src="//ai-anime.ru/ionicons/dist/ionicons/ionicons.esm.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SK44Z46F4Y"></script>
     <script async src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="//ai-anime.ru/templates/ai-anime/js/moment.min.js"></script>
-
-    <!--TEST-->
+    <script src="{THEME}/js/moment.min.js"></script>
     <link href="{THEME}/ajax/fullstory.css" type="text/css" rel="stylesheet">
     <link href="{THEME}/ajax/magnificpopup.css" type="text/css" rel="stylesheet">
     <script src="{THEME}/ajax/magnificpopup.js"></script>
@@ -427,7 +425,7 @@
         });
     </script>
 
-    <script type="text/javascript" src="//ai-anime.ru/templates/ai-anime/modules/slick/slick/slick.js"></script>
+    <script type="text/javascript" src="{THEME}/modules/slick/slick/slick.js"></script>
     <script type="text/javascript">
         $('.fullstory-season .season').slick({
             dots: true,

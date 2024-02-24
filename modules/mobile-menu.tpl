@@ -19,6 +19,16 @@
             </div>
         </a>
     </div>
+    <div class="mobile-menu-item user-login">
+        <a href="#">
+            <div class="icon">
+                <ion-icon name="chevron-up-outline"></ion-icon>
+            </div>
+            <div class="filed-icon">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
     <div class="mobile-menu-item">
         <a href="/index.php?do=schedule" title="Расписание выхода аниме">
             <div class="icon">
@@ -26,26 +36,6 @@
             </div>
             <div class="filed-icon">
                 <ion-icon name="calendar-number"></ion-icon>
-            </div>
-        </a>
-    </div>
-    <div class="mobile-menu-item user-login">
-        <a href="#">
-            <div class="icon">
-                <ion-icon name="reader-outline"></ion-icon>
-            </div>
-            <div class="filed-icon">
-                <ion-icon name="reader"></ion-icon>
-            </div>
-        </a>
-    </div>
-    <div class="mobile-menu-item user-login">
-        <a href="/index.php?do=favorites" title="Закладки">
-            <div class="icon">
-                <ion-icon name="bookmarks-outline"></ion-icon>
-            </div>
-            <div class="filed-icon">
-                <ion-icon name="bookmarks"></ion-icon>
             </div>
         </a>
     </div>

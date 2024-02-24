@@ -7,7 +7,6 @@ $(document).on('click', '[data-afs-id]', function (event) {
     type: 'ajax',
     mainClass: 'afs-modal',
     items: {
-      // eslint-disable-next-line camelcase
       src: dle_root + 'engine/ajax/controller.php'
     },
     ajax: {
